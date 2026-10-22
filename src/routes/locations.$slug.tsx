@@ -362,7 +362,7 @@ function LocationPage() {
           </div>
 
           {/* Right Column: In-Depth Differentiated Narrative & EEAT */}
-          <div className="space-y-7 text-base leading-relaxed text-foreground/85 lg:col-span-7 md:text-lg">
+          <div className="space-y-7 text-base leading-relaxed text-foreground/85 lg:col-span-7 md:text-lg text-justify-docs">
             {loc.body.map((p: string, i: number) => (
               <p key={i}>{p}</p>
             ))}

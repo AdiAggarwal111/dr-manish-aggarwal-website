@@ -262,7 +262,7 @@ function ReviewsPage() {
                 <h2 className="mt-4 font-display text-2xl sm:text-3xl md:text-4xl text-foreground font-medium">
                   A Referral Lifeline for Families Across Western UP &amp; Delhi NCR
                 </h2>
-                <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg">
+                <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg text-justify-docs">
                   Over 40% of Dr. Manish Aggarwal’s acute cardiac interventions and complex second
                   opinions originate from feeder districts outside immediate Ghaziabad, including{" "}
                   <strong className="text-foreground font-semibold">

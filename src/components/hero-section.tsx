@@ -36,11 +36,11 @@ export const HeroSection = memo(function HeroSection() {
 
   return (
     <section
-      className="relative -mt-[76px] overflow-hidden pt-[96px] sm:pt-[104px] md:-mt-[84px] md:pt-[104px] md:min-h-[100dvh]"
+      className="relative -mt-[calc(env(safe-area-inset-top,0px)+76px)] overflow-hidden pt-[calc(env(safe-area-inset-top,0px)+88px)] sm:-mt-[88px] sm:pt-[104px] md:-mt-[84px] md:pt-[104px] md:min-h-[100dvh] bg-gradient-to-r from-[#dce9fa] to-[#bcd3eb]"
       aria-label="Introduction"
     >
       {/* High-resolution Yashoda Medicity exterior background extending to top viewport edge */}
-      <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
+      <div className="absolute inset-x-0 -top-32 bottom-0 overflow-hidden" aria-hidden="true">
         <picture>
           <source
             type="image/avif"

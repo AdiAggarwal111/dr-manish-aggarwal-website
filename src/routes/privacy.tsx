@@ -93,7 +93,7 @@ function PrivacyPolicyPage() {
       />
 
       <section className="px-6 py-12 md:px-12 md:py-16">
-        <div className="mx-auto max-w-4xl space-y-10 text-foreground">
+        <div className="mx-auto max-w-4xl space-y-10 text-foreground text-justify-docs">
           {/* Executive Summary Card */}
           <div className="rounded-3xl border border-emerald-500/30 bg-emerald-500/5 p-6 sm:p-8">
             <div className="flex items-center gap-3 text-emerald-700 dark:text-emerald-400 font-semibold text-lg">

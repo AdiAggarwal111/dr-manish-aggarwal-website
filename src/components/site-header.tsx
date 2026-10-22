@@ -48,7 +48,7 @@ export const SiteHeader = memo(function SiteHeader() {
   }, [location.pathname]);
 
   return (
-    <header className="sticky top-4 z-50 mx-auto w-full max-w-[1400px] px-4">
+    <header className="sticky top-2 sm:top-4 z-50 mx-auto w-full max-w-[1400px] px-3 sm:px-4 pt-[env(safe-area-inset-top,0px)]">
       {/* Main Floating Header Pill */}
       <div
         className="flex items-center justify-between rounded-full bg-navy px-5 py-3 text-navy-foreground md:px-8 md:py-4"

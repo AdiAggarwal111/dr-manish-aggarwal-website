@@ -327,7 +327,7 @@ function CostDetailPage() {
             <h3 className="font-display text-2xl text-foreground md:text-3xl">
               {costGuide.nppaStatutoryBreakdown.title}
             </h3>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base text-justify-docs">
               {costGuide.nppaStatutoryBreakdown.description}
             </p>
 
@@ -431,7 +431,7 @@ function CostDetailPage() {
             <h3 className="mt-2 font-display text-2xl text-foreground md:text-3xl">
               100% Cashless Mediclaim &amp; Panel Coverage
             </h3>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base text-justify-docs">
               {costGuide.insuranceCoverage.summary}
             </p>
 

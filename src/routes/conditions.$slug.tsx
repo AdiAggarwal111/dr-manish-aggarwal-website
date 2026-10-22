@@ -405,7 +405,7 @@ function ConditionDetailPage() {
               <h2 className="font-display text-2xl leading-tight text-foreground sm:text-3xl md:text-4xl">
                 {sec.heading}
               </h2>
-              <div className="space-y-5 text-base leading-relaxed text-foreground/85 md:text-lg">
+              <div className="space-y-5 text-base leading-relaxed text-foreground/85 md:text-lg text-justify-docs">
                 {sec.paragraphs.map((p: string, j: number) => (
                   <p key={j}>{p}</p>
                 ))}

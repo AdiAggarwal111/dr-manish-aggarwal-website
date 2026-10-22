@@ -54,7 +54,7 @@ export function NarrativeBlock({
       <blockquote className="rounded-2xl border-l-4 border-primary bg-secondary/40 py-3 pl-4 pr-3 font-display text-base italic leading-snug text-foreground/90 sm:text-xl sm:py-3.5 sm:pl-5 md:text-2xl">
         &ldquo;{pull}&rdquo;
       </blockquote>
-      <div className="space-y-3 text-sm leading-relaxed text-muted-foreground sm:space-y-4 sm:text-base md:text-lg text-pretty">
+      <div className="space-y-3 text-sm leading-relaxed text-muted-foreground sm:space-y-4 sm:text-base md:text-lg text-justify-docs">
         {children}
       </div>
     </div>

@@ -158,3 +158,11 @@
     ),
     linear-gradient(to right, var(--hero-sky-left), var(--hero-sky-right));
 }
+
+/* Google Docs style justified alignment with clean syllable hyphenation */
+@utility text-justify-docs {
+  text-align: justify;
+  text-justify: inter-word;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
