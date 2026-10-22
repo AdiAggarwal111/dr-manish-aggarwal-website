@@ -10,6 +10,7 @@ export const siteConfig = {
   location: "Indirapuram, Ghaziabad, Uttar Pradesh (201014)",
   hospitalUrl: "https://www.yashodahospital.org/doctor/dr-manish-aggarwal",
   siteUrl: "https://drmanishaggarwal.in",
+  googleAnalyticsId: "G-E9L9F07FP5",
   phone: "+91-9871183181",
   phoneDisplay: "+91 98711 83181",
   phoneRaw: "+919871183181",
