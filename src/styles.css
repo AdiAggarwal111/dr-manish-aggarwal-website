@@ -96,6 +96,16 @@
 @layer base {
   * {
     border-color: var(--color-border);
+    -webkit-hyphens: none !important;
+    hyphens: none !important;
+  }
+  body,
+  p,
+  li,
+  blockquote {
+    -webkit-hyphens: none !important;
+    hyphens: none !important;
+    word-break: normal;
   }
   body {
     background-color: var(--color-background);
@@ -159,10 +169,11 @@
     linear-gradient(to right, var(--hero-sky-left), var(--hero-sky-right));
 }
 
-/* Google Docs style justified alignment with clean syllable hyphenation */
+/* Clean editorial typography: never breaks words across lines */
 @utility text-justify-docs {
-  text-align: justify;
-  text-justify: inter-word;
-  -webkit-hyphens: auto;
-  hyphens: auto;
+  text-align: left;
+  text-wrap: pretty;
+  -webkit-hyphens: none;
+  hyphens: none;
+  word-break: normal;
 }

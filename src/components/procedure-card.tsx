@@ -23,7 +23,7 @@ export const ProcedureCard = memo(function ProcedureCard({
       <h3 className="font-display text-xl leading-tight text-foreground group-hover:text-primary transition-colors">
         {procedure.title}
       </h3>
-      <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-muted-foreground text-justify-docs">
+      <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-muted-foreground text-pretty">
         {procedure.desc}
       </p>
       <div className="mt-auto pt-5">

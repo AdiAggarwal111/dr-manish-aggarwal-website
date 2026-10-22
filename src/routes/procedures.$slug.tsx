@@ -461,7 +461,7 @@ function ProcedurePage() {
                 </h2>
               )}
               {s.paragraphs.length > 0 && (
-                <div className="space-y-5 text-base leading-relaxed text-foreground/85 md:text-lg text-justify-docs">
+                <div className="space-y-5 text-base leading-relaxed text-foreground/85 md:text-lg text-pretty">
                   {s.paragraphs.map((p: string, j: number) => (
                     <p key={j}>{p}</p>
                   ))}

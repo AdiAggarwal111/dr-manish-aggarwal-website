@@ -93,7 +93,7 @@ function TermsPage() {
       />
 
       <section className="px-6 py-12 md:px-12 md:py-16">
-        <div className="mx-auto max-w-4xl space-y-10 text-foreground text-justify-docs">
+        <div className="mx-auto max-w-4xl space-y-10 text-foreground text-pretty">
           {/* CRITICAL EMERGENCY WARNING BANNER */}
           <div className="rounded-3xl border border-red-500/40 bg-red-500/10 p-6 sm:p-8">
             <div className="flex items-center gap-3 text-red-600 dark:text-red-400 font-semibold text-lg">

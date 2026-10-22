@@ -163,7 +163,7 @@ export const HomeConditionsSection = memo(function HomeConditionsSection() {
                     <span className="font-semibold text-foreground block mb-1">
                       Warning Signs &amp; Symptoms:
                     </span>
-                    <p className="text-muted-foreground leading-relaxed text-justify-docs">
+                    <p className="text-muted-foreground leading-relaxed text-pretty">
                       {c.symptoms}
                     </p>
                   </div>
@@ -173,7 +173,7 @@ export const HomeConditionsSection = memo(function HomeConditionsSection() {
                     <span className="font-semibold text-primary block mb-1">
                       Minimally Invasive Catheter Solution:
                     </span>
-                    <p className="text-foreground/90 leading-relaxed text-justify-docs">
+                    <p className="text-foreground/90 leading-relaxed text-pretty">
                       {c.percutaneousSolution}
                     </p>
                   </div>

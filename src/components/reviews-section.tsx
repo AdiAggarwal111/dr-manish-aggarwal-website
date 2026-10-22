@@ -271,7 +271,7 @@ export const ReviewsSection = memo(function ReviewsSection() {
                   </div>
 
                   {/* Expandable Review Text */}
-                  <div className="mt-5 text-sm leading-relaxed text-muted-foreground space-y-3 text-justify-docs">
+                  <div className="mt-5 text-sm leading-relaxed text-muted-foreground space-y-3 text-pretty">
                     {isExpanded ? (
                       <div className="space-y-3 text-foreground/85 border-t border-border/60 pt-4 animate-in fade-in duration-300">
                         {review.fullText.split("\n\n").map((para, i) => (

@@ -127,13 +127,13 @@ export const FacilitySection = memo(function FacilitySection() {
               <h3 className="font-display text-2xl sm:text-3xl lg:text-4xl leading-tight text-foreground">
                 Built for India's Most Advanced Cardiac Care
               </h3>
-              <p className="text-base leading-relaxed text-foreground/80 md:text-lg text-justify-docs">
+              <p className="text-base leading-relaxed text-foreground/80 md:text-lg text-pretty">
                 Yashoda Medicity represents a multi-crore investment in clinical excellence. As
                 Director of Interventional Cardiology &amp; Structural Heart, Dr. Manish Aggarwal
                 operates within a medical ecosystem designed from the ground up to rival leading
                 European centers.
               </p>
-              <p className="text-sm leading-relaxed text-muted-foreground md:text-base text-justify-docs">
+              <p className="text-sm leading-relaxed text-muted-foreground md:text-base text-pretty">
                 Spanning multi-acre facilities with JCI and NABH accreditations, the hospital
                 integrates on-site cardiothoracic surgical backup, continuous renal replacement
                 therapy (CRRT), multi-slice 3D CT angiography, and dedicated private recovery
@@ -162,13 +162,13 @@ export const FacilitySection = memo(function FacilitySection() {
               <h3 className="font-display text-2xl sm:text-3xl lg:text-4xl leading-tight text-foreground">
                 The Technology Enabling European Structural Mastery
               </h3>
-              <p className="text-base leading-relaxed text-foreground/80 md:text-lg text-justify-docs">
+              <p className="text-base leading-relaxed text-foreground/80 md:text-lg text-pretty">
                 Complex structural heart procedures cannot be performed in conventional cath labs.
                 Dr. Manish Aggarwal utilizes state-of-the-art NABL-accredited catheterization
                 laboratories equipped with ceiling-suspended robotic C-arms, zero-latency digital
                 flat-panel fluoroscopy, and real-time hemodynamic integration.
               </p>
-              <p className="text-sm leading-relaxed text-muted-foreground md:text-base text-justify-docs">
+              <p className="text-sm leading-relaxed text-muted-foreground md:text-base text-pretty">
                 This environment enables Dr. Aggarwal to execute non-surgical valve replacements (
                 <strong className="font-medium text-foreground">TAVI / TAVR</strong>), percutaneous
                 mitral repairs (<strong className="font-medium text-foreground">MitraClip</strong>),

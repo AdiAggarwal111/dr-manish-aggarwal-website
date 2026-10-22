@@ -61,7 +61,7 @@ export const PageHeroHeader = memo(function PageHeroHeader({
 
         {/* Short summary paragraph below it */}
         {description && (
-          <p className="mt-4 max-w-3xl text-sm leading-relaxed text-muted-foreground sm:text-base md:text-lg text-justify-docs">
+          <p className="mt-4 max-w-3xl text-sm leading-relaxed text-muted-foreground sm:text-base md:text-lg text-pretty">
             {description}
           </p>
         )}

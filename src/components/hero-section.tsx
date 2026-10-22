@@ -40,7 +40,7 @@ export const HeroSection = memo(function HeroSection() {
       aria-label="Introduction"
     >
       {/* High-resolution Yashoda Medicity exterior background extending to top viewport edge */}
-      <div className="absolute inset-x-0 -top-32 bottom-0 overflow-hidden" aria-hidden="true">
+      <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
         <picture>
           <source
             type="image/avif"
@@ -60,7 +60,7 @@ export const HeroSection = memo(function HeroSection() {
             loading="eager"
             fetchPriority="high"
             decoding="async"
-            className="h-full w-full object-cover object-[center_20%]"
+            className="h-full w-full object-cover object-[center_top] sm:object-[center_35%] md:object-[center_20%]"
           />
         </picture>
       </div>
@@ -188,7 +188,7 @@ export const HeroSection = memo(function HeroSection() {
         </div>
 
         {/* Right Column / Mobile Order 2: Doctor's Editorial Portrait & Trust Rating */}
-        <div className="order-2 mx-auto mt-3 flex w-full max-w-[340px] flex-col items-center sm:mt-0 sm:max-w-[380px] md:order-none md:mt-5 md:max-w-[520px] lg:mt-7 lg:max-w-[560px] xl:max-w-[600px]">
+        <div className="order-2 mx-auto mt-6 flex w-full max-w-[340px] flex-col items-center sm:mt-0 sm:max-w-[380px] md:order-none md:mt-5 md:max-w-[520px] lg:mt-7 lg:max-w-[560px] xl:max-w-[600px]">
           <picture className="w-full flex justify-center">
             <source
               type="image/avif"
