@@ -1,4 +1,4 @@
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound, redirect } from "@tanstack/react-router";
 import {
   Award,
   Calendar,
@@ -50,7 +50,21 @@ const COST_CONDITION_MAP: Record<string, CostConditionItem> = {
   },
 };
 
+const COST_SLUG_REDIRECTS: Record<string, string> = {
+  "pacemaker-icd-crt": "pacemaker-implantation-cost",
+};
+
 export const Route = createFileRoute("/costs/$slug")({
+  beforeLoad: ({ params }) => {
+    const targetSlug = COST_SLUG_REDIRECTS[params.slug];
+    if (targetSlug) {
+      throw redirect({
+        to: "/costs/$slug",
+        params: { slug: targetSlug },
+        statusCode: 301,
+      });
+    }
+  },
   loader: ({ params }) => {
     const costGuide = procedureCosts.find((c) => c.slug === params.slug);
     if (!costGuide) throw notFound();

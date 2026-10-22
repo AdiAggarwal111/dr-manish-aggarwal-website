@@ -2,3 +2,11 @@
 https://www.drmanishaggarwal.in/* https://drmanishaggarwal.in/:splat 301!
 http://www.drmanishaggarwal.in/* https://drmanishaggarwal.in/:splat 301!
 http://drmanishaggarwal.in/* https://drmanishaggarwal.in/:splat 301!
+
+# Legacy procedure redirects (301 Permanent)
+/procedures/complex-angioplasty-cto /procedures/complex-coronary 301
+/procedures/rotablation-atherectomy /procedures/intravascular-imaging 301
+/procedures/pacemaker-icd-crt /procedures/pacemakers 301
+/procedures/cardiac-imaging-physiology /procedures/intravascular-imaging 301
+/procedures/second-opinion-cath-review /procedures/second-opinion 301
+/costs/pacemaker-icd-crt /costs/pacemaker-implantation-cost 301

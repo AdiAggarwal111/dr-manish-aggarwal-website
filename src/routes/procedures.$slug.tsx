@@ -1,4 +1,4 @@
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound, redirect } from "@tanstack/react-router";
 import {
   Award,
   Calendar,
@@ -198,7 +198,25 @@ const PROCEDURE_TOPIC_MESH: Record<string, TopicMeshItem> = {
   },
 };
 
+const PROCEDURE_SLUG_REDIRECTS: Record<string, string> = {
+  "complex-angioplasty-cto": "complex-coronary",
+  "rotablation-atherectomy": "intravascular-imaging",
+  "pacemaker-icd-crt": "pacemakers",
+  "cardiac-imaging-physiology": "intravascular-imaging",
+  "second-opinion-cath-review": "second-opinion",
+};
+
 export const Route = createFileRoute("/procedures/$slug")({
+  beforeLoad: ({ params }) => {
+    const targetSlug = PROCEDURE_SLUG_REDIRECTS[params.slug];
+    if (targetSlug) {
+      throw redirect({
+        to: "/procedures/$slug",
+        params: { slug: targetSlug },
+        statusCode: 301,
+      });
+    }
+  },
   loader: ({ params }) => {
     const proc = procedures.find((p) => p.slug === params.slug);
     if (!proc) throw notFound();
