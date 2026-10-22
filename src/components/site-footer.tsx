@@ -491,6 +491,10 @@ export const SiteFooter = memo(function SiteFooter() {
                 <CheckCircle2 className="h-3.5 w-3.5 text-emerald-400" />
                 <span>NPPA Statutory Stent Pricing Compliant</span>
               </span>
+              <span className="inline-flex items-center gap-1.5">
+                <CheckCircle2 className="h-3.5 w-3.5 text-emerald-400" />
+                <span>DPDP Act 2023 &amp; NMC Ethics Compliant</span>
+              </span>
             </div>
 
             <button
@@ -507,10 +511,10 @@ export const SiteFooter = memo(function SiteFooter() {
       </div>
 
       {/* =========================================================================
-          SECTION 5: COPYRIGHT & NABH MEDICAL DISCLAIMER
+          SECTION 5: COPYRIGHT, STATUTORY LEGAL LINKS & MEDICAL DISCLAIMER
           ========================================================================= */}
       <div className="border-t border-white/10 bg-black/40 px-6 py-6 text-center text-xs text-slate-400">
-        <div className="mx-auto max-w-[1200px] space-y-2">
+        <div className="mx-auto max-w-[1200px] space-y-3">
           <p className="text-slate-300">
             © {new Date().getFullYear()} {siteConfig.name}. Director of Interventional Cardiology
             &amp; Structural Heart Specialist,{" "}
@@ -524,6 +528,32 @@ export const SiteFooter = memo(function SiteFooter() {
             </a>
             , Indirapuram, Ghaziabad, Delhi NCR.
           </p>
+
+          {/* Statutory Legal & Compliance Links */}
+          <div className="flex flex-wrap items-center justify-center gap-4 text-[11px] text-slate-400 py-1">
+            <Link
+              to="/privacy"
+              className="hover:text-white transition underline underline-offset-4 decoration-white/20"
+            >
+              Privacy Policy (DPDP Act 2023)
+            </Link>
+            <span className="text-white/20" aria-hidden="true">
+              •
+            </span>
+            <Link
+              to="/terms"
+              className="hover:text-white transition underline underline-offset-4 decoration-white/20"
+            >
+              Terms of Clinical Consultation &amp; NMC Notice
+            </Link>
+            <span className="text-white/20" aria-hidden="true">
+              •
+            </span>
+            <span className="text-slate-400">
+              Delhi Medical Council Reg. #{siteConfig.registration}
+            </span>
+          </div>
+
           <p className="text-[11px] text-slate-500 leading-relaxed max-w-4xl mx-auto">
             Clinical Disclaimer: Medical information, procedural descriptions, and cost estimates
             presented on this website are authored for patient education under Medical Council

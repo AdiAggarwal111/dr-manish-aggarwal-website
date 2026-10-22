@@ -16,8 +16,10 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CostsRouteImport } from './routes/costs'
 import { Route as FacilityRouteImport } from './routes/facility'
 import { Route as LocationsRouteImport } from './routes/locations'
+import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as ProceduresRouteImport } from './routes/procedures'
 import { Route as ReviewsRouteImport } from './routes/reviews'
+import { Route as TermsRouteImport } from './routes/terms'
 import { Route as ConditionsIndexRouteImport } from './routes/conditions.index'
 import { Route as ConditionsSlugRouteImport } from './routes/conditions.$slug'
 import { Route as CostsIndexRouteImport } from './routes/costs.index'
@@ -62,6 +64,11 @@ const LocationsRoute = LocationsRouteImport.update({
   path: '/locations',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ProceduresRoute = ProceduresRouteImport.update({
   id: '/procedures',
   path: '/procedures',
@@ -70,6 +77,11 @@ const ProceduresRoute = ProceduresRouteImport.update({
 const ReviewsRoute = ReviewsRouteImport.update({
   id: '/reviews',
   path: '/reviews',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ConditionsIndexRoute = ConditionsIndexRouteImport.update({
@@ -121,8 +133,10 @@ export interface FileRoutesByFullPath {
   '/costs': typeof CostsRouteWithChildren
   '/facility': typeof FacilityRoute
   '/locations': typeof LocationsRouteWithChildren
+  '/privacy': typeof PrivacyRoute
   '/procedures': typeof ProceduresRouteWithChildren
   '/reviews': typeof ReviewsRoute
+  '/terms': typeof TermsRoute
   '/conditions/$slug': typeof ConditionsSlugRoute
   '/costs/$slug': typeof CostsSlugRoute
   '/locations/$slug': typeof LocationsSlugRoute
@@ -137,7 +151,9 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/facility': typeof FacilityRoute
+  '/privacy': typeof PrivacyRoute
   '/reviews': typeof ReviewsRoute
+  '/terms': typeof TermsRoute
   '/conditions/$slug': typeof ConditionsSlugRoute
   '/costs/$slug': typeof CostsSlugRoute
   '/locations/$slug': typeof LocationsSlugRoute
@@ -156,8 +172,10 @@ export interface FileRoutesById {
   '/costs': typeof CostsRouteWithChildren
   '/facility': typeof FacilityRoute
   '/locations': typeof LocationsRouteWithChildren
+  '/privacy': typeof PrivacyRoute
   '/procedures': typeof ProceduresRouteWithChildren
   '/reviews': typeof ReviewsRoute
+  '/terms': typeof TermsRoute
   '/conditions/$slug': typeof ConditionsSlugRoute
   '/costs/$slug': typeof CostsSlugRoute
   '/locations/$slug': typeof LocationsSlugRoute
@@ -177,8 +195,10 @@ export interface FileRouteTypes {
     | '/costs'
     | '/facility'
     | '/locations'
+    | '/privacy'
     | '/procedures'
     | '/reviews'
+    | '/terms'
     | '/conditions/$slug'
     | '/costs/$slug'
     | '/locations/$slug'
@@ -193,7 +213,9 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/facility'
+    | '/privacy'
     | '/reviews'
+    | '/terms'
     | '/conditions/$slug'
     | '/costs/$slug'
     | '/locations/$slug'
@@ -211,8 +233,10 @@ export interface FileRouteTypes {
     | '/costs'
     | '/facility'
     | '/locations'
+    | '/privacy'
     | '/procedures'
     | '/reviews'
+    | '/terms'
     | '/conditions/$slug'
     | '/costs/$slug'
     | '/locations/$slug'
@@ -231,8 +255,10 @@ export interface RootRouteChildren {
   CostsRoute: typeof CostsRouteWithChildren
   FacilityRoute: typeof FacilityRoute
   LocationsRoute: typeof LocationsRouteWithChildren
+  PrivacyRoute: typeof PrivacyRoute
   ProceduresRoute: typeof ProceduresRouteWithChildren
   ReviewsRoute: typeof ReviewsRoute
+  TermsRoute: typeof TermsRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -286,6 +312,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LocationsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/procedures': {
       id: '/procedures'
       path: '/procedures'
@@ -298,6 +331,13 @@ declare module '@tanstack/react-router' {
       path: '/reviews'
       fullPath: '/reviews'
       preLoaderRoute: typeof ReviewsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/conditions/': {
@@ -421,8 +461,10 @@ const rootRouteChildren: RootRouteChildren = {
   CostsRoute: CostsRouteWithChildren,
   FacilityRoute: FacilityRoute,
   LocationsRoute: LocationsRouteWithChildren,
+  PrivacyRoute: PrivacyRoute,
   ProceduresRoute: ProceduresRouteWithChildren,
   ReviewsRoute: ReviewsRoute,
+  TermsRoute: TermsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
