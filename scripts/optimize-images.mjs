@@ -23,6 +23,7 @@ async function run() {
       { suffix: "", width: docMeta.width },
       { suffix: "-1200", width: 1200 },
       { suffix: "-800", width: 800 },
+      { suffix: "-500", width: 500 },
     ];
 
     for (const s of sizes) {
@@ -72,6 +73,7 @@ async function run() {
     const heroSizes = [
       { suffix: "", width: heroMeta.width },
       { suffix: "-640", width: 640 },
+      { suffix: "-480", width: 480 },
     ];
 
     for (const s of heroSizes) {

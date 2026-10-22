@@ -44,23 +44,12 @@ export const Route = createFileRoute("/")({
       { rel: "canonical", href: `${siteConfig.siteUrl}/` },
       {
         rel: "preload",
-        href: "/images/doctor-portrait.avif",
         as: "image",
         type: "image/avif",
         fetchPriority: "high",
         imageSrcSet:
-          "/images/doctor-portrait-800.avif 800w, /images/doctor-portrait-1200.avif 1200w, /images/doctor-portrait.avif 1856w",
+          "/images/doctor-portrait-500.avif 500w, /images/doctor-portrait-800.avif 800w, /images/doctor-portrait-1200.avif 1200w, /images/doctor-portrait.avif 1856w",
         imageSizes: "(max-width: 640px) 340px, (max-width: 1024px) 520px, 600px",
-      },
-      {
-        rel: "preload",
-        href: "/images/yashoda-medicity-hero.avif",
-        as: "image",
-        type: "image/avif",
-        fetchPriority: "high",
-        imageSrcSet:
-          "/images/yashoda-medicity-hero-640.avif 640w, /images/yashoda-medicity-hero.avif 1024w",
-        imageSizes: "100vw",
       },
     ],
   }),

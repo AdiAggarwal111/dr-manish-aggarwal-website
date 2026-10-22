@@ -112,7 +112,7 @@ export const SiteHeader = memo(function SiteHeader() {
           <a
             href={`tel:${siteConfig.phoneRaw}`}
             aria-label="Call 24/7 Cardiac Emergency Helpline (+91-9871183181)"
-            className="relative inline-flex h-9 w-9 items-center justify-center rounded-full border border-red-400/40 bg-red-500/20 text-red-200 transition hover:bg-red-500/30 active:scale-95 focus:outline-none"
+            className="relative inline-flex h-11 w-11 items-center justify-center rounded-full border border-red-400/40 bg-red-500/20 text-red-200 transition hover:bg-red-500/30 active:scale-95 focus:outline-none"
             title="24/7 Emergency Helpline: +91 98711 83181"
           >
             <span className="absolute -top-0.5 -right-0.5 flex h-2.5 w-2.5">
@@ -127,7 +127,7 @@ export const SiteHeader = memo(function SiteHeader() {
             onClick={() => setIsOpen((prev) => !prev)}
             aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
             aria-expanded={isOpen}
-            className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white/40"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white/40"
           >
             {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>

@@ -65,6 +65,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "robots", content: "index, follow" },
     ],
     links: [
+      { rel: "stylesheet", href: appCss },
       {
         rel: "preload",
         href: "/fonts/inter-normal.woff2",
@@ -83,7 +84,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
       { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
       { rel: "manifest", href: "/manifest.webmanifest" },
-      { rel: "stylesheet", href: appCss },
     ],
     scripts: [
       {
@@ -102,7 +102,8 @@ function RootShell({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
-        {/* Google tag (gtag.js) */}
+        <HeadContent />
+        {/* Google tag (gtag.js) - loaded asynchronously after critical head assets */}
         {siteConfig.googleAnalyticsId ? (
           <>
             <script
@@ -116,7 +117,6 @@ function RootShell({ children }: { children: React.ReactNode }) {
             />
           </>
         ) : null}
-        <HeadContent />
       </head>
       <body>
         {children}

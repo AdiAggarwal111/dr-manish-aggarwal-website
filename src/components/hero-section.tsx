@@ -44,13 +44,13 @@ export const HeroSection = memo(function HeroSection() {
         <picture>
           <source
             type="image/avif"
-            srcSet="/images/yashoda-medicity-hero-640.avif 640w, /images/yashoda-medicity-hero.avif 1024w"
-            sizes="100vw"
+            srcSet="/images/yashoda-medicity-hero-480.avif 480w, /images/yashoda-medicity-hero-640.avif 640w, /images/yashoda-medicity-hero.avif 1024w"
+            sizes="(max-width: 640px) 480px, (max-width: 1024px) 640px, 100vw"
           />
           <source
             type="image/webp"
-            srcSet="/images/yashoda-medicity-hero-640.webp 640w, /images/yashoda-medicity-hero.webp 1024w"
-            sizes="100vw"
+            srcSet="/images/yashoda-medicity-hero-480.webp 480w, /images/yashoda-medicity-hero-640.webp 640w, /images/yashoda-medicity-hero.webp 1024w"
+            sizes="(max-width: 640px) 480px, (max-width: 1024px) 640px, 100vw"
           />
           <img
             src="/images/yashoda-medicity-hero.jpg"
@@ -58,7 +58,7 @@ export const HeroSection = memo(function HeroSection() {
             width={1024}
             height={571}
             loading="eager"
-            fetchPriority="high"
+            fetchPriority="low"
             decoding="async"
             className="h-full w-full object-cover object-[center_top] sm:object-[center_35%] md:object-[center_20%]"
           />
@@ -134,6 +134,7 @@ export const HeroSection = memo(function HeroSection() {
               href={siteConfig.hospitalUrl}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit Yashoda Medicity official hospital page for Dr. Manish Aggarwal (opens in a new tab)"
               className="mx-auto mt-0 flex w-full max-w-[340px] items-center justify-center gap-2 rounded-full border border-white/50 bg-white/65 px-4 py-2.5 text-xs font-semibold tracking-[0.10em] uppercase text-foreground shadow-sm backdrop-blur-md transition hover:bg-white/80 sm:mt-0 sm:max-w-[440px] sm:px-5 sm:tracking-[0.12em] md:mx-0 md:max-w-[500px] lg:mt-0 lg:max-w-[530px] xl:max-w-[550px]"
             >
               <span className="text-sm">🏥</span>
@@ -192,12 +193,12 @@ export const HeroSection = memo(function HeroSection() {
           <picture className="w-full flex justify-center">
             <source
               type="image/avif"
-              srcSet="/images/doctor-portrait-800.avif 800w, /images/doctor-portrait-1200.avif 1200w, /images/doctor-portrait.avif 1856w"
+              srcSet="/images/doctor-portrait-500.avif 500w, /images/doctor-portrait-800.avif 800w, /images/doctor-portrait-1200.avif 1200w, /images/doctor-portrait.avif 1856w"
               sizes="(max-width: 640px) 340px, (max-width: 1024px) 520px, 600px"
             />
             <source
               type="image/webp"
-              srcSet="/images/doctor-portrait-800.webp 800w, /images/doctor-portrait-1200.webp 1200w, /images/doctor-portrait.webp 1856w"
+              srcSet="/images/doctor-portrait-500.webp 500w, /images/doctor-portrait-800.webp 800w, /images/doctor-portrait-1200.webp 1200w, /images/doctor-portrait.webp 1856w"
               sizes="(max-width: 640px) 340px, (max-width: 1024px) 520px, 600px"
             />
             <img

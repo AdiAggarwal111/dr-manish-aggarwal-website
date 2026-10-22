@@ -500,6 +500,7 @@ export const SiteFooter = memo(function SiteFooter() {
             <button
               type="button"
               onClick={scrollToTop}
+              aria-label="Scroll back to top"
               className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-300 hover:bg-white/10 hover:text-white transition"
               title="Scroll back to top"
             >
