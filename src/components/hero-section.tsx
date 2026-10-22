@@ -127,14 +127,14 @@ export const HeroSection = memo(function HeroSection() {
             </div>
           </div>
 
-          {/* Mobile Order 3: Yashoda Medicity Badge & Stats Bar (Revealed upon scroll below the fold) */}
-          <div className="order-3 mt-12 flex w-full flex-col items-center sm:mt-16 md:mt-4 md:order-none md:items-start lg:mt-6">
+          {/* Mobile Order 3: Yashoda Medicity Badge & Stats Bar */}
+          <div className="order-3 mt-3 flex w-full flex-col items-center sm:mt-4 md:mt-4 md:order-none md:items-start lg:mt-6">
             {/* External Hospital Link / Upper Yashoda Pill Badge */}
             <a
               href={siteConfig.hospitalUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mx-auto mt-2.5 flex w-full max-w-[340px] items-center justify-center gap-2 rounded-full border border-white/50 bg-white/65 px-4 py-2.5 text-xs font-semibold tracking-[0.10em] uppercase text-foreground shadow-sm backdrop-blur-md transition hover:bg-white/80 sm:mt-4 sm:max-w-[440px] sm:px-5 sm:tracking-[0.12em] md:mx-0 md:max-w-[500px] lg:mt-0 lg:max-w-[530px] xl:max-w-[550px]"
+              className="mx-auto mt-0 flex w-full max-w-[340px] items-center justify-center gap-2 rounded-full border border-white/50 bg-white/65 px-4 py-2.5 text-xs font-semibold tracking-[0.10em] uppercase text-foreground shadow-sm backdrop-blur-md transition hover:bg-white/80 sm:mt-0 sm:max-w-[440px] sm:px-5 sm:tracking-[0.12em] md:mx-0 md:max-w-[500px] lg:mt-0 lg:max-w-[530px] xl:max-w-[550px]"
             >
               <span className="text-sm">🏥</span>
               <span>{siteConfig.hospital.toUpperCase()}</span>
