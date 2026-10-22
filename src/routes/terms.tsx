@@ -316,13 +316,16 @@ function TermsPage() {
             <p className="text-xs text-muted-foreground leading-relaxed">
               If you require clarification on these clinical consultation terms or have specific
               inquiries about OPD appointments, please contact our clinical coordinator at{" "}
-              <a href={`mailto:${siteConfig.email}`} className="text-primary hover:underline">
+              <a
+                href={`mailto:${siteConfig.email}`}
+                className="text-primary underline underline-offset-2 hover:opacity-80"
+              >
                 {siteConfig.email}
               </a>{" "}
               or call{" "}
               <a
                 href={`tel:${siteConfig.phoneRaw}`}
-                className="text-foreground font-semibold hover:text-primary"
+                className="text-foreground font-semibold hover:text-primary underline decoration-border underline-offset-2"
               >
                 {siteConfig.phoneDisplay}
               </a>

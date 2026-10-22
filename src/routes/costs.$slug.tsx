@@ -225,7 +225,10 @@ function CostDetailPage() {
             <div className="flex items-center gap-2">
               <ShieldCheck className="h-4 w-4 text-primary shrink-0" />
               <span className="font-semibold text-foreground">Verified Pricing Protocol:</span>
-              <Link to="/about" className="font-medium text-primary hover:underline">
+              <Link
+                to="/about"
+                className="font-medium text-primary underline underline-offset-2 hover:opacity-80"
+              >
                 Dr. Manish Aggarwal, MD, DM, FESC
               </Link>
             </div>

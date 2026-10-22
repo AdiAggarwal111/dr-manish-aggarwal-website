@@ -333,7 +333,10 @@ function PrivacyPolicyPage() {
                 <Mail className="h-4 w-4 text-primary shrink-0 mt-0.5" />
                 <div>
                   <span className="font-semibold block text-foreground">Email Privacy Desk</span>
-                  <a href={`mailto:${siteConfig.email}`} className="text-primary hover:underline">
+                  <a
+                    href={`mailto:${siteConfig.email}`}
+                    className="text-primary underline underline-offset-2 hover:opacity-80"
+                  >
                     {siteConfig.email}
                   </a>
                 </div>

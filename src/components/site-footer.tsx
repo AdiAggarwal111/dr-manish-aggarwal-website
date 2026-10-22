@@ -555,7 +555,7 @@ export const SiteFooter = memo(function SiteFooter() {
             </span>
           </div>
 
-          <p className="text-[11px] text-slate-500 leading-relaxed max-w-4xl mx-auto">
+          <p className="text-[11px] text-slate-400 leading-relaxed max-w-4xl mx-auto">
             Clinical Disclaimer: Medical information, procedural descriptions, and cost estimates
             presented on this website are authored for patient education under Medical Council
             guidelines. They do not constitute formal medical diagnosis or replace an in-person

@@ -432,7 +432,10 @@ function ProcedurePage() {
               <span className="font-semibold text-foreground">
                 Clinically Authored &amp; Reviewed:
               </span>
-              <Link to="/about" className="font-medium text-primary hover:underline">
+              <Link
+                to="/about"
+                className="font-medium text-primary underline underline-offset-2 hover:opacity-80"
+              >
                 Dr. Manish Aggarwal, MD, DM, FESC
               </Link>
             </div>

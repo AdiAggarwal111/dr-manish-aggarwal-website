@@ -104,14 +104,17 @@ export function ClinicContactCards() {
         {siteConfig.location}
       </InfoCard>
       <InfoCard icon={Phone} title="Call">
-        <a href={`tel:${siteConfig.phoneRaw}`} className="hover:text-primary transition-colors">
+        <a
+          href={`tel:${siteConfig.phoneRaw}`}
+          className="hover:text-primary transition-colors underline decoration-primary/40 underline-offset-2"
+        >
           {siteConfig.phone}
         </a>
       </InfoCard>
       <InfoCard icon={Mail} title="Email">
         <a
           href={`mailto:${siteConfig.email}`}
-          className="break-all hover:text-primary transition-colors"
+          className="break-all hover:text-primary transition-colors underline decoration-primary/40 underline-offset-2"
         >
           {siteConfig.email}
         </a>
@@ -417,7 +420,14 @@ export function AppointmentForm() {
         </div>
       )}
 
-      <form onSubmit={handleSubmit} className="mt-6 grid gap-4" noValidate>
+      <form
+        id="appointment-booking-form"
+        name="appointment-booking-form"
+        aria-label="Book Cardiac Consultation Appointment"
+        onSubmit={handleSubmit}
+        className="mt-6 grid gap-4"
+        noValidate
+      >
         {/* Anti-spam Honeypot Field */}
         <div className="hidden" aria-hidden="true">
           <label htmlFor={`${formId}-website`}>Website</label>

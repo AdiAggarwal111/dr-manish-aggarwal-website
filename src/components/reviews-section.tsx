@@ -78,7 +78,7 @@ function GoogleIcon({ className = "h-4 w-4" }: { className?: string }) {
 
 function StarRating({ count = 5 }: { count?: number }) {
   return (
-    <div className="flex items-center gap-0.5" aria-label={`${count} out of 5 stars`}>
+    <div className="flex items-center gap-0.5" role="img" aria-label={`${count} out of 5 stars`}>
       {Array.from({ length: count }).map((_, i) => (
         <svg
           key={i}

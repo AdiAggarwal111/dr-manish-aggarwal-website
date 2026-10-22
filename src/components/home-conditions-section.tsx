@@ -184,7 +184,7 @@ export const HomeConditionsSection = memo(function HomeConditionsSection() {
                   <Link
                     to="/conditions/$slug"
                     params={{ slug: c.slug }}
-                    className="inline-flex items-center gap-2 text-xs font-semibold text-primary group-hover:underline underline-offset-4"
+                    className="inline-flex items-center gap-2 text-xs font-semibold text-primary underline underline-offset-4 hover:opacity-80"
                   >
                     <span>Read Complete Clinical Guide</span>
                     <ChevronRight className="h-3.5 w-3.5 transition group-hover:translate-x-1" />
