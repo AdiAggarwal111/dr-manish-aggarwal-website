@@ -12,8 +12,8 @@ import {
 import { siteConfig } from "@/data/site-config";
 import { PageHeroHeader } from "@/components/page-hero-header";
 
-const pageTitle = `Privacy Policy & Patient Data Protection | ${siteConfig.name}`;
-const pageDescription = `Statutory Privacy Policy compliant with India's Digital Personal Data Protection Act, 2023 (DPDP Act) and IT Act 2000. Learn how Dr. Manish Aggarwal protects patient confidentiality and medical diagnostic records.`;
+const pageTitle = `Privacy Policy | ${siteConfig.name}`;
+const pageDescription = `Statutory Privacy Policy under India DPDP Act 2023 & IT Act 2000 regarding patient confidentiality and medical diagnostic records by ${siteConfig.name}.`;
 
 export const Route = createFileRoute("/privacy")({
   head: () => ({

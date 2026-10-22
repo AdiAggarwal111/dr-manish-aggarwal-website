@@ -2,7 +2,7 @@ import { siteConfig } from "./site-config";
 
 export const physicianSchema = {
   "@context": "https://schema.org",
-  "@type": ["Physician", "MedicalBusiness"],
+  "@type": "Physician",
   "@id": `${siteConfig.siteUrl}/#physician`,
   name: "Dr. Manish Aggarwal",
   legalName: "Dr. Manish Aggarwal",
@@ -18,7 +18,7 @@ export const physicianSchema = {
   telephone: "+91-9871183181",
   email: "appointments@drmanishaggarwal.com",
   jobTitle: "Director & Department Head of Interventional Cardiology & Structural Heart Specialist",
-  medicalSpecialty: "Interventional Cardiology",
+  medicalSpecialty: "https://schema.org/Cardiovascular",
   priceRange: "$$$",
   paymentAccepted: [
     "Cash",
@@ -53,7 +53,7 @@ export const physicianSchema = {
       longitude: 77.3775,
     },
   },
-  hospitalAffiliation: {
+  affiliation: {
     "@type": "Hospital",
     name: "Yashoda Medicity",
     url: "https://www.yashodahospital.org/doctor/dr-manish-aggarwal",
@@ -94,7 +94,7 @@ export const physicianSchema = {
       credentialCategory: "Medical License",
       name: "Delhi Medical Council Registration No. 26547 (issued 2005)",
       recognizedBy: {
-        "@type": "MedicalOrganization",
+        "@type": "Organization",
         name: "Delhi Medical Council",
       },
     },
@@ -153,8 +153,13 @@ export const physicianSchema = {
   ],
   aggregateRating: {
     "@type": "AggregateRating",
+    itemReviewed: {
+      "@type": "Physician",
+      name: "Dr. Manish Aggarwal",
+      url: siteConfig.siteUrl,
+    },
     ratingValue: "4.9",
-    reviewCount: "370",
+    reviewCount: 370,
     bestRating: "5",
     worstRating: "1",
   },

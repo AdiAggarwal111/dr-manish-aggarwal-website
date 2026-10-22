@@ -642,6 +642,6 @@ export const procedureCosts: ProcedureCostGuide[] = [
       "Transparent pacemaker implantation cost guide in Delhi NCR (₹1.15L - ₹8.5L). Single vs Dual Chamber DDDR, CRT-D heart failure devices, battery lifespan, and cashless insurance at Yashoda Medicity.",
     keywords:
       "pacemaker cost in Delhi NCR, dual chamber pacemaker price Ghaziabad, ICD defibrillator cost India, CRT-D package cost Yashoda Medicity, cashless pacemaker insurance, Dr Manish Aggarwal",
-    relatedProcedureSlug: "pacemaker-icd-crt",
+    relatedProcedureSlug: "pacemakers",
   },
 ];

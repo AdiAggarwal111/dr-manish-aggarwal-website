@@ -27,8 +27,8 @@ import { PageHeroHeader } from "@/components/page-hero-header";
 import { AppointmentSection } from "@/components/appointment-form";
 import { InsuranceTpaSection } from "@/components/insurance-tpa-section";
 
-const pageTitle = `The Facility & Cashless Insurance | Yashoda Medicity | Dr. Manish Aggarwal`;
-const pageDescription = `Explore Yashoda Medicity's 1,200-bed quaternary care hospital in Indirapuram, Ghaziabad. Advanced hybrid cath labs, 3D mapping, IVUS/OCT imaging, dedicated cardiac ICUs, and 100% cashless TPA mediclaim empanelment.`;
+const pageTitle = `Hospital Facility & Cath Labs | ${siteConfig.name}`;
+const pageDescription = `Yashoda Medicity Indirapuram 1,200-bed hospital: hybrid cath labs, IVUS/OCT imaging, dedicated cardiac ICUs & 100% cashless TPA mediclaim empanelment.`;
 
 export const Route = createFileRoute("/facility")({
   head: () => ({

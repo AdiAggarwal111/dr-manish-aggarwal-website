@@ -5,8 +5,8 @@ import { siteConfig } from "@/data/site-config";
 import { PageHeroHeader } from "@/components/page-hero-header";
 import { AppointmentSection } from "@/components/appointment-form";
 
-const pageTitle = `Cardiology Clinics & Regional Locations | ${siteConfig.name} | ${siteConfig.hospital}`;
-const pageDescription = `Explore ${siteConfig.name}'s 25 interventional cardiology and structural heart coverage zones across Indirapuram, Vaishali, Vasundhara, Noida, Greater Noida, East Delhi, and Western UP. Rapid door-to-balloon emergency access at ${siteConfig.hospital}.`;
+const pageTitle = `Cardiology Clinic Locations | ${siteConfig.name}`;
+const pageDescription = `Interventional cardiology care across 25 locations in Indirapuram, Noida & Delhi NCR with 24/7 emergency heart care at Yashoda Medicity.`;
 const pageUrl = `${siteConfig.siteUrl}/locations`;
 
 // Group the 25 micro-markets into clear geographic clusters

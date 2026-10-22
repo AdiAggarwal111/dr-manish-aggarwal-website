@@ -5,8 +5,8 @@ import { CareerTimeline, DirectorNarrative } from "@/components/timeline-section
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { PageHeroHeader } from "@/components/page-hero-header";
 
-const pageTitle = `About ${siteConfig.name} | Interventional Cardiologist & Structural Heart Specialist at ${siteConfig.hospital}`;
-const pageDescription = `Learn about ${siteConfig.name}, Director of Interventional Cardiology & Structural Heart at ${siteConfig.hospital}, Indirapuram. 28 years of clinical mastery, ${siteConfig.proceduresCount} cardiac procedures, European structural heart fellowship in Budapest.`;
+const pageTitle = `About ${siteConfig.name} | Cardiologist, Yashoda Medicity`;
+const pageDescription = `Learn about ${siteConfig.name}, Cardiology Director at Yashoda Medicity, Indirapuram. 28+ yrs exp, 12,500+ procedures, European structural heart fellow.`;
 
 export const Route = createFileRoute("/about")({
   head: () => ({

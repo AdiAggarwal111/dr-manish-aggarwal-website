@@ -5,8 +5,8 @@ import { siteConfig } from "@/data/site-config";
 import { ProcedureCard } from "@/components/procedure-card";
 import { PageHeroHeader } from "@/components/page-hero-header";
 
-const pageTitle = `Cardiac Procedures in Delhi NCR | ${siteConfig.name} | ${siteConfig.hospital}`;
-const pageDescription = `Comprehensive interventional & structural heart procedures by ${siteConfig.name} at ${siteConfig.hospital}, Indirapuram: TAVR/TAVI, MitraClip, emergency primary angioplasty, complex CTO rotablation, pacemakers, and IVUS/OCT imaging.`;
+const pageTitle = `Cardiac Procedures | ${siteConfig.name}`;
+const pageDescription = `Interventional and structural heart procedures by ${siteConfig.name} at Yashoda Medicity: TAVR, MitraClip, Angioplasty, CTO, and Pacemakers.`;
 
 export const Route = createFileRoute("/procedures/")({
   head: () => ({

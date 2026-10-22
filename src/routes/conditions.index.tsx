@@ -16,8 +16,8 @@ import { siteConfig } from "@/data/site-config";
 import { PageHeroHeader } from "@/components/page-hero-header";
 import { AppointmentSection } from "@/components/appointment-form";
 
-const pageTitle = `Heart Conditions & Symptoms Library | Dr. Manish Aggarwal | Yashoda Medicity`;
-const pageDescription = `Clinical patient guides to 14 complex heart conditions: Left Main disease, severe aortic stenosis (TAVI), MitraClip for mitral regurgitation, heart failure (LVEF 30-35%), resistant hypertension (RDN), carotid stenting, aortic aneurysms (TEVAR), and adult congenital heart defects by Dr. Manish Aggarwal at Yashoda Medicity, Indirapuram.`;
+const pageTitle = `Heart Conditions Library | ${siteConfig.name}`;
+const pageDescription = `Clinical guides to 14 heart conditions: TAVI, MitraClip, Heart Failure, LMCA & CAD by ${siteConfig.name} at Yashoda Medicity, Indirapuram.`;
 const pageUrl = `${siteConfig.siteUrl}/conditions`;
 
 export const Route = createFileRoute("/conditions/")({

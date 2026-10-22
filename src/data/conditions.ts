@@ -224,11 +224,7 @@ export const conditions: Condition[] = [
           "Yes. TAVI was specifically engineered for octogenarians and nonagenarians who cannot tolerate open surgery. Because there is no general anesthesia, no intubation breathing tube, and zero bone cuts, advanced age is not a barrier to successful treatment.",
       },
     ],
-    relatedProcedureSlugs: [
-      "tavi-tavr",
-      "cardiac-imaging-physiology",
-      "second-opinion-cath-review",
-    ],
+    relatedProcedureSlugs: ["tavi-tavr", "intravascular-imaging", "second-opinion"],
     metaTitle:
       "Severe Aortic Stenosis: Symptoms, Life Expectancy & TAVI Treatment | Dr. Manish Aggarwal",
     metaDescription:
@@ -394,12 +390,7 @@ export const conditions: Condition[] = [
           "Modern third-generation drug-eluting stents (DES) coated with antiproliferative drugs and biocompatible polymers are permanent implants designed to remain patent for life. When properly sized and expanded under IVUS/OCT imaging guidance, long-term patency exceeds 95% at 10 years.",
       },
     ],
-    relatedProcedureSlugs: [
-      "complex-angioplasty-cto",
-      "rotablation-atherectomy",
-      "cardiac-imaging-physiology",
-      "second-opinion-cath-review",
-    ],
+    relatedProcedureSlugs: ["complex-coronary", "intravascular-imaging", "second-opinion"],
     metaTitle: "Coronary Artery Disease, High Calcium (CAC > 400) & CTO | Dr. Manish Aggarwal",
     metaDescription:
       "Clinical guide to complex coronary artery blockages, CAC score > 400, Chronic Total Occlusions (CTO), Rotablation & Shockwave IVL at Yashoda Medicity by Dr. Manish Aggarwal.",
@@ -563,11 +554,7 @@ export const conditions: Condition[] = [
           "Patients typically spend 24 to 48 hours in our dedicated Cardiac Intensive Care Unit (CCU) for continuous telemetry monitoring, followed by 24 to 48 hours in a step-down ward before safe discharge on cardiac medications.",
       },
     ],
-    relatedProcedureSlugs: [
-      "emergency-angioplasty",
-      "complex-angioplasty-cto",
-      "cardiac-imaging-physiology",
-    ],
+    relatedProcedureSlugs: ["emergency-angioplasty", "complex-coronary", "intravascular-imaging"],
     metaTitle:
       "Heart Attack (STEMI vs NSTEMI): Golden Hour Symptoms & Emergency Care | Dr. Manish Aggarwal",
     metaDescription:
@@ -733,11 +720,7 @@ export const conditions: Condition[] = [
           "Yes. Permanent pacemaker, ICD, and CRT-D implantations are 100% cashless covered by private insurers and government health schemes (CGHS, ECHS) when indicated by documented ECG or Holter evidence of symptomatic high-grade conduction disorder.",
       },
     ],
-    relatedProcedureSlugs: [
-      "pacemaker-icd-crt",
-      "cardiac-imaging-physiology",
-      "second-opinion-cath-review",
-    ],
+    relatedProcedureSlugs: ["pacemakers", "rhythm-care", "second-opinion"],
     metaTitle:
       "Arrhythmias, Bradycardia & Heart Block: Symptoms & Pacemaker Care | Dr. Manish Aggarwal",
     metaDescription:

@@ -26,7 +26,7 @@ const LOCAL_PROCEDURES = [
     badge: "Structural Heart",
   },
   {
-    slug: "complex-angioplasty-cto",
+    slug: "complex-coronary",
     title: "Complex Angioplasty & CTO",
     desc: "Micro-catheter crossing and recanalization for 100% chronically blocked arteries previously deemed inoperable.",
     badge: "High-Risk PCI",
@@ -38,7 +38,7 @@ const LOCAL_PROCEDURES = [
     badge: "24/7 Emergency",
   },
   {
-    slug: "rotablation-atherectomy",
+    slug: "intravascular-imaging",
     title: "Rotablation & Shockwave IVL",
     desc: "High-speed diamond burr (160,000 RPM) and sonic pressure waves to crack rock-hard calcium prior to precision drug-eluting stent placement.",
     badge: "Calcified Lesions",
@@ -54,14 +54,18 @@ export const Route = createFileRoute("/locations/$slug")({
   head: ({ loaderData }) => {
     const l = loaderData?.loc;
     if (!l) return { meta: [{ title: `Location | ${siteConfig.name}` }] };
-    const title = `Best Cardiologist in ${l.name} | ${siteConfig.name} | ${siteConfig.hospital}`;
-    const description = `Top interventional cardiologist & structural heart specialist serving ${l.name}, Ghaziabad & Delhi NCR. ${siteConfig.name} at ${siteConfig.hospital}, Indirapuram. 28 years experience, ${siteConfig.proceduresCount} procedures. Call ${siteConfig.phone}.`;
+    const rawName = l.name.includes("/") ? l.name.split("/")[0].trim() : l.name;
+    const cleanName = rawName.replace("Sectors ", "Sec ").replace("Extension", "Ext");
+    const title = `Cardiologist in ${cleanName} | ${siteConfig.name}`;
+    const rawDesc = `Cardiologist serving ${rawName}. ${siteConfig.name} at ${siteConfig.hospital}, Indirapuram. 28+ yrs exp, 12,500+ procedures. Call ${siteConfig.phone}.`;
+    const description =
+      rawDesc.length > 155 ? rawDesc.slice(0, 152).replace(/\s+\S*$/, "") + "..." : rawDesc;
     const url = `${siteConfig.siteUrl}/locations/${l.slug}`;
 
     const schemas: Record<string, unknown>[] = [
       {
         "@context": "https://schema.org",
-        "@type": ["MedicalClinic", "LocalBusiness"],
+        "@type": "MedicalClinic",
         name: `${siteConfig.hospital} | Interventional Cardiology Division (Serving ${l.name})`,
         description: `Comprehensive interventional cardiology and structural heart care for ${l.name} by ${siteConfig.name} at ${siteConfig.hospital}, Indirapuram.`,
         telephone: siteConfig.phone,

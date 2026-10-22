@@ -16,8 +16,8 @@ import { PageHeroHeader } from "@/components/page-hero-header";
 import { ReviewsSection } from "@/components/reviews-section";
 import { AppointmentSection } from "@/components/appointment-form";
 
-const pageTitle = `Patient Reviews & Testimonials | Dr. Manish Aggarwal | Yashoda Medicity`;
-const pageDescription = `Read verified patient reviews, emergency heart recovery accounts, and clinical testimonials for Dr. Manish Aggarwal, Director of Interventional Cardiology & Structural Heart at Yashoda Medicity, Indirapuram. Rated 4.9 from 370+ reviews.`;
+const pageTitle = `Patient Reviews & Testimonials | ${siteConfig.name}`;
+const pageDescription = `Verified patient reviews and recovery stories for ${siteConfig.name}, Cardiology Director at Yashoda Medicity, Indirapuram. Rated 4.9/5 from 370+ reviews.`;
 
 export const Route = createFileRoute("/reviews")({
   head: () => ({

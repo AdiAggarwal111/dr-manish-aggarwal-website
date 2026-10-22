@@ -3,8 +3,8 @@ import { siteConfig } from "@/data/site-config";
 import { ClinicContactCards, AppointmentForm } from "@/components/appointment-form";
 import { LocationFaqSection } from "@/components/location-faq-section";
 
-const pageTitle = `Book Appointment with ${siteConfig.name} | ${siteConfig.hospital}, Indirapuram`;
-const pageDescription = `Schedule a cardiac consultation or urgent second opinion with ${siteConfig.name} at ${siteConfig.hospital}, Indirapuram, Ghaziabad. Same-week OPD slots available. Call ${siteConfig.phone}.`;
+const pageTitle = `Book Appointment | ${siteConfig.name} | Yashoda Medicity`;
+const pageDescription = `Schedule a consultation with ${siteConfig.name} at ${siteConfig.hospital}, Indirapuram. OPD slots & 24/7 emergency care. Call ${siteConfig.phone}.`;
 
 export const Route = createFileRoute("/contact")({
   head: () => ({

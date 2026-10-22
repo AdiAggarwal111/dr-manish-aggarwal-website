@@ -12,8 +12,8 @@ import {
 import { siteConfig } from "@/data/site-config";
 import { PageHeroHeader } from "@/components/page-hero-header";
 
-const pageTitle = `Terms of Clinical Consultation & Legal Notice | ${siteConfig.name}`;
-const pageDescription = `Terms of clinical consultation, medical second opinion scope, telemedicine guidelines, and emergency care disclaimers under National Medical Commission (NMC) regulations for Dr. Manish Aggarwal.`;
+const pageTitle = `Terms of Consultation | ${siteConfig.name}`;
+const pageDescription = `Terms of clinical consultation, second opinion scope, telemedicine guidelines & emergency care disclaimers under NMC regulations for ${siteConfig.name}.`;
 
 export const Route = createFileRoute("/terms")({
   head: () => ({

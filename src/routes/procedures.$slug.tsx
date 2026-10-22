@@ -207,8 +207,22 @@ export const Route = createFileRoute("/procedures/$slug")({
   head: ({ loaderData }) => {
     const p = loaderData?.proc;
     if (!p) return { meta: [{ title: `Procedure | ${siteConfig.name}` }] };
-    const title = `${p.title} in Delhi NCR | ${siteConfig.name} | ${siteConfig.hospital}`;
-    const description = `${p.title} performed by ${siteConfig.name}, Director of Interventional Cardiology at ${siteConfig.hospital}, Indirapuram. ${p.desc} Call ${siteConfig.phone}.`;
+    const shortNames: Record<string, string> = {
+      "tavi-tavr": "TAVR / TAVI",
+      mitraclip: "MitraClip (TEER)",
+      "emergency-angioplasty": "Emergency Angioplasty",
+      "complex-coronary": "Complex Angioplasty & CTO",
+      "heart-checkup": "Executive Heart Check-Up",
+      pacemakers: "Pacemakers & ICDs",
+      "second-opinion": "Cardiology Second Opinion",
+      "intravascular-imaging": "Intravascular Imaging",
+      "rhythm-care": "Arrhythmia & Rhythm Care",
+    };
+    const procTitle = shortNames[p.slug] || p.title.split("(")[0].trim();
+    const title = `${procTitle} | ${siteConfig.name}`.slice(0, 60);
+    const rawDesc = `${p.title} at ${siteConfig.hospital} by ${siteConfig.name}. ${p.desc}`;
+    const description =
+      rawDesc.length > 155 ? rawDesc.slice(0, 152).replace(/\s+\S*$/, "") + "..." : rawDesc;
     const url = `${siteConfig.siteUrl}/procedures/${p.slug}`;
 
     const schemas: Record<string, unknown>[] = [
@@ -217,7 +231,7 @@ export const Route = createFileRoute("/procedures/$slug")({
         "@type": "MedicalProcedure",
         name: p.title,
         description: p.desc,
-        procedureType: "https://schema.org/PercutaneousProcedure",
+        procedureType: "Percutaneous Procedure",
         performer: {
           "@type": "Physician",
           name: siteConfig.name,
@@ -248,25 +262,14 @@ export const Route = createFileRoute("/procedures/$slug")({
         description: p.desc,
         url,
         lastReviewed: "2026-10-18",
-        aspect: [
-          "Indications",
-          "Clinical Candidacy",
-          "Procedure Steps",
-          "Safety Profile",
-          "Recovery",
-        ],
-        specialty: "https://schema.org/Cardiovascular",
+        medicalSpecialty: "https://schema.org/Cardiovascular",
         reviewedBy: {
           "@type": "Physician",
           name: siteConfig.name,
           jobTitle: siteConfig.title,
           identifier: siteConfig.registration,
           url: `${siteConfig.siteUrl}/about`,
-          medicalSpecialty: [
-            "https://schema.org/CardiovascularExam",
-            "Interventional Cardiology",
-            "Structural Heart",
-          ],
+          medicalSpecialty: "https://schema.org/Cardiovascular",
           alumniOf: "Gottsegen György Hungarian Institute of Cardiology, Budapest",
           worksFor: {
             "@type": "Hospital",

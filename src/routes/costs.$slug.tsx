@@ -69,19 +69,14 @@ export const Route = createFileRoute("/costs/$slug")({
         description: c.summary,
         url,
         lastReviewed: "2026-10-18",
-        aspect: ["Costs", "NPPA Pricing", "Insurance Coverage", "Room Tiers", "Consumables"],
-        specialty: "https://schema.org/Cardiovascular",
+        medicalSpecialty: "https://schema.org/Cardiovascular",
         reviewedBy: {
           "@type": "Physician",
           name: siteConfig.name,
           jobTitle: siteConfig.title,
           identifier: siteConfig.registration,
           url: `${siteConfig.siteUrl}/about`,
-          medicalSpecialty: [
-            "https://schema.org/CardiovascularExam",
-            "Interventional Cardiology",
-            "Structural Heart",
-          ],
+          medicalSpecialty: "https://schema.org/Cardiovascular",
           alumniOf: "Gottsegen György Hungarian Institute of Cardiology, Budapest",
           worksFor: {
             "@type": "Hospital",
@@ -130,22 +125,27 @@ export const Route = createFileRoute("/costs/$slug")({
       });
     }
 
+    const title = `${c.shortTitle} | ${siteConfig.name}`.slice(0, 60);
+    const rawDesc = c.metaDescription || c.summary;
+    const description =
+      rawDesc.length > 155 ? rawDesc.slice(0, 152).replace(/\s+\S*$/, "") + "..." : rawDesc;
+
     return {
       meta: [
-        { title: c.metaTitle },
-        { name: "description", content: c.metaDescription },
+        { title },
+        { name: "description", content: description },
         {
           name: "keywords",
           content: `${c.keywords}, ${siteConfig.name}, Yashoda Medicity cost guide`,
         },
-        { property: "og:title", content: c.metaTitle },
-        { property: "og:description", content: c.metaDescription },
+        { property: "og:title", content: title },
+        { property: "og:description", content: description },
         { property: "og:type", content: "article" },
         { property: "og:url", content: url },
         { property: "og:image", content: `${siteConfig.siteUrl}/images/og-doctor.jpg` },
         { property: "twitter:card", content: "summary_large_image" },
-        { property: "twitter:title", content: c.metaTitle },
-        { property: "twitter:description", content: c.metaDescription },
+        { property: "twitter:title", content: title },
+        { property: "twitter:description", content: description },
         { property: "twitter:image", content: `${siteConfig.siteUrl}/images/og-doctor.jpg` },
       ],
       links: [{ rel: "canonical", href: url }],
