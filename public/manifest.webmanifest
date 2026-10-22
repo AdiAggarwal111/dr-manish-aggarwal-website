@@ -1,0 +1,27 @@
+{
+  "name": "Dr. Manish Aggarwal — Cardiology & Structural Heart Specialist",
+  "short_name": "Dr. Manish Aggarwal",
+  "description": "Director of Interventional Cardiology & Structural Heart at Yashoda Medicity, Indirapuram, Delhi NCR.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a1628",
+  "theme_color": "#0D1B3E",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

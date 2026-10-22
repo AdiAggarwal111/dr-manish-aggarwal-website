@@ -1,0 +1,25 @@
+# Long-term immutable caching for static build chunks
+/_build/*
+  cache-control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+/assets/*
+  cache-control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+# High-performance self-hosted fonts with CORS header
+/fonts/*
+  cache-control: public, max-age=31536000, immutable
+  access-control-allow-origin: *
+  X-Content-Type-Options: nosniff
+
+# Next-gen optimized images
+/images/*
+  cache-control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+# All HTML pages & dynamic routes: fast edge delivery with revalidation
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin

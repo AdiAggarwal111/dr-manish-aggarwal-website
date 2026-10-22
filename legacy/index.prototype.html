@@ -1,0 +1,1148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Manish Aggarwal | Interventional Cardiologist</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --navy: #0d1b3e;
+        --off-white: #f7f5f0;
+        --gold: #c9a84c;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        -webkit-overflow-scrolling: touch;
+        margin: 0;
+        padding: 0;
+        background-color: var(--off-white);
+        color: var(--navy);
+        font-family: "Inter", sans-serif;
+        overflow-x: hidden;
+      }
+
+      /* Typography */
+      h1,
+      h2,
+      h3,
+      .playfair {
+        font-family: "Playfair Display", serif;
+        margin: 0;
+      }
+
+      .gold-caps {
+        color: var(--gold);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 0.85rem;
+        font-weight: 500;
+      }
+
+      /* Global Animation System */
+      .reveal {
+        opacity: 0;
+        transform: scale(0.98);
+        transition:
+          opacity 600ms ease,
+          transform 600ms ease;
+      }
+
+      .reveal.visible {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      /* Navbar - Floating Glassmorphic Pill */
+      nav {
+        position: fixed;
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 800px;
+        height: 60px;
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 40px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 8px 0 24px;
+        z-index: 1000;
+        transition: background 0.3s ease;
+      }
+
+      nav.scrolled {
+        background: rgba(255, 255, 255, 0.4);
+        /* Opacity increases slightly -> content bleeds through more */
+      }
+
+      nav .nav-brand {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 0.95rem;
+        letter-spacing: 1px;
+        color: var(--navy);
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      nav .nav-links {
+        display: flex;
+        gap: 24px;
+      }
+
+      nav .nav-links a {
+        font-family: "Inter", sans-serif;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: rgba(13, 27, 62, 0.6);
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      nav .nav-links a:hover {
+        color: var(--navy);
+      }
+
+      .btn-navy {
+        background-color: var(--navy);
+        color: var(--off-white);
+        border-radius: 30px;
+        padding: 12px 24px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        transition:
+          transform 100ms ease,
+          box-shadow 300ms ease;
+      }
+
+      .btn-navy:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 24px rgba(13, 27, 62, 0.3);
+      }
+
+      .btn-navy:active {
+        transform: scale(0.98);
+      }
+
+      .btn-outline {
+        background: transparent;
+        color: var(--gold);
+        border: 2px solid var(--gold);
+        border-radius: 30px;
+        padding: 10px 24px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        text-decoration: none;
+        transition: all 0.2s ease;
+      }
+
+      .btn-outline:hover {
+        background: rgba(201, 168, 76, 0.1);
+      }
+
+      /* --- Global Sections Padding --- */
+      section {
+        padding: 120px 5vw;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      /* --- PAGE 1: HERO & LEGACY --- */
+      #hero {
+        display: flex;
+        align-items: center;
+        gap: 6vw;
+        padding-top: 200px;
+        padding-bottom: 80px;
+      }
+
+      .hero-left {
+        width: 55%;
+      }
+
+      .hero-left h1 {
+        font-size: clamp(3rem, 5vw, 5rem);
+        line-height: 1.1;
+        margin-bottom: 2rem;
+      }
+
+      .hero-left h1 .line-1 {
+        font-weight: 400;
+        display: block;
+      }
+
+      .hero-left h1 .line-2 {
+        font-weight: 700;
+        font-style: italic;
+        font-size: 1.1em;
+        display: block;
+      }
+
+      .stat-strip {
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: rgba(13, 27, 62, 0.8);
+        margin-bottom: 2.5rem;
+        padding-left: 1rem;
+        border-left: 2px solid var(--gold);
+      }
+
+      .hero-right {
+        width: 45%;
+      }
+
+      .img-placeholder {
+        width: 100%;
+        background: rgba(13, 27, 62, 0.04);
+        border-radius: 24px;
+        border: 1px dashed rgba(13, 27, 62, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: rgba(13, 27, 62, 0.5);
+        font-size: 0.85rem;
+        position: relative;
+        /* Aspect ratio preserved roughly */
+      }
+
+      .hero-right .img-placeholder {
+        aspect-ratio: 3/4;
+      }
+
+      /* Career Bio Block */
+      .bio-block {
+        max-width: 900px;
+        padding-bottom: 60px;
+      }
+
+      .bio-block .gold-caps {
+        margin-bottom: 1rem;
+        display: block;
+      }
+
+      .bio-block h3 {
+        font-family: "Inter", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        line-height: 1.4;
+      }
+
+      .bio-block p {
+        font-size: 1.15rem;
+        line-height: 1.7;
+        color: rgba(13, 27, 62, 0.8);
+      }
+
+      /* Timeline */
+      .timeline-container {
+        margin-top: 60px;
+      }
+
+      .timeline-year-wrapper {
+        display: flex;
+        gap: 40px;
+        margin-bottom: 40px;
+      }
+
+      .timeline-year {
+        width: 120px;
+        flex-shrink: 0;
+        font-family: "Playfair Display", serif;
+        font-size: 2.5rem;
+        color: var(--navy);
+        text-align: right;
+        padding-right: 30px;
+        border-right: 2px solid rgba(13, 27, 62, 0.1);
+        font-weight: 300;
+        transition:
+          font-weight 300ms ease,
+          border-right 300ms ease;
+      }
+
+      /* Kinetic Typography state applied via JS */
+      .timeline-year.focused-year {
+        font-weight: 700;
+        border-right: 5px solid var(--gold);
+      }
+
+      .timeline-content {
+        padding-top: 10px;
+      }
+
+      .timeline-content h4 {
+        font-family: "Inter", sans-serif;
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin: 0 0 10px 0;
+      }
+
+      .timeline-content p {
+        margin: 0;
+        color: rgba(13, 27, 62, 0.7);
+        font-size: 1.05rem;
+        line-height: 1.6;
+      }
+
+      /* --- PAGE 2: INTERVENTIONS (BENTO GRID) --- */
+      #interventions .section-heading {
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      #interventions .section-subhead {
+        font-size: 1.2rem;
+        color: rgba(13, 27, 62, 0.6);
+        margin-bottom: 80px;
+      }
+
+      .bento-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(280px, auto);
+        gap: 24px;
+      }
+
+      .tile-tavr {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+
+      .tile-mitraclip {
+        grid-column: span 1;
+        grid-row: span 2;
+      }
+
+      .tile-angioplasty {
+        grid-column: span 2;
+        grid-row: span 1;
+      }
+
+      .tile-checkup {
+        grid-column: span 1;
+        grid-row: span 1;
+      }
+
+      .tile-coronary {
+        grid-column: span 2;
+        grid-row: span 1;
+      }
+
+      .tile-opinion {
+        grid-column: span 1;
+        grid-row: span 1;
+      }
+
+      .tile-pacemaker {
+        grid-column: span 3;
+        grid-row: span 1;
+      }
+
+      .bento-tile {
+        position: relative;
+        background: var(--off-white);
+        border: 1px solid rgba(13, 27, 62, 0.15);
+        border-radius: 20px;
+        padding: 32px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+
+      .bento-tile:hover {
+        background: rgba(13, 27, 62, 0.04);
+      }
+
+      .tile-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 24px;
+      }
+
+      .icon-toggle {
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 1;
+        transition: transform 0.3s ease;
+        color: var(--navy);
+      }
+
+      .bento-tile:hover .icon-toggle {
+        transform: rotate(45deg);
+        /* "+" rotates to "X" */
+      }
+
+      .bento-tile.active .icon-toggle {
+        transform: rotate(45deg);
+      }
+
+      .bento-tile h3 {
+        font-size: 2.2rem;
+        font-weight: 700;
+        margin-bottom: 16px;
+        line-height: 1.2;
+      }
+
+      /* Adjust sizes for smaller tiles */
+      .tile-checkup h3,
+      .tile-opinion h3 {
+        font-size: 1.8rem;
+      }
+
+      .bento-tile .teaser {
+        font-size: 1.05rem;
+        color: var(--navy);
+        line-height: 1.6;
+        margin-bottom: 0;
+        padding-bottom: 24px;
+      }
+
+      .overlay-panel {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60%;
+        background: var(--navy);
+        color: var(--off-white);
+        padding: 32px;
+        box-sizing: border-box;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        transform: translateY(100%);
+        transition: transform 400ms cubic-bezier(0.16, 1, 0.3, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .bento-tile.active .overlay-panel {
+        transform: translateY(0);
+      }
+
+      .overlay-panel p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin: 0;
+        color: rgba(247, 245, 240, 0.85);
+        /* Slightly muted off-white */
+      }
+
+      /* --- PAGE 3: FACILITY & TRUST --- */
+      #facility {
+        padding-top: 150px;
+        padding-bottom: 150px;
+        position: relative;
+      }
+
+      /* Parallax Background using fixed attachment */
+      .parallax-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          135deg,
+          rgba(201, 168, 76, 0.05) 0%,
+          rgba(13, 27, 62, 0.05) 100%
+        );
+        z-index: -1;
+        /* Fallback for geometric pattern if needed */
+        background-image: radial-gradient(rgba(13, 27, 62, 0.1) 1px, transparent 1px);
+        background-size: 40px 40px;
+        background-attachment: fixed;
+      }
+
+      .parallax-content {
+        text-align: center;
+        max-width: 900px;
+        margin: 0 auto 120px auto;
+      }
+
+      .parallax-content h2 {
+        font-size: 4.5rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        line-height: 1.1;
+      }
+
+      .parallax-content p {
+        font-size: 1.25rem;
+        line-height: 1.8;
+        color: rgba(13, 27, 62, 0.8);
+      }
+
+      /* Reviews */
+      .reviews-header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .reviews-header .gold-caps {
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      .reviews-header .rating {
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+
+      .reviews-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        margin-bottom: 120px;
+      }
+
+      .review-card {
+        background: #fff;
+        padding: 40px;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+        border: 1px solid rgba(13, 27, 62, 0.05);
+      }
+
+      .review-card p {
+        font-size: 1.05rem;
+        line-height: 1.7;
+        font-style: italic;
+        margin-bottom: 24px;
+        color: rgba(13, 27, 62, 0.85);
+      }
+
+      .review-card .author {
+        font-weight: 600;
+        font-size: 0.95rem;
+      }
+
+      /* Map Section */
+      .map-container {
+        width: 100%;
+        height: 450px;
+        border-radius: 24px;
+        overflow: hidden;
+        border: 1px solid rgba(13, 27, 62, 0.1);
+        margin-bottom: 30px;
+      }
+
+      .map-container iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        filter: grayscale(80%) contrast(1.1) brightness(1.05);
+      }
+
+      .location-tags {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .location-tags span {
+        padding: 8px 16px;
+        background: rgba(13, 27, 62, 0.05);
+        border-radius: 30px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: var(--navy);
+      }
+
+      /* FOOTER */
+      footer {
+        background-color: var(--navy);
+        color: var(--off-white);
+        padding: 60px 5vw;
+      }
+
+      .footer-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .footer-left h4 {
+        margin: 0 0 5px 0;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      .footer-left p {
+        margin: 0;
+        font-size: 0.9rem;
+        color: rgba(247, 245, 240, 0.6);
+      }
+
+      .footer-center {
+        text-align: center;
+        font-size: 0.95rem;
+        color: rgba(247, 245, 240, 0.8);
+      }
+
+      .footer-right {
+        display: flex;
+        gap: 16px;
+      }
+
+      .footer-right .btn-navy {
+        background-color: var(--off-white);
+        color: var(--navy);
+      }
+
+      .footer-right .btn-navy:hover {
+        box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
+      }
+
+      /* Responsive */
+      @media (max-width: 1024px) {
+        #hero {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .hero-left,
+        .hero-right {
+          width: 100%;
+        }
+
+        .stat-strip {
+          padding-left: 0;
+          border-left: none;
+          border-bottom: 2px solid var(--gold);
+          padding-bottom: 1rem;
+          display: inline-block;
+        }
+
+        .bento-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .tile-pacemaker {
+          grid-column: span 2;
+        }
+
+        .timeline-year-wrapper {
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .timeline-year {
+          text-align: left;
+          border-right: none;
+          border-left: 2px solid rgba(13, 27, 62, 0.1);
+          padding-left: 20px;
+          padding-right: 0;
+        }
+
+        .timeline-year.focused-year {
+          border-right: none;
+          border-left: 5px solid var(--gold);
+        }
+
+        .reviews-grid {
+          flex-direction: row;
+          overflow-x: auto;
+          display: flex;
+          scroll-snap-type: x mandatory;
+          padding-bottom: 20px;
+        }
+
+        .review-card {
+          min-width: 300px;
+          scroll-snap-align: start;
+        }
+
+        .footer-inner {
+          flex-direction: column;
+          gap: 30px;
+          text-align: center;
+        }
+      }
+
+      @media (max-width: 768px) {
+        nav {
+          width: 95%;
+          padding: 0 16px;
+        }
+
+        nav .nav-links {
+          display: none;
+        }
+
+        nav .btn-navy {
+          font-size: 0.75rem;
+          padding: 10px 16px;
+        }
+
+        .bento-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .bento-tile {
+          grid-column: span 1 !important;
+        }
+
+        #hero h1 {
+          font-size: 2.5rem;
+        }
+
+        .parallax-content h2 {
+          font-size: 3rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <a href="#" class="nav-brand">Dr. Aggarwal</a>
+      <div class="nav-links">
+        <a href="#legacy">The Doctor</a>
+        <a href="#interventions">Interventions</a>
+        <a href="#facility">Facility</a>
+      </div>
+      <a href="#contact" class="btn-navy">SCHEDULE VISIT</a>
+    </nav>
+
+    <!-- PAGE 1 - HERO & LEGACY -->
+    <section id="legacy">
+      <div id="hero">
+        <div class="hero-left reveal">
+          <h1 class="playfair">
+            <span class="line-1">A Lifetime Dedicated to the</span>
+            <span class="line-2">Human Heart.</span>
+          </h1>
+          <div class="stat-strip">28 Years | 10,000+ Procedures | European Fellowship</div>
+          <br />
+          <a href="#bio" class="btn-navy">Explore the Legacy ↓</a>
+        </div>
+        <div class="hero-right reveal">
+          <div class="img-placeholder">
+            [DR. AGGARWAL PORTRAIT — WebP format, Retina 2x]
+            <!-- Note: Replace with WebP format, minimum 2x resolution for Retina displays. Compress to <150KB per image. -->
+          </div>
+        </div>
+      </div>
+
+      <div id="bio" class="bio-block reveal">
+        <span class="gold-caps">CURRENT POSITION</span>
+        <h3>
+          Director of Interventional Cardiology & Structural Heart | Yashoda Medicity, Indirapuram
+        </h3>
+        <p>
+          Dr. Manish Aggarwal is a European-fellowship-trained pioneer with 28 years of clinical
+          mastery and a record of 10,000+ successful cardiac procedures. As the Director at Yashoda
+          Medicity, he specializes in bringing international standards of Structural Heart care
+          (TAVI/TAVR) to the Delhi NCR region.
+        </p>
+      </div>
+
+      <div class="timeline-container">
+        <!-- Timeline Item 1 -->
+        <div class="timeline-year-wrapper reveal">
+          <div class="timeline-year">2025–<br />Present</div>
+          <div class="timeline-content">
+            <h4>
+              Director, Interventional Cardiology & Structural Heart | Yashoda Medicity, Indirapuram
+            </h4>
+            <p>
+              Leads cardiac team at 1,200-bed quaternary institute. Catheter-based structural heart
+              solutions.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-year-wrapper reveal">
+          <div class="timeline-year">2022–<br />2025</div>
+          <div class="timeline-content">
+            <h4>Associate Director & Head | PSRI Hospital, New Delhi</h4>
+            <p>
+              Established PSRI's first Structural Heart Program with TAVI and MitraClip protocols.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3 -->
+        <div class="timeline-year-wrapper reveal">
+          <div class="timeline-year">2019–<br />2022</div>
+          <div class="timeline-content">
+            <h4>Principal Consultant & Head Unit 2 | Max Super Speciality, Patparganj</h4>
+            <p>
+              Complex coronary cases from across North India. Calcified and Left Main
+              specialization.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 4 -->
+        <div class="timeline-year-wrapper reveal">
+          <div class="timeline-year">2018</div>
+          <div class="timeline-content">
+            <h4>
+              Structural Heart Fellowship | Gottsegen György Hungarian Institute of Cardiology,
+              Budapest
+            </h4>
+            <p>
+              Elite TAVI/TAVR and edge-to-edge valve repair training. The foundation of his
+              international-grade precision.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 5 -->
+        <div class="timeline-year-wrapper reveal">
+          <div class="timeline-year">2015–<br />2019</div>
+          <div class="timeline-content">
+            <h4>Senior Consultant & Head | Metro Heart and Cancer Institute, Preet Vihar</h4>
+            <p>Region's busiest Cath Lab. Emergency STEMI protocol mastery.</p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 6 -->
+        <div class="timeline-year-wrapper reveal">
+          <div class="timeline-year">2013–<br />2014</div>
+          <div class="timeline-content">
+            <h4>Consultant | Moolchand Medcity, New Delhi</h4>
+            <p>Advanced cardiac assessment and post-CABG care.</p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 7 -->
+        <div class="timeline-year-wrapper reveal">
+          <div class="timeline-year">2003–<br />2013</div>
+          <div class="timeline-content">
+            <h4>Consultant & Attending Cardiologist | Fortis Escorts Heart Institute, Okhla</h4>
+            <p>
+              Foundational decade at India's premier heart center alongside cardiology pioneers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 2 - INTERVENTIONS (BENTO GRID) -->
+    <section id="interventions">
+      <h2 class="section-heading playfair reveal">Interventions</h2>
+      <p class="section-subhead reveal">
+        Complex cases. International standards. Minimally invasive outcomes.
+      </p>
+
+      <div class="bento-grid">
+        <!-- TAVR/TAVI - LARGE -->
+        <div class="bento-tile tile-tavr reveal" onclick="toggleTile(this)">
+          <div class="tile-header">
+            <span class="gold-caps">Flagship</span>
+            <span class="icon-toggle">+</span>
+          </div>
+          <h3 class="playfair">TAVR/TAVI</h3>
+          <p class="teaser">
+            Transcatheter Aortic Valve Replacement — Minimally invasive valve replacement without
+            open surgery...
+          </p>
+          <div class="overlay-panel">
+            <p>
+              Transcatheter Aortic Valve Replacement — Minimally invasive valve replacement without
+              open surgery. 2–3 day recovery vs. 6–8 weeks. European fellowship-trained specialist.
+              Ideal for elderly or high-risk patients with severe aortic stenosis.
+            </p>
+          </div>
+        </div>
+
+        <!-- MitraClip - TALL -->
+        <div class="bento-tile tile-mitraclip reveal" onclick="toggleTile(this)">
+          <div class="tile-header">
+            <span class="gold-caps">Structural</span>
+            <span class="icon-toggle">+</span>
+          </div>
+          <h3 class="playfair">MitraClip</h3>
+          <p class="teaser">
+            Mitral Valve Repair — Catheter-based repair of leaky mitral valves. No chest opening.
+          </p>
+          <div class="overlay-panel">
+            <p>
+              Mitral Valve Repair — Catheter-based repair of leaky mitral valves. No chest opening.
+              48-hour discharge. Immediate symptom relief. Ideal for high-risk patients.
+            </p>
+          </div>
+        </div>
+
+        <!-- Emergency Angioplasty - WIDE -->
+        <div class="bento-tile tile-angioplasty reveal" onclick="toggleTile(this)">
+          <div class="tile-header">
+            <span class="gold-caps">Critical Care</span>
+            <span class="icon-toggle">+</span>
+          </div>
+          <h3 class="playfair">Emergency Angioplasty</h3>
+          <p class="teaser">
+            24/7 Heart Attack Treatment — Door-to-balloon under 90 minutes. Same-day walking.
+          </p>
+          <div class="overlay-panel">
+            <p>
+              24/7 Heart Attack Treatment — Door-to-balloon under 90 minutes. Immediate stent
+              placement. Same-day walking. Round-the-clock availability.
+            </p>
+          </div>
+        </div>
+
+        <!-- Heart Check-Up - SMALL -->
+        <div class="bento-tile tile-checkup reveal" onclick="toggleTile(this)">
+          <div class="tile-header">
+            <span class="gold-caps">Diagnostic</span>
+            <span class="icon-toggle">+</span>
+          </div>
+          <h3 class="playfair">Heart Check-Up</h3>
+          <p class="teaser">Comprehensive Assessment</p>
+          <div class="overlay-panel">
+            <p>
+              Full Assessment — ECG, ECHO, stress test, blood work. Same-day results. Personalized
+              prevention plan. Recommended for anyone 40+.
+            </p>
+          </div>
+        </div>
+
+        <!-- Complex Coronary - WIDE -->
+        <div class="bento-tile tile-coronary reveal" onclick="toggleTile(this)">
+          <div class="tile-header">
+            <span class="gold-caps">Coronary</span>
+            <span class="icon-toggle">+</span>
+          </div>
+          <h3 class="playfair">Complex Coronary Interventions</h3>
+          <p class="teaser">
+            Advanced Solutions — Rotablation, CTO, calcified arteries, bifurcations.
+          </p>
+          <div class="overlay-panel">
+            <p>
+              Advanced Solutions — Rotablation, CTO, calcified arteries, bifurcations.
+              IVUS/OCT-guided. 3,000+ procedures. Cases other doctors turn away.
+            </p>
+          </div>
+        </div>
+
+        <!-- Second Opinion - SMALL -->
+        <div class="bento-tile tile-opinion reveal" onclick="toggleTile(this)">
+          <div class="tile-header">
+            <span class="gold-caps">Consultation</span>
+            <span class="icon-toggle">+</span>
+          </div>
+          <h3 class="playfair">Second Opinion</h3>
+          <p class="teaser">Global Perspective</p>
+          <div class="overlay-panel">
+            <p>
+              Expert Cardiac Second Opinion — Full review with European fellowship lens. Explore
+              minimally invasive alternatives. Written report with all options.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pacemaker & Devices - MEDIUM (Full width) -->
+        <div class="bento-tile tile-pacemaker reveal" onclick="toggleTile(this)">
+          <div class="tile-header">
+            <span class="gold-caps">Rhythm Management</span>
+            <span class="icon-toggle">+</span>
+          </div>
+          <h3 class="playfair">Pacemaker & Cardiac Device Implantation</h3>
+          <p class="teaser">
+            Traditional, leadless (Micra), ICD, CRT. Minimally invasive. Same-day discharge.
+          </p>
+          <div class="overlay-panel">
+            <p>
+              Rhythm Management — Traditional, leadless (Micra), ICD, CRT. Minimally invasive.
+              Same-day discharge. Long-term monitoring.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 3 - FACILITY & TRUST -->
+    <section id="facility">
+      <div class="parallax-bg"></div>
+      <div class="parallax-content reveal">
+        <h2 class="playfair">Where Precision Meets Compassion.</h2>
+        <p>
+          Yashoda Medicity is a quaternary care institute designed for the highest level of
+          intervention. Multiple NASA-grade Cath Labs. Dedicated cardiac ICUs. Private luxury
+          suites. Patients access the same 3D Mapping, IVUS, and OCT technologies used in leading
+          clinics in Zurich and New York.
+        </p>
+      </div>
+
+      <div class="reviews-header reveal">
+        <span class="gold-caps">VERIFIED PATIENT STORIES</span>
+        <div class="rating">⭐ 4.9 — 245+ Reviews on Google</div>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card reveal">
+          <p>
+            "My father arrived with a severe heart attack at 2 AM. Dr. Aggarwal activated the lab
+            instantly. Door-to-balloon under 75 mins. Within 48 hours, he was walking. Precision
+            saved his life."
+          </p>
+          <div class="author">— Rajiv Prasad, Indirapuram</div>
+        </div>
+        <div class="review-card reveal">
+          <p>
+            "My 82-year-old mother had TAVR. Home in 48 hours. Non-surgical, immediate relief. His
+            European training is evident in every step. Forever grateful."
+          </p>
+          <div class="author">— Sarah Sharma, Ghaziabad</div>
+        </div>
+        <div class="review-card reveal">
+          <p>
+            "Other doctors refused my 100% blocked artery. Dr. Aggarwal opened it with advanced
+            rotablation. A true master for complex cases."
+          </p>
+          <div class="author">— Vikram Singh, Noida</div>
+        </div>
+      </div>
+
+      <div class="map-section reveal">
+        <div class="map-container">
+          <iframe
+            title="Location Map"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=77.3000%2C28.5836%2C77.4400%2C28.7036&amp;layer=mapnik&amp;marker=28.6436%2C77.3700"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          >
+          </iframe>
+        </div>
+        <div class="location-tags">
+          <span>Indirapuram</span>
+          <span>Ghaziabad</span>
+          <span>Noida</span>
+          <span>Greater Noida</span>
+          <span>Delhi NCR</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER / CONTACT -->
+    <footer id="contact">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <h4>DR. AGGARWAL</h4>
+          <p>Director, Interventional Cardiology</p>
+        </div>
+        <div class="footer-center">Yashoda Medicity, Indirapuram, Ghaziabad, UP</div>
+        <div class="footer-right">
+          <button class="btn-outline">💬 WhatsApp</button>
+          <button class="btn-navy">📞 Book Appointment</button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+      // Navbar Scrolled State
+      const navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+
+      // Toggle Bento Tile Overlay
+      function toggleTile(element) {
+        const allTiles = document.querySelectorAll(".bento-tile");
+
+        // If already active, remove it to toggle close
+        if (element.classList.contains("active")) {
+          element.classList.remove("active");
+          return;
+        }
+
+        // Otherwise, close others and open this one
+        allTiles.forEach((t) => {
+          t.classList.remove("active");
+        });
+        element.classList.add("active");
+      }
+
+      // Kinetic Typography Interaction Observer for Timeline
+      const timelineObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("focused-year");
+            } else {
+              entry.target.classList.remove("focused-year");
+            }
+          });
+        },
+        {
+          // Trigger exactly at the center of the viewport
+          rootMargin: "-49% 0px -49% 0px",
+          threshold: 0,
+        },
+      );
+
+      document.querySelectorAll(".timeline-year").forEach((el) => {
+        timelineObserver.observe(el);
+      });
+
+      // Liquid Reveal Global Staggered Animation
+      const revealObserver = new IntersectionObserver(
+        (entries, observer) => {
+          let delay = 0;
+          // Filter entries that are intersecting
+          const visibleEntries = entries.filter((e) => e.isIntersecting);
+
+          visibleEntries.forEach((entry) => {
+            // Apply dynamic delay for stagger effect
+            entry.target.style.transitionDelay = `${delay}ms`;
+            entry.target.classList.add("visible");
+            delay += 80;
+
+            // Unobserve so it only happens once
+            observer.unobserve(entry.target);
+          });
+        },
+        {
+          threshold: 0.15,
+        },
+      );
+
+      document.querySelectorAll(".reveal").forEach((el) => {
+        revealObserver.observe(el);
+      });
+    </script>
+  </body>
+</html>
