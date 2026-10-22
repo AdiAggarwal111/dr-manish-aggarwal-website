@@ -93,7 +93,7 @@ My wife is totally fine now after a month and we are very much satisfied with th
     date: "Verified Google Review",
     rating: 5,
     summary:
-      "Saved from severe complications and pericardial fluid accumulation after a botched PPI at Fortis Noida — 'Rod of Asclepius'.",
+      "Saved from severe complications and pericardial fluid accumulation after a botched PPI at Fortis Noida: calling Dr. Aggarwal a 'Rod of Asclepius'.",
     fullText: `Patient experience prior being attended by Dr Manish Aggarwal (Director Interventional Cardiology & Structural heart)
 
 My heart rhythm had gone off after PPI at Fortis NOIDA, searched for solutions for almost 4 months Then I got admitted on 15 th March 2026in Yashoda Medicity under Dr Manish Aggarwal & his team..

@@ -53,8 +53,8 @@ export const Route = createFileRoute("/locations/$slug")({
   },
   head: ({ loaderData }) => {
     const l = loaderData?.loc;
-    if (!l) return { meta: [{ title: `Location — ${siteConfig.name}` }] };
-    const title = `Best Cardiologist in ${l.name} — ${siteConfig.name} | ${siteConfig.hospital}`;
+    if (!l) return { meta: [{ title: `Location | ${siteConfig.name}` }] };
+    const title = `Best Cardiologist in ${l.name} | ${siteConfig.name} | ${siteConfig.hospital}`;
     const description = `Top interventional cardiologist & structural heart specialist serving ${l.name}, Ghaziabad & Delhi NCR. ${siteConfig.name} at ${siteConfig.hospital}, Indirapuram. 28 years experience, ${siteConfig.proceduresCount} procedures. Call ${siteConfig.phone}.`;
     const url = `${siteConfig.siteUrl}/locations/${l.slug}`;
 
@@ -62,7 +62,7 @@ export const Route = createFileRoute("/locations/$slug")({
       {
         "@context": "https://schema.org",
         "@type": ["MedicalClinic", "LocalBusiness"],
-        name: `${siteConfig.hospital} — Interventional Cardiology Division (Serving ${l.name})`,
+        name: `${siteConfig.hospital} | Interventional Cardiology Division (Serving ${l.name})`,
         description: `Comprehensive interventional cardiology and structural heart care for ${l.name} by ${siteConfig.name} at ${siteConfig.hospital}, Indirapuram.`,
         telephone: siteConfig.phone,
         url,

@@ -16,7 +16,7 @@ import { PageHeroHeader } from "@/components/page-hero-header";
 import { ReviewsSection } from "@/components/reviews-section";
 import { AppointmentSection } from "@/components/appointment-form";
 
-const pageTitle = `Patient Reviews & Testimonials — Dr. Manish Aggarwal | Yashoda Medicity`;
+const pageTitle = `Patient Reviews & Testimonials | Dr. Manish Aggarwal | Yashoda Medicity`;
 const pageDescription = `Read verified patient reviews, emergency heart recovery accounts, and clinical testimonials for Dr. Manish Aggarwal, Director of Interventional Cardiology & Structural Heart at Yashoda Medicity, Indirapuram. Rated 4.9 from 370+ reviews.`;
 
 export const Route = createFileRoute("/reviews")({
@@ -134,7 +134,7 @@ export const Route = createFileRoute("/reviews")({
               },
               reviewRating: { "@type": "Rating", ratingValue: "5" },
               reviewBody:
-                "Saved from severe complications and pericardial fluid accumulation after a botched PPI at Fortis Noida — 'Rod of Asclepius'.",
+                "Saved from severe complications and pericardial fluid accumulation after a botched PPI at Fortis Noida, calling Dr. Aggarwal a 'Rod of Asclepius'.",
             },
           ],
         }),
@@ -264,7 +264,7 @@ function ReviewsPage() {
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg">
                   Over 40% of Dr. Manish Aggarwal’s acute cardiac interventions and complex second
-                  opinions originate from feeder districts outside immediate Ghaziabad—including{" "}
+                  opinions originate from feeder districts outside immediate Ghaziabad, including{" "}
                   <strong className="text-foreground font-semibold">
                     Muzaffarnagar, Meerut, Moradabad, Bareilly, Hapur, Bulandshahr, Noida, and East
                     Delhi

@@ -27,7 +27,7 @@ import { PageHeroHeader } from "@/components/page-hero-header";
 import { AppointmentSection } from "@/components/appointment-form";
 import { InsuranceTpaSection } from "@/components/insurance-tpa-section";
 
-const pageTitle = `The Facility & Cashless Insurance — Yashoda Medicity | Dr. Manish Aggarwal`;
+const pageTitle = `The Facility & Cashless Insurance | Yashoda Medicity | Dr. Manish Aggarwal`;
 const pageDescription = `Explore Yashoda Medicity's 1,200-bed quaternary care hospital in Indirapuram, Ghaziabad. Advanced hybrid cath labs, 3D mapping, IVUS/OCT imaging, dedicated cardiac ICUs, and 100% cashless TPA mediclaim empanelment.`;
 
 export const Route = createFileRoute("/facility")({
@@ -60,7 +60,7 @@ export const Route = createFileRoute("/facility")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": ["Hospital", "MedicalClinic"],
-          name: `${siteConfig.hospital} — Interventional Cardiology`,
+          name: `${siteConfig.hospital} | Interventional Cardiology`,
           description: pageDescription,
           url: `${siteConfig.siteUrl}/facility`,
           telephone: siteConfig.phone,
@@ -142,7 +142,7 @@ function FacilityPage() {
             }}
             title="The Flagship Facility at Yashoda Medicity"
             subtitle={`1,200-Bed Quaternary Campus & Advanced Hybrid Cath Labs · ${siteConfig.hospital}`}
-            description="A multi-crore greenfield medical landmark anchored in Indirapuram, Ghaziabad — engineered to deliver European-standard structural heart interventions, 24/7 primary angioplasty, and millimetric surgical precision under elite safety standards."
+            description="A multi-crore greenfield medical landmark anchored in Indirapuram, Ghaziabad, engineered to deliver European-standard structural heart interventions, 24/7 primary angioplasty, and millimetric surgical precision under elite safety standards."
             badges={
               <>
                 <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3.5 py-1.5 text-xs font-semibold text-primary">

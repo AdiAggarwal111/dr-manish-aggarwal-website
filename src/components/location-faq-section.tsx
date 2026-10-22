@@ -69,7 +69,7 @@ export const LocationFaqSection = memo(function LocationFaqSection() {
   const localClinicSchema = {
     "@context": "https://schema.org",
     "@type": ["MedicalClinic", "LocalBusiness"],
-    name: `Dr. Manish Aggarwal — Interventional Cardiology Suite at ${siteConfig.hospital}`,
+    name: `Dr. Manish Aggarwal | Interventional Cardiology Suite at ${siteConfig.hospital}`,
     image: `${siteConfig.siteUrl}/images/yashoda-medicity-hero.jpg`,
     url: siteConfig.siteUrl,
     telephone: siteConfig.phone,

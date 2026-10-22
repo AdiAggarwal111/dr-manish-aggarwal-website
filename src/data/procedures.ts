@@ -62,16 +62,16 @@ export const procedures: Procedure[] = [
       {
         heading: "The Paradigm Shift: Replacing Heart Valves Without Opening the Chest",
         paragraphs: [
-          "Severe Aortic Stenosis is an anatomical choke point on the left ventricle. As the valve calcifies and narrows to the diameter of a pencil, the heart muscle must generate crushing pressures to force blood out to the brain and vital organs. Left untreated, severe symptomatic aortic stenosis carries a 50% mortality rate within two years—a prognosis worse than many aggressive malignancies.",
+          "Severe Aortic Stenosis is an anatomical choke point on the left ventricle. As the valve calcifies and narrows to the diameter of a pencil, the heart muscle must generate crushing pressures to force blood out to the brain and vital organs. Left untreated, severe symptomatic aortic stenosis carries a 50% mortality rate within two years, a prognosis worse than many aggressive malignancies.",
           "For decades, the only clinical recourse was median sternotomy: sawing through the breastbone, arresting the heart on a cardiopulmonary bypass machine, and surgically excising the valve. For frail seniors, octogenarians, or patients with compromised renal or pulmonary function, open surgery was often deemed too dangerous, leaving them without viable options.",
-          "Dr. Manish Aggarwal has spent his career dismantling that barrier. Drawing upon his advanced Structural Heart Fellowship at the renowned Gottsegen György Hungarian Institute of Cardiology in Budapest, Dr. Aggarwal performs Transcatheter Aortic Valve Replacement (TAVR / TAVI)—deploying a biological heart valve inside the beating heart through a microscopic femoral puncture no larger than a pencil tip.",
+          "Dr. Manish Aggarwal has spent his career dismantling that barrier. Drawing upon his advanced Structural Heart Fellowship at the renowned Gottsegen György Hungarian Institute of Cardiology in Budapest, Dr. Aggarwal performs Transcatheter Aortic Valve Replacement (TAVR / TAVI), deploying a biological heart valve inside the beating heart through a microscopic femoral puncture no larger than a pencil tip.",
         ],
       },
       {
         heading: "European Structural Precision: 3D CT Biomodeling & Deployment",
         paragraphs: [
           "TAVR is not merely an alternative to surgery; in expert hands, it is an engineering masterpiece of millimetric precision. Success begins long before the patient enters the hybrid catheterization suite at Yashoda Medicity, Indirapuram.",
-          "Every candidate undergoes high-resolution electrocardiogram-gated multi-slice CT angiography. Dr. Aggarwal personally reconstructs the aortic root in three dimensions, mapping the annular perimeter, coronary artery take-off heights, calcification distribution, and peripheral vascular access paths with sub-millimeter precision. This rigorous preoperative planning eliminates guesswork and tailors valve selection—whether balloon-expandable or self-expanding—to the patient's exact anatomical geometry.",
+          "Every candidate undergoes high-resolution electrocardiogram-gated multi-slice CT angiography. Dr. Aggarwal personally reconstructs the aortic root in three dimensions, mapping the annular perimeter, coronary artery take-off heights, calcification distribution, and peripheral vascular access paths with sub-millimeter precision. This rigorous preoperative planning eliminates guesswork and tailors valve selection, whether balloon-expandable or self-expanding, to the patient's exact anatomical geometry.",
         ],
         bullets: [
           "Beating-Heart Deployment: The new biological valve is crimped onto a slender catheter, guided through the arterial system, and expanded precisely inside the diseased valve under fluoroscopic and echocardiographic guidance.",
@@ -87,7 +87,7 @@ export const procedures: Procedure[] = [
         ],
         callout: {
           quote:
-            "In structural cardiology, our measure of success is not just valve hemodynamics on an echo screen—it is returning an octogenarian to their morning garden walk within 48 hours.",
+            "In structural cardiology, our measure of success is not just valve hemodynamics on an echo screen; it is returning an octogenarian to their morning garden walk within 48 hours.",
           attribution: "Dr. Manish Aggarwal · Director of Interventional Cardiology",
         },
       },
@@ -153,7 +153,7 @@ export const procedures: Procedure[] = [
         paragraphs: [
           "The mitral valve controls the one-way gateway between the lungs' oxygenated reservoir (left atrium) and the body's primary pump (left ventricle). When the valve leaflets fail to seal completely, a significant portion of every heartbeat regurgitates backward into the lungs instead of surging forward into the systemic circulation.",
           "This backward hydraulic surge causes pulmonary congestion, severe shortness of breath, fluid buildup in the abdomen and limbs, and recurrent hospital admissions. Over time, the volume overload stretches the left ventricle, setting off a vicious cycle of worsening pump failure and deadly atrial fibrillation.",
-          "Historically, fixing a leaky mitral valve required open-heart surgery to replace or reconstruct the valve. For frail individuals or those with weakened heart muscle, surgical mortality was daunting. MitraClip—Transcatheter Edge-to-Edge Repair (TEER)—revolutionizes this space by repairing the valve while the heart continues to beat steadily, without a single cut on the chest.",
+          "Historically, fixing a leaky mitral valve required open-heart surgery to replace or reconstruct the valve. For frail individuals or those with weakened heart muscle, surgical mortality was daunting. MitraClip, also known as Transcatheter Edge-to-Edge Repair (TEER), revolutionizes this space by repairing the valve while the heart continues to beat steadily, without a single cut on the chest.",
         ],
       },
       {
@@ -310,7 +310,7 @@ export const procedures: Procedure[] = [
     ],
     patientProfile: [
       "Patients told by other cardiologists that their blockages are 'too hard,' 'too calcified,' or '100% blocked' to treat with standard angioplasty.",
-      "Individuals with Chronic Total Occlusion (CTO)—arteries that have been completely occluded for months or years—causing persistent angina or shortness of breath.",
+      "Individuals with Chronic Total Occlusion (CTO), where arteries have been completely blocked for months or years, causing persistent angina or shortness of breath.",
       "Patients deemed inoperable or high-risk for open-heart Coronary Artery Bypass Grafting (CABG) due to low ejection fraction (EF < 30%), severe diabetes, renal dysfunction, or previous bypass surgery.",
       "Patients with complex multi-vessel disease, bifurcation lesions (vessel forks), or Left Main trunk disease seeking percutaneous alternatives to open-chest surgery.",
     ],
@@ -318,7 +318,7 @@ export const procedures: Procedure[] = [
       {
         heading: "When Arteries Turn to Stone: Defeating Severe Calcification",
         paragraphs: [
-          "As coronary atherosclerosis advances over decades—particularly in patients with long-standing diabetes, chronic kidney disease, or advanced age—the vessel walls accumulate dense, rock-hard calcium deposits. When an artery turns into a rigid, non-compliant 'porcelain pipe', standard angioplasty balloons cannot expand.",
+          "As coronary atherosclerosis advances over decades, especially in patients with long-standing diabetes, chronic kidney disease, or advanced age, the vessel walls accumulate dense, rock-hard calcium deposits. When an artery turns into a rigid, non-compliant 'porcelain pipe', standard angioplasty balloons cannot expand.",
           "Attempting to force a standard balloon or stent into a severely calcified vessel carries severe risks: balloon rupture, vessel dissection, or catastrophic stent under-expansion, which dramatically increases the risk of acute clotting and stent failure. When standard tools fail, many cardiologists turn patients away or default to open-heart bypass surgery.",
           "Dr. Manish Aggarwal is recognized across Delhi NCR as a specialist in Complex Higher-Risk and Indicated Patients (CHIP). Utilizing diamond-tipped Rotational Atherectomy (Rotablation) and Intravascular Lithotripsy (IVL), Dr. Aggarwal pulverizes rock-hard calcium to prepare the vessel for flawless, full-expansion stenting.",
         ],
@@ -404,7 +404,7 @@ export const procedures: Procedure[] = [
       {
         heading: "The Dangerous Fallacy of the Basic Annual Health Check",
         paragraphs: [
-          "Every year, thousands of seemingly healthy executives pass their company-mandated health check-ups with 'flying colors'—only to suffer a catastrophic, unpredicted heart attack weeks later. Why does this happen with alarming regularity?",
+          "Every year, thousands of seemingly healthy executives pass their company-mandated health check-ups with 'flying colors', only to suffer a catastrophic, unpredicted heart attack weeks later. Why does this happen with alarming regularity?",
           "A conventional health check relies primarily on a resting ECG and a standard treadmill stress test (TMT). A resting ECG is completely normal in over 85% of individuals with severe coronary artery disease until the moment a plaque ruptures. Similarly, a treadmill test only turns positive when an artery is already mechanically choked by 70% or more.",
           "The medical reality is sobering: the majority of fatal heart attacks occur from the sudden rupture of mild, 30% to 50% non-obstructive 'soft plaques' that cause zero symptoms and produce completely normal treadmill tests. Relying on basic screening packages creates a dangerous, false sense of security.",
         ],
@@ -491,7 +491,7 @@ export const procedures: Procedure[] = [
       {
         heading: "The Conductor of the Heart: When the Electrical Metronome Fails",
         paragraphs: [
-          "The heart is both a mechanical pump and an electrical marvel. An intrinsic network of specialized conduction tissue—beginning at the sinus node and branching through the atrioventricular (AV) bundle—coordinates 100,000 synchronized beats every single day.",
+          "The heart is both a mechanical pump and an electrical marvel. An intrinsic network of specialized conduction tissue, starting at the sinus node and branching through the atrioventricular (AV) bundle, coordinates 100,000 synchronized beats every single day.",
           "When this natural metronome degenerates due to aging, fibrosis, previous heart attacks, or medication toxicity, the heart's pacing falls into disarray. Severe conduction failure leads to sudden drops in cerebral perfusion, triggering frightening blackouts (Stokes-Adams attacks), debilitating exhaustion, memory fog, or fatal asystole.",
           "At Yashoda Medicity, Indirapuram, Dr. Manish Aggarwal directs a comprehensive cardiac rhythm device program. From traditional dual-chamber pacemakers to advanced physiological conduction system pacing (His-bundle and Left Bundle Branch Area Pacing / LBBAP), our focus is restoring natural, synchronized cardiac cadence.",
         ],
@@ -500,7 +500,7 @@ export const procedures: Procedure[] = [
         heading: "The Micra Revolution: The World's Smallest Invisible Pacemaker",
         paragraphs: [
           "Conventional pacemakers require a surgical incision beneath the collarbone to fashion a subcutaneous 'pocket' for the battery generator, along with insulated transvenous leads threaded through veins into the heart chambers. While effective, traditional pacemakers leave a visible bump under the skin and carry risks of lead fracture, venous thrombosis, and pocket infections.",
-          "Dr. Manish Aggarwal offers the Medtronic Micra Transcatheter Pacing System—a technological triumph 93% smaller than a conventional pacemaker, roughly the size of a large vitamin capsule.",
+          "Dr. Manish Aggarwal offers the Medtronic Micra Transcatheter Pacing System, an engineering breakthrough 93% smaller than a conventional pacemaker and roughly the size of a large vitamin capsule.",
         ],
         bullets: [
           "Zero Chest Incision & No Visible Bump: The entire self-contained pacemaker is delivered through a catheter in the femoral vein and anchored directly into the right ventricle.",
@@ -577,7 +577,7 @@ export const procedures: Procedure[] = [
         paragraphs: [
           "Few experiences in life are as disorienting as lying on a catheterization table or sitting in a hospital consultation room while a physician announces: 'You have severe triple-vessel blockages and need emergency open-heart bypass surgery tomorrow.'",
           "In these high-pressure moments, patients and families feel trapped, panicked, and ill-equipped to evaluate complex medical jargon. While bypass surgery and stenting are miraculous, life-saving therapies when strictly indicated, modern clinical literature documents significant rates of over-investigation and unnecessary interventional procedures.",
-          "Dr. Manish Aggarwal founded his clinical practice on an uncompromising standard: Radical Honesty. In an era of transactional medicine, Dr. Aggarwal provides an independent, evidence-based sanctuary for patients seeking the objective truth about their hearts. The most expensive procedure—both financially and biologically—is the one that was never necessary.",
+          "Dr. Manish Aggarwal founded his clinical practice on an uncompromising standard: Radical Honesty. In an era of transactional medicine, Dr. Aggarwal provides an independent, evidence-based sanctuary for patients seeking the objective truth about their hearts. The most expensive procedure, both financially and biologically, is the one that was never necessary.",
         ],
       },
       {
@@ -662,7 +662,7 @@ export const procedures: Procedure[] = [
       {
         heading: "Beyond the Shadow: The Inherent Blindness of Standard Angiography",
         paragraphs: [
-          "Standard coronary angiography has been the foundation of catheterization for 50 years. However, angiography has an inherent, dangerous limitation: it is merely a two-dimensional 'shadowgram'—a flat silhouette of radiopaque dye flowing through a vessel.",
+          "Standard coronary angiography has been the foundation of catheterization for 50 years. However, angiography has an inherent, dangerous limitation: it is merely a two-dimensional 'shadowgram', creating a flat silhouette of radiopaque dye flowing through a vessel.",
           "An angiogram cannot look through the blood to examine the arterial wall itself. It cannot tell whether a blockage is composed of soft lipid, dense fibrous tissue, or deep rock-hard calcium. Crucially, an angiogram cannot verify whether an expanded stent is fully pressed (apposed) against the vessel wall or sitting loosely inside the bloodstream.",
           "Global registries demonstrate that over 70% of stents deployed using angiography alone suffer from some degree of stent under-expansion or edge malapposition. These microscopic gaps are the primary trigger for in-stent restenosis (the artery slowly scarring shut again) and catastrophic stent thrombosis (sudden massive blood clotting inside the stent).",
         ],
@@ -683,7 +683,7 @@ export const procedures: Procedure[] = [
         heading: "High-Definition IVUS: The Standard for Left Main & Deep Calcium",
         paragraphs: [
           "For large vessels, aorto-ostial blockages, and high-stakes Left Main coronary trunk interventions, Dr. Aggarwal deploys High-Definition Intravascular Ultrasound (HD-IVUS). Sound waves penetrate deep into the outer vessel layers, visualizing the full architecture of the arterial wall.",
-          "IVUS guidance allows Dr. Aggarwal to deploy targeted high-pressure post-dilation balloons, ensuring the stent reaches its optimal cross-sectional expansion area (MSA). Landmark international clinical trials—including RENOVATE-COMPLEX-PCI and ILUMIEN IV—prove that imaging-guided angioplasty significantly reduces cardiac death, recurrent heart attacks, and target vessel failure compared to conventional angioplasty.",
+          "IVUS guidance allows Dr. Aggarwal to deploy targeted high-pressure post-dilation balloons, ensuring the stent reaches its optimal cross-sectional expansion area (MSA). Landmark international clinical trials, including RENOVATE-COMPLEX-PCI and ILUMIEN IV, prove that imaging-guided angioplasty significantly reduces cardiac death, recurrent heart attacks, and target vessel failure compared to conventional angioplasty.",
         ],
         callout: {
           quote:
@@ -748,7 +748,7 @@ export const procedures: Procedure[] = [
       {
         heading: "The Danger of Electrical Chaos: When the Heart Loses Cadence",
         paragraphs: [
-          "A racing or fluttering heart is far more than an annoying sensation or an anxiety trigger; it is often a sign of underlying electrical disarray. Cardiac arrhythmias—such as Atrial Fibrillation (AFib), Supraventricular Tachycardia (SVT), and frequent ventricular ectopy—disrupt the mechanical efficiency of the heart.",
+          "A racing or fluttering heart is far more than an annoying sensation or an anxiety trigger; it is often a sign of underlying electrical disarray. Cardiac arrhythmias (such as Atrial Fibrillation, SVT, and frequent ventricular ectopy) disrupt the mechanical efficiency of the heart.",
           "When the heart beats erratically or at 150+ beats per minute, the chambers cannot fill properly between strokes. Over time, persistent arrhythmias cause chronic cardiac exhaustion, leading to arrhythmia-induced cardiomyopathy, irreversible chamber enlargement, and heart failure.",
           "At Yashoda Medicity, Indirapuram, Dr. Manish Aggarwal provides an integrated rhythm management program. Combining high-resolution continuous telemetry, electrophysiological evaluation, and structural interventions, our goal is to pinpoint and neutralize electrical instability before permanent heart damage occurs.",
         ],
@@ -757,11 +757,11 @@ export const procedures: Procedure[] = [
         heading: "Atrial Fibrillation (AFib): Early Rhythm Control Prevents Remodeling",
         paragraphs: [
           "Atrial Fibrillation is the most common serious arrhythmia worldwide. Instead of contracting smoothly, the upper chambers quiver chaoticly at up to 400 to 600 electrical impulses per minute. In addition to severe fatigue and exercise intolerance, AFib allows blood to stagnate and pool in the left atrium, multiplying the risk of ischemic stroke by 500%.",
-          "Dr. Aggarwal advocates for aggressive early rhythm control. The longer a heart remains in AFib, the more the atrial tissue fibroses and stretches—a phenomenon known as 'AFib begets AFib'. By deploying pharmacological therapy, synchronized electrical cardioversion, and coordinated catheter ablation referral pathways early, we restore natural sinus cadence, preserving the heart's natural pumping power.",
+          "Dr. Aggarwal advocates for aggressive early rhythm control. The longer a heart remains in AFib, the more the atrial tissue fibroses and stretches, a phenomenon known as 'AFib begets AFib'. By deploying pharmacological therapy, synchronized electrical cardioversion, and coordinated catheter ablation referral pathways early, we restore natural sinus cadence, preserving the heart's natural pumping power.",
         ],
         bullets: [
           "Forensic Rhythm Monitoring: Utilizes cutting-edge digital patch monitors and extended Holter telemetry to detect silent, nocturnal, and intermittent paroxysmal arrhythmias.",
-          "Cardiometabolic Risk Reversal: Addresses the underlying drivers of AFib—including obstructive sleep apnea, hypertension, visceral obesity, and metabolic dysregulation.",
+          "Cardiometabolic Risk Reversal: Addresses the underlying drivers of AFib, including obstructive sleep apnea, hypertension, visceral obesity, and metabolic dysregulation.",
           "Hemodynamic Protection: Restores ventricular filling time, relieving chronic fatigue, chest heaviness, and breathlessness.",
         ],
       },

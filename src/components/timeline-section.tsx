@@ -47,24 +47,28 @@ export function NarrativeBlock({
   children: React.ReactNode;
 }) {
   return (
-    <div>
-      <h2 className="font-display text-3xl leading-tight md:text-4xl">{title}</h2>
-      <blockquote className="mt-6 border-l-2 border-primary pl-5 font-display text-xl italic text-foreground/85 md:text-2xl">
-        "{pull}"
+    <div className="space-y-4 sm:space-y-5">
+      <h2 className="font-display text-2xl font-medium tracking-tight text-foreground sm:text-3xl md:text-4xl">
+        {title}
+      </h2>
+      <blockquote className="rounded-2xl border-l-4 border-primary bg-secondary/40 py-3 pl-4 pr-3 font-display text-base italic leading-snug text-foreground/90 sm:text-xl sm:py-3.5 sm:pl-5 md:text-2xl">
+        &ldquo;{pull}&rdquo;
       </blockquote>
-      <div className="mt-6 space-y-4 text-base text-muted-foreground md:text-lg">{children}</div>
+      <div className="space-y-3 text-sm leading-relaxed text-muted-foreground sm:space-y-4 sm:text-base md:text-lg text-pretty">
+        {children}
+      </div>
     </div>
   );
 }
 
 export function DirectorNarrative() {
   return (
-    <article className="space-y-16">
+    <article className="space-y-12 sm:space-y-16">
       <NarrativeBlock
         title="The Director's Mission & Precision"
         pull="In cardiology, the difference between a good outcome and a life-changing one is millimetric precision."
       >
-        <p className="leading-relaxed">
+        <p>
           At the helm of cardiovascular care as Director of Interventional Cardiology &amp;
           Structural Heart at{" "}
           <a
@@ -74,18 +78,21 @@ export function DirectorNarrative() {
             className="font-semibold text-foreground underline decoration-primary/40 underline-offset-4 hover:text-primary transition"
             title="View Dr. Manish Aggarwal's Official Yashoda Medicity Profile"
           >
-            {siteConfig.hospital} ↗
+            {siteConfig.hospital}
           </a>
           , Dr. Manish Aggarwal operates on an uncompromising clinical philosophy: the human heart
           deserves solutions that restore vitality without the trauma of open-chest surgery.
+        </p>
+        <p>
           Specializing in advanced{" "}
           <strong className="font-semibold text-foreground">structural heart solutions</strong>, he
-          focuses on repairing failing heart valves and resolving complex, long-standing arterial
-          blockages through microscopic, pinhole catheter access. In an arena where anatomical
-          margins are measured in fractions of a millimeter, Dr. Aggarwal&apos;s practice is
-          anchored by the fundamental conviction that millimetric precision separates an ordinary
-          clinical outcome from a truly life-changing one—sparing fragile patients the physical toll
-          of a sternotomy and returning them to their families with renewed cardiac reserve.
+          repairs failing heart valves and resolves complex, long-standing arterial blockages
+          through microscopic pinhole catheter access. In an arena where anatomical margins are
+          measured in fractions of a millimeter, Dr. Aggarwal&apos;s practice is anchored by the
+          fundamental conviction that millimetric precision separates an ordinary clinical outcome
+          from a truly life-changing one. This exacting standard spares fragile patients the
+          physical toll of a sternotomy and returns them to their families with renewed cardiac
+          reserve.
         </p>
       </NarrativeBlock>
 
@@ -93,9 +100,9 @@ export function DirectorNarrative() {
         title="Global Pedigree & European Standards"
         pull="Budapest-trained. Indirapuram-anchored. World-class structural heart standards."
       >
-        <p className="leading-relaxed">
-          Dr. Aggarwal&apos;s surgical mindset is forged through elite international pedigree,
-          having completed his specialized{" "}
+        <p>
+          Dr. Aggarwal&apos;s approach was shaped through elite international training, having
+          completed his specialized{" "}
           <strong className="font-semibold text-foreground">
             European Fellowship in Structural Heart Interventions
           </strong>{" "}
@@ -106,9 +113,11 @@ export function DirectorNarrative() {
             Transcatheter Aortic Valve Implantation (TAVI / TAVR)
           </strong>{" "}
           and percutaneous edge-to-edge mitral repair (
-          <strong className="font-semibold text-foreground">MitraClip</strong>). By transplanting
-          these stringent European procedural protocols and minimalist conscious-sedation paradigms
-          directly into{" "}
+          <strong className="font-semibold text-foreground">MitraClip</strong>).
+        </p>
+        <p>
+          By transplanting these European procedural protocols and conscious-sedation methods
+          directly to{" "}
           <a
             href={siteConfig.hospitalUrl}
             target="_blank"
@@ -116,12 +125,12 @@ export function DirectorNarrative() {
             className="font-semibold text-foreground underline decoration-primary/40 underline-offset-4 hover:text-primary transition"
             title="View Dr. Manish Aggarwal's Official Yashoda Medicity Profile"
           >
-            {siteConfig.hospital}&apos;s ↗
+            {siteConfig.hospital}&apos;s
           </a>{" "}
-          state-of-the-art hybrid cath lab in Indirapuram, Dr. Aggarwal provides patients across{" "}
+          hybrid cath lab in Indirapuram, Dr. Aggarwal provides patients across{" "}
           <strong className="font-semibold text-foreground">Noida, Ghaziabad, and Delhi NCR</strong>{" "}
-          access to the same world-class valve therapies and 48-hour recovery standards found in
-          leading medical capitals worldwide.
+          access to the same valve therapies and 48-hour recovery standards found in leading medical
+          capitals worldwide.
         </p>
       </NarrativeBlock>
 
@@ -129,11 +138,11 @@ export function DirectorNarrative() {
         title="Complex Interventions & Radically Honest Advocacy"
         pull="A radically honest approach to the complex cardiac cases other centres refuse."
       >
-        <p className="leading-relaxed">
+        <p>
           Widely regarded across Delhi NCR as the &ldquo;cardiologist&apos;s cardiologist,&rdquo;
           Dr. Aggarwal specializes in high-risk, complex coronary interventions (CHIP) that other
-          institutions routinely deem inoperable or untreatable. Where standard catheterization
-          reaches its limits, he deploys diamond-tipped{" "}
+          institutions routinely turn away. Where standard catheterization reaches its limits, he
+          deploys diamond-tipped{" "}
           <strong className="font-semibold text-foreground">
             rotational atherectomy (rotablation)
           </strong>{" "}
@@ -142,7 +151,10 @@ export function DirectorNarrative() {
           <strong className="font-semibold text-foreground">
             100% blocked Chronic Total Occlusions (CTOs)
           </strong>
-          . Complementing this technical mastery is his defining ethos of{" "}
+          .
+        </p>
+        <p>
+          Complementing this technical mastery is his defining ethos of{" "}
           <strong className="font-semibold text-foreground">Radical Honesty</strong>: an unwavering
           patient-advocacy commitment providing rigorous, objective second opinions for individuals
           told that emergency open-heart bypass surgery (CABG) or multiple stents are their only

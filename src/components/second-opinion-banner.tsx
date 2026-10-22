@@ -32,12 +32,12 @@ export const SecondOpinionBanner = memo(function SecondOpinionBanner() {
                 <span className="text-emerald-300">Get an Independent Second Opinion.</span>
               </h2>
 
-              <p className="max-w-2xl text-base sm:text-lg leading-relaxed text-slate-200">
+              <p className="max-w-2xl text-base sm:text-lg leading-relaxed text-slate-200 text-pretty">
                 Before undergoing open-heart bypass surgery (CABG) or multi-stent placement, let Dr.
-                Manish Aggarwal review your angiography CD. We practice radical diagnostic
-                honesty—evaluating whether your blockages can be safely treated via minimally
-                invasive transradial angioplasty or if bypass surgery is truly the safer longevity
-                choice.
+                Manish Aggarwal review your angiography CD. We practice radical diagnostic honesty,
+                evaluating whether your blockages can be safely treated through minimally invasive
+                transradial angioplasty, or if bypass surgery is genuinely necessary for your
+                long-term health.
               </p>
 
               {/* Trust Value Points */}

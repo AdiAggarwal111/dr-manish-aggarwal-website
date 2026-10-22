@@ -3,7 +3,7 @@ import { siteConfig } from "@/data/site-config";
 import { ClinicContactCards, AppointmentForm } from "@/components/appointment-form";
 import { LocationFaqSection } from "@/components/location-faq-section";
 
-const pageTitle = `Book Appointment with ${siteConfig.name} — ${siteConfig.hospital}, Indirapuram`;
+const pageTitle = `Book Appointment with ${siteConfig.name} | ${siteConfig.hospital}, Indirapuram`;
 const pageDescription = `Schedule a cardiac consultation or urgent second opinion with ${siteConfig.name} at ${siteConfig.hospital}, Indirapuram, Ghaziabad. Same-week OPD slots available. Call ${siteConfig.phone}.`;
 
 export const Route = createFileRoute("/contact")({
@@ -58,7 +58,7 @@ export const Route = createFileRoute("/contact")({
           url: `${siteConfig.siteUrl}/contact`,
           mainEntity: {
             "@type": "MedicalClinic",
-            name: `${siteConfig.hospital} — Interventional Cardiology Division`,
+            name: `${siteConfig.hospital} | Interventional Cardiology Division`,
             telephone: siteConfig.phone,
             priceRange: "$$$",
             address: {
@@ -114,7 +114,7 @@ function ContactPage() {
               Consultation &amp; Appointments
             </p>
             <h1 className="mx-auto mt-4 max-w-4xl font-display text-3xl font-medium leading-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
-              Book Consultation with {siteConfig.name} — Interventional Cardiologist at{" "}
+              Book Consultation with {siteConfig.name}, Interventional Cardiologist at{" "}
               <a
                 href={siteConfig.hospitalUrl}
                 target="_blank"

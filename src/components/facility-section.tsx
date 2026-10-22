@@ -136,9 +136,9 @@ export const FacilitySection = memo(function FacilitySection() {
               <p className="text-sm leading-relaxed text-muted-foreground md:text-base">
                 Spanning multi-acre facilities with JCI and NABH accreditations, the hospital
                 integrates on-site cardiothoracic surgical backup, continuous renal replacement
-                therapy (CRRT), multi-slice 3D CT angiography, and dedicated private recovery suites
-                — ensuring complete clinical continuity for elderly, high-risk, and complex cardiac
-                patients.
+                therapy (CRRT), multi-slice 3D CT angiography, and dedicated private recovery
+                suites, ensuring complete clinical continuity for elderly, high-risk, and complex
+                cardiac patients.
               </p>
               <div className="pt-2">
                 <a

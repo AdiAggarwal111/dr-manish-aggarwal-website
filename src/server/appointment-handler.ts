@@ -90,7 +90,7 @@ function buildClinicNotificationHtml(
                 Dr. Manish Aggarwal
               </h1>
               <p style="margin:4px 0 0 0;font-size:13px;color:#94a3b8;">
-                Director — Interventional Cardiology &amp; Structural Heart Specialist
+                Director, Interventional Cardiology &amp; Structural Heart Specialist
               </p>
             </td>
           </tr>
@@ -214,7 +214,7 @@ function buildPatientConfirmationHtml(
                 Dr. Manish Aggarwal
               </h1>
               <p style="margin:4px 0 0 0;font-size:13px;color:#94a3b8;">
-                Director — Interventional Cardiology &amp; Structural Heart Specialist
+                Director, Interventional Cardiology &amp; Structural Heart Specialist
               </p>
             </td>
           </tr>
@@ -440,7 +440,7 @@ Yashoda Medicity, Indirapuram, Ghaziabad, Delhi NCR 201014.
       resendApiKey,
       fromEmail,
       CLINIC_NOTIFICATION_EMAIL,
-      `[New Appointment Request] ${data.name} — ${formattedDate} (#${referenceId})`,
+      `[New Appointment Request] ${data.name} | ${formattedDate} (#${referenceId})`,
       clinicHtml,
       clinicText,
       data.email, // Reply-to patient
@@ -463,7 +463,7 @@ Yashoda Medicity, Indirapuram, Ghaziabad, Delhi NCR 201014.
         resendApiKey,
         fromEmail,
         data.email,
-        `Your Appointment Request with Dr. Manish Aggarwal — Yashoda Medicity (#${referenceId})`,
+        `Your Appointment Request with Dr. Manish Aggarwal | Yashoda Medicity (#${referenceId})`,
         patientHtml,
         patientText,
       );

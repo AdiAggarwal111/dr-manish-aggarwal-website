@@ -203,7 +203,7 @@ export const HeroSection = memo(function HeroSection() {
             <img
               ref={portraitRef}
               src="/images/doctor-portrait.webp"
-              alt={`${siteConfig.name} — Interventional Cardiologist & Structural Heart Specialist, Delhi NCR`}
+              alt={`${siteConfig.name}, Interventional Cardiologist & Structural Heart Specialist, Delhi NCR`}
               width={1856}
               height={2304}
               loading="eager"

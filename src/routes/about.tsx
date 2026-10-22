@@ -5,7 +5,7 @@ import { CareerTimeline, DirectorNarrative } from "@/components/timeline-section
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { PageHeroHeader } from "@/components/page-hero-header";
 
-const pageTitle = `About ${siteConfig.name} — Interventional Cardiologist & Structural Heart Specialist at ${siteConfig.hospital}`;
+const pageTitle = `About ${siteConfig.name} | Interventional Cardiologist & Structural Heart Specialist at ${siteConfig.hospital}`;
 const pageDescription = `Learn about ${siteConfig.name}, Director of Interventional Cardiology & Structural Heart at ${siteConfig.hospital}, Indirapuram. 28 years of clinical mastery, ${siteConfig.proceduresCount} cardiac procedures, European structural heart fellowship in Budapest.`;
 
 export const Route = createFileRoute("/about")({
@@ -90,12 +90,12 @@ function AboutPage() {
 
         {/* Split Canvas: Pedigree Timeline & Director's Narrative */}
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-14 lg:divide-x lg:divide-border">
-          {/* LEFT — Pedigree & Career Timeline */}
+          {/* LEFT: Pedigree & Career Timeline */}
           <aside className="lg:col-span-5 xl:col-span-4">
             <CareerTimeline isSticky />
           </aside>
 
-          {/* RIGHT — Narrative & Direct Case CTA */}
+          {/* RIGHT: Narrative & Direct Case CTA */}
           <div className="lg:col-span-7 xl:col-span-8 lg:pl-14">
             <DirectorNarrative />
 
@@ -107,7 +107,7 @@ function AboutPage() {
               <h3 className="font-display text-2xl md:text-3xl">Discuss your case directly.</h3>
               <p className="mt-3 max-w-xl text-muted-foreground">
                 Same-week consultations at {siteConfig.hospital},{" "}
-                {siteConfig.location.split(",")[0]}. Bring your reports — leave with a clear,
+                {siteConfig.location.split(",")[0]}. Bring your reports and leave with a clear,
                 verified treatment plan.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">

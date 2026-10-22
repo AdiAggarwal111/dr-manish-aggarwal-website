@@ -17,7 +17,7 @@ import { siteConfig } from "@/data/site-config";
 import { PageHeroHeader } from "@/components/page-hero-header";
 import { AppointmentSection } from "@/components/appointment-form";
 
-const pageTitle = `Cardiac Procedure Costs & Packages in Delhi NCR — Dr. Manish Aggarwal | Yashoda Medicity`;
+const pageTitle = `Cardiac Procedure Costs & Packages in Delhi NCR | Dr. Manish Aggarwal | Yashoda Medicity`;
 const pageDescription = `Transparent cost ranges for TAVI/TAVR (₹18L–₹27.5L), Angioplasty (₹1.2L–₹4.2L), and Pacemakers (₹1.15L–₹8.5L) at Yashoda Medicity, Indirapuram. Statutory NPPA stent price caps, room categories, and 100% cashless insurance empanelment.`;
 const pageUrl = `${siteConfig.siteUrl}/costs`;
 

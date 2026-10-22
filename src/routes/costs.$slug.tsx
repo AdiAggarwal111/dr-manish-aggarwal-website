@@ -58,7 +58,7 @@ export const Route = createFileRoute("/costs/$slug")({
   },
   head: ({ loaderData }) => {
     const c = loaderData?.costGuide;
-    if (!c) return { meta: [{ title: `Procedure Cost — ${siteConfig.name}` }] };
+    if (!c) return { meta: [{ title: `Procedure Cost | ${siteConfig.name}` }] };
     const url = `${siteConfig.siteUrl}/costs/${c.slug}`;
 
     const schemas: Record<string, unknown>[] = [

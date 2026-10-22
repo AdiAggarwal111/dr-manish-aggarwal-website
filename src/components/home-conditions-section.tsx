@@ -32,7 +32,7 @@ const CURATED_CONDITIONS: readonly CuratedCondition[] = [
     symptoms:
       "Progressive breathlessness climbing stairs, sudden fainting spells (syncope), heavy chest tightness, fatigue.",
     percutaneousSolution:
-      "Transcatheter Aortic Valve Implantation (TAVI / TAVR) via pinhole groin puncture under conscious sedation—no cracked ribs or bypass machine.",
+      "Transcatheter Aortic Valve Implantation (TAVI / TAVR) via pinhole groin puncture under conscious sedation, without cracked ribs or a bypass machine.",
     icon: HeartPulse,
   },
   {

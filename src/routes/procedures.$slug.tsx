@@ -206,8 +206,8 @@ export const Route = createFileRoute("/procedures/$slug")({
   },
   head: ({ loaderData }) => {
     const p = loaderData?.proc;
-    if (!p) return { meta: [{ title: `Procedure — ${siteConfig.name}` }] };
-    const title = `${p.title} in Delhi NCR — ${siteConfig.name} | ${siteConfig.hospital}`;
+    if (!p) return { meta: [{ title: `Procedure | ${siteConfig.name}` }] };
+    const title = `${p.title} in Delhi NCR | ${siteConfig.name} | ${siteConfig.hospital}`;
     const description = `${p.title} performed by ${siteConfig.name}, Director of Interventional Cardiology at ${siteConfig.hospital}, Indirapuram. ${p.desc} Call ${siteConfig.phone}.`;
     const url = `${siteConfig.siteUrl}/procedures/${p.slug}`;
 
@@ -244,7 +244,7 @@ export const Route = createFileRoute("/procedures/$slug")({
       {
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
-        name: `${p.title} — Procedural Overview & Clinical Indications`,
+        name: `${p.title} | Procedural Overview & Clinical Indications`,
         description: p.desc,
         url,
         lastReviewed: "2026-10-18",
@@ -487,7 +487,7 @@ function ProcedurePage() {
                   </blockquote>
                   {s.callout.attribution && (
                     <figcaption className="mt-3 text-xs font-semibold tracking-wider text-muted-foreground uppercase not-italic">
-                      — {s.callout.attribution}
+                      · {s.callout.attribution}
                     </figcaption>
                   )}
                 </figure>

@@ -45,14 +45,14 @@ export const locations: Location[] = [
     positioning: "Flagship Medical Center",
     hero: "Five minutes from your front door to a European-standard hybrid cath lab.",
     intro:
-      "For families residing in Shipra Suncity, Gyan Khand, Niti Khand, and Nyay Khand, world-class interventional cardiology is no longer a cross-city journey — it is a five-minute drive.",
+      "For families residing in Shipra Suncity, Gyan Khand, Niti Khand, and Nyay Khand, world-class interventional cardiology is no longer a cross-city journey; it is a five-minute drive.",
     transitTime: "3 to 5 Minutes via Dr. Sushila Naiyar Marg / Kala Patthar Road",
     corridor: "Direct township arterial access with zero highway toll or border friction",
     demographicFocus:
       "Township families, active professionals, and senior residents seeking same-day executive check-ups and immediate emergency triage.",
     body: [
-      "Indirapuram serves as the clinical headquarters of Dr. Manish Aggarwal's cardiovascular practice. As Director of Interventional Cardiology & Structural Heart Specialist at Yashoda Medicity, Dr. Aggarwal directs a round-the-clock emergency angioplasty programme situated within immediate reach of every major residential society in the township — from Shipra Suncity and Windsor Park to Orange County, Cloud 9, and ATS Advantage. There is no Delhi border gridlock, no cross-city detour, and zero time lost navigating slow expressway traffic.",
-      "In acute myocardial infarction (heart attack), myocardial tissue viability decreases every passing minute. Door-to-balloon times under 90 minutes represent the definitive metric separating complete myocardial recovery from permanent, irreversible heart failure. Indirapuram residents reach Yashoda Medicity's specialized hybrid cath lab faster than virtually any other residential community in Delhi NCR — a proximity advantage that is decisively life-saving.",
+      "Indirapuram serves as the clinical headquarters of Dr. Manish Aggarwal's cardiovascular practice. As Director of Interventional Cardiology & Structural Heart Specialist at Yashoda Medicity, Dr. Aggarwal directs a round-the-clock emergency angioplasty programme situated within immediate reach of every major residential society in the township, covering Shipra Suncity, Windsor Park, Orange County, Cloud 9, and ATS Advantage. There is no Delhi border gridlock, no cross-city detour, and zero time lost navigating slow expressway traffic.",
+      "In acute myocardial infarction (heart attack), myocardial tissue viability decreases every passing minute. Door-to-balloon times under 90 minutes represent the definitive metric separating complete myocardial recovery from permanent, irreversible heart failure. Indirapuram residents reach Yashoda Medicity's specialized hybrid cath lab faster than virtually any other residential community in Delhi NCR, a proximity advantage that is decisively life-saving.",
       "Beyond acute emergency care, our Indirapuram outpatient clinic is tailored to the exact rhythm of local life: early-morning appointments for corporate executives commuting to Noida and Central Delhi, relaxed weekend consultations for multi-generational families, and rapid same-day 2D Echocardiography, CT Calcium Scoring, and TMT testing for walk-in residents.",
     ],
     landmarks: [
@@ -66,9 +66,9 @@ export const locations: Location[] = [
     keywords:
       "best cardiologist in Indirapuram, heart specialist Yashoda Medicity, TAVI Indirapuram, emergency angioplasty Indirapuram, Dr Manish Aggarwal cardiologist",
     cta: "Schedule an Indirapuram Consultation",
-    metaTitle: "Best Cardiologist in Indirapuram — Dr. Manish Aggarwal | Yashoda Medicity",
+    metaTitle: "Best Cardiologist in Indirapuram | Dr. Manish Aggarwal | Yashoda Medicity",
     metaDescription:
-      "Director of Interventional Cardiology at Yashoda Medicity, Indirapuram. 24×7 emergency angioplasty, TAVI, and structural heart care — 5 minutes from Shipra Suncity, Windsor Park, and Orange County.",
+      "Director of Interventional Cardiology at Yashoda Medicity, Indirapuram. 24×7 emergency angioplasty, TAVI, and structural heart care, located 5 minutes from Shipra Suncity, Windsor Park, and Orange County.",
     reassuranceNote:
       "Emergency cardiac triage is available 24/7/365 at Yashoda Medicity, Indirapuram. Code STEMI cath lab activations occur directly upon emergency arrival.",
     faqs: [
@@ -99,13 +99,13 @@ export const locations: Location[] = [
     positioning: "The 10-Minute Advantage",
     hero: "Skip the Delhi-UP border bottlenecks. Reach a quaternary cath lab in ten minutes flat.",
     intro:
-      "Vaishali sits at one of the busiest medical crossroads in NCR — where discerning residents deserve more than a packed corporate waiting room at the border.",
+      "Vaishali sits at one of the busiest medical crossroads in NCR, where discerning residents deserve more than a packed corporate waiting room at the border.",
     transitTime: "7 to 10 Minutes via Madan Mohan Malviya Marg & Elevated Link Road",
     corridor: "Elevated bypass directly linking Vaishali Sectors 1–5 to Indirapuram",
     demographicFocus:
       "Delhi-working senior civil servants, corporate leaders, and aging joint families seeking compassionate, unhurried cardiac care.",
     body: [
-      "From Vaishali Sectors 1 through 5, the elevated corridor delivers patients to Yashoda Medicity, Indirapuram in under ten minutes — substantially faster than battling the persistent Delhi-UP border traffic towards Anand Vihar or Patparganj. For residents near Vaishali Metro Station and Mahagun Metro Mall, this 10-minute transit advantage transforms what is clinically possible during an acute cardiac crisis.",
+      "From Vaishali Sectors 1 through 5, the elevated corridor delivers patients to Yashoda Medicity, Indirapuram in under ten minutes, substantially faster than battling the persistent Delhi-UP border traffic towards Anand Vihar or Patparganj. For residents near Vaishali Metro Station and Mahagun Metro Mall, this 10-minute transit advantage transforms what is clinically possible during an acute cardiac crisis.",
       "Dr. Manish Aggarwal's clinical ethos is built on Radical Honesty: objective diagnostic clarity, zero commercial pressure to place stents, and formal written second opinions. Vaishali residents who have grown exhausted by impersonal, high-turnover border corporate hospitals consistently appreciate Dr. Aggarwal's transparent, unhurried bedside manner.",
       "The quick transit via Madan Mohan Malviya Marg simplifies chronic disease follow-ups: blood work, Holter monitoring, stress echocardiograms, and pacemaker telemetry checks can be completed seamlessly without sacrificing half a workday in transit.",
     ],
@@ -120,7 +120,7 @@ export const locations: Location[] = [
     keywords:
       "top cardiologist in Vaishali Ghaziabad, heart doctor near Vaishali Metro, cardiologist near Mahagun Metro Mall, TAVI specialist Vaishali",
     cta: "Book a Vaishali-Area Consultation",
-    metaTitle: "Top Cardiologist in Vaishali Ghaziabad — Dr. Manish Aggarwal",
+    metaTitle: "Top Cardiologist in Vaishali Ghaziabad | Dr. Manish Aggarwal",
     metaDescription:
       "Heart specialist for Vaishali Sectors 1–5. 7–10 minutes from Vaishali Metro to Yashoda Medicity via the elevated corridor. European-trained interventional cardiologist.",
     reassuranceNote:
@@ -148,7 +148,7 @@ export const locations: Location[] = [
     name: "Vasundhara",
     tagline: "The Residential Legacy",
     positioning: "Multi-Generational Family Trust",
-    hero: "A cardiologist your parents — and their parents — can trust for decades.",
+    hero: "A cardiologist your parents and their parents can trust for decades.",
     intro:
       "Vasundhara's established sectors represent proud, multi-generational households whose cardiovascular care demands deep clinical continuity.",
     transitTime: "6 to 8 Minutes via Atal Chowk & CISF Road",
@@ -156,7 +156,7 @@ export const locations: Location[] = [
     demographicFocus:
       "Multi-generational families, retired PSU/defense officers, and working couples balancing aging parents' care with career demands.",
     body: [
-      "In the established sectors of Vasundhara — Sectors 10, 12, 13, 15, and 16 around Atal Chowk and Mewar Institute — cardiovascular health is fundamentally a family responsibility. From managing resistant hypertension and diabetic microvascular disease in grandparents to proactive lipid subfractionation in working parents, Dr. Manish Aggarwal provides unified family cardiac stewardship.",
+      "In the established sectors of Vasundhara, particularly around Atal Chowk and Mewar Institute, cardiovascular health is fundamentally a family responsibility. From managing resistant hypertension and diabetic microvascular disease in grandparents to proactive lipid subfractionation in working parents, Dr. Manish Aggarwal provides unified family cardiac stewardship.",
       "Dr. Aggarwal’s preventive heart clinic consolidates diagnostics into a single cohesive morning: high-resolution echocardiography, treadmill stress testing, coronary calcium scoring, and advanced biomarker mapping (ApoB, Lp(a)). Patients receive a definitive, written longevity roadmap with zero unnecessary prescription bloat.",
       "Long-time Vasundhara residents choose Dr. Aggarwal because his practice reflects the neighborhood's enduring values: dignified, scientifically rigorous, conservative, and transparent.",
     ],
@@ -171,7 +171,7 @@ export const locations: Location[] = [
     keywords:
       "heart specialist in Vasundhara, cardiac checkup Vasundhara Ghaziabad, preventive cardiology Vasundhara, best heart doctor Sector 12 Vasundhara",
     cta: "Request a Vasundhara Family Review",
-    metaTitle: "Heart Specialist in Vasundhara — Dr. Manish Aggarwal | Yashoda Medicity",
+    metaTitle: "Heart Specialist in Vasundhara | Dr. Manish Aggarwal | Yashoda Medicity",
     metaDescription:
       "Trusted cardiologist for Vasundhara Sectors 10, 12, 15 & Olive County. Preventive heart check-ups, pacemaker care, and complex interventions minutes away at Yashoda Medicity.",
     reassuranceNote:
@@ -210,7 +210,7 @@ export const locations: Location[] = [
     body: [
       "Kaushambi's luxury high-rises sit a short, clean drive from Yashoda Medicity's private executive suites. Designed for patients who value discretion, private single-room recovery, and direct senior-consultant oversight at every clinical stage, Dr. Manish Aggarwal's unit delivers an elevated standard of inpatient and outpatient care.",
       "For HNI families accustomed to weighing AIIMS or South Delhi private chains, the Kaushambi-to-Indirapuram route represents an intelligent, traffic-free alternative. Instead of losing two hours traversing the Ring Road to Saket or Okhla, residents reach our advanced cath lab in just 10 minutes via Link Road.",
-      "Dr. Aggarwal provides European-standard structural heart interventions — including TAVR, MitraClip, and left atrial appendage closure — backed by the Gottsegen György Hungarian Institute of Cardiology fellowship pedigree.",
+      "Dr. Aggarwal provides European-standard structural heart interventions, including TAVR, MitraClip, and left atrial appendage closure, backed by the Gottsegen György Hungarian Institute of Cardiology fellowship pedigree.",
     ],
     landmarks: [
       "Anand Vihar ISBT",
@@ -223,7 +223,7 @@ export const locations: Location[] = [
     keywords:
       "best heart doctor Kaushambi, cardiologist near Anand Vihar, premium cardiac care Kaushambi, TAVI specialist Delhi UP border",
     cta: "Schedule a Kaushambi Consultation",
-    metaTitle: "Best Heart Doctor in Kaushambi — Dr. Manish Aggarwal",
+    metaTitle: "Best Heart Doctor in Kaushambi | Dr. Manish Aggarwal",
     metaDescription:
       "Premium cardiac care for Kaushambi residents. Private executive suites, structural heart expertise, and a refined alternative to South Delhi hospitals.",
     reassuranceNote:
@@ -275,7 +275,7 @@ export const locations: Location[] = [
     keywords:
       "cardiologist Noida Sector 62, best heart specialist near Electronic City, precision stenting Noida, executive heart checkup Sector 62 Noida",
     cta: "Book a Precision Cardiac Screen",
-    metaTitle: "Cardiologist in Noida Sector 62 — Dr. Manish Aggarwal | Yashoda Medicity",
+    metaTitle: "Cardiologist in Noida Sector 62 | Dr. Manish Aggarwal | Yashoda Medicity",
     metaDescription:
       "Precision cardiac screening and IVUS/OCT-guided stenting for Sector 62's tech professionals. 6 minutes from Electronic City Metro to Yashoda Medicity.",
     reassuranceNote:
@@ -326,7 +326,7 @@ export const locations: Location[] = [
     keywords:
       "heart doctor near Cleo County, cardiologist Noida Extension border, TAVI MitraClip Noida 121, best heart specialist Sector 122 Noida",
     cta: "Consult our Structural Heart Specialist",
-    metaTitle: "Heart Doctor near Cleo County, Noida 121/122 — Dr. Manish Aggarwal",
+    metaTitle: "Heart Doctor near Cleo County, Noida 121/122 | Dr. Manish Aggarwal",
     metaDescription:
       "European-trained structural heart specialist for residents of Cleo County, Ajnara Homes, and Homes 121. TAVI, MitraClip, and leadless pacemakers for parents.",
     reassuranceNote:
@@ -378,7 +378,7 @@ export const locations: Location[] = [
     keywords:
       "best cardiologist in Crossing Republik, heart specialist GH-7, emergency cardiac care Crossing Republik, primary angioplasty NH24",
     cta: "Secure a Township Consultation",
-    metaTitle: "Best Cardiologist in Crossing Republik — Dr. Manish Aggarwal",
+    metaTitle: "Best Cardiologist in Crossing Republik | Dr. Manish Aggarwal",
     metaDescription:
       "24×7 emergency cardiac care, primary angioplasty, and pacemaker specialist for Crossing Republik. 12 minutes via NH-9 to Yashoda Medicity, Indirapuram.",
     reassuranceNote:
@@ -414,7 +414,7 @@ export const locations: Location[] = [
     demographicFocus:
       "Young fitness enthusiasts, sports club members, and newly relocated families seeking top-tier clinical authority.",
     body: [
-      "From Migsun Roof, VVIP Style Mall, River Heights, and societies near the BCCI cricket stadium site, the Hindon Elevated Road delivers patients straight to Yashoda Medicity's doorstep in approximately 12 to 14 minutes — far faster and safer than navigating inner Ghaziabad congestion.",
+      "From Migsun Roof, VVIP Style Mall, River Heights, and societies near the BCCI cricket stadium site, the Hindon Elevated Road delivers patients straight to Yashoda Medicity's doorstep in approximately 12 to 14 minutes, far faster and safer than navigating inner Ghaziabad congestion.",
       "Dr. Manish Aggarwal’s primary angioplasty program runs 24 hours a day with door-to-balloon benchmarks that consistently beat international guidelines. In a corridor with an active demographic that skews young and fitness-conscious, sudden heart attacks can be unexpected; having immediate access to a European-trained interventional director preserves long-term myocardial pumping capacity.",
       "Additionally, RNE runners, marathoners, and gym enthusiasts increasingly utilize our outpatient clinic for pre-athletic cardiac screenings, stress echocardiograms, and lipid subfractionation to identify subclinical cardiovascular risk factors before entering intense training regimes.",
     ],
@@ -429,7 +429,7 @@ export const locations: Location[] = [
     keywords:
       "top heart specialist Raj Nagar Extension, emergency cardiologist Ghaziabad, RNE cardiac care, sports cardiology Ghaziabad",
     cta: "Consult Dr. Aggarwal from RNE",
-    metaTitle: "Top Heart Specialist in Raj Nagar Extension — Dr. Manish Aggarwal",
+    metaTitle: "Top Heart Specialist in Raj Nagar Extension | Dr. Manish Aggarwal",
     metaDescription:
       "24×7 emergency cardiac care for Raj Nagar Extension via the Hindon Elevated Road. Door-to-balloon under 90 minutes at Yashoda Medicity, Indirapuram.",
     reassuranceNote:
@@ -481,7 +481,7 @@ export const locations: Location[] = [
     keywords:
       "heart doctor Sahibabad, best cardiologist near Sahibabad Railway Station, complex coronary rotablation Sahibabad, bypass second opinion Ghaziabad",
     cta: "Book an Expert Second Opinion",
-    metaTitle: "Heart Doctor in Sahibabad — Dr. Manish Aggarwal | Yashoda Medicity",
+    metaTitle: "Heart Doctor in Sahibabad | Dr. Manish Aggarwal | Yashoda Medicity",
     metaDescription:
       "Twenty-eight years of complex coronary expertise for Sahibabad's industrial families. Rotablation, CTO revascularization, and honest second opinions.",
     reassuranceNote:
@@ -511,7 +511,7 @@ export const locations: Location[] = [
     positioning: "Comprehensive Multi-Generational Cardiology",
     hero: "One trusted interventional cardiologist for grandparents, parents, and children.",
     intro:
-      "In Pratap Vihar and Siddhartha Vihar, multi-generational households are the norm — and families value a doctor who can treat three generations under one roof.",
+      "In Pratap Vihar and Siddhartha Vihar, multi-generational households are the norm, and families value a doctor who can treat three generations under one roof.",
     transitTime: "10 to 12 Minutes via CISF Road / NH-9 Connector",
     corridor: "Smooth bypass connection around New Ghaziabad Railway Station into Indirapuram",
     demographicFocus:
@@ -532,7 +532,7 @@ export const locations: Location[] = [
     keywords:
       "best cardiologist Pratap Vihar Ghaziabad, heart specialist near Santosh Hospital, family cardiologist Ghaziabad, Siddhartha Vihar heart doctor",
     cta: "Request a Pratap Vihar Consultation",
-    metaTitle: "Best Cardiologist in Pratap Vihar Ghaziabad — Dr. Manish Aggarwal",
+    metaTitle: "Best Cardiologist in Pratap Vihar Ghaziabad | Dr. Manish Aggarwal",
     metaDescription:
       "Comprehensive multi-generational cardiac care for Pratap Vihar and Siddhartha Vihar. Valve repair, complex coronary work, and preventive heart check-ups.",
     reassuranceNote:
@@ -584,7 +584,7 @@ export const locations: Location[] = [
     keywords:
       "cardiologist Mayur Vihar Delhi, best heart doctor Mayur Vihar Phase 1, TAVI specialist East Delhi, bypass second opinion Mayur Vihar",
     cta: "Schedule an East Delhi Consultation",
-    metaTitle: "Best Cardiologist for Mayur Vihar Delhi — Dr. Manish Aggarwal",
+    metaTitle: "Best Cardiologist for Mayur Vihar Delhi | Dr. Manish Aggarwal",
     metaDescription:
       "12 signal-free minutes via Delhi-Meerut Expressway from Mayur Vihar Phases 1, 2 & 3 to Yashoda Medicity. European TAVI, MitraClip, and complex coronary care.",
     reassuranceNote:
@@ -620,7 +620,7 @@ export const locations: Location[] = [
     demographicFocus:
       "Cooperative society residents, retired professionals, and working families seeking unconflicted second opinions and precision stenting.",
     body: [
-      "While Patparganj hosts several prominent corporate healthcare facilities, many residents in IP Extension societies have experienced the pressure of high-volume commercial cardiology — where surgical bypass or multi-stent interventions are urgently pushed without adequate explanation. Dr. Manish Aggarwal offers a refreshingly transparent, patient-centric environment.",
+      "While Patparganj hosts several prominent corporate healthcare facilities, many residents in IP Extension societies have experienced the pressure of high-volume commercial cardiology, where surgical bypass or multi-stent interventions are urgently pushed without adequate explanation. Dr. Manish Aggarwal offers a refreshingly transparent, patient-centric environment.",
       "Located just a 12-minute drive via the Gazipur bypass into Indirapuram, Yashoda Medicity provides state-of-the-art cath lab infrastructure combined with Dr. Aggarwal's 28 years of clinical integrity. Stenting is performed only when functionally verified by Fractional Flow Reserve (FFR) or high-definition intravascular imaging (IVUS/OCT).",
       "For seniors managing severe heart failure or valvular decline, our European-standard structural heart program delivers transcatheter aortic and mitral repairs with zero sternotomy, allowing patients to preserve their vitality and independence.",
     ],
@@ -635,7 +635,7 @@ export const locations: Location[] = [
     keywords:
       "best cardiologist Patparganj, heart specialist IP Extension, avoid unnecessary stent Patparganj, TAVR doctor East Delhi",
     cta: "Request an IP Extension Review",
-    metaTitle: "Best Cardiologist for Patparganj & IP Extension — Dr. Manish Aggarwal",
+    metaTitle: "Best Cardiologist for Patparganj & IP Extension | Dr. Manish Aggarwal",
     metaDescription:
       "Transparent, European-trained cardiology for Patparganj & IP Extension. 12 minutes via NH-9 to Yashoda Medicity. Honest second opinions and precision stenting.",
     reassuranceNote:
@@ -686,7 +686,7 @@ export const locations: Location[] = [
     keywords:
       "cardiologist Anand Vihar, heart specialist Surajmal Vihar, emergency angioplasty Anand Vihar, best heart hospital near Anand Vihar",
     cta: "Schedule an Anand Vihar Consultation",
-    metaTitle: "Best Cardiologist near Anand Vihar Delhi — Dr. Manish Aggarwal",
+    metaTitle: "Best Cardiologist near Anand Vihar Delhi | Dr. Manish Aggarwal",
     metaDescription:
       "10 minutes from Anand Vihar, Surajmal Vihar, and Shreshtha Vihar to Yashoda Medicity. 24×7 emergency angioplasty, TAVI, and rotablation by Dr. Manish Aggarwal.",
     reassuranceNote:
@@ -723,7 +723,7 @@ export const locations: Location[] = [
     demographicFocus:
       "Established traders, chartered accountants, legal professionals, and multi-generational business leaders managing cardiometabolic stress.",
     body: [
-      "The prominent colonies flanking Vikas Marg — Preet Vihar, Swasthya Vihar, Gagan Vihar, and Nirman Vihar — represent the commercial backbone of East Delhi. Long hours, high-stress trade cycles, and rich diets frequently combine to cause premature coronary artery disease, silent dyslipidemia, and sudden cardiac episodes.",
+      "The prominent colonies flanking Vikas Marg (Preet Vihar, Swasthya Vihar, Gagan Vihar, and Nirman Vihar) represent the commercial backbone of East Delhi. Long hours, high-stress trade cycles, and rich diets frequently combine to cause premature coronary artery disease, silent dyslipidemia, and sudden cardiac episodes.",
       "Dr. Manish Aggarwal provides Preet Vihar families with authoritative clinical counsel backed by 28 years of experience and over 12,500 cardiac interventions. When blockages are identified, Dr. Aggarwal utilizes optical coherence tomography (OCT) to deploy ultra-thin drug-eluting stents with millimetric precision.",
       "For patients told that multiple blockages require open-heart bypass surgery, Dr. Aggarwal’s Radically Honest second opinion protocol evaluates whether modern percutaneous techniques (including rotablation and bifurcation stenting) can achieve complete revascularization without opening the chest.",
     ],
@@ -738,7 +738,7 @@ export const locations: Location[] = [
     keywords:
       "cardiologist Preet Vihar Delhi, heart doctor Vikas Marg, bypass second opinion Preet Vihar, executive heart checkup East Delhi",
     cta: "Book a Preet Vihar Consultation",
-    metaTitle: "Best Cardiologist for Preet Vihar Delhi — Dr. Manish Aggarwal",
+    metaTitle: "Best Cardiologist for Preet Vihar Delhi | Dr. Manish Aggarwal",
     metaDescription:
       "15 minutes via Vikas Marg to Yashoda Medicity, Indirapuram. 28 years of clinical mastery, European structural heart fellowship, and honest second opinions.",
     reassuranceNote:
@@ -790,7 +790,7 @@ export const locations: Location[] = [
     keywords:
       "cardiologist Shahdara Delhi, heart specialist GT Road, rotablation cardiologist Shahdara, diabetic heart disease specialist East Delhi",
     cta: "Schedule a Shahdara Consultation",
-    metaTitle: "Best Cardiologist for Shahdara Delhi — Dr. Manish Aggarwal",
+    metaTitle: "Best Cardiologist for Shahdara Delhi | Dr. Manish Aggarwal",
     metaDescription:
       "Advanced complex coronary angioplasty, rotablation, and structural heart care for Shahdara families. 18 minutes to Yashoda Medicity, Indirapuram.",
     reassuranceNote:
@@ -841,7 +841,7 @@ export const locations: Location[] = [
     keywords:
       "cardiologist Govindpuram Ghaziabad, heart doctor Hapur Road, emergency angioplasty Govindpuram, TAVI specialist Eastern Ghaziabad",
     cta: "Book a Govindpuram Consultation",
-    metaTitle: "Best Cardiologist for Govindpuram Ghaziabad — Dr. Manish Aggarwal",
+    metaTitle: "Best Cardiologist for Govindpuram Ghaziabad | Dr. Manish Aggarwal",
     metaDescription:
       "Tertiary cardiac care, 24×7 emergency angioplasty, and TAVI for Govindpuram & Hapur Road. 20 minutes via DME to Yashoda Medicity, Indirapuram.",
     reassuranceNote:
@@ -878,7 +878,7 @@ export const locations: Location[] = [
     demographicFocus:
       "Villa owners, senior tech executives, entrepreneurs, and young families in India's premier integrated hi-tech smart city.",
     body: [
-      "Residents of Wave City — spanning Kingstown Park, Dream Homes, and the luxury villa sectors along the Delhi-Meerut Expressway — enjoy one of the cleanest transit routes in the national capital region. A straight, signal-free 10-minute drive delivers patients to Yashoda Medicity's state-of-the-art medical center in Indirapuram.",
+      "Residents of Wave City, spanning Kingstown Park, Dream Homes, and the luxury villa sectors along the Delhi-Meerut Expressway, enjoy one of the cleanest transit routes in the national capital region. A straight, signal-free 10-minute drive delivers patients to Yashoda Medicity's state-of-the-art medical center in Indirapuram.",
       "Dr. Manish Aggarwal’s cardiovascular practice matches the progressive ethos of Wave City. Using optical coherence tomography (OCT) and intravascular ultrasound (IVUS), coronary stenting is elevated to a science of millimetric certainty. Furthermore, his Executive Heart Check-Up moves beyond obsolete treadmill tests to quantify soft plaque through CT Calcium Scoring and advanced lipidomics (ApoB and Lp(a)).",
       "For acute chest pain emergencies, Wave City residents reach our 24/7 catheterization team faster than residents living within crowded inner-city sectors, ensuring immediate door-to-balloon reperfusion when every second counts.",
     ],
@@ -893,7 +893,7 @@ export const locations: Location[] = [
     keywords:
       "cardiologist Wave City Ghaziabad, heart specialist NH24 Wave City, executive heart audit Wave City, emergency angioplasty Wave City",
     cta: "Schedule a Wave City Consultation",
-    metaTitle: "Best Cardiologist for Wave City Ghaziabad — Dr. Manish Aggarwal",
+    metaTitle: "Best Cardiologist for Wave City Ghaziabad | Dr. Manish Aggarwal",
     metaDescription:
       "10 minutes via Delhi-Meerut Expressway from Wave City to Yashoda Medicity. Precision OCT angioplasty, executive heart checks, and European TAVI care.",
     reassuranceNote:
@@ -944,7 +944,7 @@ export const locations: Location[] = [
     keywords:
       "cardiologist Lal Kuan Ghaziabad, heart specialist Bulandshahr Road, emergency angioplasty Lal Kuan, rotablation cardiologist Ghaziabad",
     cta: "Consult Dr. Aggarwal from Lal Kuan",
-    metaTitle: "Best Cardiologist for Lal Kuan Ghaziabad — Dr. Manish Aggarwal",
+    metaTitle: "Best Cardiologist for Lal Kuan Ghaziabad | Dr. Manish Aggarwal",
     metaDescription:
       "24×7 emergency angioplasty and complex rotablation for Lal Kuan & Bulandshahr Road. 12 minutes via NH-9 to Yashoda Medicity, Indirapuram.",
     reassuranceNote:
@@ -995,7 +995,7 @@ export const locations: Location[] = [
     keywords:
       "cardiologist Greater Noida West, best heart doctor Noida Extension, TAVI specialist Gaur City, emergency angioplasty Noida Extension",
     cta: "Schedule a Noida Extension Consultation",
-    metaTitle: "Best Cardiologist in Greater Noida West (Noida Extension) — Dr. Manish Aggarwal",
+    metaTitle: "Best Cardiologist in Greater Noida West (Noida Extension) | Dr. Manish Aggarwal",
     metaDescription:
       "Top interventional cardiologist for Gaur City & Greater Noida West. 12 minutes to Yashoda Medicity. TAVI, MitraClip, 24×7 angioplasty, and honest second opinions.",
     reassuranceNote:
@@ -1033,7 +1033,7 @@ export const locations: Location[] = [
     body: [
       "Noida Sector 50, home to prestigious residential complexes like Mahagun Maestro, Alok Vihar, and Meghdootam Park, represents one of Noida’s most refined, established neighborhoods. Residents here prioritize exceptional clinical credentials, dedicated consultant time, and private, comfortable hospital surroundings.",
       "Dr. Manish Aggarwal’s structural heart practice provides an ideal clinical sanctuary for Sector 50 families. Having completed his European fellowship at the Gottsegen György Hungarian Institute of Cardiology in Budapest, Dr. Aggarwal delivers world-class transcatheter valve replacement (TAVI/TAVR) and edge-to-edge repair (MitraClip) without the trauma of open-heart surgery.",
-      "For patients suffering from electrical conduction disorders or heart failure, Dr. Aggarwal implants the revolutionary Medtronic Micra leadless pacemaker — 93% smaller than traditional devices, placed directly into the heart chamber with zero chest incisions or visible subcutaneous lumps.",
+      "For patients suffering from electrical conduction disorders or heart failure, Dr. Aggarwal implants the revolutionary Medtronic Micra leadless pacemaker, 93% smaller than traditional devices, placed directly into the heart chamber with zero chest incisions or visible subcutaneous lumps.",
     ],
     landmarks: [
       "Meghdootam Park",
@@ -1046,7 +1046,7 @@ export const locations: Location[] = [
     keywords:
       "cardiologist Noida Sector 50, best heart specialist Central Noida, TAVI doctor Sector 50 Noida, leadless pacemaker Noida",
     cta: "Schedule a Sector 50 Consultation",
-    metaTitle: "Top Cardiologist in Noida Sector 50 — Dr. Manish Aggarwal",
+    metaTitle: "Top Cardiologist in Noida Sector 50 | Dr. Manish Aggarwal",
     metaDescription:
       "Bespoke cardiovascular and structural heart care for Noida Sector 50. European-trained TAVI, MitraClip, and leadless Micra pacemakers at Yashoda Medicity.",
     reassuranceNote:
@@ -1098,7 +1098,7 @@ export const locations: Location[] = [
     keywords:
       "cardiologist Noida Sector 18, executive heart checkup Noida, heart specialist DLF Mall of India, precision angioplasty Noida Sector 18",
     cta: "Book an Executive Longevity Audit",
-    metaTitle: "Best Cardiologist near Noida Sector 18 — Dr. Manish Aggarwal",
+    metaTitle: "Best Cardiologist near Noida Sector 18 | Dr. Manish Aggarwal",
     metaDescription:
       "Executive cardiac longevity audits and OCT-guided precision stenting for Sector 18 founders and business leaders. 14 minutes to Yashoda Medicity.",
     reassuranceNote:
@@ -1134,7 +1134,7 @@ export const locations: Location[] = [
     demographicFocus:
       "Established suburban families, retired educators, and professionals seeking quiet, consistent cardiac oversight.",
     body: [
-      "The quieter residential sectors of Vasundhara Extension — including Sectors 1, 2, 3, and 4 flanking the Hindon Canal — offer a peaceful community setting while sitting right on the doorstep of Yashoda Medicity, Indirapuram. For local families, reaching our quaternary cath lab takes barely five minutes.",
+      "The quieter residential sectors of Vasundhara Extension, including Sectors 1, 2, 3, and 4 flanking the Hindon Canal, offer a peaceful community setting while sitting right on the doorstep of Yashoda Medicity, Indirapuram. For local families, reaching our quaternary cath lab takes barely five minutes.",
       "Dr. Manish Aggarwal provides complete neighborhood cardiology services: chronic hypertension stabilization, post-stent medication management, pacemaker tele-monitoring, and comprehensive family check-ups. Having an internationally trained director as a close neighbor provides immense peace of mind.",
       "For complex conditions requiring rotablation, CTO crossing, or valve repair, local patients benefit from seamless continuity: outpatient consultations, procedure execution, and post-discharge recovery all occur in their own neighborhood without traveling into Delhi.",
     ],
@@ -1149,7 +1149,7 @@ export const locations: Location[] = [
     keywords:
       "cardiologist Vasundhara Sector 1, heart specialist Sector 4 Vasundhara, family cardiologist Vasundhara Extension, emergency heart care near Canal Road",
     cta: "Schedule a Neighborhood Consultation",
-    metaTitle: "Heart Doctor in Vasundhara Extension — Dr. Manish Aggarwal",
+    metaTitle: "Heart Doctor in Vasundhara Extension | Dr. Manish Aggarwal",
     metaDescription:
       "Dedicated cardiac care for Vasundhara Sectors 1, 2, 3 & 4. 5 minutes via the Canal Bridge to Yashoda Medicity. Honest, experienced interventional cardiology.",
     reassuranceNote:
@@ -1179,7 +1179,7 @@ export const locations: Location[] = [
     positioning: "Emergency Highway Lifeline",
     hero: "Rapid transit from Ghaziabad's busiest transit junction to an accredited 24/7 cath lab.",
     intro:
-      "Mohan Nagar connects commuters, industrialists, and families across Western UP — and requires an emergency cardiac lifeline that never sleeps.",
+      "Mohan Nagar connects commuters, industrialists, and families across Western UP, requiring an emergency cardiac lifeline that never sleeps.",
     transitTime: "10 to 14 Minutes via Link Road / CISF Corridor",
     corridor: "High-capacity north-south arterial corridor linking GT Road to Indirapuram",
     demographicFocus:
@@ -1200,7 +1200,7 @@ export const locations: Location[] = [
     keywords:
       "cardiologist Mohan Nagar Ghaziabad, heart specialist near World Square Mall, emergency angioplasty Mohan Nagar, best heart hospital GT Road",
     cta: "Consult Dr. Aggarwal from Mohan Nagar",
-    metaTitle: "Best Cardiologist for Mohan Nagar Ghaziabad — Dr. Manish Aggarwal",
+    metaTitle: "Best Cardiologist for Mohan Nagar Ghaziabad | Dr. Manish Aggarwal",
     metaDescription:
       "24×7 emergency angioplasty and complex heart interventions for Mohan Nagar & World Square Mall. 12 minutes via Link Road to Yashoda Medicity.",
     reassuranceNote:
@@ -1251,7 +1251,7 @@ export const locations: Location[] = [
     keywords:
       "cardiologist Loni Ghaziabad, heart doctor Tronica City, rotablation specialist Loni, emergency heart care Northeast Delhi border",
     cta: "Schedule a Consultation from Loni",
-    metaTitle: "Best Cardiologist for Loni & Tronica City — Dr. Manish Aggarwal",
+    metaTitle: "Best Cardiologist for Loni & Tronica City | Dr. Manish Aggarwal",
     metaDescription:
       "Advanced complex coronary angioplasty, rotablation, and structural heart care for Loni & Tronica City. 22 minutes to Yashoda Medicity, Indirapuram.",
     reassuranceNote:
@@ -1302,7 +1302,7 @@ export const locations: Location[] = [
     keywords:
       "cardiologist Modinagar, best heart doctor Muradnagar, TAVI specialist Western UP, bypass second opinion Modinagar, heart hospital Delhi Meerut Expressway",
     cta: "Book a Western UP Consultation",
-    metaTitle: "Best Cardiologist for Modinagar & Western UP — Dr. Manish Aggarwal",
+    metaTitle: "Best Cardiologist for Modinagar & Western UP | Dr. Manish Aggarwal",
     metaDescription:
       "25 minutes via Delhi-Meerut Expressway from Modinagar to Yashoda Medicity, Indirapuram. European TAVI valve replacements, rotablation, and honest second opinions.",
     reassuranceNote:

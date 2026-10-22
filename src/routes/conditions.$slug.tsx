@@ -165,7 +165,7 @@ export const Route = createFileRoute("/conditions/$slug")({
   },
   head: ({ loaderData }) => {
     const c = loaderData?.cond;
-    if (!c) return { meta: [{ title: `Condition — ${siteConfig.name}` }] };
+    if (!c) return { meta: [{ title: `Condition | ${siteConfig.name}` }] };
     const url = `${siteConfig.siteUrl}/conditions/${c.slug}`;
 
     const schemas: Record<string, unknown>[] = [
@@ -429,7 +429,7 @@ function ConditionDetailPage() {
                   </blockquote>
                   {sec.callout.attribution && (
                     <figcaption className="mt-3 text-xs font-semibold tracking-wider text-muted-foreground uppercase not-italic">
-                      — {sec.callout.attribution}
+                      · {sec.callout.attribution}
                     </figcaption>
                   )}
                 </figure>

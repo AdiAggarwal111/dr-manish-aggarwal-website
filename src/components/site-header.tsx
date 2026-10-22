@@ -65,7 +65,7 @@ export const SiteHeader = memo(function SiteHeader() {
           </span>
         </Link>
 
-        {/* Desktop Navigation — Responsive gap & emergency helpline */}
+        {/* Desktop Navigation: Responsive gap & emergency helpline */}
         <nav
           aria-label="Main Navigation"
           className="hidden items-center gap-3.5 lg:gap-5 xl:gap-6 md:flex"

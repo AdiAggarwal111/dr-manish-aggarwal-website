@@ -167,7 +167,7 @@ export const conditions: Condition[] = [
         bullets: [
           "Angina Onset: ~50% mortality within 5 years without valve intervention.",
           "Syncope Onset: ~50% mortality within 3 years due to critical cerebral hypoperfusion.",
-          "Dyspnea & Congestive Failure: ~50% mortality within 1.5 to 2 years—a prognosis worse than lung or colon cancer.",
+          "Dyspnea & Congestive Failure: ~50% mortality within 1.5 to 2 years, a prognosis worse than lung or colon cancer.",
         ],
       },
       {
@@ -416,7 +416,7 @@ export const conditions: Condition[] = [
     heroBadge: "Acute Coronary Syndromes · 24/7 Emergency STEMI Triage",
     prevalence:
       "Over 2.5 million Indians suffer heart attacks annually; tragically, over 50% succumb before reaching an emergency catheterization facility.",
-    urgencyLevel: "CRITICAL 24/7 EMERGENCY — Immediate Door-to-Balloon Catheterization Required.",
+    urgencyLevel: "CRITICAL 24/7 EMERGENCY: Immediate Door-to-Balloon Catheterization Required.",
     keyStats: [
       {
         label: "Door-to-Balloon Standard",
@@ -682,7 +682,7 @@ export const conditions: Condition[] = [
         heading: "Complete Heart Block (CHB) vs. Sick Sinus Syndrome: Clinical Distinctions",
         paragraphs: [
           "Third-Degree or Complete Heart Block (CHB) represents total electrical dissociation: no atrial impulses reach the ventricles. The atria beat at their normal rate (60–80 BPM) while the ventricles beat at their own sluggish, independent escape rate (30–40 BPM). CHB carries a severe risk of sudden ventricular asystole (cardiac arrest) and requires urgent permanent pacemaker implantation.",
-          "Sick Sinus Syndrome (SSS), by contrast, is characterized by sinus node dysfunction—manifesting as sinus pauses, profound bradycardia, or alternating fast and slow rhythms (Tachy-Brady syndrome). Patients often complain of debilitating exhaustion, fainting, and sudden heart palpitations.",
+          "Sick Sinus Syndrome (SSS), by contrast, is characterized by sinus node dysfunction, manifesting as sinus pauses, profound bradycardia, or alternating fast and slow rhythms (Tachy-Brady syndrome). Patients often complain of debilitating exhaustion, fainting, and sudden heart palpitations.",
         ],
       },
       {
@@ -752,7 +752,7 @@ export const conditions: Condition[] = [
     shortTitle: "Left Main & Bifurcation (LMCA)",
     subtitle: "Percutaneous LMCA Stenting (DK-Crush) vs. Open-Chest CABG Bypass Surgery",
     summary:
-      "The Left Main Coronary Artery supplies over 75% of the left ventricle's blood flow. Once considered an exclusive indication for open-heart bypass surgery, modern IVUS/OCT-guided bifurcation stenting—including the double-kissing crush (DK-Crush) protocol—provides durable, non-surgical revascularization for low-to-intermediate SYNTAX anatomies with rapid 48-hour recovery.",
+      "The Left Main Coronary Artery supplies over 75% of the left ventricle's blood flow. Once considered an exclusive indication for open-heart bypass surgery, modern IVUS/OCT-guided bifurcation stenting (including the double-kissing crush / DK-Crush protocol) provides durable, non-surgical revascularization for low-to-intermediate SYNTAX anatomies with rapid 48-hour recovery.",
     heroBadge: "Critical Coronary Interventions · LMCA Bifurcation & Complex PCI",
     prevalence:
       "Identified in 5–7% of patients undergoing diagnostic coronary angiography; represents the highest ischemic mortality risk in clinical cardiology.",
@@ -847,7 +847,7 @@ export const conditions: Condition[] = [
         heading: "The Anatomy of the Left Main Stem: Why It Demands Precision",
         paragraphs: [
           "The Left Main Coronary Artery (LMCA) is the master conduit of the cardiovascular system. Arising directly from the left aortic sinus, it travels just 10 to 25 millimeters before branching into the Left Anterior Descending (LAD) and Left Circumflex (LCx) arteries. Together, these branches nourish between 75% and 85% of the total left ventricular muscle mass.",
-          "When atherosclerotic plaque constricts the Left Main trunk by more than 50%, even minor increases in physical demand can cause catastrophic global myocardial ischemia. In distal bifurcation lesions—where the trunk splits into the LAD and circumflex branches—hemodynamic turbulence makes plaque accumulation particularly vulnerable to abrupt thrombosis.",
+          "When atherosclerotic plaque constricts the Left Main trunk by more than 50%, even minor increases in physical demand can cause catastrophic global myocardial ischemia. In distal bifurcation lesions, where the trunk splits into the LAD and circumflex branches, hemodynamic turbulence makes plaque accumulation particularly vulnerable to abrupt thrombosis.",
         ],
       },
       {
@@ -860,8 +860,8 @@ export const conditions: Condition[] = [
       {
         heading: "The Yashoda Medicity Protocol: DK-Crush & High-Definition IVUS",
         paragraphs: [
-          "Treating distal Left Main bifurcation disease requires far more than placing a standard stent. Dr. Manish Aggarwal employs the evidence-based Double-Kissing Crush (DK-Crush) technique—an advanced two-stent bifurcation strategy proven in the DKCRUSH-V randomized trial to significantly lower target lesion failure and side-branch re-occlusion compared to traditional provisional stenting.",
-          "Crucially, every Left Main angioplasty at Yashoda Medicity is guided by real-time Intravascular Ultrasound (IVUS) or Optical Coherence Tomography (OCT). High-definition intravascular imaging verifies exact vessel sizing, ensures zero geographical miss, confirms complete stent strut expansion, and eliminates stent under-apposition—the single greatest cause of late stent thrombosis.",
+          "Treating distal Left Main bifurcation disease requires far more than placing a standard stent. Dr. Manish Aggarwal employs the evidence-based Double-Kissing Crush (DK-Crush) technique, an advanced two-stent bifurcation strategy proven in the DKCRUSH-V randomized trial to significantly lower target lesion failure and side-branch re-occlusion compared to traditional provisional stenting.",
+          "Crucially, every Left Main angioplasty at Yashoda Medicity is guided by real-time Intravascular Ultrasound (IVUS) or Optical Coherence Tomography (OCT). High-definition intravascular imaging verifies exact vessel sizing, ensures zero geographical miss, confirms complete stent strut expansion, and eliminates stent under-apposition, the single greatest cause of late stent thrombosis.",
         ],
         callout: {
           quote:
@@ -1070,7 +1070,7 @@ export const conditions: Condition[] = [
       {
         question: "Who is an ideal candidate for MitraClip instead of open-heart surgery?",
         answer:
-          "Patients who qualify for MitraClip typically have severe Grade 3+ or 4+ mitral regurgitation, significant symptoms of breathlessness or fatigue despite medications, and factors that make open surgery risky—such as age over 65, previous bypass surgery, reduced ejection fraction (<40%), or chronic kidney/lung disease.",
+          "Patients who qualify for MitraClip typically have severe Grade 3+ or 4+ mitral regurgitation, significant symptoms of breathlessness or fatigue despite medications, and factors that make open surgery risky, such as age over 65, previous bypass surgery, reduced ejection fraction (<40%), or chronic kidney/lung disease.",
       },
       {
         question: "Is the MitraClip permanent, and will it ever need to be replaced?",
@@ -1211,7 +1211,7 @@ export const conditions: Condition[] = [
       {
         heading: "How CRT-D Resynchronizes a Sluggish Heart and Saves Lives",
         paragraphs: [
-          "In approximately one-third of heart failure patients, the electrical wiring of the heart is damaged, producing a Left Bundle Branch Block (LBBB) seen as a wide QRS complex on the ECG (>130 milliseconds). This electrical delay causes the septum and the lateral wall of the left ventricle to beat out of sync—wasting precious pumping energy like a car firing on half its cylinders.",
+          "In approximately one-third of heart failure patients, the electrical wiring of the heart is damaged, producing a Left Bundle Branch Block (LBBB) seen as a wide QRS complex on the ECG (>130 milliseconds). This electrical delay causes the septum and the lateral wall of the left ventricle to beat out of sync, wasting precious pumping energy like a car firing on half its cylinders.",
           "A Cardiac Resynchronization Therapy Defibrillator (CRT-D) places three microscopic pacing leads: one in the right atrium, one in the right ventricle, and a specialized lead through the coronary sinus onto the back wall of the left ventricle. By pacing both ventricles simultaneously (biventricular pacing), CRT-D resynchronizes the contraction, frequently boosting the ejection fraction by 10 to 15 percentage points while standing ready 24/7 to deliver an instant life-saving shock if a fatal arrhythmia occurs.",
         ],
         callout: {
@@ -1232,7 +1232,7 @@ export const conditions: Condition[] = [
       {
         query: "Can heart pumping capacity (EF) increase with medicine?",
         answer:
-          "Yes. Many patients with dilated cardiomyopathy or post-heart attack dysfunction experience substantial recovery in their ejection fraction—sometimes rising from 25% back above 50% ('Heart Failure with Improved EF'). This process, called reverse ventricular remodeling, requires strict adherence to full doses of ARNI, beta-blockers, and SGLT2 inhibitors.",
+          "Yes. Many patients with dilated cardiomyopathy or post-heart attack dysfunction experience substantial recovery in their ejection fraction, sometimes rising from 25% back above 50% ('Heart Failure with Improved EF'). This process, called reverse ventricular remodeling, requires strict adherence to full doses of ARNI, beta-blockers, and SGLT2 inhibitors.",
         clinicalSignificance:
           "Never assume a low ejection fraction is permanent until at least 3 to 6 months of optimized medical therapy have been administered.",
       },
@@ -1386,7 +1386,7 @@ export const conditions: Condition[] = [
       {
         heading: "Clinical Evidence: 24/7 BP Reduction and Stroke Prevention",
         paragraphs: [
-          "Large-scale international clinical trials—including the SPYRAL HTN-ON MED and RADIANCE trials—have demonstrated that RDN achieves a significant, consistent, and 'always-on' drop in blood pressure. Unlike pills that peak and wear off over 24 hours, RDN provides unvarying protection throughout the dangerous early morning hours (6:00 AM to 9:00 AM) when most fatal strokes and heart attacks strike.",
+          "Large-scale international clinical trials, including the SPYRAL HTN-ON MED and RADIANCE trials, have demonstrated that RDN achieves a significant, consistent, and 'always-on' drop in blood pressure. Unlike pills that peak and wear off over 24 hours, RDN provides unvarying protection throughout the dangerous early morning hours (6:00 AM to 9:00 AM) when most fatal strokes and heart attacks strike.",
           "Cardiovascular epidemiological data confirms that every 10 mmHg reduction in systolic blood pressure translates to a 28% drop in stroke risk and a 20% drop in major adverse cardiovascular events. For patients trapped in endless cycles of medication dose hikes, RDN represents a genuine breakthrough.",
         ],
         callout: {
@@ -1561,7 +1561,7 @@ export const conditions: Condition[] = [
         heading: "Carotid Artery Stenting with Brain Protection: Preventing Strokes",
         paragraphs: [
           "The internal carotid arteries carry blood directly from the heart to the brain. When high-grade calcified plaque builds up at the carotid bifurcation, microscopic cholesterol particles or blood clots can break off and travel to the brain, precipitating a devastating stroke or transient ischemic attack (TIA).",
-          "Carotid Artery Stenting (CAS) is performed through a pinhole in the groin or wrist under local anesthesia. Before deploying the self-expanding nitinol carotid stent, an Embolic Protection Filter—a microscopic umbrella basket—is deployed downstream in the artery. This basket catches any microscopic debris dislodged during balloon dilation. Once the stent is safely expanded and the vessel is widely open, the filter basket is folded and retrieved, ensuring zero plaque escapes to the brain.",
+          "Carotid Artery Stenting (CAS) is performed through a pinhole in the groin or wrist under local anesthesia. Before deploying the self-expanding nitinol carotid stent, an Embolic Protection Filter (a microscopic umbrella basket) is deployed downstream in the artery. This basket catches any microscopic debris dislodged during balloon dilation. Once the stent is safely expanded and the vessel is widely open, the filter basket is folded and retrieved, ensuring zero plaque escapes to the brain.",
         ],
         callout: {
           quote:
@@ -1574,7 +1574,7 @@ export const conditions: Condition[] = [
       {
         query: "Leg pain while walking that stops when resting causes",
         answer:
-          "Calf, thigh, or buttock pain that comes on consistently while walking and disappears within minutes of resting is called Intermittent Claudication—the hallmark sign of Peripheral Artery Disease (PAD). Caused by narrowed arteries in the pelvis or legs, the muscles become ischemic during effort. A simple bedside Doppler Ankle-Brachial Index (ABI) test confirms the diagnosis.",
+          "Calf, thigh, or buttock pain that comes on consistently while walking and disappears within minutes of resting is called Intermittent Claudication, the hallmark sign of Peripheral Artery Disease (PAD). Caused by narrowed arteries in the pelvis or legs, the muscles become ischemic during effort. A simple bedside Doppler Ankle-Brachial Index (ABI) test confirms the diagnosis.",
         clinicalSignificance:
           "Never dismiss walking leg pain as muscular strain or sciatica without first checking pedal pulses.",
       },
@@ -1725,8 +1725,8 @@ export const conditions: Condition[] = [
       {
         heading: "TEVAR & EVAR: How Covered Stent-Grafts Save Lives Without Open Surgery",
         paragraphs: [
-          "Traditionally, repairing an aortic aneurysm was one of the most grueling operations in surgery—requiring a massive incision through the chest or abdomen, clamping the aorta (shutting off blood to the kidneys and lower body), and replacing the segment with a sewn Dacron tube. Perioperative mortality and complications were substantial.",
-          "Endovascular Aneurysm Repair (EVAR for the abdomen, TEVAR for the chest) replaces this ordeal with a percutaneous approach. Through small pinholes in the femoral arteries in the groin, a compressed modular stent-graft—comprising a self-expanding nitinol frame covered with impermeable fabric—is guided under fluoroscopy into the aneurysm. Once deployed, the graft seals firmly against healthy aortic walls above and below the bulge, channeling all blood flow through the new graft and permanently relieving pressure from the thinned aneurysm sac.",
+          "Traditionally, repairing an aortic aneurysm was one of the most grueling operations in surgery, requiring a massive incision through the chest or abdomen, clamping the aorta (shutting off blood to the kidneys and lower body), and replacing the segment with a sewn Dacron tube. Perioperative mortality and complications were substantial.",
+          "Endovascular Aneurysm Repair (EVAR for the abdomen, TEVAR for the chest) replaces this ordeal with a percutaneous approach. Through small pinholes in the femoral arteries in the groin, a compressed modular stent-graft (comprising a self-expanding nitinol frame covered with impermeable fabric) is guided under fluoroscopy into the aneurysm. Once deployed, the graft seals firmly against healthy aortic walls above and below the bulge, channeling all blood flow through the new graft and permanently relieving pressure from the thinned aneurysm sac.",
         ],
       },
       {
@@ -1857,7 +1857,7 @@ export const conditions: Condition[] = [
     diagnosticChecklist: [
       "Comprehensive 2D/3D Doppler Echocardiography: Measures maximal septal thickness, Resting/Valsalva peak LVOT gradient, and Systolic Anterior Motion (SAM) of the anterior mitral leaflet.",
       "Myocardial Contrast Echocardiography (MCE): Mandatory cath lab ultrasound injection of echo-contrast into candidate septal perforator branches to verify the exact target zone before alcohol delivery.",
-      "Cardiac MRI (CMR) with Late Gadolinium Enhancement (LGE): High-resolution fibrosis mapping quantifying scar percentage—a critical factor for sudden death risk stratification.",
+      "Cardiac MRI (CMR) with Late Gadolinium Enhancement (LGE): High-resolution fibrosis mapping quantifying scar percentage, a critical factor for sudden death risk stratification.",
       "Genetic Testing & Family Cascade Screening: Identifies sarcomeric mutations (MYH7, MYBPC3) and screens first-degree family members.",
     ],
     treatmentComparison: [
@@ -1971,7 +1971,7 @@ export const conditions: Condition[] = [
     shortTitle: "Adult Congenital Defects (ASD/VSD)",
     subtitle: "Non-Surgical Pinhole Umbrella Closure for ASD, VSD & PDA Without Open-Heart Surgery",
     summary:
-      "Congenital heart defects—such as Atrial Septal Defects (ASD), Ventricular Septal Defects (VSD), Patent Ductus Arteriosus (PDA), and Patent Foramen Ovale (PFO)—are frequently missed in childhood and only discovered in adulthood when unexplained breathlessness, palpitations, or cryptogenic strokes occur. Learn how modern self-expanding nitinol umbrella devices seal these defects completely through a tiny vein puncture in the groin.",
+      "Congenital heart defects (such as Atrial Septal Defects, Ventricular Septal Defects, Patent Ductus Arteriosus, and PFO) are frequently missed in childhood and only discovered in adulthood when unexplained breathlessness, palpitations, or cryptogenic strokes occur. Learn how modern self-expanding nitinol umbrella devices seal these defects completely through a tiny vein puncture in the groin.",
     heroBadge: "Adult Congenital Cardiology · Pinhole Device Closures",
     prevalence:
       "ASD represents 30–40% of all congenital cardiac defects diagnosed in adulthood; often detected between ages 20 and 50 during routine evaluations.",
@@ -2144,7 +2144,7 @@ export const conditions: Condition[] = [
     subtitle:
       "Overcoming Failed Stents with Drug-Coated Balloons (DCB), Scoring Balloons & Intravascular Imaging",
     summary:
-      "When a patient experiences recurrent chest pain months or years after angioplasty, the culprit is often In-Stent Restenosis (ISR)—either excessive scar tissue ingrowth (neointimal hyperplasia) or new plaque buildup (neoatherosclerosis) inside the old stent. Learn how high-resolution OCT/IVUS imaging and modern Drug-Coated Balloons (DCB) reopen the artery without placing another permanent metal cage inside.",
+      "When a patient experiences recurrent chest pain months or years after angioplasty, the culprit is often In-Stent Restenosis (ISR), caused by excessive scar tissue ingrowth or new plaque buildup inside the old stent. Learn how high-resolution OCT/IVUS imaging and modern Drug-Coated Balloons (DCB) reopen the artery without placing another permanent metal cage inside.",
     heroBadge: "Complex Coronary Interventions · Stent Failure Mastery",
     prevalence:
       "Occurs in 5–10% of second-generation drug-eluting stents; substantially higher in diabetic patients, small vessels, chronic kidney disease, or under-expanded stents.",
@@ -2238,7 +2238,7 @@ export const conditions: Condition[] = [
       {
         heading: "Why Do Stents Get Blocked Again? The Biology of Restenosis",
         paragraphs: [
-          "When a coronary stent is deployed, it acts as a permanent metallic scaffold holding an open artery. In response to the mechanical stretch, the arterial wall undergoes a natural healing process. In some patients—particularly those with diabetes, small arteries, or chronic inflammation—this healing response becomes hyperactive.",
+          "When a coronary stent is deployed, it acts as a permanent metallic scaffold holding an open artery. In response to the mechanical stretch, the arterial wall undergoes a natural healing process. In some patients, particularly those with diabetes, small arteries, or chronic inflammation, this healing response becomes hyperactive.",
           "In-Stent Restenosis (ISR) presents in two primary forms:",
         ],
         bullets: [
@@ -2251,14 +2251,14 @@ export const conditions: Condition[] = [
         heading: "The Power of Light: Why OCT Imaging Is Mandatory Before Re-Treating ISR",
         paragraphs: [
           "Treating an in-stent restenosis blindly with standard angiography is a major clinical error. A standard 2D angiogram only shows a shadow of the contrast lumen; it cannot reveal whether the blockage is soft cellular scar tissue, rock-hard calcified neoatherosclerosis, a fractured stent strut, or an under-expanded metal cage.",
-          "At Yashoda Medicity, Dr. Manish Aggarwal utilizes Optical Coherence Tomography (OCT)—a 10-micron infrared light-based imaging camera. Within 3 seconds, OCT renders a 3D microscopic cross-section of the artery. If the underlying cause is mechanical under-expansion, non-compliant scoring balloons or intravascular lithotripsy (IVL) are deployed to shatter the confining calcium. If the cause is cellular tissue ingrowth, targeted antiproliferative therapy is administered.",
+          "At Yashoda Medicity, Dr. Manish Aggarwal utilizes Optical Coherence Tomography (OCT), an ultra-high resolution 10-micron infrared imaging camera. Within 3 seconds, OCT renders a 3D microscopic cross-section of the artery. If the underlying cause is mechanical under-expansion, non-compliant scoring balloons or intravascular lithotripsy (IVL) are deployed to shatter the confining calcium. If the cause is cellular tissue ingrowth, targeted antiproliferative therapy is administered.",
         ],
       },
       {
         heading: "The 'Leave Nothing Behind' Strategy: The Drug-Coated Balloon Revolution",
         paragraphs: [
           "Historically, the reflex reaction to a blocked stent was simply to deploy another stent inside it. Stacking metal inside metal ('stent onion-skinning') stiffens the artery, impairs natural vasomotion, and dramatically elevates the risk of late catastrophic stent thrombosis.",
-          "The modern standard of care is the 'Leave Nothing Behind' approach using Drug-Coated Balloons (DCB). Following meticulous preparation of the lesion with ultra-high pressure scoring or cutting balloons to micro-incise the scar tissue, a specialized balloon coated with an antiproliferative drug (Paclitaxel or Sirolimus) is inflated for 60 seconds. The medication transfers instantly into the vessel wall cells, halting cellular proliferation for months, while the balloon is deflated and removed entirely—leaving zero extra metal behind.",
+          "The modern standard of care is the 'Leave Nothing Behind' approach using Drug-Coated Balloons (DCB). Following meticulous preparation of the lesion with ultra-high pressure scoring or cutting balloons to micro-incise the scar tissue, a specialized balloon coated with an antiproliferative drug (Paclitaxel or Sirolimus) is inflated for 60 seconds. The medication transfers instantly into the vessel wall cells, halting cellular proliferation for months, while the balloon is deflated and removed entirely, leaving zero extra metal behind.",
         ],
         callout: {
           quote:
@@ -2271,7 +2271,7 @@ export const conditions: Condition[] = [
       {
         query: "Can an angioplasty stent get blocked again after 5 or 10 years?",
         answer:
-          "Yes. While drug-eluting stents are designed to last a lifetime, 5% to 10% can develop In-Stent Restenosis (ISR). Late re-blockages (occurring 3 to 10 years post-procedure) are often driven by 'neoatherosclerosis'—new cholesterol plaque and calcium forming inside the stent lining, particularly in patients with uncontrolled diabetes, high cholesterol, or smoking habits.",
+          "Yes. While drug-eluting stents are designed to last a lifetime, 5% to 10% can develop In-Stent Restenosis (ISR). Late re-blockages (occurring 3 to 10 years post-procedure) are often driven by 'neoatherosclerosis', where new cholesterol plaque and calcium form inside the stent lining, particularly in patients with uncontrolled diabetes, high cholesterol, or smoking habits.",
         clinicalSignificance:
           "Strict ongoing statin therapy and lifestyle control are mandatory even years after successful stenting.",
       },
@@ -2434,7 +2434,7 @@ export const conditions: Condition[] = [
       {
         heading: "Ending the 'Gas and Anxiety' Myth: Validation and Targeted Cure",
         paragraphs: [
-          "For decades, patients with microvascular angina—particularly women—have suffered in silence. After a normal angiogram, they were routinely told: 'Your heart is fine; it's just gas, acidity, or panic attacks.' Yet their chest pain remained excruciating, forcing repeated emergency room visits and leaving them terrified of sudden death.",
+          "For decades, patients with microvascular angina, particularly women, have suffered in silence. After a normal angiogram, they were routinely told: 'Your heart is fine; it's just gas, acidity, or panic attacks.' Yet their chest pain remained excruciating, forcing repeated emergency room visits and leaving them terrified of sudden death.",
           "At Yashoda Medicity, Dr. Manish Aggarwal offers dedicated invasive coronary physiology in the catheterization lab. Using sensor-tipped PressureWires and thermodilution, we definitively measure microvascular resistance and prove cellular ischemia. Once the exact endotype is identified, personalized medications (such as Ranolazine to improve myocardial relaxation, Nicorandil, or specific calcium channel blockers) provide profound, lasting relief.",
         ],
         callout: {
