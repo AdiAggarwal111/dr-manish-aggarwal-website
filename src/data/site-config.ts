@@ -37,10 +37,9 @@ export const siteConfig = {
     reviewCount: "370+",
   },
   meta: {
-    defaultTitle:
-      "Dr. Manish Aggarwal | Interventional Cardiologist & Structural Heart Specialist at Yashoda Medicity",
+    defaultTitle: "Dr. Manish Aggarwal | Cardiologist, Yashoda Medicity",
     defaultDescription:
-      "Director of Interventional Cardiology at Yashoda Medicity, Indirapuram, Delhi NCR. 28 years of experience, 12,500+ cardiac procedures, European structural heart fellowship. Call +91-9871183181.",
+      "Director of Cardiology at Yashoda Medicity, Indirapuram, Delhi NCR. 28+ years exp, 12,500+ procedures, European heart fellow. Call: +91-9871183181.",
     keywords:
       "Dr Manish Aggarwal, interventional cardiologist Delhi NCR, structural heart specialist Indirapuram, Yashoda Medicity cardiology, TAVR Delhi, MitraClip India, best cardiologist Ghaziabad",
   },

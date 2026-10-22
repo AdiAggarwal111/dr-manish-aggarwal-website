@@ -73,6 +73,21 @@ export default {
     try {
       const url = new URL(request.url);
 
+      // Canonical 301 Redirect: enforce non-www and https
+      if (
+        url.hostname === "www.drmanishaggarwal.in" ||
+        (url.protocol === "http:" &&
+          !url.hostname.includes("localhost") &&
+          !url.hostname.includes("127.0.0.1"))
+      ) {
+        const canonicalUrl = new URL(request.url);
+        if (canonicalUrl.hostname === "www.drmanishaggarwal.in") {
+          canonicalUrl.hostname = "drmanishaggarwal.in";
+        }
+        canonicalUrl.protocol = "https:";
+        return Response.redirect(canonicalUrl.toString(), 301);
+      }
+
       // Handle Appointment Form API Submissions (resilient to trailing slash)
       const normalizedPath = url.pathname.replace(/\/+$/, "");
       if (normalizedPath === "/api/appointments") {

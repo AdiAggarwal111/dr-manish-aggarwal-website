@@ -54,7 +54,7 @@ export const HeroSection = memo(function HeroSection() {
           />
           <img
             src="/images/yashoda-medicity-hero.jpg"
-            alt=""
+            alt="Yashoda Medicity quaternary care hospital campus exterior in Indirapuram, Delhi NCR"
             width={1024}
             height={571}
             loading="eager"
@@ -94,6 +94,9 @@ export const HeroSection = memo(function HeroSection() {
               className="relative mt-1.5 font-display font-medium text-3xl leading-[1.15] tracking-[-0.02em] text-foreground sm:mt-4 sm:text-4xl sm:leading-[1.1] md:text-[2.75rem] md:leading-[1.08] lg:text-[3.25rem] lg:leading-[1.06] xl:text-[3.6rem] xl:leading-[1.04]"
               style={{ textShadow: "0 1px 2px rgba(0,0,0,0.08)" }}
             >
+              <span className="sr-only">
+                {siteConfig.name} — Interventional Cardiologist, Yashoda Medicity:{" "}
+              </span>
               <span className="block whitespace-nowrap">A Lifetime Dedicated</span>
               <span className="block whitespace-nowrap">
                 to the <em className="font-medium italic">Human Heart.</em>
@@ -104,9 +107,10 @@ export const HeroSection = memo(function HeroSection() {
               className="relative mx-auto mt-1.5 max-w-[460px] text-sm font-normal leading-relaxed text-[#111827] sm:mt-4 sm:text-[15px] md:mx-0 md:text-[17px] md:leading-[1.6] [text-wrap:balance] text-balance lg:mb-7"
               style={{ textShadow: "0 1px 2px rgba(0,0,0,0.06)" }}
             >
-              {siteConfig.name} · Interventional Cardiologist &amp; Structural Heart Specialist.{" "}
-              {siteConfig.experienceYears} years of experience and {siteConfig.proceduresCount}{" "}
-              successful cardiac procedures across Delhi NCR.
+              {siteConfig.name} · Interventional Cardiologist &amp; Structural Heart Specialist. A
+              lifetime dedicated to advanced cardiac care, with {siteConfig.experienceYears} years
+              of clinical experience and {siteConfig.proceduresCount} successful cardiac procedures
+              across Delhi NCR.
             </p>
 
             {/* Primary Action buttons: shifted upward on mobile to sit above the Yashoda Medicity building sign */}
