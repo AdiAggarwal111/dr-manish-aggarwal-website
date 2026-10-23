@@ -1,8 +1,3 @@
-# Enforce canonical non-www domain with permanent 301 redirect
-https://www.drmanishaggarwal.in/* https://drmanishaggarwal.in/:splat 301!
-http://www.drmanishaggarwal.in/* https://drmanishaggarwal.in/:splat 301!
-http://drmanishaggarwal.in/* https://drmanishaggarwal.in/:splat 301!
-
 # Legacy procedure redirects (301 Permanent)
 /procedures/complex-angioplasty-cto /procedures/complex-coronary 301
 /procedures/rotablation-atherectomy /procedures/intravascular-imaging 301
