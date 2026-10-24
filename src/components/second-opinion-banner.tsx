@@ -123,6 +123,26 @@ export const SecondOpinionBanner = memo(function SecondOpinionBanner() {
               </p>
             </div>
           </div>
+
+          {/* Directory Strip: Full-Width Gateway (Exact match to screenshot) */}
+          <div className="relative z-10 mt-10 rounded-2xl border border-white/15 bg-white/5 p-5 sm:p-6 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm backdrop-blur-md">
+            <div className="text-center sm:text-left">
+              <p className="font-display text-base sm:text-lg font-medium text-white">
+                Holding an Angiography CD or advised open-heart bypass surgery?
+              </p>
+              <p className="text-xs text-slate-300 mt-0.5">
+                Explore our full digital second opinion protocol, DICOM upload guidelines, and bypass avoidance criteria.
+              </p>
+            </div>
+
+            <Link
+              to="/second-opinion"
+              className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-2.5 text-xs font-semibold text-navy shadow hover:bg-slate-100 transition shrink-0"
+            >
+              <span>Explore Full Second Opinion Desk</span>
+              <ArrowRight className="h-3.5 w-3.5" />
+            </Link>
+          </div>
         </div>
       </div>
     </section>

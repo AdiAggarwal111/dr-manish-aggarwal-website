@@ -11,6 +11,7 @@ import {
   Loader2,
   ShieldCheck,
   FileText,
+  ArrowRight,
   type LucideIcon,
 } from "lucide-react";
 import { siteConfig } from "@/data/site-config";
@@ -841,25 +842,26 @@ export function AppointmentSection({ heading, sub }: { heading?: string; sub?: s
               Emergency Pre-Auth SLA: &lt;60 Minutes
             </span>
           </div>
+        </div>
 
-          {/* Direct High-Visibility CTA button below the boxes */}
-          <div className="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4 pt-5 border-t border-border/60">
-            <div className="text-center sm:text-left">
-              <p className="text-xs sm:text-sm font-semibold text-foreground">
-                Need cashless pre-authorization, TPA query assistance, or CGHS / ECHS details?
-              </p>
-              <p className="text-xs text-muted-foreground mt-0.5">
-                Explore our full cashless empanelment directory, document checklist, and 30-minute approval workflow.
-              </p>
-            </div>
-            <Link
-              to="/insurance"
-              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-navy px-6 py-3 text-xs sm:text-sm font-semibold text-white shadow-sm hover:opacity-90 transition"
-            >
-              <ShieldCheck className="h-4 w-4 text-emerald-400" />
-              <span>Explore Full Cashless TPA &amp; CGHS Desk →</span>
-            </Link>
+        {/* Directory Strip: Cashless TPA & Insurance Desk Gateway (Exact match to Procedures/Conditions strip) */}
+        <div className="mt-8 rounded-2xl border border-border bg-card p-5 sm:p-6 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
+          <div className="text-center sm:text-left">
+            <p className="font-display text-base sm:text-lg font-medium text-foreground">
+              Need cashless pre-authorization, TPA query assistance, or CGHS / ECHS details?
+            </p>
+            <p className="text-xs text-muted-foreground mt-0.5">
+              Explore 10+ approved TPAs, required document checklists, and 30-minute approval guidelines at Yashoda Medicity.
+            </p>
           </div>
+
+          <Link
+            to="/insurance"
+            className="inline-flex items-center gap-2 rounded-full bg-navy px-6 py-2.5 text-xs font-semibold text-white shadow hover:opacity-90 transition shrink-0"
+          >
+            <span>Explore Full Cashless TPA Desk</span>
+            <ArrowRight className="h-3.5 w-3.5" />
+          </Link>
         </div>
       </div>
     </section>
