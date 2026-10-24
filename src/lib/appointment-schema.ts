@@ -66,7 +66,7 @@ export const appointmentSchema = z.object({
         return digitsOnly.length >= 10 && digitsOnly.length <= 15 && phoneRegex.test(val);
       },
       {
-        message: "Please enter a valid 10-digit mobile or phone number (e.g., +91 98711 83181).",
+        message: "Please enter a valid 10-digit mobile or phone number (e.g., +91 93481 31276).",
       },
     ),
 

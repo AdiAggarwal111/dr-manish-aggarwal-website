@@ -560,7 +560,7 @@ export const SiteFooter = memo(function SiteFooter() {
             presented on this website are authored for patient education under Medical Council
             guidelines. They do not constitute formal medical diagnosis or replace an in-person
             clinical consultation. In the event of acute chest pain, breathlessness, or suspected
-            heart attack, immediately call our 24/7 Helpline (+91-9871183181) or report to the
+            heart attack, immediately call our 24/7 Helpline ({siteConfig.phoneDisplay}) or report to the
             nearest emergency cath lab.
           </p>
         </div>

@@ -252,12 +252,12 @@ export function AppointmentForm() {
               "We encountered an issue submitting your request. Please call our clinical coordinator directly.",
           );
         } else {
-          setServerError("Unable to complete request. Please call +91-9871183181.");
+          setServerError(`Unable to complete request. Please call ${siteConfig.phoneDisplay}.`);
         }
       } catch (err) {
         console.error("Appointment submission error:", err);
         setServerError(
-          "Network connectivity error. Please check your internet connection or call our emergency triage desk at +91-9871183181.",
+          `Network connectivity error. Please check your internet connection or call our emergency triage desk at ${siteConfig.phoneDisplay}.`,
         );
       }
     });
@@ -356,10 +356,10 @@ export function AppointmentForm() {
             Experiencing sudden severe chest discomfort, breathlessness, or cold sweats? Please do
             not wait for an OPD callback. Call our 24/7 Emergency Triage immediately at{" "}
             <a
-              href="tel:+919871183181"
+              href={`tel:${siteConfig.phoneRaw}`}
               className="font-bold underline text-amber-800 dark:text-amber-300"
             >
-              +91-9871183181
+              {siteConfig.phoneDisplay}
             </a>{" "}
             or arrive directly at Yashoda Medicity Emergency Bay, Indirapuram.
           </p>
@@ -486,7 +486,7 @@ export function AppointmentForm() {
               autoComplete="tel"
               value={formData.phone}
               onChange={(e) => handleFieldChange("phone", e.target.value)}
-              placeholder="+91 98711 83181"
+              placeholder="+91 93481 31276"
               className={`w-full rounded-full border bg-background px-5 py-3 text-sm transition focus:outline-none ${
                 errors.phone
                   ? "border-destructive focus:border-destructive ring-1 ring-destructive/30"

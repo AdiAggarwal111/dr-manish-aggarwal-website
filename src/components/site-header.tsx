@@ -111,9 +111,9 @@ export const SiteHeader = memo(function SiteHeader() {
         <div className="flex items-center gap-2 md:hidden shrink-0">
           <a
             href={`tel:${siteConfig.phoneRaw}`}
-            aria-label="Call 24/7 Cardiac Emergency Helpline (+91-9871183181)"
+            aria-label={`Call 24/7 Cardiac Emergency Helpline (${siteConfig.phoneDisplay})`}
             className="relative inline-flex h-11 w-11 items-center justify-center rounded-full border border-red-400/40 bg-red-500/20 text-red-200 transition hover:bg-red-500/30 active:scale-95 focus:outline-none"
-            title="24/7 Emergency Helpline: +91 98711 83181"
+            title={`24/7 Emergency Helpline: ${siteConfig.phoneDisplay}`}
           >
             <span className="absolute -top-0.5 -right-0.5 flex h-2.5 w-2.5">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>

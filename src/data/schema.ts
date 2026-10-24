@@ -15,7 +15,7 @@ export const physicianSchema = {
   ],
   url: siteConfig.siteUrl,
   image: `${siteConfig.siteUrl}/images/doctor-portrait.png`,
-  telephone: "+91-9871183181",
+  telephone: siteConfig.phone,
   email: "appointments@drmanishaggarwal.com",
   jobTitle: "Director & Department Head of Interventional Cardiology & Structural Heart Specialist",
   medicalSpecialty: "https://schema.org/Cardiovascular",
@@ -45,7 +45,7 @@ export const physicianSchema = {
     name: "Yashoda Medicity",
     url: "https://www.yashodahospital.org/doctor/dr-manish-aggarwal",
     hasMap: siteConfig.googleMapsUrl,
-    telephone: "+91-9871183181",
+    telephone: siteConfig.phone,
     address: {
       "@type": "PostalAddress",
       streetAddress: "Yashoda Medicity, Indirapuram",

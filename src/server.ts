@@ -120,7 +120,7 @@ export default {
               JSON.stringify({
                 success: false,
                 message:
-                  "Unable to process appointment submission at this moment. Please call +91-9871183181 directly for emergency triage.",
+                  "Unable to process appointment submission at this moment. Please call +91-9348131276 directly for emergency triage.",
               }),
               {
                 status: 500,

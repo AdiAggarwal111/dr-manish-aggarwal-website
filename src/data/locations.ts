@@ -397,7 +397,7 @@ export const locations: Location[] = [
       {
         question: "How do I book a follow-up consultation after an emergency hospital stay?",
         answer:
-          "Follow-up consultations can be booked directly online or by calling our desk at +91 98711 83181 with priority same-week scheduling.",
+          "Follow-up consultations can be booked directly online or by calling our desk at +91 93481 31276 with priority same-week scheduling.",
       },
     ],
   },
@@ -799,7 +799,7 @@ export const locations: Location[] = [
       {
         question: "How should Shahdara families handle an emergency heart attack at night?",
         answer:
-          "Call our emergency helpline (+91 98711 83181) immediately and proceed via GT Road and Hindon Link Road directly to Yashoda Medicity's 24/7 cath lab.",
+          "Call our emergency helpline (+91 93481 31276) immediately and proceed via GT Road and Hindon Link Road directly to Yashoda Medicity's 24/7 cath lab.",
       },
       {
         question: "Why do diabetic cardiac patients require intravascular imaging?",
@@ -953,7 +953,7 @@ export const locations: Location[] = [
       {
         question: "What is the emergency ambulance protocol for Lal Kuan factories?",
         answer:
-          "Call our emergency desk directly (+91 98711 83181) for immediate ALS ambulance dispatch with onboard cardiac telemetry and oxygen support.",
+          "Call our emergency desk directly (+91 93481 31276) for immediate ALS ambulance dispatch with onboard cardiac telemetry and oxygen support.",
       },
       {
         question: "Can patients with heavy calcification avoid bypass surgery?",

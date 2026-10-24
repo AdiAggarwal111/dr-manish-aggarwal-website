@@ -168,7 +168,7 @@ function buildClinicNotificationHtml(
                 Yashoda Medicity · Indirapuram, Ghaziabad, Delhi NCR 201014
               </p>
               <p style="margin:0;">
-                Emergency Bay &amp; 24/7 Cath Lab Mobilization: +91-9871183181
+                Emergency Bay &amp; 24/7 Cath Lab Mobilization: +91-9348131276
               </p>
             </td>
           </tr>
@@ -260,7 +260,7 @@ function buildPatientConfirmationHtml(
                   ⚠️ Experiencing an Acute Emergency?
                 </p>
                 <p style="margin:0;font-size:12px;line-height:1.5;color:#b91c1c;">
-                  If you or your family member are experiencing sudden, severe chest pain, shortness of breath, cold sweating, or fainting, do not wait for OPD confirmation. Please call our 24/7 Emergency Helpline immediately at <a href="tel:+919871183181" style="color:#991b1b;font-weight:bold;text-decoration:underline;">+91-9871183181</a> or arrive directly at the Yashoda Medicity Emergency Bay.
+                  If you or your family member are experiencing sudden, severe chest pain, shortness of breath, cold sweating, or fainting, do not wait for OPD confirmation. Please call our 24/7 Emergency Helpline immediately at <a href="tel:+919348131276" style="color:#991b1b;font-weight:bold;text-decoration:underline;">+91-9348131276</a> or arrive directly at the Yashoda Medicity Emergency Bay.
                 </p>
               </div>
 
@@ -411,7 +411,7 @@ REASON FOR VISIT:
 ${data.reason}
 
 Hospital: Yashoda Medicity, Indirapuram, Ghaziabad
-Emergency Bay: +91-9871183181
+Emergency Bay: +91-9348131276
   `.trim();
 
   // Construct text fallback for patient confirmation
@@ -425,7 +425,7 @@ Requested Date: ${formattedDate}
 
 Our clinical care coordinator will review your request and contact you at ${data.phone} within one business day to confirm your exact OPD consultation slot.
 
-If you are experiencing an acute cardiac emergency, do not wait for an OPD slot. Call our 24/7 triage helpline at +91-9871183181 immediately or proceed directly to Yashoda Medicity Emergency Bay.
+If you are experiencing an acute cardiac emergency, do not wait for an OPD slot. Call our 24/7 triage helpline at +91-9348131276 immediately or proceed directly to Yashoda Medicity Emergency Bay.
 
 Yashoda Medicity, Indirapuram, Ghaziabad, Delhi NCR 201014.
   `.trim();

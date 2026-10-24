@@ -14,7 +14,7 @@ export const WhatsappFab = memo(function WhatsappFab() {
       <a
         href={`tel:${siteConfig.phoneRaw}`}
         aria-label="Call Dr. Manish Aggarwal's 24/7 Emergency Helpline"
-        title="24/7 Cardiac Emergency Helpline (+91-9871183181)"
+        title={`24/7 Cardiac Emergency Helpline (${siteConfig.phoneDisplay})`}
         className="group relative flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-full bg-gradient-to-tr from-red-600 via-rose-600 to-red-500 text-white shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-red-500/50"
       >
         <span className="relative flex h-full w-full items-center justify-center">

@@ -270,7 +270,7 @@ export const procedures: Procedure[] = [
       {
         question: "What should I do immediately if I suspect a heart attack?",
         answer:
-          "Do not wait to see if symptoms pass. Call our emergency response desk directly at +91 98711 83181 and proceed immediately to the Emergency Department at Yashoda Medicity, Indirapuram. If available and not allergic, chew a 300mg soluble Aspirin immediately while en route.",
+          "Do not wait to see if symptoms pass. Call our emergency response desk directly at +91 93481 31276 and proceed immediately to the Emergency Department at Yashoda Medicity, Indirapuram. If available and not allergic, chew a 300mg soluble Aspirin immediately while en route.",
       },
       {
         question:

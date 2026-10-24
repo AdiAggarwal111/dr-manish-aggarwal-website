@@ -13,9 +13,9 @@ export const siteConfig = {
   googleProfileUrl: "https://share.google/J6Vu9CrYCRqk43ln0",
   siteUrl: "https://drmanishaggarwal.in",
   googleAnalyticsId: "G-E9L9F07FP5",
-  phone: "+91-9871183181",
-  phoneDisplay: "+91 98711 83181",
-  phoneRaw: "+919871183181",
+  phone: "+91-9348131276",
+  phoneDisplay: "+91 93481 31276",
+  phoneRaw: "+919348131276",
   email: "appointments@drmanishaggarwal.com",
   opdHours: "Mon – Sat · 10:00 AM – 6:00 PM",
   emergencyHours: "24/7 Emergency Response",
@@ -41,7 +41,7 @@ export const siteConfig = {
   meta: {
     defaultTitle: "Dr. Manish Aggarwal | Cardiologist, Yashoda Medicity",
     defaultDescription:
-      "Director of Cardiology at Yashoda Medicity, Indirapuram, Delhi NCR. 28+ years exp, 12,500+ procedures, European heart fellow. Call: +91-9871183181.",
+      "Director of Cardiology at Yashoda Medicity, Indirapuram, Delhi NCR. 28+ years exp, 12,500+ procedures, European heart fellow. Call: +91-9348131276.",
     keywords:
       "Dr Manish Aggarwal, interventional cardiologist Delhi NCR, structural heart specialist Indirapuram, Yashoda Medicity cardiology, TAVR Delhi, MitraClip India, best cardiologist Ghaziabad",
   },

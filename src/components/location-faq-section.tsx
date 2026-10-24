@@ -13,7 +13,7 @@ const FAQS: readonly FAQItem[] = [
     question:
       "How can I book an urgent consultation or emergency admission with Dr. Manish Aggarwal at Yashoda Medicity?",
     answer:
-      "Outpatient consultations can be scheduled in advance by calling +91-9871183181 or booking directly through the clinic portal for same-week appointments at Yashoda Medicity, Indirapuram. For acute cardiac emergencies (sudden chest pain, heart attack / STEMI, pulmonary edema), Dr. Manish Aggarwal's emergency triage team operates 24/7 with dedicated Door-to-Balloon mobilization under 90 minutes. In an emergency, immediately call the hospital triage helpline or arrive directly at the Yashoda Medicity Emergency Bay for zero-delay catheterization lab activation.",
+      "Outpatient consultations can be scheduled in advance by calling +91-9348131276 or booking directly through the clinic portal for same-week appointments at Yashoda Medicity, Indirapuram. For acute cardiac emergencies (sudden chest pain, heart attack / STEMI, pulmonary edema), Dr. Manish Aggarwal's emergency triage team operates 24/7 with dedicated Door-to-Balloon mobilization under 90 minutes. In an emergency, immediately call the hospital triage helpline or arrive directly at the Yashoda Medicity Emergency Bay for zero-delay catheterization lab activation.",
   },
   {
     category: "Hospital Infrastructure",
