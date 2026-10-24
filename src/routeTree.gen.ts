@@ -23,6 +23,7 @@ import { Route as ProceduresRouteImport } from './routes/procedures'
 import { Route as ReviewsRouteImport } from './routes/reviews'
 import { Route as SecondOpinionRouteImport } from './routes/second-opinion'
 import { Route as TermsRouteImport } from './routes/terms'
+import { Route as ToolsRouteImport } from './routes/tools'
 import { Route as ConditionsIndexRouteImport } from './routes/conditions.index'
 import { Route as ConditionsSlugRouteImport } from './routes/conditions.$slug'
 import { Route as ConditionsChestPainHeartAttackVsAcidityRouteImport } from './routes/conditions.chest-pain-heart-attack-vs-acidity'
@@ -113,6 +114,11 @@ const SecondOpinionRoute = SecondOpinionRouteImport.update({
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
   path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsRoute = ToolsRouteImport.update({
+  id: '/tools',
+  path: '/tools',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ConditionsIndexRoute = ConditionsIndexRouteImport.update({
@@ -241,6 +247,7 @@ export interface FileRoutesByFullPath {
   '/reviews': typeof ReviewsRoute
   '/second-opinion': typeof SecondOpinionRouteWithChildren
   '/terms': typeof TermsRoute
+  '/tools': typeof ToolsRoute
   '/conditions/$slug': typeof ConditionsSlugRoute
   '/conditions/chest-pain-heart-attack-vs-acidity': typeof ConditionsChestPainHeartAttackVsAcidityRoute
   '/conditions/in-stent-restenosis-treatment': typeof ConditionsInStentRestenosisTreatmentRoute
@@ -272,6 +279,7 @@ export interface FileRoutesByTo {
   '/privacy': typeof PrivacyRoute
   '/reviews': typeof ReviewsRoute
   '/terms': typeof TermsRoute
+  '/tools': typeof ToolsRoute
   '/conditions/$slug': typeof ConditionsSlugRoute
   '/conditions/chest-pain-heart-attack-vs-acidity': typeof ConditionsChestPainHeartAttackVsAcidityRoute
   '/conditions/in-stent-restenosis-treatment': typeof ConditionsInStentRestenosisTreatmentRoute
@@ -309,6 +317,7 @@ export interface FileRoutesById {
   '/reviews': typeof ReviewsRoute
   '/second-opinion': typeof SecondOpinionRouteWithChildren
   '/terms': typeof TermsRoute
+  '/tools': typeof ToolsRoute
   '/conditions/$slug': typeof ConditionsSlugRoute
   '/conditions/chest-pain-heart-attack-vs-acidity': typeof ConditionsChestPainHeartAttackVsAcidityRoute
   '/conditions/in-stent-restenosis-treatment': typeof ConditionsInStentRestenosisTreatmentRoute
@@ -347,6 +356,7 @@ export interface FileRouteTypes {
     | '/reviews'
     | '/second-opinion'
     | '/terms'
+    | '/tools'
     | '/conditions/$slug'
     | '/conditions/chest-pain-heart-attack-vs-acidity'
     | '/conditions/in-stent-restenosis-treatment'
@@ -378,6 +388,7 @@ export interface FileRouteTypes {
     | '/privacy'
     | '/reviews'
     | '/terms'
+    | '/tools'
     | '/conditions/$slug'
     | '/conditions/chest-pain-heart-attack-vs-acidity'
     | '/conditions/in-stent-restenosis-treatment'
@@ -414,6 +425,7 @@ export interface FileRouteTypes {
     | '/reviews'
     | '/second-opinion'
     | '/terms'
+    | '/tools'
     | '/conditions/$slug'
     | '/conditions/chest-pain-heart-attack-vs-acidity'
     | '/conditions/in-stent-restenosis-treatment'
@@ -451,6 +463,7 @@ export interface RootRouteChildren {
   ReviewsRoute: typeof ReviewsRoute
   SecondOpinionRoute: typeof SecondOpinionRouteWithChildren
   TermsRoute: typeof TermsRoute
+  ToolsRoute: typeof ToolsRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -551,6 +564,13 @@ declare module '@tanstack/react-router' {
       path: '/terms'
       fullPath: '/terms'
       preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools': {
+      id: '/tools'
+      path: '/tools'
+      fullPath: '/tools'
+      preLoaderRoute: typeof ToolsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/conditions/': {
@@ -816,6 +836,7 @@ const rootRouteChildren: RootRouteChildren = {
   ReviewsRoute: ReviewsRoute,
   SecondOpinionRoute: SecondOpinionRouteWithChildren,
   TermsRoute: TermsRoute,
+  ToolsRoute: ToolsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

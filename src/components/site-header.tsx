@@ -4,8 +4,9 @@ import { Menu, X, PhoneCall } from "lucide-react";
 import { siteConfig } from "@/data/site-config";
 
 interface NavItem {
-  to: "/" | "/about" | "/procedures" | "/conditions" | "/facility" | "/reviews" | "/contact" | "/insurance";
+  to: "/" | "/about" | "/procedures" | "/conditions" | "/facility" | "/reviews" | "/contact" | "/insurance" | "/tools";
   label: string;
+  desktopNode?: React.ReactNode;
   hash?: string;
 }
 
@@ -13,6 +14,16 @@ const NAV_ITEMS: readonly NavItem[] = [
   { to: "/about", label: "About" },
   { to: "/procedures", label: "Procedures" },
   { to: "/conditions", label: "Conditions" },
+  {
+    to: "/tools",
+    label: "Tools & Guides",
+    desktopNode: (
+      <span className="flex flex-col text-center leading-[1.05] text-[11px] lg:text-xs">
+        <span>Tools &amp;</span>
+        <span>Guides</span>
+      </span>
+    ),
+  },
   { to: "/insurance", label: "Cashless TPA" },
   { to: "/facility", label: "Facility" },
   { to: "/reviews", label: "Reviews" },
@@ -75,11 +86,11 @@ export const SiteHeader = memo(function SiteHeader() {
               key={item.label}
               to={item.to}
               hash={item.hash}
-              className="text-sm text-navy-foreground/85 transition hover:text-navy-foreground"
+              className="text-sm text-navy-foreground/85 transition hover:text-navy-foreground flex items-center"
               activeProps={{ className: "text-navy-foreground font-medium" }}
               activeOptions={{ exact: item.to === "/" && !item.hash }}
             >
-              {item.label}
+              {item.desktopNode || item.label}
             </Link>
           ))}
 
@@ -200,6 +211,19 @@ export const SiteHeader = memo(function SiteHeader() {
               activeProps={{ className: "bg-white/10 text-white font-semibold" }}
             >
               <span>Conditions Library</span>
+              <span className="text-xs text-white/40">→</span>
+            </Link>
+
+            <Link
+              to="/tools"
+              onClick={() => setIsOpen(false)}
+              className="flex items-center justify-between rounded-2xl px-4 py-3 text-sm font-medium text-navy-foreground/90 transition hover:bg-white/10 hover:text-white"
+              activeProps={{ className: "bg-white/10 text-white font-semibold" }}
+            >
+              <span className="flex items-center gap-2">
+                <span>Tools &amp; Decision Guides</span>
+                <span className="rounded-full bg-blue-500/20 px-2 py-0.5 text-[10px] font-bold text-blue-300">Hub</span>
+              </span>
               <span className="text-xs text-white/40">→</span>
             </Link>
 
