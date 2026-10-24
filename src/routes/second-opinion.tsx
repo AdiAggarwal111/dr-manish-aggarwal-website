@@ -115,26 +115,33 @@ function SecondOpinionPage() {
 
   return (
     <div className="bg-background">
-      <PageHeroHeader
-        badge={{
-          icon: <Disc className="h-4 w-4 text-emerald-400" />,
-          text: "Digital Angiogram CD Review Desk",
-        }}
-        title="Cardiac Second Opinion & Angiogram CD Review"
-        subtitle="Radical diagnostic honesty before bypass surgery or multi-stent placement. Frame-by-frame DICOM analysis by European Structural Heart Fellow Dr. Manish Aggarwal."
-        primaryAction={{
-          label: "WhatsApp Angiogram Files for Review",
-          href: whatsappUrl,
-        }}
-        secondaryAction={{
-          label: "Call Clinical Desk: " + siteConfig.phoneDisplay,
-          href: `tel:${siteConfig.phoneRaw}`,
-        }}
-      />
+      <section className="px-6 pb-20 pt-8 md:px-12 md:pt-10 md:pb-24">
+        <div className="mx-auto max-w-[1400px]">
+          <PageHeroHeader
+            title="Cardiac Second Opinion & Angiogram CD Review"
+            subtitle={`Independent Case Evaluation · ${siteConfig.hospital}`}
+            description="Radical diagnostic honesty before bypass surgery or multi-stent placement. Frame-by-frame DICOM analysis personally by European Structural Heart Fellow Dr. Manish Aggarwal."
+            badges={
+              <>
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3.5 py-1.5 text-xs font-semibold text-primary">
+                  <Disc className="h-3.5 w-3.5" /> Frame-by-Frame DICOM Review
+                </span>
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3.5 py-1.5 text-xs font-semibold text-secondary-foreground">
+                  2-Hour Emergency Turnaround
+                </span>
+                <a
+                  href={siteConfig.hospitalUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3.5 py-1.5 text-xs font-semibold text-secondary-foreground transition hover:bg-secondary/80 hover:text-primary"
+                  title="View Dr. Manish Aggarwal's Official Yashoda Medicity Profile"
+                >
+                  📍 {siteConfig.hospital}, Indirapuram ↗
+                </a>
+              </>
+            }
+          />
 
-      <section className="py-16 px-6 md:px-12 border-b border-border/80">
-        <div className="mx-auto max-w-7xl">
-          
           {/* Diagnostic Honesty Manifesto */}
           <div className="rounded-3xl border border-primary/20 bg-gradient-to-br from-primary/10 via-card to-card p-8 md:p-12 shadow-sm mb-16">
             <div className="max-w-3xl space-y-4">

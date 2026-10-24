@@ -152,27 +152,33 @@ function InsurancePage() {
 
   return (
     <div className="bg-background">
-      <PageHeroHeader
-        badge={{
-          icon: <ShieldCheck className="h-4 w-4 text-emerald-400" />,
-          text: "Yashoda Medicity 24/7 TPA Desk",
-        }}
-        title="Cashless Mediclaim & Cardiac Insurance Desk"
-        subtitle="100% cashless pre-authorization, statutory NPPA stent pricing, CGHS/ECHS empanelment, and zero out-of-pocket surprises under Director of Cardiology Dr. Manish Aggarwal."
-        primaryAction={{
-          label: "Check Cashless Eligibility on WhatsApp",
-          href: whatsappUrl,
-        }}
-        secondaryAction={{
-          label: "Call Emergency TPA Helpline",
-          href: `tel:${siteConfig.phoneRaw}`,
-        }}
-      />
+      <section className="px-6 pb-20 pt-8 md:px-12 md:pt-10 md:pb-24">
+        <div className="mx-auto max-w-[1400px]">
+          <PageHeroHeader
+            title="Cashless Mediclaim & Cardiac TPA Desk"
+            subtitle={`Empanelled Health Insurers, CGHS & ECHS · ${siteConfig.hospital}`}
+            description="100% cashless pre-authorization, statutory NPPA stent pricing, CGHS/ECHS empanelment, and zero out-of-pocket surprises under Director of Cardiology Dr. Manish Aggarwal."
+            badges={
+              <>
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3.5 py-1.5 text-xs font-semibold text-primary">
+                  <ShieldCheck className="h-3.5 w-3.5" /> 24/7 TPA Desk
+                </span>
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3.5 py-1.5 text-xs font-semibold text-secondary-foreground">
+                  Pre-Auth Under 60 Mins
+                </span>
+                <a
+                  href={siteConfig.hospitalUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3.5 py-1.5 text-xs font-semibold text-secondary-foreground transition hover:bg-secondary/80 hover:text-primary"
+                  title="View Dr. Manish Aggarwal's Official Yashoda Medicity Profile"
+                >
+                  📍 {siteConfig.hospital}, Indirapuram ↗
+                </a>
+              </>
+            }
+          />
 
-      {/* Main Content Pavilion */}
-      <section className="py-16 px-6 md:px-12 border-b border-border/80">
-        <div className="mx-auto max-w-7xl">
-          
           {/* Fast-Track Emergency Banner */}
           <div className="mb-14 rounded-2xl border border-red-500/30 bg-red-500/10 p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div className="space-y-2 max-w-3xl">

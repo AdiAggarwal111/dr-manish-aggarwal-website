@@ -14,6 +14,7 @@ const NAV_ITEMS: readonly NavItem[] = [
   { to: "/procedures", label: "Procedures" },
   { to: "/conditions", label: "Conditions" },
   { to: "/insurance", label: "Cashless TPA" },
+  { to: "/facility", label: "Facility" },
   { to: "/reviews", label: "Reviews" },
 ] as const;
 
@@ -82,18 +83,22 @@ export const SiteHeader = memo(function SiteHeader() {
             </Link>
           ))}
 
-          {/* 24/7 Cardiac Emergency Helpline Pill - Compact, sleek & non-crowded */}
+          {/* 24/7 Cardiac Emergency Helpline Pill - Stacked layout with Emergency 24/7 above phone number */}
           <a
             href={`tel:${siteConfig.phoneRaw}`}
-            className="inline-flex items-center gap-1.5 rounded-full border border-red-400/40 bg-red-500/15 px-2.5 py-1.5 text-xs font-semibold text-red-100 transition hover:bg-red-500/30 hover:text-white shrink-0 shadow-sm"
+            className="flex flex-col items-center justify-center rounded-2xl border border-red-400/40 bg-red-500/15 px-3 py-1 text-center transition hover:bg-red-500/25 shrink-0"
             title="24/7 Acute Cardiac Emergency Helpline (Golden Hour Primary Angioplasty)"
           >
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+            <span className="flex items-center gap-1 text-[9px] font-bold uppercase tracking-wider text-red-300 leading-none">
+              <span className="relative flex h-1.5 w-1.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-red-500"></span>
+              </span>
+              <span>Emergency 24/7</span>
             </span>
-            <PhoneCall className="h-3 w-3 text-red-300" />
-            <span className="font-mono text-white text-[11px] lg:text-xs">{siteConfig.phoneDisplay}</span>
+            <span className="mt-0.5 font-mono text-[11px] lg:text-xs font-bold text-white tracking-tight leading-tight">
+              {siteConfig.phoneDisplay}
+            </span>
           </a>
 
           <Link
