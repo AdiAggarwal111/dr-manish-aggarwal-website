@@ -78,10 +78,10 @@ export const SecondOpinionBanner = memo(function SecondOpinionBanner() {
               </div>
 
               <Link
-                to="/contact"
+                to="/second-opinion"
                 className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-navy transition hover:bg-slate-100 shadow-md"
               >
-                <span>Book CD Second Opinion</span>
+                <span>Read Full CD Review Protocol</span>
                 <ArrowRight className="h-4 w-4" />
               </Link>
 

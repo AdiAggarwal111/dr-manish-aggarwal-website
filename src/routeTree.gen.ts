@@ -15,10 +15,12 @@ import { Route as ConditionsRouteImport } from './routes/conditions'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CostsRouteImport } from './routes/costs'
 import { Route as FacilityRouteImport } from './routes/facility'
+import { Route as InsuranceRouteImport } from './routes/insurance'
 import { Route as LocationsRouteImport } from './routes/locations'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as ProceduresRouteImport } from './routes/procedures'
 import { Route as ReviewsRouteImport } from './routes/reviews'
+import { Route as SecondOpinionRouteImport } from './routes/second-opinion'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as ConditionsIndexRouteImport } from './routes/conditions.index'
 import { Route as ConditionsSlugRouteImport } from './routes/conditions.$slug'
@@ -28,6 +30,7 @@ import { Route as LocationsIndexRouteImport } from './routes/locations.index'
 import { Route as LocationsSlugRouteImport } from './routes/locations.$slug'
 import { Route as ProceduresIndexRouteImport } from './routes/procedures.index'
 import { Route as ProceduresSlugRouteImport } from './routes/procedures.$slug'
+import { Route as SecondOpinionAngioplastyVsBypassRouteImport } from './routes/second-opinion.angioplasty-vs-bypass'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -59,6 +62,11 @@ const FacilityRoute = FacilityRouteImport.update({
   path: '/facility',
   getParentRoute: () => rootRouteImport,
 } as any)
+const InsuranceRoute = InsuranceRouteImport.update({
+  id: '/insurance',
+  path: '/insurance',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const LocationsRoute = LocationsRouteImport.update({
   id: '/locations',
   path: '/locations',
@@ -77,6 +85,11 @@ const ProceduresRoute = ProceduresRouteImport.update({
 const ReviewsRoute = ReviewsRouteImport.update({
   id: '/reviews',
   path: '/reviews',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SecondOpinionRoute = SecondOpinionRouteImport.update({
+  id: '/second-opinion',
+  path: '/second-opinion',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TermsRoute = TermsRouteImport.update({
@@ -124,6 +137,12 @@ const ProceduresSlugRoute = ProceduresSlugRouteImport.update({
   path: '/$slug',
   getParentRoute: () => ProceduresRoute,
 } as any)
+const SecondOpinionAngioplastyVsBypassRoute =
+  SecondOpinionAngioplastyVsBypassRouteImport.update({
+    id: '/angioplasty-vs-bypass',
+    path: '/angioplasty-vs-bypass',
+    getParentRoute: () => SecondOpinionRoute,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -132,15 +151,18 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/costs': typeof CostsRouteWithChildren
   '/facility': typeof FacilityRoute
+  '/insurance': typeof InsuranceRoute
   '/locations': typeof LocationsRouteWithChildren
   '/privacy': typeof PrivacyRoute
   '/procedures': typeof ProceduresRouteWithChildren
   '/reviews': typeof ReviewsRoute
+  '/second-opinion': typeof SecondOpinionRouteWithChildren
   '/terms': typeof TermsRoute
   '/conditions/$slug': typeof ConditionsSlugRoute
   '/costs/$slug': typeof CostsSlugRoute
   '/locations/$slug': typeof LocationsSlugRoute
   '/procedures/$slug': typeof ProceduresSlugRoute
+  '/second-opinion/angioplasty-vs-bypass': typeof SecondOpinionAngioplastyVsBypassRoute
   '/conditions/': typeof ConditionsIndexRoute
   '/costs/': typeof CostsIndexRoute
   '/locations/': typeof LocationsIndexRoute
@@ -151,13 +173,16 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/facility': typeof FacilityRoute
+  '/insurance': typeof InsuranceRoute
   '/privacy': typeof PrivacyRoute
   '/reviews': typeof ReviewsRoute
+  '/second-opinion': typeof SecondOpinionRouteWithChildren
   '/terms': typeof TermsRoute
   '/conditions/$slug': typeof ConditionsSlugRoute
   '/costs/$slug': typeof CostsSlugRoute
   '/locations/$slug': typeof LocationsSlugRoute
   '/procedures/$slug': typeof ProceduresSlugRoute
+  '/second-opinion/angioplasty-vs-bypass': typeof SecondOpinionAngioplastyVsBypassRoute
   '/conditions': typeof ConditionsIndexRoute
   '/costs': typeof CostsIndexRoute
   '/locations': typeof LocationsIndexRoute
@@ -171,15 +196,18 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/costs': typeof CostsRouteWithChildren
   '/facility': typeof FacilityRoute
+  '/insurance': typeof InsuranceRoute
   '/locations': typeof LocationsRouteWithChildren
   '/privacy': typeof PrivacyRoute
   '/procedures': typeof ProceduresRouteWithChildren
   '/reviews': typeof ReviewsRoute
+  '/second-opinion': typeof SecondOpinionRouteWithChildren
   '/terms': typeof TermsRoute
   '/conditions/$slug': typeof ConditionsSlugRoute
   '/costs/$slug': typeof CostsSlugRoute
   '/locations/$slug': typeof LocationsSlugRoute
   '/procedures/$slug': typeof ProceduresSlugRoute
+  '/second-opinion/angioplasty-vs-bypass': typeof SecondOpinionAngioplastyVsBypassRoute
   '/conditions/': typeof ConditionsIndexRoute
   '/costs/': typeof CostsIndexRoute
   '/locations/': typeof LocationsIndexRoute
@@ -194,15 +222,18 @@ export interface FileRouteTypes {
     | '/contact'
     | '/costs'
     | '/facility'
+    | '/insurance'
     | '/locations'
     | '/privacy'
     | '/procedures'
     | '/reviews'
+    | '/second-opinion'
     | '/terms'
     | '/conditions/$slug'
     | '/costs/$slug'
     | '/locations/$slug'
     | '/procedures/$slug'
+    | '/second-opinion/angioplasty-vs-bypass'
     | '/conditions/'
     | '/costs/'
     | '/locations/'
@@ -213,13 +244,16 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/facility'
+    | '/insurance'
     | '/privacy'
     | '/reviews'
+    | '/second-opinion'
     | '/terms'
     | '/conditions/$slug'
     | '/costs/$slug'
     | '/locations/$slug'
     | '/procedures/$slug'
+    | '/second-opinion/angioplasty-vs-bypass'
     | '/conditions'
     | '/costs'
     | '/locations'
@@ -232,15 +266,18 @@ export interface FileRouteTypes {
     | '/contact'
     | '/costs'
     | '/facility'
+    | '/insurance'
     | '/locations'
     | '/privacy'
     | '/procedures'
     | '/reviews'
+    | '/second-opinion'
     | '/terms'
     | '/conditions/$slug'
     | '/costs/$slug'
     | '/locations/$slug'
     | '/procedures/$slug'
+    | '/second-opinion/angioplasty-vs-bypass'
     | '/conditions/'
     | '/costs/'
     | '/locations/'
@@ -254,10 +291,12 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   CostsRoute: typeof CostsRouteWithChildren
   FacilityRoute: typeof FacilityRoute
+  InsuranceRoute: typeof InsuranceRoute
   LocationsRoute: typeof LocationsRouteWithChildren
   PrivacyRoute: typeof PrivacyRoute
   ProceduresRoute: typeof ProceduresRouteWithChildren
   ReviewsRoute: typeof ReviewsRoute
+  SecondOpinionRoute: typeof SecondOpinionRouteWithChildren
   TermsRoute: typeof TermsRoute
 }
 
@@ -305,6 +344,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FacilityRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/insurance': {
+      id: '/insurance'
+      path: '/insurance'
+      fullPath: '/insurance'
+      preLoaderRoute: typeof InsuranceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/locations': {
       id: '/locations'
       path: '/locations'
@@ -331,6 +377,13 @@ declare module '@tanstack/react-router' {
       path: '/reviews'
       fullPath: '/reviews'
       preLoaderRoute: typeof ReviewsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/second-opinion': {
+      id: '/second-opinion'
+      path: '/second-opinion'
+      fullPath: '/second-opinion'
+      preLoaderRoute: typeof SecondOpinionRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/terms': {
@@ -396,6 +449,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProceduresSlugRouteImport
       parentRoute: typeof ProceduresRoute
     }
+    '/second-opinion/angioplasty-vs-bypass': {
+      id: '/second-opinion/angioplasty-vs-bypass'
+      path: '/angioplasty-vs-bypass'
+      fullPath: '/second-opinion/angioplasty-vs-bypass'
+      preLoaderRoute: typeof SecondOpinionAngioplastyVsBypassRouteImport
+      parentRoute: typeof SecondOpinionRoute
+    }
   }
 }
 
@@ -453,6 +513,18 @@ const ProceduresRouteWithChildren = ProceduresRoute._addFileChildren(
   ProceduresRouteChildren,
 )
 
+interface SecondOpinionRouteChildren {
+  SecondOpinionAngioplastyVsBypassRoute: typeof SecondOpinionAngioplastyVsBypassRoute
+}
+
+const SecondOpinionRouteChildren: SecondOpinionRouteChildren = {
+  SecondOpinionAngioplastyVsBypassRoute: SecondOpinionAngioplastyVsBypassRoute,
+}
+
+const SecondOpinionRouteWithChildren = SecondOpinionRoute._addFileChildren(
+  SecondOpinionRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
@@ -460,10 +532,12 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   CostsRoute: CostsRouteWithChildren,
   FacilityRoute: FacilityRoute,
+  InsuranceRoute: InsuranceRoute,
   LocationsRoute: LocationsRouteWithChildren,
   PrivacyRoute: PrivacyRoute,
   ProceduresRoute: ProceduresRouteWithChildren,
   ReviewsRoute: ReviewsRoute,
+  SecondOpinionRoute: SecondOpinionRouteWithChildren,
   TermsRoute: TermsRoute,
 }
 export const routeTree = rootRouteImport

@@ -308,13 +308,19 @@ export const FacilitySection = memo(function FacilitySection() {
             >
               <Calendar className="h-4 w-4" /> Book Consultation
             </Link>
+            <Link
+              to="/insurance"
+              className="inline-flex items-center gap-2 rounded-full border border-emerald-400/40 bg-emerald-500/15 px-6 py-3.5 text-sm font-medium text-emerald-200 transition hover:bg-emerald-500/25"
+            >
+              <Shield className="h-4 w-4 text-emerald-300" /> Cashless TPA &amp; CGHS Desk →
+            </Link>
             <a
               href={siteConfig.hospitalUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-navy-foreground/30 px-7 py-3.5 text-sm font-medium text-navy-foreground transition hover:bg-white/10"
+              className="inline-flex items-center gap-2 rounded-full border border-navy-foreground/30 px-6 py-3.5 text-sm font-medium text-navy-foreground transition hover:bg-white/10"
             >
-              <MapPin className="h-4 w-4" /> Hospital Campus Tour
+              <MapPin className="h-4 w-4" /> Campus Tour ↗
             </a>
           </div>
         </div>

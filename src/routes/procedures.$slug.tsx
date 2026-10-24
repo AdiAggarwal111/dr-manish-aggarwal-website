@@ -686,6 +686,49 @@ function ProcedurePage() {
                     </div>
                   </div>
                 </div>
+
+                {/* Patient Desks: Cashless Insurance & Second Opinion Cross-Links */}
+                <div className="mt-8 rounded-3xl border border-border bg-card p-6 md:p-8 grid gap-6 md:grid-cols-2 shadow-sm">
+                  <div className="space-y-2 border-b md:border-b-0 md:border-r border-border pb-5 md:pb-0 md:pr-6">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
+                      Cashless Mediclaim &amp; TPA
+                    </span>
+                    <h5 className="font-display text-lg font-medium text-foreground">
+                      Planning Admission Under Insurance?
+                    </h5>
+                    <p className="text-xs text-muted-foreground leading-relaxed">
+                      Pre-authorization cleared under 60 minutes. Empanelled with 10+ TPAs, Star Health, HDFC ERGO, Care, plus full cashless CGHS &amp; ECHS coverage.
+                    </p>
+                    <div className="pt-2">
+                      <Link
+                        to="/insurance"
+                        className="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-600 dark:text-emerald-400 hover:underline"
+                      >
+                        <span>Check Cashless TPA &amp; CGHS Guidelines →</span>
+                      </Link>
+                    </div>
+                  </div>
+
+                  <div className="space-y-2 md:pl-2">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-primary">
+                      Unbiased Clinical Review
+                    </span>
+                    <h5 className="font-display text-lg font-medium text-foreground">
+                      Advised Surgery or Multiple Stents?
+                    </h5>
+                    <p className="text-xs text-muted-foreground leading-relaxed">
+                      Upload your Angiography CD or Echo report for a frame-by-frame independent review by European Structural Heart Fellow Dr. Manish Aggarwal.
+                    </p>
+                    <div className="pt-2">
+                      <Link
+                        to="/second-opinion"
+                        className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:underline"
+                      >
+                        <span>Request Digital Angiogram Second Opinion →</span>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
               </div>
             </section>
           );

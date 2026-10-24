@@ -101,6 +101,7 @@ export const Route = createFileRoute("/reviews")({
             bestRating: "5",
             worstRating: "1",
             ratingCount: siteConfig.rating.reviewCount.replace(/[^0-9]/g, ""),
+            reviewCount: siteConfig.rating.reviewCount.replace(/[^0-9]/g, ""),
           },
           review: [
             {
@@ -110,7 +111,13 @@ export const Route = createFileRoute("/reviews")({
                 name: "Vidit Aren",
                 homeLocation: "Delhi NCR",
               },
-              reviewRating: { "@type": "Rating", ratingValue: "5" },
+              datePublished: "2026-03-15",
+              reviewRating: {
+                "@type": "Rating",
+                ratingValue: "5",
+                bestRating: "5",
+                worstRating: "1",
+              },
               reviewBody:
                 "Three years of trusted care, complex case foresight, and a smooth angioplasty for my father under Dr. Manish Aggarwal.",
             },
@@ -121,7 +128,13 @@ export const Route = createFileRoute("/reviews")({
                 name: "Patient Family",
                 homeLocation: "Muzaffarnagar, Western Uttar Pradesh",
               },
-              reviewRating: { "@type": "Rating", ratingValue: "5" },
+              datePublished: "2026-05-10",
+              reviewRating: {
+                "@type": "Rating",
+                ratingValue: "5",
+                bestRating: "5",
+                worstRating: "1",
+              },
               reviewBody:
                 "Late-night emergency response from Muzaffarnagar, rapid stent placement at Yashoda Medicity, and continuous WhatsApp availability.",
             },
@@ -132,7 +145,13 @@ export const Route = createFileRoute("/reviews")({
                 name: "Senior Cardiac Patient & Family",
                 homeLocation: "Noida, Uttar Pradesh",
               },
-              reviewRating: { "@type": "Rating", ratingValue: "5" },
+              datePublished: "2026-08-20",
+              reviewRating: {
+                "@type": "Rating",
+                ratingValue: "5",
+                bestRating: "5",
+                worstRating: "1",
+              },
               reviewBody:
                 "Saved from severe complications and pericardial fluid accumulation after a botched PPI at Fortis Noida, calling Dr. Aggarwal a 'Rod of Asclepius'.",
             },

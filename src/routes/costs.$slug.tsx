@@ -486,6 +486,18 @@ function CostDetailPage() {
                 </p>
               </div>
             </div>
+
+            <div className="mt-6 pt-5 border-t border-border/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <p className="text-xs text-muted-foreground">
+                Need to verify pre-authorization with Star Health, HDFC Ergo, Care, or CGHS/ECHS?
+              </p>
+              <Link
+                to="/insurance"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:underline shrink-0"
+              >
+                <span>Full Cashless TPA &amp; CGHS Guide →</span>
+              </Link>
+            </div>
           </div>
 
           {/* FAQs Accordion */}

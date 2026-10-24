@@ -113,6 +113,7 @@ export const Route = createFileRoute("/locations/$slug")({
         aggregateRating: {
           "@type": "AggregateRating",
           ratingValue: siteConfig.rating.score,
+          ratingCount: "370",
           reviewCount: "370",
           bestRating: "5",
           worstRating: "1",

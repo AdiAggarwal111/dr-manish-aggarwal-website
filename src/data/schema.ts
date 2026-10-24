@@ -161,16 +161,79 @@ export const physicianSchema = {
   ],
   aggregateRating: {
     "@type": "AggregateRating",
-    itemReviewed: {
-      "@type": "Physician",
-      name: "Dr. Manish Aggarwal",
-      url: siteConfig.siteUrl,
-    },
     ratingValue: "4.9",
+    ratingCount: 370,
     reviewCount: 370,
     bestRating: "5",
     worstRating: "1",
+    itemReviewed: {
+      "@type": "Physician",
+      "@id": `${siteConfig.siteUrl}/#physician`,
+      name: "Dr. Manish Aggarwal",
+      image: `${siteConfig.siteUrl}/images/doctor-portrait.png`,
+      telephone: siteConfig.phone,
+      url: siteConfig.siteUrl,
+      priceRange: "$$$",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Yashoda Medicity, Indirapuram",
+        addressLocality: "Indirapuram, Ghaziabad",
+        addressRegion: "Delhi NCR, Uttar Pradesh",
+        postalCode: "201014",
+        addressCountry: "IN",
+      },
+    },
   },
+  review: [
+    {
+      "@type": "Review",
+      author: {
+        "@type": "Person",
+        name: "Vidit Aren",
+      },
+      datePublished: "2026-03-15",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+        worstRating: "1",
+      },
+      reviewBody:
+        "Three years of trusted care, complex case foresight, and a smooth angioplasty for my father under Dr. Manish Aggarwal.",
+    },
+    {
+      "@type": "Review",
+      author: {
+        "@type": "Person",
+        name: "Patient Family (Emergency Angioplasty)",
+      },
+      datePublished: "2026-05-10",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+        worstRating: "1",
+      },
+      reviewBody:
+        "Late-night emergency response from Muzaffarnagar, rapid stent placement at Yashoda Medicity, and continuous WhatsApp availability.",
+    },
+    {
+      "@type": "Review",
+      author: {
+        "@type": "Person",
+        name: "Senior Cardiac Patient & Family",
+      },
+      datePublished: "2026-08-20",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+        worstRating: "1",
+      },
+      reviewBody:
+        "Saved from severe complications and pericardial fluid accumulation after a complex procedure, calling Dr. Aggarwal an expert interventionalist.",
+    },
+  ],
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",

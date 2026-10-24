@@ -4,17 +4,16 @@ import { Menu, X, PhoneCall } from "lucide-react";
 import { siteConfig } from "@/data/site-config";
 
 interface NavItem {
-  to: "/" | "/about" | "/procedures" | "/conditions" | "/facility" | "/reviews" | "/contact";
+  to: "/" | "/about" | "/procedures" | "/conditions" | "/facility" | "/reviews" | "/contact" | "/insurance";
   label: string;
   hash?: string;
 }
 
 const NAV_ITEMS: readonly NavItem[] = [
-  { to: "/", label: "Home" },
   { to: "/about", label: "About" },
   { to: "/procedures", label: "Procedures" },
   { to: "/conditions", label: "Conditions" },
-  { to: "/facility", label: "Facility" },
+  { to: "/insurance", label: "Cashless TPA" },
   { to: "/reviews", label: "Reviews" },
 ] as const;
 
@@ -83,27 +82,26 @@ export const SiteHeader = memo(function SiteHeader() {
             </Link>
           ))}
 
-          {/* 24/7 Cardiac Emergency Helpline Pill */}
+          {/* 24/7 Cardiac Emergency Helpline Pill - Compact, sleek & non-crowded */}
           <a
             href={`tel:${siteConfig.phoneRaw}`}
-            className="inline-flex items-center gap-2 rounded-full border border-red-400/40 bg-red-500/20 px-3.5 py-2 text-xs font-semibold text-red-200 transition hover:bg-red-500/30 hover:text-white shrink-0 shadow-sm"
+            className="inline-flex items-center gap-1.5 rounded-full border border-red-400/40 bg-red-500/15 px-2.5 py-1.5 text-xs font-semibold text-red-100 transition hover:bg-red-500/30 hover:text-white shrink-0 shadow-sm"
             title="24/7 Acute Cardiac Emergency Helpline (Golden Hour Primary Angioplasty)"
           >
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
             </span>
-            <PhoneCall className="h-3.5 w-3.5 text-red-300" />
-            <span className="hidden lg:inline text-red-100">24/7 Helpline:</span>
-            <span className="font-mono text-white">{siteConfig.phoneDisplay}</span>
+            <PhoneCall className="h-3 w-3 text-red-300" />
+            <span className="font-mono text-white text-[11px] lg:text-xs">{siteConfig.phoneDisplay}</span>
           </a>
 
           <Link
             to="/contact"
-            className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-medium text-navy transition hover:bg-white/90 shrink-0 shadow-sm"
+            className="inline-flex items-center gap-1.5 rounded-full bg-white px-4 py-2 text-xs font-semibold text-navy transition hover:bg-white/90 shrink-0 shadow-sm"
           >
-            <CalendarIcon className="h-4 w-4" />
-            Book Appointment
+            <CalendarIcon className="h-3.5 w-3.5" />
+            <span>Book Appointment</span>
           </Link>
         </nav>
 
@@ -197,6 +195,29 @@ export const SiteHeader = memo(function SiteHeader() {
               activeProps={{ className: "bg-white/10 text-white font-semibold" }}
             >
               <span>Conditions Library</span>
+              <span className="text-xs text-white/40">→</span>
+            </Link>
+
+            <Link
+              to="/insurance"
+              onClick={() => setIsOpen(false)}
+              className="flex items-center justify-between rounded-2xl px-4 py-3 text-sm font-medium text-navy-foreground/90 transition hover:bg-white/10 hover:text-white"
+              activeProps={{ className: "bg-white/10 text-white font-semibold" }}
+            >
+              <span className="flex items-center gap-2">
+                <span>Cashless TPA Desk</span>
+                <span className="rounded-full bg-emerald-500/20 px-2 py-0.5 text-[10px] font-bold text-emerald-300">CGHS / ECHS</span>
+              </span>
+              <span className="text-xs text-white/40">→</span>
+            </Link>
+
+            <Link
+              to="/second-opinion"
+              onClick={() => setIsOpen(false)}
+              className="flex items-center justify-between rounded-2xl px-4 py-3 text-sm font-medium text-navy-foreground/90 transition hover:bg-white/10 hover:text-white"
+              activeProps={{ className: "bg-white/10 text-white font-semibold" }}
+            >
+              <span>Second Opinion &amp; Angiogram CD</span>
               <span className="text-xs text-white/40">→</span>
             </Link>
 
