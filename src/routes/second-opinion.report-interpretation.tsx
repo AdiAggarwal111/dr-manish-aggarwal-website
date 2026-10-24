@@ -241,7 +241,7 @@ function ReportInterpretationPage() {
                       { id: "rest", label: "Chest Pain at Rest - Pain while sitting or sleeping" },
                     ].map((s) => (
                       <option key={s.id} value={s.id}>
-                        {b.label}
+                        {s.label}
                       </option>
                     ))}
                   </select>

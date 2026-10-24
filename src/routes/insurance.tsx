@@ -353,7 +353,7 @@ function InsurancePage() {
                 <p className="text-xs text-muted-foreground leading-relaxed">
                   Covered by 100% of retail and group policies. Drug-Eluting Stents (DES) are billed strictly according to statutory NPPA caps (₹38,265 + GST). Catheterization, IVUS imaging, and post-procedure ICU care are included up to your sum insured.
                 </p>
-                <Link to="/costs/angioplasty-cost-delhi-ncr" className="inline-flex items-center gap-1 text-xs font-semibold text-primary hover:underline">
+                <Link to="/costs/$slug" params={{ slug: "angioplasty-cost-delhi-ncr" }} className="inline-flex items-center gap-1 text-xs font-semibold text-primary hover:underline">
                   <span>View Angioplasty Cost Breakdown →</span>
                 </Link>
               </div>
@@ -366,7 +366,7 @@ function InsurancePage() {
                 <p className="text-xs text-muted-foreground leading-relaxed">
                   Under the 2019 IRDAI Modern Treatment guidelines, percutaneous valve therapies are covered when surgery is deemed high risk (STS score &gt; 4% or age &gt; 65). Dr. Manish Aggarwal provides official Heart Team clinical scoring for smooth clearance.
                 </p>
-                <Link to="/costs/tavr-cost-delhi-ncr" className="inline-flex items-center gap-1 text-xs font-semibold text-primary hover:underline">
+                <Link to="/costs/$slug" params={{ slug: "tavr-cost-delhi-ncr" }} className="inline-flex items-center gap-1 text-xs font-semibold text-primary hover:underline">
                   <span>View TAVR Valve Cost Guide →</span>
                 </Link>
               </div>
@@ -379,7 +379,7 @@ function InsurancePage() {
                 <p className="text-xs text-muted-foreground leading-relaxed">
                   Radial angiography is covered under Daycare Procedures by all insurers without requiring a mandatory 24-hour hospitalization. Most patients arrive in the morning, undergo radial imaging, and are discharged within 3 hours.
                 </p>
-                <Link to="/costs/angiography-cost-delhi-ncr" className="inline-flex items-center gap-1 text-xs font-semibold text-primary hover:underline">
+                <Link to="/costs/$slug" params={{ slug: "angiography-cost-delhi-ncr" }} className="inline-flex items-center gap-1 text-xs font-semibold text-primary hover:underline">
                   <span>View Angiography Cost Guide →</span>
                 </Link>
               </div>

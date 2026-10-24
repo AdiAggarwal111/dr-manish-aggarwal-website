@@ -311,7 +311,8 @@ function EchoReportDecrypterRoute() {
                 When the aortic valve calcifies and narrows, patients experience breathlessness, syncope, or angina. Through <strong>TAVI (Transcatheter Aortic Valve Implantation)</strong>, a new biological heart valve is deployed through a tiny pinhole in the groin—without open surgery or a heart-lung bypass machine.
               </p>
               <Link
-                to="/procedures/tavi"
+                to="/procedures/$slug"
+                params={{ slug: "tavi" }}
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-300 hover:text-white transition"
               >
                 <span>Explore TAVI Eligibility &amp; Procedure Guide →</span>

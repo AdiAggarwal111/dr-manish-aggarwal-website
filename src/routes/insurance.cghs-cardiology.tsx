@@ -13,6 +13,7 @@ import {
   Award,
   ArrowRight,
   UserCheck,
+  HeartPulse,
 } from "lucide-react";
 import { siteConfig } from "@/data/site-config";
 import { PageHeroHeader } from "@/components/page-hero-header";

@@ -299,7 +299,8 @@ function DaycareRadialAngiographyPage() {
                 <span>Book on WhatsApp</span>
               </a>
               <Link
-                to="/costs/angiography-cost-delhi-ncr"
+                to="/costs/$slug"
+                params={{ slug: "angiography-cost-delhi-ncr" }}
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/10 px-5 py-3.5 text-xs font-semibold text-white hover:bg-white/20 transition"
               >
                 <span>View Angiography Pricing</span>
