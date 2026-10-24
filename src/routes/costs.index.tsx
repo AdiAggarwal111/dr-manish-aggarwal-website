@@ -16,6 +16,7 @@ import { procedureCosts } from "@/data/costs";
 import { siteConfig } from "@/data/site-config";
 import { PageHeroHeader } from "@/components/page-hero-header";
 import { AppointmentSection } from "@/components/appointment-form";
+import { CardiacCostEstimator } from "@/components/cardiac-cost-estimator";
 
 const pageTitle = `Procedure Costs & Packages | ${siteConfig.name}`;
 const pageDescription = `Transparent costs for TAVI, Angioplasty & Pacemakers at Yashoda Medicity, Indirapuram. Statutory NPPA price caps & 100% cashless insurance empanelment.`;
@@ -121,6 +122,13 @@ function CostsIndexPage() {
               </>
             }
           />
+        </div>
+      </section>
+
+      {/* Interactive Cost & Insurance Estimator */}
+      <section className="px-6 py-8 md:px-12 md:py-10">
+        <div className="mx-auto max-w-[1360px]">
+          <CardiacCostEstimator />
         </div>
       </section>
 
@@ -238,6 +246,15 @@ function CostsIndexPage() {
                     any procedure is scheduled.
                   </span>
                 </div>
+              </div>
+
+              <div className="mt-8">
+                <Link
+                  to="/costs/stent-brands-comparison"
+                  className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-5 py-2.5 text-xs font-semibold text-primary hover:bg-primary/20 transition"
+                >
+                  <span>Compare Stent Brands (Onyx vs Xience vs Indian DES) →</span>
+                </Link>
               </div>
             </div>
 

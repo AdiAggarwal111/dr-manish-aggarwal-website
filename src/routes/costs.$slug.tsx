@@ -25,6 +25,7 @@ import {
 import { procedures } from "@/data/procedures";
 import { siteConfig } from "@/data/site-config";
 import { PageHeroHeader } from "@/components/page-hero-header";
+import { CardiacCostEstimator } from "@/components/cardiac-cost-estimator";
 
 interface CostConditionItem {
   slug: string;
@@ -439,6 +440,13 @@ function CostDetailPage() {
               ))}
             </div>
           </div>
+
+          {/* Interactive Dynamic Cost Estimator (for Angioplasty) */}
+          {costGuide.slug === "angioplasty-cost-delhi-ncr" && (
+            <div className="mb-14">
+              <CardiacCostEstimator />
+            </div>
+          )}
 
           {/* 100% Cashless Insurance & TPA Guide */}
           <div className="rounded-3xl border border-border bg-cream/40 p-8 md:p-10">

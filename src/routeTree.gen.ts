@@ -26,11 +26,15 @@ import { Route as ConditionsIndexRouteImport } from './routes/conditions.index'
 import { Route as ConditionsSlugRouteImport } from './routes/conditions.$slug'
 import { Route as CostsIndexRouteImport } from './routes/costs.index'
 import { Route as CostsSlugRouteImport } from './routes/costs.$slug'
+import { Route as CostsStentBrandsComparisonRouteImport } from './routes/costs.stent-brands-comparison'
+import { Route as InsuranceCghsCardiologyRouteImport } from './routes/insurance.cghs-cardiology'
 import { Route as LocationsIndexRouteImport } from './routes/locations.index'
 import { Route as LocationsSlugRouteImport } from './routes/locations.$slug'
 import { Route as ProceduresIndexRouteImport } from './routes/procedures.index'
 import { Route as ProceduresSlugRouteImport } from './routes/procedures.$slug'
 import { Route as SecondOpinionAngioplastyVsBypassRouteImport } from './routes/second-opinion.angioplasty-vs-bypass'
+import { Route as SecondOpinionAvoidBypassSurgeryRouteImport } from './routes/second-opinion.avoid-bypass-surgery'
+import { Route as SecondOpinionReportInterpretationRouteImport } from './routes/second-opinion.report-interpretation'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -117,6 +121,17 @@ const CostsSlugRoute = CostsSlugRouteImport.update({
   path: '/$slug',
   getParentRoute: () => CostsRoute,
 } as any)
+const CostsStentBrandsComparisonRoute =
+  CostsStentBrandsComparisonRouteImport.update({
+    id: '/stent-brands-comparison',
+    path: '/stent-brands-comparison',
+    getParentRoute: () => CostsRoute,
+  } as any)
+const InsuranceCghsCardiologyRoute = InsuranceCghsCardiologyRouteImport.update({
+  id: '/cghs-cardiology',
+  path: '/cghs-cardiology',
+  getParentRoute: () => InsuranceRoute,
+} as any)
 const LocationsIndexRoute = LocationsIndexRouteImport.update({
   id: '/',
   path: '/',
@@ -143,6 +158,18 @@ const SecondOpinionAngioplastyVsBypassRoute =
     path: '/angioplasty-vs-bypass',
     getParentRoute: () => SecondOpinionRoute,
   } as any)
+const SecondOpinionAvoidBypassSurgeryRoute =
+  SecondOpinionAvoidBypassSurgeryRouteImport.update({
+    id: '/avoid-bypass-surgery',
+    path: '/avoid-bypass-surgery',
+    getParentRoute: () => SecondOpinionRoute,
+  } as any)
+const SecondOpinionReportInterpretationRoute =
+  SecondOpinionReportInterpretationRouteImport.update({
+    id: '/report-interpretation',
+    path: '/report-interpretation',
+    getParentRoute: () => SecondOpinionRoute,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -151,7 +178,7 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/costs': typeof CostsRouteWithChildren
   '/facility': typeof FacilityRoute
-  '/insurance': typeof InsuranceRoute
+  '/insurance': typeof InsuranceRouteWithChildren
   '/locations': typeof LocationsRouteWithChildren
   '/privacy': typeof PrivacyRoute
   '/procedures': typeof ProceduresRouteWithChildren
@@ -160,9 +187,13 @@ export interface FileRoutesByFullPath {
   '/terms': typeof TermsRoute
   '/conditions/$slug': typeof ConditionsSlugRoute
   '/costs/$slug': typeof CostsSlugRoute
+  '/costs/stent-brands-comparison': typeof CostsStentBrandsComparisonRoute
+  '/insurance/cghs-cardiology': typeof InsuranceCghsCardiologyRoute
   '/locations/$slug': typeof LocationsSlugRoute
   '/procedures/$slug': typeof ProceduresSlugRoute
   '/second-opinion/angioplasty-vs-bypass': typeof SecondOpinionAngioplastyVsBypassRoute
+  '/second-opinion/avoid-bypass-surgery': typeof SecondOpinionAvoidBypassSurgeryRoute
+  '/second-opinion/report-interpretation': typeof SecondOpinionReportInterpretationRoute
   '/conditions/': typeof ConditionsIndexRoute
   '/costs/': typeof CostsIndexRoute
   '/locations/': typeof LocationsIndexRoute
@@ -173,16 +204,20 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/facility': typeof FacilityRoute
-  '/insurance': typeof InsuranceRoute
+  '/insurance': typeof InsuranceRouteWithChildren
   '/privacy': typeof PrivacyRoute
   '/reviews': typeof ReviewsRoute
   '/second-opinion': typeof SecondOpinionRouteWithChildren
   '/terms': typeof TermsRoute
   '/conditions/$slug': typeof ConditionsSlugRoute
   '/costs/$slug': typeof CostsSlugRoute
+  '/costs/stent-brands-comparison': typeof CostsStentBrandsComparisonRoute
+  '/insurance/cghs-cardiology': typeof InsuranceCghsCardiologyRoute
   '/locations/$slug': typeof LocationsSlugRoute
   '/procedures/$slug': typeof ProceduresSlugRoute
   '/second-opinion/angioplasty-vs-bypass': typeof SecondOpinionAngioplastyVsBypassRoute
+  '/second-opinion/avoid-bypass-surgery': typeof SecondOpinionAvoidBypassSurgeryRoute
+  '/second-opinion/report-interpretation': typeof SecondOpinionReportInterpretationRoute
   '/conditions': typeof ConditionsIndexRoute
   '/costs': typeof CostsIndexRoute
   '/locations': typeof LocationsIndexRoute
@@ -196,7 +231,7 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/costs': typeof CostsRouteWithChildren
   '/facility': typeof FacilityRoute
-  '/insurance': typeof InsuranceRoute
+  '/insurance': typeof InsuranceRouteWithChildren
   '/locations': typeof LocationsRouteWithChildren
   '/privacy': typeof PrivacyRoute
   '/procedures': typeof ProceduresRouteWithChildren
@@ -205,9 +240,13 @@ export interface FileRoutesById {
   '/terms': typeof TermsRoute
   '/conditions/$slug': typeof ConditionsSlugRoute
   '/costs/$slug': typeof CostsSlugRoute
+  '/costs/stent-brands-comparison': typeof CostsStentBrandsComparisonRoute
+  '/insurance/cghs-cardiology': typeof InsuranceCghsCardiologyRoute
   '/locations/$slug': typeof LocationsSlugRoute
   '/procedures/$slug': typeof ProceduresSlugRoute
   '/second-opinion/angioplasty-vs-bypass': typeof SecondOpinionAngioplastyVsBypassRoute
+  '/second-opinion/avoid-bypass-surgery': typeof SecondOpinionAvoidBypassSurgeryRoute
+  '/second-opinion/report-interpretation': typeof SecondOpinionReportInterpretationRoute
   '/conditions/': typeof ConditionsIndexRoute
   '/costs/': typeof CostsIndexRoute
   '/locations/': typeof LocationsIndexRoute
@@ -231,9 +270,13 @@ export interface FileRouteTypes {
     | '/terms'
     | '/conditions/$slug'
     | '/costs/$slug'
+    | '/costs/stent-brands-comparison'
+    | '/insurance/cghs-cardiology'
     | '/locations/$slug'
     | '/procedures/$slug'
     | '/second-opinion/angioplasty-vs-bypass'
+    | '/second-opinion/avoid-bypass-surgery'
+    | '/second-opinion/report-interpretation'
     | '/conditions/'
     | '/costs/'
     | '/locations/'
@@ -251,9 +294,13 @@ export interface FileRouteTypes {
     | '/terms'
     | '/conditions/$slug'
     | '/costs/$slug'
+    | '/costs/stent-brands-comparison'
+    | '/insurance/cghs-cardiology'
     | '/locations/$slug'
     | '/procedures/$slug'
     | '/second-opinion/angioplasty-vs-bypass'
+    | '/second-opinion/avoid-bypass-surgery'
+    | '/second-opinion/report-interpretation'
     | '/conditions'
     | '/costs'
     | '/locations'
@@ -275,9 +322,13 @@ export interface FileRouteTypes {
     | '/terms'
     | '/conditions/$slug'
     | '/costs/$slug'
+    | '/costs/stent-brands-comparison'
+    | '/insurance/cghs-cardiology'
     | '/locations/$slug'
     | '/procedures/$slug'
     | '/second-opinion/angioplasty-vs-bypass'
+    | '/second-opinion/avoid-bypass-surgery'
+    | '/second-opinion/report-interpretation'
     | '/conditions/'
     | '/costs/'
     | '/locations/'
@@ -291,7 +342,7 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   CostsRoute: typeof CostsRouteWithChildren
   FacilityRoute: typeof FacilityRoute
-  InsuranceRoute: typeof InsuranceRoute
+  InsuranceRoute: typeof InsuranceRouteWithChildren
   LocationsRoute: typeof LocationsRouteWithChildren
   PrivacyRoute: typeof PrivacyRoute
   ProceduresRoute: typeof ProceduresRouteWithChildren
@@ -421,6 +472,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CostsSlugRouteImport
       parentRoute: typeof CostsRoute
     }
+    '/costs/stent-brands-comparison': {
+      id: '/costs/stent-brands-comparison'
+      path: '/stent-brands-comparison'
+      fullPath: '/costs/stent-brands-comparison'
+      preLoaderRoute: typeof CostsStentBrandsComparisonRouteImport
+      parentRoute: typeof CostsRoute
+    }
+    '/insurance/cghs-cardiology': {
+      id: '/insurance/cghs-cardiology'
+      path: '/cghs-cardiology'
+      fullPath: '/insurance/cghs-cardiology'
+      preLoaderRoute: typeof InsuranceCghsCardiologyRouteImport
+      parentRoute: typeof InsuranceRoute
+    }
     '/locations/': {
       id: '/locations/'
       path: '/'
@@ -456,6 +521,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SecondOpinionAngioplastyVsBypassRouteImport
       parentRoute: typeof SecondOpinionRoute
     }
+    '/second-opinion/avoid-bypass-surgery': {
+      id: '/second-opinion/avoid-bypass-surgery'
+      path: '/avoid-bypass-surgery'
+      fullPath: '/second-opinion/avoid-bypass-surgery'
+      preLoaderRoute: typeof SecondOpinionAvoidBypassSurgeryRouteImport
+      parentRoute: typeof SecondOpinionRoute
+    }
+    '/second-opinion/report-interpretation': {
+      id: '/second-opinion/report-interpretation'
+      path: '/report-interpretation'
+      fullPath: '/second-opinion/report-interpretation'
+      preLoaderRoute: typeof SecondOpinionReportInterpretationRouteImport
+      parentRoute: typeof SecondOpinionRoute
+    }
   }
 }
 
@@ -475,15 +554,29 @@ const ConditionsRouteWithChildren = ConditionsRoute._addFileChildren(
 
 interface CostsRouteChildren {
   CostsSlugRoute: typeof CostsSlugRoute
+  CostsStentBrandsComparisonRoute: typeof CostsStentBrandsComparisonRoute
   CostsIndexRoute: typeof CostsIndexRoute
 }
 
 const CostsRouteChildren: CostsRouteChildren = {
   CostsSlugRoute: CostsSlugRoute,
+  CostsStentBrandsComparisonRoute: CostsStentBrandsComparisonRoute,
   CostsIndexRoute: CostsIndexRoute,
 }
 
 const CostsRouteWithChildren = CostsRoute._addFileChildren(CostsRouteChildren)
+
+interface InsuranceRouteChildren {
+  InsuranceCghsCardiologyRoute: typeof InsuranceCghsCardiologyRoute
+}
+
+const InsuranceRouteChildren: InsuranceRouteChildren = {
+  InsuranceCghsCardiologyRoute: InsuranceCghsCardiologyRoute,
+}
+
+const InsuranceRouteWithChildren = InsuranceRoute._addFileChildren(
+  InsuranceRouteChildren,
+)
 
 interface LocationsRouteChildren {
   LocationsSlugRoute: typeof LocationsSlugRoute
@@ -515,10 +608,15 @@ const ProceduresRouteWithChildren = ProceduresRoute._addFileChildren(
 
 interface SecondOpinionRouteChildren {
   SecondOpinionAngioplastyVsBypassRoute: typeof SecondOpinionAngioplastyVsBypassRoute
+  SecondOpinionAvoidBypassSurgeryRoute: typeof SecondOpinionAvoidBypassSurgeryRoute
+  SecondOpinionReportInterpretationRoute: typeof SecondOpinionReportInterpretationRoute
 }
 
 const SecondOpinionRouteChildren: SecondOpinionRouteChildren = {
   SecondOpinionAngioplastyVsBypassRoute: SecondOpinionAngioplastyVsBypassRoute,
+  SecondOpinionAvoidBypassSurgeryRoute: SecondOpinionAvoidBypassSurgeryRoute,
+  SecondOpinionReportInterpretationRoute:
+    SecondOpinionReportInterpretationRoute,
 }
 
 const SecondOpinionRouteWithChildren = SecondOpinionRoute._addFileChildren(
@@ -532,7 +630,7 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   CostsRoute: CostsRouteWithChildren,
   FacilityRoute: FacilityRoute,
-  InsuranceRoute: InsuranceRoute,
+  InsuranceRoute: InsuranceRouteWithChildren,
   LocationsRoute: LocationsRouteWithChildren,
   PrivacyRoute: PrivacyRoute,
   ProceduresRoute: ProceduresRouteWithChildren,

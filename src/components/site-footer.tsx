@@ -262,8 +262,24 @@ export const SiteFooter = memo(function SiteFooter() {
             <ul className="space-y-1.5 text-xs text-slate-400">
               <li>
                 <Link
+                  to="/second-opinion/avoid-bypass-surgery"
+                  className="text-white hover:text-rose-300 transition font-medium block py-0.5"
+                >
+                  Avoid Bypass Surgery (CABG) Hub
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/second-opinion/report-interpretation"
+                  className="text-white hover:text-rose-300 transition font-medium block py-0.5"
+                >
+                  Report Decrypter: 70%–90% Blockage
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/second-opinion/angioplasty-vs-bypass"
-                  className="text-white hover:text-blue-300 transition font-medium block py-0.5"
+                  className="text-slate-200 hover:text-blue-300 transition font-medium block py-0.5"
                 >
                   Angioplasty vs Bypass (CABG) Guide
                 </Link>
@@ -271,12 +287,12 @@ export const SiteFooter = memo(function SiteFooter() {
               <li>
                 <Link
                   to="/costs/heart-checkup-packages-cost"
-                  className="text-white hover:text-blue-300 transition font-medium block py-0.5"
+                  className="hover:text-white transition block py-0.5"
                 >
                   2D Echo, TMT &amp; Diagnostic Tests
                 </Link>
               </li>
-              {conditions.slice(0, 6).map((c) => (
+              {conditions.slice(0, 5).map((c) => (
                 <li key={c.slug}>
                   <Link
                     to="/conditions/$slug"
@@ -303,10 +319,28 @@ export const SiteFooter = memo(function SiteFooter() {
           <div className="lg:col-span-2">
             <h3 className="mb-3 text-xs font-bold tracking-[0.15em] uppercase text-white flex items-center gap-2">
               <CreditCard className="h-3.5 w-3.5 text-emerald-400" />
-              <span>Cost Guides</span>
+              <span>Cost &amp; Hardware</span>
             </h3>
             <ul className="space-y-2 text-xs text-slate-400">
-              {procedureCosts.slice(0, 5).map((g) => (
+              <li>
+                <Link
+                  to="/costs/stent-brands-comparison"
+                  className="text-white hover:text-emerald-300 transition block py-0.5 font-medium"
+                >
+                  <span className="block truncate">Which Stent is Best? (Onyx vs Xience)</span>
+                  <span className="text-[10px] text-emerald-400/80">NPPA Cap ₹38,265</span>
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="/costs#cost-estimator"
+                  className="text-emerald-300 hover:text-white transition block py-0.5 font-medium"
+                >
+                  <span className="block truncate">Interactive Cost Estimator ↗</span>
+                  <span className="text-[10px] text-slate-400">Calculate Hospital Package</span>
+                </a>
+              </li>
+              {procedureCosts.slice(0, 4).map((g) => (
                 <li key={g.slug}>
                   <Link
                     to="/costs/$slug"
@@ -327,7 +361,7 @@ export const SiteFooter = memo(function SiteFooter() {
                   to="/costs"
                   className="inline-flex items-center gap-1 text-xs font-semibold text-emerald-300 hover:text-white transition"
                 >
-                  <span>View All 8 Cost Guides</span>
+                  <span>View All Cost Guides</span>
                   <ChevronRight className="h-3 w-3" />
                 </Link>
               </li>
@@ -338,22 +372,27 @@ export const SiteFooter = memo(function SiteFooter() {
           <div className="lg:col-span-2">
             <h3 className="mb-3 text-xs font-bold tracking-[0.15em] uppercase text-white flex items-center gap-2">
               <Building2 className="h-3.5 w-3.5 text-blue-400" />
-              <span>Patient Services</span>
+              <span>Specialized Desks</span>
             </h3>
             <ul className="space-y-1.5 text-xs text-slate-400">
               <li>
+                <Link to="/insurance/cghs-cardiology" className="text-white hover:text-blue-300 transition font-medium">
+                  CGHS &amp; ECHS Fast-Track Desk
+                </Link>
+              </li>
+              <li>
+                <Link to="/second-opinion/avoid-bypass-surgery" className="text-white hover:text-blue-300 transition font-medium">
+                  Avoid Bypass Surgery Hub
+                </Link>
+              </li>
+              <li>
                 <Link to="/insurance" className="hover:text-white transition font-medium text-slate-200">
-                  Cashless TPA &amp; CGHS Desk
+                  Cashless TPA Empanelment
                 </Link>
               </li>
               <li>
                 <Link to="/second-opinion" className="hover:text-white transition font-medium text-slate-200">
-                  Angiogram CD Review
-                </Link>
-              </li>
-              <li>
-                <Link to="/second-opinion/angioplasty-vs-bypass" className="hover:text-white transition">
-                  Stent vs Bypass Guide
+                  Angiogram CD Review Desk
                 </Link>
               </li>
               <li>
