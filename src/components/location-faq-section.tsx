@@ -72,6 +72,13 @@ export const LocationFaqSection = memo(function LocationFaqSection() {
     name: `Dr. Manish Aggarwal | Interventional Cardiology Suite at ${siteConfig.hospital}`,
     image: `${siteConfig.siteUrl}/images/yashoda-medicity-hero.jpg`,
     url: siteConfig.siteUrl,
+    hasMap: siteConfig.googleMapsUrl,
+    sameAs: [
+      siteConfig.googleMapsUrl,
+      siteConfig.googleProfileUrl,
+      siteConfig.hospitalUrl,
+      siteConfig.siteUrl,
+    ],
     telephone: siteConfig.phone,
     priceRange: "$$",
     address: {
@@ -187,7 +194,7 @@ export const LocationFaqSection = memo(function LocationFaqSection() {
               {/* Action Buttons beneath Map */}
               <div className="flex flex-wrap items-center justify-between gap-3 pt-1">
                 <a
-                  href={`https://www.google.com/maps/dir/?api=1&destination=Yashoda+Medicity+Indirapuram+Ghaziabad`}
+                  href={siteConfig.googleMapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-full bg-navy px-6 py-3 text-xs font-semibold text-white transition hover:opacity-90 shadow-sm"

@@ -227,7 +227,7 @@ export const SiteFooter = memo(function SiteFooter() {
               <div className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 text-blue-400 shrink-0 mt-0.5" />
                 <a
-                  href={siteConfig.hospitalUrl}
+                  href={siteConfig.googleMapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white transition underline decoration-white/20"

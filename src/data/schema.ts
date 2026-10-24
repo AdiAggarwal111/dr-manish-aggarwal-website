@@ -32,12 +32,19 @@ export const physicianSchema = {
   currenciesAccepted: "INR",
   description:
     "Dr. Manish Aggarwal is the Director & Department Head of Interventional Cardiology & Structural Heart Specialist at Yashoda Medicity, Indirapuram, Ghaziabad, Delhi NCR. With over 28 years of clinical experience and 12,500+ successful cardiac procedures, he specializes in TAVR/TAVI, Complex Angioplasty (CHIP/CTO), Rotablation, and 24/7 Emergency Primary PCI.",
-  sameAs: ["https://www.yashodahospital.org/doctor/dr-manish-aggarwal", siteConfig.siteUrl],
+  hasMap: siteConfig.googleMapsUrl,
+  sameAs: [
+    siteConfig.googleMapsUrl,
+    siteConfig.googleProfileUrl,
+    siteConfig.hospitalUrl,
+    siteConfig.siteUrl,
+  ],
   worksFor: {
     "@type": "Hospital",
     "@id": "https://www.yashodahospital.org/doctor/dr-manish-aggarwal",
     name: "Yashoda Medicity",
     url: "https://www.yashodahospital.org/doctor/dr-manish-aggarwal",
+    hasMap: siteConfig.googleMapsUrl,
     telephone: "+91-9871183181",
     address: {
       "@type": "PostalAddress",
@@ -57,6 +64,7 @@ export const physicianSchema = {
     "@type": "Hospital",
     name: "Yashoda Medicity",
     url: "https://www.yashodahospital.org/doctor/dr-manish-aggarwal",
+    hasMap: siteConfig.googleMapsUrl,
     address: {
       "@type": "PostalAddress",
       streetAddress: "Yashoda Medicity, Indirapuram",

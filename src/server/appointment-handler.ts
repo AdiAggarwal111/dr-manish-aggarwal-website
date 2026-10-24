@@ -268,7 +268,7 @@ function buildPatientConfirmationHtml(
               <p style="margin:0;font-size:13px;color:#475569;line-height:1.5;">
                 <strong>Hospital Location:</strong><br />
                 Yashoda Medicity, Indirapuram, Ghaziabad, Delhi NCR 201014<br />
-                Direct Link: <a href="https://maps.google.com/?q=Yashoda+Medicity+Indirapuram" style="color:#0284c7;text-decoration:none;">Open in Google Maps</a>
+                Direct Link: <a href="https://maps.app.goo.gl/BrU9t1byXzPg6dx89" style="color:#0284c7;text-decoration:none;">Open in Google Maps</a>
               </p>
 
             </td>
