@@ -353,10 +353,42 @@ export const SiteFooter = memo(function SiteFooter() {
               </li>
               <li>
                 <Link
+                  to="/second-opinion/report-interpretation"
+                  className="text-white hover:text-blue-300 transition font-medium block py-0.5"
+                >
+                  <span className="text-blue-400 font-semibold">[Tool]</span> Report Decrypter: 70%–90% Blockage
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/second-opinion/avoid-bypass-surgery"
+                  className="text-white hover:text-rose-300 transition font-medium block py-0.5"
+                >
+                  <span className="text-rose-300 font-semibold">[Guide]</span> Avoid Bypass Surgery (CABG) Hub
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/second-opinion/echo-report-decrypter"
                   className="text-white hover:text-blue-300 transition font-medium block py-0.5"
                 >
                   <span className="text-blue-400 font-semibold">[Tool]</span> 2D Echo Report Normal Decrypter
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/second-opinion/angioplasty-vs-bypass"
+                  className="text-slate-200 hover:text-amber-300 transition font-medium block py-0.5"
+                >
+                  <span className="text-amber-400 font-semibold">[Guide]</span> Angioplasty vs Bypass (CABG) Guide
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/second-opinion/max-fortis-cardiac-second-opinion"
+                  className="text-white hover:text-cyan-300 transition font-medium block py-0.5"
+                >
+                  <span className="text-cyan-400 font-semibold">[Desk]</span> Max &amp; Fortis 2nd Opinion
                 </Link>
               </li>
               <li>
@@ -368,43 +400,35 @@ export const SiteFooter = memo(function SiteFooter() {
                 </Link>
               </li>
               <li>
-                <Link to="/second-opinion/avoid-bypass-surgery" className="text-white hover:text-rose-300 transition font-medium block py-0.5">
-                  Avoid Bypass Surgery (CABG) Hub
+                <Link
+                  to="/procedures/daycare-radial-angiography"
+                  className="text-white hover:text-teal-300 transition font-medium block py-0.5"
+                >
+                  <span className="text-teal-400 font-semibold">[Desk]</span> Same-Day Radial Angiography
                 </Link>
               </li>
               <li>
-                <Link to="/second-opinion/report-interpretation" className="text-white hover:text-blue-300 transition font-medium block py-0.5">
-                  Report Decrypter: 70%–90% Blockage
+                <Link
+                  to="/conditions/in-stent-restenosis-treatment"
+                  className="text-white hover:text-purple-300 transition font-medium block py-0.5"
+                >
+                  <span className="text-purple-400 font-semibold">[Clinic]</span> Blocked Stent (ISR) Clinic
                 </Link>
               </li>
               <li>
-                <Link to="/second-opinion/angioplasty-vs-bypass" className="text-slate-200 hover:text-blue-300 transition font-medium block py-0.5">
-                  Angioplasty vs Bypass (CABG) Guide
+                <Link
+                  to="/insurance/cghs-cardiology"
+                  className="text-slate-200 hover:text-emerald-300 transition font-medium block py-0.5"
+                >
+                  <span className="text-emerald-400 font-semibold">[Desk]</span> CGHS &amp; ECHS Fast-Track Desk
                 </Link>
               </li>
               <li>
-                <Link to="/second-opinion/max-fortis-cardiac-second-opinion" className="text-white hover:text-blue-300 transition font-medium block py-0.5">
-                  Max &amp; Fortis 2nd Opinion
-                </Link>
-              </li>
-              <li>
-                <Link to="/procedures/daycare-radial-angiography" className="text-white hover:text-blue-300 transition font-medium block py-0.5">
-                  Same-Day Radial Angiography
-                </Link>
-              </li>
-              <li>
-                <Link to="/conditions/in-stent-restenosis-treatment" className="text-white hover:text-blue-300 transition font-medium block py-0.5">
-                  Blocked Stent (ISR) Clinic
-                </Link>
-              </li>
-              <li>
-                <Link to="/best-cardiologist-indirapuram-ghaziabad" className="text-white hover:text-blue-300 transition font-medium block py-0.5">
-                  Top Cardiologist Selection Guide
-                </Link>
-              </li>
-              <li>
-                <Link to="/insurance/cghs-cardiology" className="hover:text-white transition font-medium text-slate-200 block py-0.5">
-                  CGHS &amp; ECHS Fast-Track Desk
+                <Link
+                  to="/best-cardiologist-indirapuram-ghaziabad"
+                  className="text-white hover:text-indigo-300 transition font-medium block py-0.5"
+                >
+                  <span className="text-indigo-400 font-semibold">[Guide]</span> Top Cardiologist Selection Guide
                 </Link>
               </li>
             </ul>
