@@ -834,4 +834,742 @@ export const procedureCosts: ProcedureCostGuide[] = [
       "angiography cost in Delhi NCR, coronary angiogram price Ghaziabad, radial angiography cost Indirapuram, heart test cost Yashoda Medicity, cashless angiography insurance, Dr Manish Aggarwal",
     relatedProcedureSlug: "coronary-angiography",
   },
+  {
+    slug: "mitraclip-cost-india",
+    procedureTitle:
+      "MitraClip (TEER) Procedure Cost in India & Delhi NCR (2026 Transparent Guide)",
+    shortTitle: "MitraClip Cost Guide",
+    heroTagline:
+      "Transparent Pricing for Non-Surgical Mitral Valve Repair · Abbott Clip Systems · Cashless TPA Approvals",
+    summary:
+      "A complete breakdown of Transcatheter Edge-to-Edge Repair (MitraClip / TEER) costs at Yashoda Medicity, Indirapuram. Explaining Abbott clip hardware pricing, single vs. dual clip requirements, 48-hour CCU stay, and insurance pre-authorization pathways for high-risk heart failure patients.",
+    overallPriceRange: "₹24,00,000 to ₹34,00,000",
+    statutoryHighlight:
+      "Minimally invasive pinhole femoral vein access with zero sternotomy, zero heart-lung bypass machine, and rapid discharge within 48 to 72 hours.",
+    keyStats: [
+      {
+        label: "Single Clip Package",
+        value: "₹24.0L – ₹28.5L",
+        subtext: "Standard non-surgical repair for severe primary or secondary mitral regurgitation",
+      },
+      {
+        label: "Dual Clip Package",
+        value: "₹29.0L – ₹34.0L",
+        subtext: "For complex broad regurgitant jets or severe multi-scallop leaflet prolapse",
+      },
+      {
+        label: "Hospital Discharge",
+        value: "48 to 72 Hours",
+        subtext: "Walking within 12 hours; eliminates 3-month open sternotomy bone recovery",
+      },
+      {
+        label: "Insurance Approval",
+        value: "High-Risk Clause",
+        subtext: "Covered under IRDAI structural heart clauses for high surgical risk candidates",
+      },
+    ],
+    nppaStatutoryBreakdown: {
+      title: "Abbott MitraClip G4 Delivery System & 3D Echo Guidance",
+      description:
+        "MitraClip is a breakthrough imported precision device from Abbott Vascular. Because the system is imported under specialized CDSCO licensing, costs are primarily dictated by device manufacturing and real-time intraoperative 3D transesophageal echocardiography (TEE).",
+      statutoryCaps: [
+        {
+          component: "Abbott MitraClip G4 Clip Implant & Steerable Catheter",
+          ceilingPrice: "₹18,00,000 – ₹24,00,000",
+          nppaReference: "US-FDA & CDSCO licensed micro-mechanical structural implant",
+        },
+        {
+          component: "Real-Time 3D TEE & Hybrid Cath Lab Utilization",
+          ceilingPrice: "₹1,80,000 – ₹2,80,000",
+          nppaReference: "Multi-plane echocardiographic guidance & biplane fluoroscopy",
+        },
+        {
+          component: "Dedicated Cardiac Critical Care (CCU) & Telemetry",
+          ceilingPrice: "₹1,20,000 – ₹2,00,000",
+          nppaReference: "48-hour post-procedural hemodynamic monitoring suite",
+        },
+      ],
+    },
+    roomTiers: [
+      {
+        roomType: "Twin Sharing Room",
+        estimatedRange: "₹24,00,000 – ₹27,50,000",
+        icuStay: "24 to 48 hours specialized cardiac CCU",
+        roomStay: "1 to 2 days semi-private recovery room",
+        includes: [
+          "Complete Abbott MitraClip delivery system and single clip",
+          "Hybrid Cath Lab charges, 3D TEE and general anesthesia",
+          "Dedicated cardiac critical care nursing & telemetry",
+          "Post-implant Doppler echocardiogram and discharge medications",
+        ],
+      },
+      {
+        roomType: "Single Private Room",
+        estimatedRange: "₹27,50,000 – ₹31,00,000",
+        icuStay: "24 to 48 hours private CCU bay",
+        roomStay: "2 days private room accommodation for family",
+        includes: [
+          "All device hardware, sterile consumables & anesthesia",
+          "Private room with dedicated attendant couch and meals",
+          "Priority insurance pre-authorization desk coordination",
+          "Comprehensive follow-up Doppler echo at 30 days",
+        ],
+      },
+      {
+        roomType: "Deluxe Suite",
+        estimatedRange: "₹31,00,000 – ₹34,00,000",
+        icuStay: "Executive CCU monitoring",
+        roomStay: "2 to 3 days luxury suite with patient lounge",
+        includes: [
+          "Dual-clip accommodation if complex jet requires two devices",
+          "Executive suite with private patient meeting area",
+          "Direct bedside concierge and priority medication fulfillment",
+          "Comprehensive cardiac rehabilitation orientation",
+        ],
+      },
+    ],
+    costBreakdown: [
+      {
+        category: "Abbott MitraClip Hardware & Delivery Catheter",
+        sharePercentage: "72%",
+        description:
+          "Advanced cobalt-chromium clip arms, nitinol gripper mechanism, and multi-steerable guide catheter.",
+      },
+      {
+        category: "Hybrid Cath Lab & 3D TEE Guidance",
+        sharePercentage: "14%",
+        description:
+          "Real-time transesophageal echocardiography, biplane fluoroscopy, and sterile structural surgical suite.",
+      },
+      {
+        category: "Cardiac ICU (CCU) & Inpatient Room",
+        sharePercentage: "9%",
+        description:
+          "Specialized post-procedural hemodynamic monitoring, non-invasive cardiac output tracking, and recovery care.",
+      },
+      {
+        category: "Structural Heart Specialist & Anesthesia",
+        sharePercentage: "5%",
+        description:
+          "European-fellowship trained structural cardiologist fee, cardiac anesthesia, and echocardiographer team.",
+      },
+    ],
+    variableFactors: [
+      {
+        factor: "Single Clip vs. Dual Clip Deployment",
+        impact: "₹4,50,000 – ₹6,00,000 variance",
+        guidance:
+          "If the regurgitant jet is broad or spans multiple scallops, placing a second clip ensures complete eradication of leakage.",
+      },
+      {
+        factor: "Underlying Left Ventricular Dysfunction",
+        impact: "₹1,00,000 – ₹2,50,000 variance",
+        guidance:
+          "Patients with very low ejection fraction (EF < 25%) may require temporary inotropic support or extra CCU observation hours.",
+      },
+      {
+        factor: "Prior Open-Heart Surgery (Redo Risk)",
+        impact: "Zero surgical penalty",
+        guidance:
+          "MitraClip is performed through a vein from the groin, completely bypassing dangerous chest adhesions from prior bypass surgery.",
+      },
+    ],
+    insuranceCoverage: {
+      summary:
+        "MitraClip is covered under IRDAI guidelines for severe symptomatic mitral regurgitation (primary or secondary) in patients deemed high-risk or prohibitive surgical candidates for conventional open-heart surgery.",
+      acceptedInsurers: [
+        "Star Health & Allied Insurance",
+        "Care Health Insurance",
+        "HDFC ERGO General Insurance",
+        "ICICI Lombard",
+        "Niva Bupa Health Insurance",
+        "Bajaj Allianz",
+        "Medi Assist TPA",
+        "Paramount TPA",
+      ],
+      cghsEchsStatus:
+        "Eligible for CGHS / ECHS special committee sanction for elderly or inoperable cardiac patients.",
+      preAuthDuration:
+        "High-value pre-authorizations are typically processed in 48 to 72 hours with detailed 3D Echo documentation.",
+      coPayDetails:
+        "Depends on your policy sum insured; high-sum insured plans (₹25L–₹50L) cover the majority of hardware expenses.",
+    },
+    faqs: [
+      {
+        question: "Why does MitraClip cost more than conventional open-heart valve surgery?",
+        answer:
+          "The primary cost lies in the Abbott precision bio-engineering hardware, which replaces major open-chest surgery with a microscopic clip. However, MitraClip avoids cracked breastbones, eliminates cardiopulmonary bypass machine complications, reduces CCU stay to 1–2 days, and allows patients in their 70s and 80s to walk home in 48 hours.",
+      },
+      {
+        question: "Can MitraClip be covered 100% under health insurance?",
+        answer:
+          "Yes, if the patient has an adequate sum insured (typically ₹25L+ or high-deductible super top-up policy) and documented high surgical risk (EuroSCORE II > 4% or STS score > 8%). Dr. Manish Aggarwal's clinical team provides complete documentation for insurer pre-approval.",
+      },
+      {
+        question: "How long does a MitraClip last?",
+        answer:
+          "Clinical trials (COAPT, EVEREST II) prove durable mitral regurgitation reduction extending beyond 5 to 10 years, with significant reversal of heart failure symptoms, reduced hospitalizations, and improved longevity.",
+      },
+    ],
+    metaTitle: "MitraClip Procedure Cost in India & Delhi NCR (2026 Transparent Guide)",
+    metaDescription:
+      "Transparent MitraClip (TEER) cost guide in Delhi NCR (₹24L - ₹34L). Single vs dual clip pricing, Abbott hardware, insurance coverage, and recovery at Yashoda Medicity.",
+    keywords:
+      "MitraClip cost India, TEER procedure cost Delhi NCR, MitraClip price Yashoda Medicity, non surgical mitral valve repair cost, cashless MitraClip insurance, Dr Manish Aggarwal",
+    relatedProcedureSlug: "mitraclip",
+  },
+  {
+    slug: "rotablation-shockwave-ivl-cost",
+    procedureTitle:
+      "Rotablation & Shockwave IVL Angioplasty Cost in Delhi NCR (2026 Transparent Guide)",
+    shortTitle: "Rotablation & IVL Stent Cost",
+    heroTagline:
+      "Transparent Pricing for Severely Calcified Arteries · Diamond Burr & Sonic Lithotripsy Stenting",
+    summary:
+      "A complete transparent cost guide for complex calcified angioplasty at Yashoda Medicity, Indirapuram. Explaining the incremental hardware costs of Rotablator diamond-tipped burrs (~₹45K–₹65K), Shockwave Intravascular Lithotripsy (IVL) sonic balloons (~₹75K–₹1.1L), OCT imaging guidance, and NPPA-capped drug-eluting stents.",
+    overallPriceRange: "₹2,20,000 to ₹3,85,000",
+    statutoryHighlight:
+      "All Drug-Eluting Stents strictly adhere to the NPPA government price ceiling (~₹38,260 + GST); incremental charges reflect only single-use precision rotational burrs or acoustic lithotripsy catheters.",
+    keyStats: [
+      {
+        label: "Rotablation Stenting Package",
+        value: "₹2.20L – ₹2.95L",
+        subtext: "Includes diamond burr, advancer unit, NPPA DES stent & 24h CCU stay",
+      },
+      {
+        label: "Shockwave IVL Package",
+        value: "₹2.60L – ₹3.45L",
+        subtext: "Includes sonic lithotripsy balloon, pulse generator, DES stent & imaging",
+      },
+      {
+        label: "Combined Rota-Tripsy Package",
+        value: "₹3.20L – ₹3.85L",
+        subtext: "For impenetrable, eccentric 360-degree rock-hard calcified blockages",
+      },
+      {
+        label: "Avoided Open Surgery",
+        value: "100% Non-Surgical",
+        subtext: "Treats patients turned down for bypass surgery due to high surgical risk",
+      },
+    ],
+    nppaStatutoryBreakdown: {
+      title: "NPPA Stent Ceiling Compliance & Specialized Plaque Modification",
+      description:
+        "Unlike routine angioplasty, rock-hard calcium cannot be stretched by standard balloons without risking vessel rupture. Specialized single-use plaque-fracturing devices must be deployed before stent implantation.",
+      statutoryCaps: [
+        {
+          component: "Drug-Eluting Stent (DES) - US-FDA Approved",
+          ceilingPrice: "₹38,260 (+ GST)",
+          nppaReference: "NPPA Order S.O. 1335(E) statutory national ceiling cap",
+        },
+        {
+          component: "Boston Scientific Rotablator Diamond Burr & RotaWire",
+          ceilingPrice: "₹45,000 – ₹62,000",
+          nppaReference: "160,000 RPM diamond-grit rotational atherectomy consumable",
+        },
+        {
+          component: "Shockwave Medical Coronary IVL Sonic Balloon",
+          ceilingPrice: "₹75,000 – ₹1,10,000",
+          nppaReference: "Sonic pressure wave intravascular lithotripsy catheter",
+        },
+        {
+          component: "High-Definition OCT / IVUS Catheter",
+          ceilingPrice: "₹28,000 – ₹38,000",
+          nppaReference: "10-micron near-infrared calcium thickness measurement catheter",
+        },
+      ],
+    },
+    roomTiers: [
+      {
+        roomType: "Twin Sharing Room",
+        estimatedRange: "₹2,20,000 – ₹2,80,000",
+        icuStay: "24 hours specialized cardiac CCU",
+        roomStay: "1 to 2 days semi-private room",
+        includes: [
+          "Complete Rotablation or single IVL balloon procedure",
+          "1 NPPA-capped US-FDA drug-eluting stent",
+          "Cath Lab fluoroscopy, contrast dye & CCU monitoring",
+          "Post-procedure medications and discharge summary",
+        ],
+      },
+      {
+        roomType: "Single Private Room",
+        estimatedRange: "₹2,80,000 – ₹3,30,000",
+        icuStay: "24 hours dedicated CCU",
+        roomStay: "2 days private room for patient & attendant",
+        includes: [
+          "Plaque modification hardware + DES stent + OCT guidance",
+          "Private room with dedicated attendant couch and meals",
+          "Priority cashless insurance pre-authorization desk assistance",
+          "Comprehensive discharge counseling by Dr. Manish Aggarwal",
+        ],
+      },
+      {
+        roomType: "Deluxe Suite",
+        estimatedRange: "₹3,30,000 – ₹3,85,000",
+        icuStay: "Executive CCU monitoring",
+        roomStay: "2 to 3 days luxury suite",
+        includes: [
+          "Combined Rota-Tripsy protocol or multi-vessel calcified stenting",
+          "Executive suite with private family waiting area",
+          "Full high-definition DICOM CD footage of pre/post calcium fracture",
+          "Comprehensive personalized cardiac rehabilitation plan",
+        ],
+      },
+    ],
+    costBreakdown: [
+      {
+        category: "Rotablation Burr / Shockwave Lithotripsy Balloon",
+        sharePercentage: "38%",
+        description:
+          "Single-use micro-mechanical diamond burrs or acoustic sonic pulse emitters that fracture calcified rings.",
+      },
+      {
+        category: "NPPA-Capped Drug-Eluting Stents (DES)",
+        sharePercentage: "22%",
+        description:
+          "Latest-generation cobalt-chromium / platinum-chromium antiproliferative drug-eluting stents.",
+      },
+      {
+        category: "Cath Lab Suite, Fluoroscopy & OCT Imaging",
+        sharePercentage: "24%",
+        description:
+          "High-definition biplane imaging, 10-micron OCT optical pull-through, and high-pressure non-compliant balloons.",
+      },
+      {
+        category: "Cardiac CCU, Room & Specialist Nursing",
+        sharePercentage: "16%",
+        description:
+          "24-hour hemodynamic telemetry, radial sheath care, blood tests, and hospital room stay.",
+      },
+    ],
+    variableFactors: [
+      {
+        factor: "Single vs. Multiple Shockwave IVL Balloons",
+        impact: "₹75,000 – ₹95,000 per additional balloon",
+        guidance:
+          "If severe calcification spans across both LAD and Circumflex vessels, two distinct balloon sizes may be required.",
+      },
+      {
+        factor: "Rota-Tripsy Combination Technique",
+        impact: "₹60,000 – ₹85,000 additional",
+        guidance:
+          "For uncrossable, impenetrable lesions where Rotablation drills an initial pilot channel and Shockwave fractures deep calcium.",
+      },
+      {
+        factor: "OCT or IVUS Optical Imaging Guidance",
+        impact: "₹28,000 – ₹38,000",
+        guidance:
+          "Strongly recommended to verify 100% calcium fracture and eliminate stent under-expansion.",
+      },
+    ],
+    insuranceCoverage: {
+      summary:
+        "Rotablation and Shockwave IVL are fully approved, medically necessary procedures under IRDAI guidelines. Because they treat calcified blockages that cannot be opened by standard angioplasty, private insurance TPAs, CGHS, and ECHS approve them as cashless emergency or planned admissions.",
+      acceptedInsurers: [
+        "Star Health & Allied Insurance",
+        "Care Health Insurance",
+        "HDFC ERGO General Insurance",
+        "ICICI Lombard",
+        "Niva Bupa Health Insurance",
+        "Bajaj Allianz",
+        "Medi Assist TPA",
+        "Paramount TPA",
+      ],
+      cghsEchsStatus:
+        "Approved under CGHS / ECHS rates with prior permission or emergency CCU admission at Yashoda Medicity.",
+      preAuthDuration:
+        "Emergency cases pre-authorized within 60 minutes; planned admissions within 24 to 48 hours.",
+      coPayDetails:
+        "Zero co-pay for standard corporate and retail policies; hardware expenses reimbursed up to approved sum insured.",
+    },
+    faqs: [
+      {
+        question: "Why does Shockwave IVL or Rotablation cost more than standard angioplasty?",
+        answer:
+          "Standard angioplasty uses basic plastic balloons. Severely calcified arteries are like porcelain pipes; normal balloons will burst before stretching the calcium. Rotablation uses a 160,000 RPM diamond-dusted drill and Shockwave uses acoustic sound waves (lithotripsy). These imported single-use devices add to hardware costs, but they make stenting 100% safe and prevent emergency open-heart surgery.",
+      },
+      {
+        question: "Can calcified blockages be treated with a normal stent without Rotablation?",
+        answer:
+          "No. Forcing a stent into heavily calcified plaque without fracturing the calcium leads to stent under-expansion—the stent gets squashed and cannot open fully. This results in acute stent clotting, recurrent chest pain, or emergency bypass surgery within months. Plaque modification ensures the stent expands fully to its intended millimeter diameter.",
+      },
+      {
+        question: "Is Shockwave Lithotripsy covered under health insurance?",
+        answer:
+          "Yes. Yashoda Medicity's TPA desk submits pre-procedure coronary angiogram images demonstrating heavy calcium. Insurers approve the medical necessity of IVL lithotripsy and Rotablation catheters as essential angioplasty consumables.",
+      },
+    ],
+    metaTitle: "Rotablation & Shockwave IVL Cost in Delhi NCR (2026 Transparent Guide)",
+    metaDescription:
+      "Transparent cost guide for Rotablation & Shockwave IVL angioplasty in Delhi NCR (₹2.2L - ₹3.85L). Diamond burr, sonic balloon, NPPA stent caps, and cashless insurance at Yashoda Medicity.",
+    keywords:
+      "Rotablation cost in Delhi NCR, Shockwave IVL stent price Ghaziabad, calcified angioplasty cost India, diamond burr stent cost Yashoda Medicity, cashless IVL insurance, Dr Manish Aggarwal",
+    relatedProcedureSlug: "complex-coronary",
+  },
+  {
+    slug: "aicd-crtd-pacemaker-cost",
+    procedureTitle:
+      "AICD & CRT-D Heart Failure Device Cost in Delhi NCR (2026 Transparent Guide)",
+    shortTitle: "AICD & CRT-D Device Cost Guide",
+    heroTagline:
+      "Transparent Pricing for Life-Saving Defibrillators & Resynchronization Devices · 100% Cashless TPA Support",
+    summary:
+      "A detailed, transparent cost guide for Automatic Implantable Cardioverter Defibrillators (AICD) and Cardiac Resynchronization Therapy Defibrillators (CRT-D) at Yashoda Medicity, Indirapuram. Explaining why shock-delivering defibrillators cost more than basic pacemakers, device lifespan (8–11 years), MRI compatibility, and cashless insurance coverage for low EF patients.",
+    overallPriceRange: "₹4,25,000 to ₹9,80,000",
+    statutoryHighlight:
+      "Advanced cardiac rhythm management devices protecting against sudden cardiac arrest and reversing heart failure in patients with ejection fraction < 35%.",
+    keyStats: [
+      {
+        label: "Single-Chamber AICD",
+        value: "₹4.25L – ₹5.80L",
+        subtext: "Delivers life-saving electrical shock to abort sudden cardiac arrest and VT/VF",
+      },
+      {
+        label: "Dual-Chamber AICD",
+        value: "₹5.40L – ₹6.95L",
+        subtext: "Provides dual-chamber pacing plus instant defibrillation backup",
+      },
+      {
+        label: "CRT-D (Combo Device)",
+        value: "₹7.20L – ₹9.80L",
+        subtext: "Biventricular 3-lead pacing for low EF heart failure + defibrillator shock",
+      },
+      {
+        label: "Battery Longevity",
+        value: "8 to 11 Years",
+        subtext: "Long-term protection with Bluetooth home interrogation and MRI safety",
+      },
+    ],
+    nppaStatutoryBreakdown: {
+      title: "Advanced Titanium Pulse Generators & Quadripolar Defibrillation Leads",
+      description:
+        "Unlike standard pacemakers that only stimulate a slow pulse (bradycardia), AICDs and CRT-Ds contain powerful micro-capacitors capable of sensing lethal ventricular tachycardias and delivering a 35 to 40 Joule internal defibrillation shock within seconds.",
+      statutoryCaps: [
+        {
+          component: "Single / Dual Chamber AICD Generator & Shocking Lead",
+          ceilingPrice: "₹3,20,000 – ₹4,80,000",
+          nppaReference: "US-FDA / CE-approved implantable cardioverter defibrillator unit",
+        },
+        {
+          component: "CRT-D Multi-Lead Generator & Quadripolar LV Lead",
+          ceilingPrice: "₹5,80,000 – ₹7,80,000",
+          nppaReference: "Biventricular resynchronization device with coronary sinus lead",
+        },
+        {
+          component: "Cath Lab Electrophysiology Suite & Programming",
+          ceilingPrice: "₹45,000 – ₹75,000",
+          nppaReference: "Intraoperative pacing threshold testing & computer interrogation",
+        },
+      ],
+    },
+    roomTiers: [
+      {
+        roomType: "Twin Sharing Room",
+        estimatedRange: "₹4,25,000 – ₹7,50,000",
+        icuStay: "24 hours cardiac CCU",
+        roomStay: "1 to 2 days semi-private room",
+        includes: [
+          "Complete AICD or CRT-D pulse generator and active-fixation leads",
+          "Cath Lab implantation suite and electrophysiology testing",
+          "Initial programming, threshold testing, and warranty card",
+          "Discharge medications and wound dressing",
+        ],
+      },
+      {
+        roomType: "Single Private Room",
+        estimatedRange: "₹5,20,000 – ₹8,80,000",
+        icuStay: "24 hours dedicated CCU",
+        roomStay: "2 days private room for patient & family",
+        includes: [
+          "All device hardware, telemetry and sterile consumables",
+          "Private room with attendant sofa-bed and meals",
+          "Priority cashless insurance pre-authorization desk coordination",
+          "First 1-month post-discharge programmer check under Dr. Manish Aggarwal",
+        ],
+      },
+      {
+        roomType: "Deluxe Suite",
+        estimatedRange: "₹6,00,000 – ₹9,80,000",
+        icuStay: "Executive CCU monitoring",
+        roomStay: "2 to 3 days luxury suite",
+        includes: [
+          "Premium quadripolar CRT-D or Bluetooth wireless home monitoring hub",
+          "Executive suite with private patient consultation area",
+          "Direct clinical coordinator assistance and VIP discharge",
+          "Lifetime device interrogation card and international travel clearance",
+        ],
+      },
+    ],
+    costBreakdown: [
+      {
+        category: "AICD / CRT-D Pulse Generator & Leads",
+        sharePercentage: "76%",
+        description:
+          "High-energy capacitor battery unit, transvenous DF-4 defibrillation leads, and quadripolar left ventricular pacing wires.",
+      },
+      {
+        category: "Cath Lab Suite & Electrophysiology Testing",
+        sharePercentage: "12%",
+        description:
+          "Fluoroscopy suite, intra-operative pacing system analyzer (PSA), and sterile surgical pocket creation.",
+      },
+      {
+        category: "Cardiac CCU & Inpatient Care",
+        sharePercentage: "8%",
+        description:
+          "24-hour continuous rhythm monitoring, post-implant chest X-ray, and dedicated telemetry.",
+      },
+      {
+        category: "Implanting Cardiologist & Device Programming",
+        sharePercentage: "4%",
+        description:
+          "Specialist interventional surgical fee, threshold optimization, and patient education.",
+      },
+    ],
+    variableFactors: [
+      {
+        factor: "Single vs. Dual Chamber vs. CRT-D",
+        impact: "₹2,50,000 – ₹4,00,000 variance",
+        guidance:
+          "Patients with pure sudden arrest risk receive an AICD; heart failure patients with low EF (<35%) and wide QRS require CRT-D for chamber resynchronization.",
+      },
+      {
+        factor: "Quadripolar Left Ventricular Lead Technology",
+        impact: "₹40,000 – ₹65,000 variance",
+        guidance:
+          "Quadripolar leads allow 14+ electronic pacing vectors, overcoming phrenic nerve stimulation and ensuring optimal heart resynchronization.",
+      },
+      {
+        factor: "Wireless Home Monitoring Transmitter",
+        impact: "Included in premium tiers",
+        guidance:
+          "Transmits daily electrical reports directly from the patient's bedside to Dr. Manish Aggarwal's clinical dashboard.",
+      },
+    ],
+    insuranceCoverage: {
+      summary:
+        "AICD and CRT-D devices are 100% approved under IRDAI guidelines for patients meeting guideline criteria (documented LVEF < 35%, prior sudden cardiac arrest, or documented ventricular tachycardia). Yashoda Medicity's TPA desk coordinates full cashless authorization across private insurers, TPAs, CGHS, and ECHS.",
+      acceptedInsurers: [
+        "Star Health & Allied Insurance",
+        "Care Health Insurance",
+        "HDFC ERGO General Insurance",
+        "ICICI Lombard",
+        "Niva Bupa Health Insurance",
+        "Bajaj Allianz",
+        "Medi Assist TPA",
+        "Paramount TPA",
+      ],
+      cghsEchsStatus:
+        "Fully approved under CGHS and ECHS rate schedules with prior sanction from competent medical authority.",
+      preAuthDuration:
+        "Emergency cardiac arrest admissions pre-authorized within 1 hour; elective heart failure admissions in 24 to 48 hours.",
+      coPayDetails:
+        "Zero co-pay for standard plans; covered up to the patient's approved sum insured.",
+    },
+    faqs: [
+      {
+        question: "Why does an AICD cost significantly more than a standard pacemaker?",
+        answer:
+          "A standard pacemaker only delivers tiny low-voltage micro-pulses to gently nudge a slow heart. An AICD contains a complex miniature computer and high-voltage capacitor capable of generating a life-saving 35 to 40 Joule electrical shock to restart a dying heart in sudden cardiac arrest. The intricate circuitry, shocking coils, and titanium encapsulation account for the cost difference.",
+      },
+      {
+        question: "What is the difference between a standard pacemaker, an AICD, and a CRT-D?",
+        answer:
+          "A standard pacemaker treats slow heart rates (bradycardia). An AICD monitors for dangerously fast rhythms (VT/VF) and delivers a shock to prevent sudden death. A CRT-D combines both: it places three pacing leads to coordinate the weak left and right ventricles (reversing heart failure) while also having the built-in defibrillator shock backup.",
+      },
+      {
+        question: "Can an AICD patient undergo an MRI scan in the future?",
+        answer:
+          "Yes. All modern AICD and CRT-D devices implanted by Dr. Manish Aggarwal at Yashoda Medicity are Full-Body MRI Conditional (1.5T and 3.0T certified), allowing safe scans whenever clinically required.",
+      },
+    ],
+    metaTitle: "AICD & CRT-D Device Cost in Delhi NCR (2026 Transparent Guide)",
+    metaDescription:
+      "Transparent AICD & CRT-D cost guide in Delhi NCR (₹4.25L - ₹9.8L). Single vs dual chamber defibrillator price, heart failure resynchronization, and cashless insurance at Yashoda Medicity.",
+    keywords:
+      "AICD cost in Delhi NCR, CRT-D cost Ghaziabad, implantable defibrillator price India, heart failure pacemaker cost Yashoda Medicity, cashless AICD insurance, Dr Manish Aggarwal",
+    relatedProcedureSlug: "pacemakers",
+  },
+  {
+    slug: "heart-checkup-packages-cost",
+    procedureTitle:
+      "Executive Heart Check-Up & Cardiac Diagnostic Packages Cost in Delhi NCR (2026 Guide)",
+    shortTitle: "Heart Check-Up Packages Cost",
+    heroTagline:
+      "Transparent Diagnostic Cardiology Pricing · 2D Echo, TMT, Holter & CT Calcium Scores · Zero Hidden Tests",
+    summary:
+      "A complete transparent cost guide for executive and master cardiac health check-up packages at Yashoda Medicity, Indirapuram. Explaining individual and bundled costs for 2D Echocardiography, Treadmill Stress Testing (TMT), 24-Hour Holter Monitoring, Carotid Doppler, and personal consultation with Director of Cardiology Dr. Manish Aggarwal.",
+    overallPriceRange: "₹2,500 to ₹11,500",
+    statutoryHighlight:
+      "Comprehensive same-day diagnostic testing reviewed personally by Director of Interventional Cardiology Dr. Manish Aggarwal with eligible Section 80D tax deductions.",
+    keyStats: [
+      {
+        label: "Basic Cardiac Wellness",
+        value: "₹2,500 – ₹3,800",
+        subtext: "ECG, 2D Echocardiogram with Color Doppler & Cardiologist Consultation",
+      },
+      {
+        label: "Comprehensive Executive Package",
+        value: "₹4,800 – ₹6,900",
+        subtext: "ECG, 2D Echo, TMT Stress Test, Comprehensive Lipid Profile & Full Review",
+      },
+      {
+        label: "Advanced Master Heart Package",
+        value: "₹8,500 – ₹11,500",
+        subtext: "Echo, TMT, Carotid Doppler, HbA1c, Kidney/Liver panel & Extended Holter / CT Calcium",
+      },
+      {
+        label: "Turnaround Time",
+        value: "Same-Day (2 to 3 Hours)",
+        subtext: "All diagnostic reports, graphs, and cardiologist prescription handed over immediately",
+      },
+    ],
+    nppaStatutoryBreakdown: {
+      title: "Diagnostic Equipment Accuracy & Institutional Quality Standards",
+      description:
+        "Every diagnostic evaluation utilizes hospital-grade quaternary cardiac instrumentation, including GE Vivid high-definition 2D Echo machines with color tissue Doppler, computerized Mortara treadmill stress systems, and automated digital telemetry.",
+      statutoryCaps: [
+        {
+          component: "2D Echocardiography with Color Doppler",
+          ceilingPrice: "₹2,200 – ₹3,200",
+          nppaReference: "Measures EF, valve gradients, regurgitation & wall motion",
+        },
+        {
+          component: "Treadmill Exercise Stress Test (TMT)",
+          ceilingPrice: "₹1,800 – ₹2,500",
+          nppaReference: "Computerized stress ECG for inducible coronary ischemia",
+        },
+        {
+          component: "24-Hour Ambulatory Holter Rhythm Monitoring",
+          ceilingPrice: "₹3,000 – ₹4,500",
+          nppaReference: "Continuous 3-channel digital arrhythmia and syncope recording",
+        },
+        {
+          component: "Consultation with Director of Interventional Cardiology",
+          ceilingPrice: "₹1,200 – ₹1,800",
+          nppaReference: "Comprehensive physical examination & clinical risk stratification",
+        },
+      ],
+    },
+    roomTiers: [
+      {
+        roomType: "Basic Cardiac Wellness Suite",
+        estimatedRange: "₹2,500 – ₹3,800",
+        icuStay: "Zero (Outpatient Walk-In)",
+        roomStay: "1 to 2 hours outpatient lounge",
+        includes: [
+          "Standard 12-lead Electrocardiogram (ECG)",
+          "High-definition 2D Echocardiogram with Color Doppler",
+          "Blood pressure, BMI, and vital risk assessment",
+          "Personal consultation and report review by Dr. Manish Aggarwal",
+        ],
+      },
+      {
+        roomType: "Executive Comprehensive Package",
+        estimatedRange: "₹4,800 – ₹6,900",
+        icuStay: "Zero (Outpatient Walk-In)",
+        roomStay: "2 to 3 hours outpatient lounge",
+        includes: [
+          "Everything in Basic Package + Computerized Treadmill Stress Test (TMT)",
+          "Fasting Lipid Profile (Total Cholesterol, HDL, LDL, Triglycerides)",
+          "Fasting Blood Sugar & HbA1c (3-month diabetic marker)",
+          "Kidney Function Test (Serum Creatinine & Blood Urea)",
+          "Detailed lifestyle, diet, and preventive medical prescription",
+        ],
+      },
+      {
+        roomType: "Master Advanced Heart Screen",
+        estimatedRange: "₹8,500 – ₹11,500",
+        icuStay: "Zero (Outpatient Walk-In)",
+        roomStay: "3 to 4 hours outpatient lounge",
+        includes: [
+          "Everything in Executive Package + Bilateral Carotid Doppler",
+          "Ultrasound screening for carotid artery plaque and stroke risk",
+          "High-sensitivity C-Reactive Protein (hs-CRP) inflammatory marker",
+          "Thyroid Profile (TSH) and complete electrolyte panel",
+          "Dedicated 1-on-1 lifestyle counseling and customized preventive plan",
+        ],
+      },
+    ],
+    costBreakdown: [
+      {
+        category: "Diagnostic Cardiac Imaging (2D Echo & TMT)",
+        sharePercentage: "52%",
+        description:
+          "High-definition echocardiographic ultrasound, tissue Doppler imaging, and treadmill stress lab usage.",
+      },
+      {
+        category: "Biochemical & Metabolic Pathology Panel",
+        sharePercentage: "26%",
+        description:
+          "Fasting lipid fraction, glycemic control (HbA1c), renal markers, and cardiovascular inflammatory indicators.",
+      },
+      {
+        category: "Cardiologist Clinical Review & Risk Profiling",
+        sharePercentage: "22%",
+        description:
+          "Detailed clinical evaluation by Director Dr. Manish Aggarwal, ASCVD 10-year risk scoring, and management plan.",
+      },
+    ],
+    variableFactors: [
+      {
+        factor: "Addition of 24-Hour Holter Monitoring",
+        impact: "₹3,000 – ₹4,500 additional",
+        guidance:
+          "Recommended for patients experiencing intermittent palpitations, irregular beats, or unexplained lightheadedness.",
+      },
+      {
+        factor: "CT Coronary Calcium Scoring",
+        impact: "₹4,500 – ₹6,500 additional",
+        guidance:
+          "Ultra-low radiation non-contrast CT scan that quantifies actual calcium deposits inside coronary arteries for asymptomatic high-risk individuals.",
+      },
+      {
+        factor: "Stress Echocardiography Alternative",
+        impact: "₹1,500 – ₹2,500 variance",
+        guidance:
+          "For patients with knee arthritis or orthopedic limitations unable to run on a treadmill, Dobutamine Stress Echo is performed.",
+      },
+    ],
+    insuranceCoverage: {
+      summary:
+        "While routine preventive health checkups are generally outpatient (OPD) expenses, they qualify for legal tax deductions under Section 80D of the Indian Income Tax Act (up to ₹5,000 per financial year). Many corporate group insurance policies and executive wellness benefits provide 100% reimbursement for annual cardiac evaluations.",
+      acceptedInsurers: [
+        "Corporate Group Health Insurance (OPD Wellness Reimbursement)",
+        "Star Health (Preventive Health Checkup Vouchers)",
+        "Care Health (Annual Health Checkup Benefits)",
+        "HDFC ERGO (My:Health Wellness Benefits)",
+        "ICICI Lombard (OPD Care Rider)",
+      ],
+      cghsEchsStatus:
+        "Diagnostic investigations covered under CGHS / ECHS rates upon valid specialist OPD prescription.",
+      preAuthDuration: "Instant same-day walk-in testing with zero pre-auth delay.",
+      coPayDetails:
+        "Full tax deduction certificate provided under Section 80D for preventive health check-up expenses.",
+    },
+    faqs: [
+      {
+        question: "Can I claim income tax deduction for a heart check-up under Section 80D?",
+        answer:
+          "Yes. Under Section 80D of the Indian Income Tax Act, you can claim a deduction of up to ₹5,000 per financial year for preventive health check-ups for yourself, your spouse, dependent children, or parents. Yashoda Medicity issues an official itemized medical receipt for tax filing.",
+      },
+      {
+        question: "How often should an adult over 40 get an echocardiogram and TMT stress test?",
+        answer:
+          "For asymptomatic individuals without major risk factors, a baseline evaluation at age 40 followed by testing every 2 to 3 years is recommended. For individuals with diabetes, high blood pressure, smoking history, or a family history of early heart attacks, annual cardiac screening with 2D Echo and TMT is strongly advised.",
+      },
+      {
+        question: "What preparation is needed before an executive heart check-up?",
+        answer:
+          "Please arrive following 10 to 12 hours of overnight fasting for accurate blood sugar and lipid tests. Wear comfortable sports shoes and loose clothing for the treadmill test (TMT). Continue your regular morning medications with small sips of water unless specifically instructed otherwise by our team.",
+      },
+    ],
+    metaTitle: "Heart Check-Up Packages Cost in Delhi NCR & Ghaziabad (2026 Guide)",
+    metaDescription:
+      "Transparent heart check-up package costs in Delhi NCR (₹2,500 - ₹11,500). 2D Echo, TMT, Holter, lipid tests, and personal review by Dr. Manish Aggarwal at Yashoda Medicity.",
+    keywords:
+      "heart check up cost Delhi NCR, cardiac health checkup packages Ghaziabad, 2D echo test price Indirapuram, TMT test cost Yashoda Medicity, executive heart checkup cost, Dr Manish Aggarwal",
+    relatedProcedureSlug: "heart-checkup",
+  },
 ];
