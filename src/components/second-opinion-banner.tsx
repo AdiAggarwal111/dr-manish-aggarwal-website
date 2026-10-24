@@ -64,6 +64,26 @@ export const SecondOpinionBanner = memo(function SecondOpinionBanner() {
                   </span>
                 </div>
               </div>
+
+              {/* Direct Action Button placed right below the 3 boxes */}
+              <div className="pt-2 flex flex-wrap items-center gap-3">
+                <Link
+                  to="/second-opinion"
+                  className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-xs sm:text-sm font-semibold text-navy transition hover:bg-slate-100 shadow-md"
+                >
+                  <Disc className="h-4 w-4 text-primary" />
+                  <span>Read Full CD Review Protocol &amp; Guidelines →</span>
+                </Link>
+                <a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full border border-emerald-400/40 bg-emerald-500/20 px-5 py-3 text-xs sm:text-sm font-semibold text-emerald-200 transition hover:bg-emerald-500/30"
+                >
+                  <MessageSquare className="h-4 w-4 text-emerald-400" />
+                  <span>WhatsApp Angiogram File</span>
+                </a>
+              </div>
             </div>
 
             {/* Right Action Column */}

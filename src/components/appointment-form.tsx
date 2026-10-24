@@ -1,4 +1,5 @@
 import { useState, useId, useTransition, useRef } from "react";
+import { Link } from "@tanstack/react-router";
 import {
   Calendar,
   MapPin,
@@ -798,16 +799,13 @@ export function AppointmentSection({ heading, sub }: { heading?: string; sub?: s
               </p>
             </div>
 
-            <a
-              href={siteConfig.hospitalUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/insurance"
               className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:underline shrink-0"
-              title="View Dr. Manish Aggarwal's Official Yashoda Medicity Profile"
+              title="View Full Cashless TPA & CGHS Desk"
             >
-              <span>Explore Yashoda Medicity TPA Desk</span>
-              <span aria-hidden="true">↗</span>
-            </a>
+              <span>Explore Yashoda Medicity TPA Desk →</span>
+            </Link>
           </div>
 
           {/* Badges Grid */}
@@ -842,6 +840,25 @@ export function AppointmentSection({ heading, sub }: { heading?: string; sub?: s
             <span className="font-mono text-[11px] text-foreground font-medium shrink-0">
               Emergency Pre-Auth SLA: &lt;60 Minutes
             </span>
+          </div>
+
+          {/* Direct High-Visibility CTA button below the boxes */}
+          <div className="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4 pt-5 border-t border-border/60">
+            <div className="text-center sm:text-left">
+              <p className="text-xs sm:text-sm font-semibold text-foreground">
+                Need cashless pre-authorization, TPA query assistance, or CGHS / ECHS details?
+              </p>
+              <p className="text-xs text-muted-foreground mt-0.5">
+                Explore our full cashless empanelment directory, document checklist, and 30-minute approval workflow.
+              </p>
+            </div>
+            <Link
+              to="/insurance"
+              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-navy px-6 py-3 text-xs sm:text-sm font-semibold text-white shadow-sm hover:opacity-90 transition"
+            >
+              <ShieldCheck className="h-4 w-4 text-emerald-400" />
+              <span>Explore Full Cashless TPA &amp; CGHS Desk →</span>
+            </Link>
           </div>
         </div>
       </div>
