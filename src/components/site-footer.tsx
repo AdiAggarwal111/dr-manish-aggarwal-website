@@ -376,12 +376,32 @@ export const SiteFooter = memo(function SiteFooter() {
             </h3>
             <ul className="space-y-1.5 text-xs text-slate-400">
               <li>
-                <Link to="/insurance/cghs-cardiology" className="text-white hover:text-blue-300 transition font-medium">
+                <Link to="/second-opinion/max-fortis-cardiac-second-opinion" className="text-white hover:text-blue-300 transition font-medium">
+                  Max &amp; Fortis 2nd Opinion
+                </Link>
+              </li>
+              <li>
+                <Link to="/procedures/daycare-radial-angiography" className="text-white hover:text-blue-300 transition font-medium">
+                  Same-Day Radial Angiography
+                </Link>
+              </li>
+              <li>
+                <Link to="/conditions/in-stent-restenosis-treatment" className="text-white hover:text-blue-300 transition font-medium">
+                  Blocked Stent (ISR) Clinic
+                </Link>
+              </li>
+              <li>
+                <Link to="/best-cardiologist-indirapuram-ghaziabad" className="text-white hover:text-blue-300 transition font-medium">
+                  Top Cardiologist Selection Guide
+                </Link>
+              </li>
+              <li>
+                <Link to="/insurance/cghs-cardiology" className="hover:text-white transition font-medium text-slate-200">
                   CGHS &amp; ECHS Fast-Track Desk
                 </Link>
               </li>
               <li>
-                <Link to="/second-opinion/avoid-bypass-surgery" className="text-white hover:text-blue-300 transition font-medium">
+                <Link to="/second-opinion/avoid-bypass-surgery" className="hover:text-white transition font-medium text-slate-200">
                   Avoid Bypass Surgery Hub
                 </Link>
               </li>
@@ -393,31 +413,6 @@ export const SiteFooter = memo(function SiteFooter() {
               <li>
                 <Link to="/second-opinion" className="hover:text-white transition font-medium text-slate-200">
                   Angiogram CD Review Desk
-                </Link>
-              </li>
-              <li>
-                <Link to="/reviews" className="hover:text-white transition">
-                  Patient Reviews (4.9★)
-                </Link>
-              </li>
-              <li>
-                <Link to="/facility" className="hover:text-white transition">
-                  Hospital &amp; Cath Labs
-                </Link>
-              </li>
-              <li>
-                <Link to="/locations" className="hover:text-white transition">
-                  Delhi NCR Corridors
-                </Link>
-              </li>
-              <li>
-                <Link to="/about" className="hover:text-white transition">
-                  About Dr. Manish
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="hover:text-white transition">
-                  Contact &amp; Directions
                 </Link>
               </li>
             </ul>

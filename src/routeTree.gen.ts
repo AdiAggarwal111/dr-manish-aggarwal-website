@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
+import { Route as BestCardiologistIndirapuramGhaziabadRouteImport } from './routes/best-cardiologist-indirapuram-ghaziabad'
 import { Route as ConditionsRouteImport } from './routes/conditions'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CostsRouteImport } from './routes/costs'
@@ -24,6 +25,7 @@ import { Route as SecondOpinionRouteImport } from './routes/second-opinion'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as ConditionsIndexRouteImport } from './routes/conditions.index'
 import { Route as ConditionsSlugRouteImport } from './routes/conditions.$slug'
+import { Route as ConditionsInStentRestenosisTreatmentRouteImport } from './routes/conditions.in-stent-restenosis-treatment'
 import { Route as CostsIndexRouteImport } from './routes/costs.index'
 import { Route as CostsSlugRouteImport } from './routes/costs.$slug'
 import { Route as CostsStentBrandsComparisonRouteImport } from './routes/costs.stent-brands-comparison'
@@ -32,8 +34,10 @@ import { Route as LocationsIndexRouteImport } from './routes/locations.index'
 import { Route as LocationsSlugRouteImport } from './routes/locations.$slug'
 import { Route as ProceduresIndexRouteImport } from './routes/procedures.index'
 import { Route as ProceduresSlugRouteImport } from './routes/procedures.$slug'
+import { Route as ProceduresDaycareRadialAngiographyRouteImport } from './routes/procedures.daycare-radial-angiography'
 import { Route as SecondOpinionAngioplastyVsBypassRouteImport } from './routes/second-opinion.angioplasty-vs-bypass'
 import { Route as SecondOpinionAvoidBypassSurgeryRouteImport } from './routes/second-opinion.avoid-bypass-surgery'
+import { Route as SecondOpinionMaxFortisCardiacSecondOpinionRouteImport } from './routes/second-opinion.max-fortis-cardiac-second-opinion'
 import { Route as SecondOpinionReportInterpretationRouteImport } from './routes/second-opinion.report-interpretation'
 
 const IndexRoute = IndexRouteImport.update({
@@ -46,6 +50,12 @@ const AboutRoute = AboutRouteImport.update({
   path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BestCardiologistIndirapuramGhaziabadRoute =
+  BestCardiologistIndirapuramGhaziabadRouteImport.update({
+    id: '/best-cardiologist-indirapuram-ghaziabad',
+    path: '/best-cardiologist-indirapuram-ghaziabad',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ConditionsRoute = ConditionsRouteImport.update({
   id: '/conditions',
   path: '/conditions',
@@ -111,6 +121,12 @@ const ConditionsSlugRoute = ConditionsSlugRouteImport.update({
   path: '/$slug',
   getParentRoute: () => ConditionsRoute,
 } as any)
+const ConditionsInStentRestenosisTreatmentRoute =
+  ConditionsInStentRestenosisTreatmentRouteImport.update({
+    id: '/in-stent-restenosis-treatment',
+    path: '/in-stent-restenosis-treatment',
+    getParentRoute: () => ConditionsRoute,
+  } as any)
 const CostsIndexRoute = CostsIndexRouteImport.update({
   id: '/',
   path: '/',
@@ -152,6 +168,12 @@ const ProceduresSlugRoute = ProceduresSlugRouteImport.update({
   path: '/$slug',
   getParentRoute: () => ProceduresRoute,
 } as any)
+const ProceduresDaycareRadialAngiographyRoute =
+  ProceduresDaycareRadialAngiographyRouteImport.update({
+    id: '/daycare-radial-angiography',
+    path: '/daycare-radial-angiography',
+    getParentRoute: () => ProceduresRoute,
+  } as any)
 const SecondOpinionAngioplastyVsBypassRoute =
   SecondOpinionAngioplastyVsBypassRouteImport.update({
     id: '/angioplasty-vs-bypass',
@@ -164,6 +186,12 @@ const SecondOpinionAvoidBypassSurgeryRoute =
     path: '/avoid-bypass-surgery',
     getParentRoute: () => SecondOpinionRoute,
   } as any)
+const SecondOpinionMaxFortisCardiacSecondOpinionRoute =
+  SecondOpinionMaxFortisCardiacSecondOpinionRouteImport.update({
+    id: '/max-fortis-cardiac-second-opinion',
+    path: '/max-fortis-cardiac-second-opinion',
+    getParentRoute: () => SecondOpinionRoute,
+  } as any)
 const SecondOpinionReportInterpretationRoute =
   SecondOpinionReportInterpretationRouteImport.update({
     id: '/report-interpretation',
@@ -174,6 +202,7 @@ const SecondOpinionReportInterpretationRoute =
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/best-cardiologist-indirapuram-ghaziabad': typeof BestCardiologistIndirapuramGhaziabadRoute
   '/conditions': typeof ConditionsRouteWithChildren
   '/contact': typeof ContactRoute
   '/costs': typeof CostsRouteWithChildren
@@ -186,13 +215,16 @@ export interface FileRoutesByFullPath {
   '/second-opinion': typeof SecondOpinionRouteWithChildren
   '/terms': typeof TermsRoute
   '/conditions/$slug': typeof ConditionsSlugRoute
+  '/conditions/in-stent-restenosis-treatment': typeof ConditionsInStentRestenosisTreatmentRoute
   '/costs/$slug': typeof CostsSlugRoute
   '/costs/stent-brands-comparison': typeof CostsStentBrandsComparisonRoute
   '/insurance/cghs-cardiology': typeof InsuranceCghsCardiologyRoute
   '/locations/$slug': typeof LocationsSlugRoute
   '/procedures/$slug': typeof ProceduresSlugRoute
+  '/procedures/daycare-radial-angiography': typeof ProceduresDaycareRadialAngiographyRoute
   '/second-opinion/angioplasty-vs-bypass': typeof SecondOpinionAngioplastyVsBypassRoute
   '/second-opinion/avoid-bypass-surgery': typeof SecondOpinionAvoidBypassSurgeryRoute
+  '/second-opinion/max-fortis-cardiac-second-opinion': typeof SecondOpinionMaxFortisCardiacSecondOpinionRoute
   '/second-opinion/report-interpretation': typeof SecondOpinionReportInterpretationRoute
   '/conditions/': typeof ConditionsIndexRoute
   '/costs/': typeof CostsIndexRoute
@@ -202,6 +234,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/best-cardiologist-indirapuram-ghaziabad': typeof BestCardiologistIndirapuramGhaziabadRoute
   '/contact': typeof ContactRoute
   '/facility': typeof FacilityRoute
   '/insurance': typeof InsuranceRouteWithChildren
@@ -210,13 +243,16 @@ export interface FileRoutesByTo {
   '/second-opinion': typeof SecondOpinionRouteWithChildren
   '/terms': typeof TermsRoute
   '/conditions/$slug': typeof ConditionsSlugRoute
+  '/conditions/in-stent-restenosis-treatment': typeof ConditionsInStentRestenosisTreatmentRoute
   '/costs/$slug': typeof CostsSlugRoute
   '/costs/stent-brands-comparison': typeof CostsStentBrandsComparisonRoute
   '/insurance/cghs-cardiology': typeof InsuranceCghsCardiologyRoute
   '/locations/$slug': typeof LocationsSlugRoute
   '/procedures/$slug': typeof ProceduresSlugRoute
+  '/procedures/daycare-radial-angiography': typeof ProceduresDaycareRadialAngiographyRoute
   '/second-opinion/angioplasty-vs-bypass': typeof SecondOpinionAngioplastyVsBypassRoute
   '/second-opinion/avoid-bypass-surgery': typeof SecondOpinionAvoidBypassSurgeryRoute
+  '/second-opinion/max-fortis-cardiac-second-opinion': typeof SecondOpinionMaxFortisCardiacSecondOpinionRoute
   '/second-opinion/report-interpretation': typeof SecondOpinionReportInterpretationRoute
   '/conditions': typeof ConditionsIndexRoute
   '/costs': typeof CostsIndexRoute
@@ -227,6 +263,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/best-cardiologist-indirapuram-ghaziabad': typeof BestCardiologistIndirapuramGhaziabadRoute
   '/conditions': typeof ConditionsRouteWithChildren
   '/contact': typeof ContactRoute
   '/costs': typeof CostsRouteWithChildren
@@ -239,13 +276,16 @@ export interface FileRoutesById {
   '/second-opinion': typeof SecondOpinionRouteWithChildren
   '/terms': typeof TermsRoute
   '/conditions/$slug': typeof ConditionsSlugRoute
+  '/conditions/in-stent-restenosis-treatment': typeof ConditionsInStentRestenosisTreatmentRoute
   '/costs/$slug': typeof CostsSlugRoute
   '/costs/stent-brands-comparison': typeof CostsStentBrandsComparisonRoute
   '/insurance/cghs-cardiology': typeof InsuranceCghsCardiologyRoute
   '/locations/$slug': typeof LocationsSlugRoute
   '/procedures/$slug': typeof ProceduresSlugRoute
+  '/procedures/daycare-radial-angiography': typeof ProceduresDaycareRadialAngiographyRoute
   '/second-opinion/angioplasty-vs-bypass': typeof SecondOpinionAngioplastyVsBypassRoute
   '/second-opinion/avoid-bypass-surgery': typeof SecondOpinionAvoidBypassSurgeryRoute
+  '/second-opinion/max-fortis-cardiac-second-opinion': typeof SecondOpinionMaxFortisCardiacSecondOpinionRoute
   '/second-opinion/report-interpretation': typeof SecondOpinionReportInterpretationRoute
   '/conditions/': typeof ConditionsIndexRoute
   '/costs/': typeof CostsIndexRoute
@@ -257,6 +297,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
+    | '/best-cardiologist-indirapuram-ghaziabad'
     | '/conditions'
     | '/contact'
     | '/costs'
@@ -269,13 +310,16 @@ export interface FileRouteTypes {
     | '/second-opinion'
     | '/terms'
     | '/conditions/$slug'
+    | '/conditions/in-stent-restenosis-treatment'
     | '/costs/$slug'
     | '/costs/stent-brands-comparison'
     | '/insurance/cghs-cardiology'
     | '/locations/$slug'
     | '/procedures/$slug'
+    | '/procedures/daycare-radial-angiography'
     | '/second-opinion/angioplasty-vs-bypass'
     | '/second-opinion/avoid-bypass-surgery'
+    | '/second-opinion/max-fortis-cardiac-second-opinion'
     | '/second-opinion/report-interpretation'
     | '/conditions/'
     | '/costs/'
@@ -285,6 +329,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/about'
+    | '/best-cardiologist-indirapuram-ghaziabad'
     | '/contact'
     | '/facility'
     | '/insurance'
@@ -293,13 +338,16 @@ export interface FileRouteTypes {
     | '/second-opinion'
     | '/terms'
     | '/conditions/$slug'
+    | '/conditions/in-stent-restenosis-treatment'
     | '/costs/$slug'
     | '/costs/stent-brands-comparison'
     | '/insurance/cghs-cardiology'
     | '/locations/$slug'
     | '/procedures/$slug'
+    | '/procedures/daycare-radial-angiography'
     | '/second-opinion/angioplasty-vs-bypass'
     | '/second-opinion/avoid-bypass-surgery'
+    | '/second-opinion/max-fortis-cardiac-second-opinion'
     | '/second-opinion/report-interpretation'
     | '/conditions'
     | '/costs'
@@ -309,6 +357,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/about'
+    | '/best-cardiologist-indirapuram-ghaziabad'
     | '/conditions'
     | '/contact'
     | '/costs'
@@ -321,13 +370,16 @@ export interface FileRouteTypes {
     | '/second-opinion'
     | '/terms'
     | '/conditions/$slug'
+    | '/conditions/in-stent-restenosis-treatment'
     | '/costs/$slug'
     | '/costs/stent-brands-comparison'
     | '/insurance/cghs-cardiology'
     | '/locations/$slug'
     | '/procedures/$slug'
+    | '/procedures/daycare-radial-angiography'
     | '/second-opinion/angioplasty-vs-bypass'
     | '/second-opinion/avoid-bypass-surgery'
+    | '/second-opinion/max-fortis-cardiac-second-opinion'
     | '/second-opinion/report-interpretation'
     | '/conditions/'
     | '/costs/'
@@ -338,6 +390,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  BestCardiologistIndirapuramGhaziabadRoute: typeof BestCardiologistIndirapuramGhaziabadRoute
   ConditionsRoute: typeof ConditionsRouteWithChildren
   ContactRoute: typeof ContactRoute
   CostsRoute: typeof CostsRouteWithChildren
@@ -365,6 +418,13 @@ declare module '@tanstack/react-router' {
       path: '/about'
       fullPath: '/about'
       preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/best-cardiologist-indirapuram-ghaziabad': {
+      id: '/best-cardiologist-indirapuram-ghaziabad'
+      path: '/best-cardiologist-indirapuram-ghaziabad'
+      fullPath: '/best-cardiologist-indirapuram-ghaziabad'
+      preLoaderRoute: typeof BestCardiologistIndirapuramGhaziabadRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/conditions': {
@@ -458,6 +518,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ConditionsSlugRouteImport
       parentRoute: typeof ConditionsRoute
     }
+    '/conditions/in-stent-restenosis-treatment': {
+      id: '/conditions/in-stent-restenosis-treatment'
+      path: '/in-stent-restenosis-treatment'
+      fullPath: '/conditions/in-stent-restenosis-treatment'
+      preLoaderRoute: typeof ConditionsInStentRestenosisTreatmentRouteImport
+      parentRoute: typeof ConditionsRoute
+    }
     '/costs/': {
       id: '/costs/'
       path: '/'
@@ -514,6 +581,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProceduresSlugRouteImport
       parentRoute: typeof ProceduresRoute
     }
+    '/procedures/daycare-radial-angiography': {
+      id: '/procedures/daycare-radial-angiography'
+      path: '/daycare-radial-angiography'
+      fullPath: '/procedures/daycare-radial-angiography'
+      preLoaderRoute: typeof ProceduresDaycareRadialAngiographyRouteImport
+      parentRoute: typeof ProceduresRoute
+    }
     '/second-opinion/angioplasty-vs-bypass': {
       id: '/second-opinion/angioplasty-vs-bypass'
       path: '/angioplasty-vs-bypass'
@@ -528,6 +602,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SecondOpinionAvoidBypassSurgeryRouteImport
       parentRoute: typeof SecondOpinionRoute
     }
+    '/second-opinion/max-fortis-cardiac-second-opinion': {
+      id: '/second-opinion/max-fortis-cardiac-second-opinion'
+      path: '/max-fortis-cardiac-second-opinion'
+      fullPath: '/second-opinion/max-fortis-cardiac-second-opinion'
+      preLoaderRoute: typeof SecondOpinionMaxFortisCardiacSecondOpinionRouteImport
+      parentRoute: typeof SecondOpinionRoute
+    }
     '/second-opinion/report-interpretation': {
       id: '/second-opinion/report-interpretation'
       path: '/report-interpretation'
@@ -540,11 +621,14 @@ declare module '@tanstack/react-router' {
 
 interface ConditionsRouteChildren {
   ConditionsSlugRoute: typeof ConditionsSlugRoute
+  ConditionsInStentRestenosisTreatmentRoute: typeof ConditionsInStentRestenosisTreatmentRoute
   ConditionsIndexRoute: typeof ConditionsIndexRoute
 }
 
 const ConditionsRouteChildren: ConditionsRouteChildren = {
   ConditionsSlugRoute: ConditionsSlugRoute,
+  ConditionsInStentRestenosisTreatmentRoute:
+    ConditionsInStentRestenosisTreatmentRoute,
   ConditionsIndexRoute: ConditionsIndexRoute,
 }
 
@@ -594,11 +678,14 @@ const LocationsRouteWithChildren = LocationsRoute._addFileChildren(
 
 interface ProceduresRouteChildren {
   ProceduresSlugRoute: typeof ProceduresSlugRoute
+  ProceduresDaycareRadialAngiographyRoute: typeof ProceduresDaycareRadialAngiographyRoute
   ProceduresIndexRoute: typeof ProceduresIndexRoute
 }
 
 const ProceduresRouteChildren: ProceduresRouteChildren = {
   ProceduresSlugRoute: ProceduresSlugRoute,
+  ProceduresDaycareRadialAngiographyRoute:
+    ProceduresDaycareRadialAngiographyRoute,
   ProceduresIndexRoute: ProceduresIndexRoute,
 }
 
@@ -609,12 +696,15 @@ const ProceduresRouteWithChildren = ProceduresRoute._addFileChildren(
 interface SecondOpinionRouteChildren {
   SecondOpinionAngioplastyVsBypassRoute: typeof SecondOpinionAngioplastyVsBypassRoute
   SecondOpinionAvoidBypassSurgeryRoute: typeof SecondOpinionAvoidBypassSurgeryRoute
+  SecondOpinionMaxFortisCardiacSecondOpinionRoute: typeof SecondOpinionMaxFortisCardiacSecondOpinionRoute
   SecondOpinionReportInterpretationRoute: typeof SecondOpinionReportInterpretationRoute
 }
 
 const SecondOpinionRouteChildren: SecondOpinionRouteChildren = {
   SecondOpinionAngioplastyVsBypassRoute: SecondOpinionAngioplastyVsBypassRoute,
   SecondOpinionAvoidBypassSurgeryRoute: SecondOpinionAvoidBypassSurgeryRoute,
+  SecondOpinionMaxFortisCardiacSecondOpinionRoute:
+    SecondOpinionMaxFortisCardiacSecondOpinionRoute,
   SecondOpinionReportInterpretationRoute:
     SecondOpinionReportInterpretationRoute,
 }
@@ -626,6 +716,8 @@ const SecondOpinionRouteWithChildren = SecondOpinionRoute._addFileChildren(
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  BestCardiologistIndirapuramGhaziabadRoute:
+    BestCardiologistIndirapuramGhaziabadRoute,
   ConditionsRoute: ConditionsRouteWithChildren,
   ContactRoute: ContactRoute,
   CostsRoute: CostsRouteWithChildren,
