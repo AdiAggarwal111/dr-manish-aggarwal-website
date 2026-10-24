@@ -159,23 +159,34 @@ function PositiveTmtNextStepsRoute() {
   };
 
   return (
-    <div className="bg-slate-50 min-h-screen">
-      {/* Hero Header */}
-      <PageHeroHeader
-        badge="Clinical Guidance & Second Opinion"
-        title="Positive TMT Test: What It Means & Next Steps"
-        description="Holding a Treadmill Stress Test report showing 'Positive for Inducible Ischemia'? Do not panic. Discover the truth about false positives, calculate your Duke Treadmill Score, and understand when you truly need an Angiogram."
-        breadcrumbs={[
-          { label: "Home", href: "/" },
-          { label: "Second Opinion", href: "/second-opinion" },
-          { label: "Positive TMT Next Steps" },
-        ]}
-      />
+    <div className="bg-background">
+      <section className="px-6 pb-20 pt-8 md:px-12 md:pt-10 md:pb-24">
+        <div className="mx-auto max-w-[1400px]">
+          {/* Hero Header */}
+          <PageHeroHeader
+            backLink={{ to: "/second-opinion", label: "Back to Specialized Hub & Tools" }}
+            title="Positive TMT Test: What It Means & Next Steps"
+            subtitle={`Duke Treadmill Score (DTS) · CT Angiogram vs Radial Angiography · ${siteConfig.hospital}`}
+            description="Holding a Treadmill Stress Test report showing 'Positive for Inducible Ischemia'? Do not panic. Discover the truth about false positives, calculate your Duke Treadmill Score, and understand when you truly need an Angiogram."
+            badges={
+              <>
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-500/10 px-3.5 py-1.5 text-xs font-semibold text-amber-600">
+                  <Calculator className="h-3.5 w-3.5" /> Duke Treadmill Score Calculator
+                </span>
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3.5 py-1.5 text-xs font-semibold text-secondary-foreground">
+                  Female False Positive Protocol
+                </span>
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-3.5 py-1.5 text-xs font-semibold text-emerald-600">
+                  <Clock className="h-3.5 w-3.5" /> 2-Hour Graph Review
+                </span>
+              </>
+            }
+          />
 
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 space-y-16">
-        
-        {/* INTERACTIVE DUKE TREADMILL SCORE (DTS) CALCULATOR */}
-        <section className="rounded-2xl border border-slate-200 bg-white shadow-xl overflow-hidden text-slate-800">
+          <div className="mt-12 space-y-16">
+            
+            {/* INTERACTIVE DUKE TREADMILL SCORE (DTS) CALCULATOR */}
+            <section className="rounded-2xl border border-slate-200 bg-white shadow-xl overflow-hidden text-slate-800">
           <div className="bg-gradient-to-r from-navy via-slate-900 to-navy p-6 md:p-8 text-white">
             <div className="flex flex-wrap items-center justify-between gap-4">
               <div className="flex items-center gap-3">
@@ -535,10 +546,12 @@ function PositiveTmtNextStepsRoute() {
           </div>
         </section>
 
-        {/* APPOINTMENT FORM SECTION */}
-        <AppointmentSection />
-
       </div>
     </div>
-  );
+  </section>
+
+  {/* APPOINTMENT FORM SECTION */}
+  <AppointmentSection />
+</div>
+);
 }

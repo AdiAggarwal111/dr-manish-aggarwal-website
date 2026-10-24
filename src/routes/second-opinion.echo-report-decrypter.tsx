@@ -123,25 +123,36 @@ function EchoReportDecrypterRoute() {
   };
 
   return (
-    <div className="bg-slate-50 min-h-screen">
-      {/* Hero Header */}
-      <PageHeroHeader
-        badge="Digital Diagnostic Decrypter"
-        title="2D Echo Report Normal Values Decrypter"
-        description="Decode ultrasound heart measurements in seconds. Demystify LVEF pumping percentage, RWMA regional wall motion abnormalities, valve gradients, and chamber dimensions without medical jargon."
-        breadcrumbs={[
-          { label: "Home", href: "/" },
-          { label: "Second Opinion", href: "/second-opinion" },
-          { label: "2D Echo Report Decrypter" },
-        ]}
-      />
+    <div className="bg-background">
+      <section className="px-6 pb-20 pt-8 md:px-12 md:pt-10 md:pb-24">
+        <div className="mx-auto max-w-[1400px]">
+          {/* Hero Header */}
+          <PageHeroHeader
+            backLink={{ to: "/second-opinion", label: "Back to Specialized Hub & Tools" }}
+            title="2D Echo Report Normal Values Decrypter"
+            subtitle={`Demystifying LVEF Pumping %, Wall Motion (RWMA) & Valves · ${siteConfig.hospital}`}
+            description="Decode ultrasound heart measurements in seconds. Demystify LVEF pumping percentage, RWMA regional wall motion abnormalities, valve gradients, and chamber dimensions without medical jargon."
+            badges={
+              <>
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-blue-500/10 px-3.5 py-1.5 text-xs font-semibold text-blue-600">
+                  <Activity className="h-3.5 w-3.5" /> Diagnostic Report Decrypter
+                </span>
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3.5 py-1.5 text-xs font-semibold text-secondary-foreground">
+                  ASE &amp; EACVI Clinical Standards
+                </span>
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-3.5 py-1.5 text-xs font-semibold text-emerald-600">
+                  <CheckCircle2 className="h-3.5 w-3.5" /> Instant Parameter Analysis
+                </span>
+              </>
+            }
+          />
 
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 space-y-16">
-        
-        {/* INTERACTIVE TOOL */}
-        <section className="scroll-mt-24" id="echo-decrypter-tool">
-          <EchoReportDecrypter />
-        </section>
+          <div className="mt-12 space-y-16">
+            
+            {/* INTERACTIVE TOOL */}
+            <section className="scroll-mt-24" id="echo-decrypter-tool">
+              <EchoReportDecrypter />
+            </section>
 
         {/* CLINICAL NORMAL RANGE REFERENCE TABLE */}
         <section className="space-y-6">
@@ -379,10 +390,12 @@ function EchoReportDecrypterRoute() {
           </div>
         </section>
 
-        {/* APPOINTMENT FORM SECTION */}
-        <AppointmentSection />
-
       </div>
     </div>
-  );
+  </section>
+
+  {/* APPOINTMENT FORM SECTION */}
+  <AppointmentSection />
+</div>
+);
 }

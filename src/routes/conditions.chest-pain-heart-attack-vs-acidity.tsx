@@ -125,26 +125,37 @@ function ChestPainAcidityRoute() {
   };
 
   return (
-    <div className="bg-slate-50 min-h-screen">
-      {/* Hero Header */}
-      <PageHeroHeader
-        badge="Interactive Diagnostic Triage"
-        title="Chest Pain: Heart Attack vs Acidity"
-        description="Every year in India, over 40% of avoidable cardiac complications occur because patients mistake acute arterial blockages for ordinary gastric reflux. Use our clinical triage checker to evaluate your symptoms immediately."
-        breadcrumbs={[
-          { label: "Home", href: "/" },
-          { label: "Conditions", href: "/conditions" },
-          { label: "Chest Pain: Heart Attack vs Acidity" },
-        ]}
-      />
+    <div className="bg-background">
+      <section className="px-6 pb-20 pt-8 md:px-12 md:pt-10 md:pb-24">
+        <div className="mx-auto max-w-[1400px]">
+          {/* Hero Header */}
+          <PageHeroHeader
+            backLink={{ to: "/conditions", label: "Back to Heart Conditions" }}
+            title="Chest Pain: Heart Attack vs Acidity"
+            subtitle={`Clinical Symptom Triage · Is It Gas or Myocardial Ischemia? · ${siteConfig.hospital}`}
+            description="Every year in India, over 40% of avoidable cardiac complications occur because patients mistake acute arterial blockages for ordinary gastric reflux. Use our clinical triage checker to evaluate your symptoms immediately."
+            badges={
+              <>
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-rose-500/10 px-3.5 py-1.5 text-xs font-semibold text-rose-600">
+                  <AlertTriangle className="h-3.5 w-3.5" /> Emergency Triage Protocol
+                </span>
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3.5 py-1.5 text-xs font-semibold text-secondary-foreground">
+                  ESC Clinical Guideline Matrix
+                </span>
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-3.5 py-1.5 text-xs font-semibold text-emerald-600">
+                  <Clock className="h-3.5 w-3.5" /> 90-Second Symptom Score
+                </span>
+              </>
+            }
+          />
 
-      {/* Main Content Area */}
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 space-y-16">
-        
-        {/* INTERACTIVE TRIAGE TOOL */}
-        <section className="scroll-mt-24" id="triage-tool">
-          <ChestPainTriageTool />
-        </section>
+          {/* Main Content Area */}
+          <div className="mt-12 space-y-16">
+            
+            {/* INTERACTIVE TRIAGE TOOL */}
+            <section className="scroll-mt-24" id="triage-tool">
+              <ChestPainTriageTool />
+            </section>
 
         {/* COMPARISON MATRIX SECTION */}
         <section className="scroll-mt-24 space-y-6" id="comparison-matrix">
@@ -439,10 +450,12 @@ function ChestPainAcidityRoute() {
           </div>
         </section>
 
-        {/* APPOINTMENT FORM SECTION */}
-        <AppointmentSection />
-
       </div>
     </div>
-  );
+  </section>
+
+  {/* APPOINTMENT FORM SECTION */}
+  <AppointmentSection />
+</div>
+);
 }
