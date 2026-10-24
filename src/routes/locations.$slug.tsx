@@ -20,7 +20,7 @@ import { PageHeroHeader } from "@/components/page-hero-header";
 
 const LOCAL_PROCEDURES = [
   {
-    slug: "tavi-tavr",
+    slug: "tavi",
     title: "TAVR / TAVI (Zero Sternotomy)",
     desc: "Percutaneous aortic valve replacement under conscious sedation for senior cardiac patients. No cracked breastbone, 48-hr discharge.",
     badge: "Structural Heart",

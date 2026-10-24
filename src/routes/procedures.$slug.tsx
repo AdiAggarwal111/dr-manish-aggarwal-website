@@ -88,6 +88,18 @@ interface TopicMeshItem {
 }
 
 const PROCEDURE_TOPIC_MESH: Record<string, TopicMeshItem> = {
+  tavi: {
+    conditionSlug: "severe-aortic-stenosis",
+    conditionName: "Severe Aortic Stenosis & Valvular Disease",
+    conditionBadge: "Underlying Pathology",
+    conditionSummary:
+      "Aortic valve orifice narrowing (< 1.0 cm²) restricting systemic circulation. Symptomatic severe stenosis carries a 50% 2-year mortality if untreated.",
+    costSlug: "tavi-tavr-cost-india",
+    costName: "TAVI / TAVR Procedure Cost & Package Guide",
+    costRange: "₹18,00,000 – ₹26,00,000",
+    costHighlight:
+      "100% Cashless CGHS/ECHS & Private TPA coverage. Valve costs conforming to NPPA ceiling guidelines with 48h hospital stay.",
+  },
   "tavi-tavr": {
     conditionSlug: "severe-aortic-stenosis",
     conditionName: "Severe Aortic Stenosis & Valvular Disease",
@@ -199,6 +211,11 @@ const PROCEDURE_TOPIC_MESH: Record<string, TopicMeshItem> = {
 };
 
 const PROCEDURE_SLUG_REDIRECTS: Record<string, string> = {
+  "tavi-tavr": "tavi",
+  "tavr": "tavi",
+  "angiography": "coronary-angiography",
+  "pacemaker": "pacemakers",
+  "complex-angioplasty": "complex-coronary",
   "complex-angioplasty-cto": "complex-coronary",
   "rotablation-atherectomy": "intravascular-imaging",
   "pacemaker-icd-crt": "pacemakers",
@@ -226,6 +243,7 @@ export const Route = createFileRoute("/procedures/$slug")({
     const p = loaderData?.proc;
     if (!p) return { meta: [{ title: `Procedure | ${siteConfig.name}` }] };
     const shortNames: Record<string, string> = {
+      tavi: "TAVR / TAVI",
       "tavi-tavr": "TAVR / TAVI",
       mitraclip: "MitraClip (TEER)",
       "emergency-angioplasty": "Emergency Angioplasty",

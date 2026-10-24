@@ -224,7 +224,7 @@ export const conditions: Condition[] = [
           "Yes. TAVI was specifically engineered for octogenarians and nonagenarians who cannot tolerate open surgery. Because there is no general anesthesia, no intubation breathing tube, and zero bone cuts, advanced age is not a barrier to successful treatment.",
       },
     ],
-    relatedProcedureSlugs: ["tavi-tavr", "intravascular-imaging", "second-opinion"],
+    relatedProcedureSlugs: ["tavi", "intravascular-imaging", "second-opinion"],
     metaTitle:
       "Severe Aortic Stenosis: Symptoms, Life Expectancy & TAVI Treatment | Dr. Manish Aggarwal",
     metaDescription:
@@ -1066,7 +1066,7 @@ export const conditions: Condition[] = [
           "Most patients notice an immediate improvement in their breathing while still in the hospital, as pulmonary venous pressure drops instantly once the valve leak is sealed. Within weeks, patients report walking greater distances, sleeping flat without extra pillows, and requiring fewer diuretic water pills.",
       },
     ],
-    relatedProcedureSlugs: ["mitraclip", "tavi-tavr", "second-opinion"],
+    relatedProcedureSlugs: ["mitraclip", "tavi", "second-opinion"],
     metaTitle: "Mitral Regurgitation (MR): MitraClip & TEER Valve Repair | Dr. Manish Aggarwal",
     metaDescription:
       "Clinical guide to severe mitral regurgitation (MR): symptoms, COAPT trial evidence, and pinhole MitraClip / TEER non-surgical repair at Yashoda Medicity, Indirapuram.",
@@ -1767,7 +1767,7 @@ export const conditions: Condition[] = [
           "Yes. In fact, advanced age is one of the primary reasons TEVAR and EVAR were invented. Because the procedure avoids general anesthesia, chest cracking, and massive blood loss, octogenarians and nonagenarians routinely undergo successful endovascular repair and return home safely within two to three days.",
       },
     ],
-    relatedProcedureSlugs: ["tavi-tavr", "complex-coronary", "second-opinion"],
+    relatedProcedureSlugs: ["tavi", "complex-coronary", "second-opinion"],
     metaTitle: "Aortic Aneurysm & TEVAR / EVAR Endovascular Stenting | Dr. Manish Aggarwal",
     metaDescription:
       "Clinical guide to thoracic & abdominal aortic aneurysms (TAA/AAA), rupture thresholds (5.5cm), and pinhole TEVAR / EVAR stent-grafting at Yashoda Medicity, Indirapuram.",
@@ -2112,7 +2112,7 @@ export const conditions: Condition[] = [
           "Patients can resume light walking immediately upon discharge. We recommend avoiding heavy weightlifting and contact sports for 4 weeks to allow the groin puncture and device endothelialization to progress, after which full athletic activity can safely resume.",
       },
     ],
-    relatedProcedureSlugs: ["tavi-tavr", "pacemakers", "second-opinion"],
+    relatedProcedureSlugs: ["tavi", "pacemakers", "second-opinion"],
     metaTitle: "Adult Congenital Heart Defects: Non-Surgical Device Closure | Dr. Manish Aggarwal",
     metaDescription:
       "Clinical guide to adult congenital heart defects (ASD, VSD, PDA, PFO): right heart overload, cryptogenic stroke, and pinhole umbrella device closure at Yashoda Medicity, Indirapuram.",

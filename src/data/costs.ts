@@ -259,7 +259,7 @@ export const procedureCosts: ProcedureCostGuide[] = [
       "Realistic, transparent TAVI / TAVR procedure cost ranges in Delhi NCR (₹18L - ₹27.5L). Indian vs US-FDA valve pricing, room tiers, NPPA statutory caps, and cashless insurance at Yashoda Medicity.",
     keywords:
       "TAVI cost India, TAVR cost in Delhi NCR, TAVI procedure price Yashoda Medicity, Edwards Sapien valve cost India, cashless TAVI insurance, Dr Manish Aggarwal TAVI",
-    relatedProcedureSlug: "tavi-tavr",
+    relatedProcedureSlug: "tavi",
   },
   {
     slug: "angioplasty-cost-delhi-ncr",

@@ -112,7 +112,7 @@ export const procedures: Procedure[] = [
       "coronary angiography Ghaziabad, radial angiogram Delhi NCR, angiography cost Indirapuram, painless heart test Yashoda Medicity, transradial CAG Noida, Dr Manish Aggarwal angiogram",
   },
   {
-    slug: "tavi-tavr",
+    slug: "tavi",
     title: "TAVR / TAVI",
     tagline: "Transcatheter Aortic Valve Replacement · Zero Sternotomy Protocol",
     desc: "Pinhole percutaneous aortic valve replacement for severe aortic stenosis. Performed under conscious sedation with 48-hour hospital discharge and zero surgical chest opening.",
