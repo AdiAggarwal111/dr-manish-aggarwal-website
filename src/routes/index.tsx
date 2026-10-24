@@ -1,5 +1,6 @@
 import { lazy, Suspense } from "react";
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { ArrowRight } from "lucide-react";
 import { procedures } from "@/data/procedures";
 import { siteConfig } from "@/data/site-config";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
@@ -84,9 +85,29 @@ function HomePage() {
           </div>
 
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {procedures.map((p) => (
+            {procedures.slice(0, 9).map((p) => (
               <ProcedureCard key={p.slug} procedure={p} isReveal />
             ))}
+          </div>
+
+          {/* Directory Strip: Option to See More Procedures & Imaging */}
+          <div className="mt-12 rounded-2xl border border-border bg-card p-5 sm:p-6 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
+            <div className="text-center sm:text-left">
+              <p className="font-display text-base sm:text-lg font-medium text-foreground">
+                Looking for specialized intravascular imaging or diagnostic procedures?
+              </p>
+              <p className="text-xs text-muted-foreground mt-0.5">
+                Explore Intravascular Ultrasound (IVUS), Optical Coherence Tomography (OCT), Fractional Flow Reserve (FFR), and preventive check-up hubs.
+              </p>
+            </div>
+
+            <Link
+              to="/procedures"
+              className="inline-flex items-center gap-2 rounded-full bg-navy px-6 py-2.5 text-xs font-semibold text-white shadow hover:opacity-90 transition shrink-0"
+            >
+              <span>View All 10 Procedures &amp; Imaging</span>
+              <ArrowRight className="h-3.5 w-3.5" />
+            </Link>
           </div>
         </div>
       </section>

@@ -34,6 +34,84 @@ export type Procedure = {
 
 export const procedures: Procedure[] = [
   {
+    slug: "coronary-angiography",
+    title: "Coronary Angiography (CAG)",
+    tagline: "Radial Pinhole Angiogram · Zero-Stitch Daycare Protocol",
+    desc: "Gold-standard diagnostic cardiac catheterization to detect heart blockages. Performed via pinhole wrist puncture (transradial) under local anesthesia with same-day discharge in 2 to 4 hours.",
+    focus: "Pinhole Radial Access · 100% Diagnostic Accuracy · Same-Day Daycare Discharge",
+    highlights: [
+      { label: "Access Route", value: "Transradial (Microscopic pinhole wrist puncture)" },
+      { label: "Procedure Duration", value: "15 to 25 Minutes (Local anesthesia, fully awake)" },
+      { label: "Discharge Window", value: "2 to 4 Hours (Walk immediately, zero sandbag bed rest)" },
+      { label: "Clinical Precision", value: "Multi-Angle Digital Fluoroscopy & Digital CD Report" },
+    ],
+    patientProfile: [
+      "Individuals experiencing chest pain, retrosternal heaviness, shortness of breath on exertion, or left arm/jaw ache.",
+      "Patients with positive TMT (Treadmill Test), abnormal Stress Echo, high coronary calcium on CT, or suspicious ECG findings.",
+      "Diabetic or hypertensive patients requiring definitive anatomical evaluation of coronary circulation prior to major surgery.",
+      "Patients diagnosed elsewhere with multi-vessel disease or advised bypass surgery who need high-clarity anatomical restudy.",
+      "Individuals seeking immediate, same-day walk-in evaluation with same-day digital CD recording and definitive expert diagnosis.",
+    ],
+    sections: [
+      {
+        heading: "The Definitive Gold Standard: Direct Visualization of Coronary Flow",
+        paragraphs: [
+          "Non-invasive tests like ECGs, Echocardiograms, and Treadmill Tests provide essential functional clues, but they cannot show the physical lumen of your coronary arteries. Coronary Angiography (Coronary Angiogram / CAG) remains the undisputed worldwide gold standard for definitive diagnosis of coronary artery disease.",
+          "During the procedure, microscopic optical catheters are navigated to the ostia of the coronary arteries under real-time digital fluoroscopy. A small volume of specialized radio-opaque contrast dye is introduced, illuminating the left anterior descending (LAD), circumflex (LCx), and right coronary artery (RCA) from multiple radiographic projections. This reveals the exact percentage, anatomical length, calcification profile, and bifurcations of every blockage with sub-millimeter precision.",
+          "At Yashoda Medicity, Indirapuram, Dr. Manish Aggarwal performs coronary angiography with advanced contrast-sparing and low-radiation protocols, ensuring crystal-clear diagnostic imaging while minimizing contrast exposure for patients with kidney concerns or diabetes.",
+        ],
+      },
+      {
+        heading: "The Radial Wrist Revolution: Walk In, Walk Out in 2 to 4 Hours",
+        paragraphs: [
+          "Historically, angiography was performed through the femoral artery in the groin. Groin punctures forced patients into 6 to 8 hours of agonizing flat bed rest with heavy sandbags pressed on the thigh to prevent hematomas. Today, that obsolete approach is entirely bypassed.",
+          "Dr. Manish Aggarwal utilizes the advanced Transradial (wrist) protocol for more than 98% of his cases. Through a 2-millimeter pinhole puncture at the base of the thumb over the radial artery, microscopic hydrophilic catheters are guided directly to the heart. Patients experience zero groin discomfort, zero stitch lines, and can walk, eat breakfast, and use the washroom immediately following the test.",
+        ],
+        bullets: [
+          "Local Anesthesia Only: The wrist is numbed with a tiny local injection; you remain completely awake, pain-free, and can watch your heart arteries live on high-definition cath lab monitors.",
+          "Zero Bed Rest: Unlike groin punctures, transradial patients sit comfortably in their recliner lounge immediately and are discharged home within 2 to 4 hours.",
+          "Same-Sitting Stenting Option: If an acute, high-grade 95% to 99% blockage is discovered, Dr. Aggarwal can immediately transition to angioplasty and stenting in the same sitting with patient/family consent, avoiding a second catheterization.",
+        ],
+      },
+      {
+        heading: "Contrast-Sparing & Renal Safety Protocols",
+        paragraphs: [
+          "For patients with pre-existing diabetes, borderline creatinine, or elderly physiology, traditional angiography can cause contrast-induced nephropathy if excessive dye is used.",
+          "Dr. Aggarwal employs specialized micro-syringes, biplane low-volume injections, and iso-osmolar non-ionic contrast agents. This protocol cuts contrast dye volume by over 50% compared to conventional standards while maintaining cinematic diagnostic clarity, safeguarding your kidneys throughout the evaluation.",
+        ],
+        callout: {
+          quote:
+            "A coronary angiogram should never be an ordeal. Through the radial wrist protocol, we transform what was once an intimidating hospital admission into a 20-minute, walk-in, walk-out diagnostic milestone.",
+          attribution: "Dr. Manish Aggarwal · Director of Interventional Cardiology",
+        },
+      },
+    ],
+    faqs: [
+      {
+        question: "Is coronary angiography painful?",
+        answer:
+          "No. A tiny prick of local anesthesia is administered at the right wrist, numbing the skin completely. The blood vessels themselves do not have pain nerves, so you will feel no pain as the slender catheter travels to the heart. You may only feel a warm, flushing sensation for 10-15 seconds when the contrast dye is injected.",
+      },
+      {
+        question: "How long after radial angiography can I resume normal activities?",
+        answer:
+          "Because radial wrist access eliminates the risk of groin bleeding, you can walk within minutes of leaving the cath lab. You will be discharged home within 2 to 4 hours. You can resume desk work, walking, and normal meals the following morning, avoiding heavy weightlifting with the right wrist for 48 hours.",
+      },
+      {
+        question: "What is the difference between a CT Angio and Conventional Cath Lab Angiography?",
+        answer:
+          "A CT Angio is a non-invasive scan from outside the body, helpful for ruling out disease in low-risk individuals, but it frequently overestimates calcified blockages. Conventional Cath Lab Angiography is the definitive gold standard: it provides real-time dynamic flow visualization under fluoroscopy and allows immediate stenting in the same sitting if a life-threatening blockage is found.",
+      },
+      {
+        question: "Do I receive the angiography video CD and report on the same day?",
+        answer:
+          "Yes. Full high-definition DICOM video footage on CD/DVD and a comprehensive written clinical report with angiographic vessel diagrams are handed to you and your family before discharge for your permanent medical records.",
+      },
+    ],
+    keywords:
+      "coronary angiography Ghaziabad, radial angiogram Delhi NCR, angiography cost Indirapuram, painless heart test Yashoda Medicity, transradial CAG Noida, Dr Manish Aggarwal angiogram",
+  },
+  {
     slug: "tavi-tavr",
     title: "TAVR / TAVI",
     tagline: "Transcatheter Aortic Valve Replacement · Zero Sternotomy Protocol",
@@ -628,91 +706,6 @@ export const procedures: Procedure[] = [
       "cardiac second opinion Delhi NCR, bypass surgery second opinion Indirapuram, angiogram CD review Ghaziabad, avoid unnecessary stent Noida, cardiologist second opinion India, Dr Manish Aggarwal second opinion",
   },
   {
-    slug: "intravascular-imaging",
-    title: "Intravascular Imaging (IVUS & OCT)",
-    tagline: "Millimetric Precision Stenting · We Don't Guess. We See Inside the Vessel.",
-    desc: "10-micron optical coherence tomography (OCT) and high-definition intravascular ultrasound (IVUS) to guide stent selection and deployment. Eliminating stent under-expansion and thrombosis.",
-    focus: "High-Definition IVUS · Near-Infrared OCT · Stent Optimization · Zero Guesswork",
-    highlights: [
-      {
-        label: "Imaging Resolution",
-        value: "OCT 10 to 15-Micron Near-Infrared Resolution (10x sharper than ultrasound)",
-      },
-      {
-        label: "Clinical Advantage",
-        value: "Complete 360-degree cross-sectional arterial plaque & calcium characterization",
-      },
-      {
-        label: "Complication Defense",
-        value: "Eliminates stent under-expansion, malapposition, and edge dissection",
-      },
-      {
-        label: "Guideline Stance",
-        value: "Class 1A ESC & ACC recommendation for complex PCI optimization",
-      },
-    ],
-    patientProfile: [
-      "Any patient undergoing elective or complex coronary angioplasty who wants the highest standard of procedural precision and lifelong stent durability.",
-      "Patients with Left Main coronary trunk blockages or complex bifurcation (branching vessel) disease where precision placement is crucial.",
-      "Patients with a history of In-Stent Restenosis (arteries blocking again inside a previously placed stent) or late stent clotting.",
-      "Individuals with heavily calcified or diffuse, long blockages requiring precise landing zone selection to avoid healthy arterial damage.",
-      "Diabetic and high-risk patients who require minimal dye (contrast) administration to protect sensitive kidney function.",
-    ],
-    sections: [
-      {
-        heading: "Beyond the Shadow: The Inherent Blindness of Standard Angiography",
-        paragraphs: [
-          "Standard coronary angiography has been the foundation of catheterization for 50 years. However, angiography has an inherent, dangerous limitation: it is merely a two-dimensional 'shadowgram', creating a flat silhouette of radiopaque dye flowing through a vessel.",
-          "An angiogram cannot look through the blood to examine the arterial wall itself. It cannot tell whether a blockage is composed of soft lipid, dense fibrous tissue, or deep rock-hard calcium. Crucially, an angiogram cannot verify whether an expanded stent is fully pressed (apposed) against the vessel wall or sitting loosely inside the bloodstream.",
-          "Global registries demonstrate that over 70% of stents deployed using angiography alone suffer from some degree of stent under-expansion or edge malapposition. These microscopic gaps are the primary trigger for in-stent restenosis (the artery slowly scarring shut again) and catastrophic stent thrombosis (sudden massive blood clotting inside the stent).",
-        ],
-      },
-      {
-        heading: "Optical Coherence Tomography (OCT): Microscopic Resolution Inside the Heart",
-        paragraphs: [
-          "At Yashoda Medicity, Dr. Manish Aggarwal champions the routine use of advanced Intravascular Imaging for coronary interventions. Utilizing Optical Coherence Tomography (OCT), we harness near-infrared light to capture real-time cross-sectional microscopic images from within the coronary artery with an incredible 10 to 15-micron resolution.",
-          "OCT acts as an optical microscope travelling through the beating heart. With OCT, Dr. Aggarwal achieves unprecedented clinical control:",
-        ],
-        bullets: [
-          "Precision Stent Sizing: Measures exact internal lumen dimensions down to the tenth of a millimeter, preventing the placement of undersized or oversized stents.",
-          "Plaque Characterization: Differentiates vulnerable thin-cap fibroatheromas (unstable plaques) from stable fibrous plaques and calculates calcium arc and depth.",
-          "Strut-Level Verification: Verifies 100% circumferential metal contact against the vessel wall and immediately identifies microscopic edge tears or tissue prolapse.",
-        ],
-      },
-      {
-        heading: "High-Definition IVUS: The Standard for Left Main & Deep Calcium",
-        paragraphs: [
-          "For large vessels, aorto-ostial blockages, and high-stakes Left Main coronary trunk interventions, Dr. Aggarwal deploys High-Definition Intravascular Ultrasound (HD-IVUS). Sound waves penetrate deep into the outer vessel layers, visualizing the full architecture of the arterial wall.",
-          "IVUS guidance allows Dr. Aggarwal to deploy targeted high-pressure post-dilation balloons, ensuring the stent reaches its optimal cross-sectional expansion area (MSA). Landmark international clinical trials, including RENOVATE-COMPLEX-PCI and ILUMIEN IV, prove that imaging-guided angioplasty significantly reduces cardiac death, recurrent heart attacks, and target vessel failure compared to conventional angioplasty.",
-        ],
-        callout: {
-          quote:
-            "In interventional cardiology, you cannot fix what you cannot see. Intravascular imaging transforms angioplasty from an art of approximation into a science of millimetric certainty.",
-          attribution: "Dr. Manish Aggarwal · Director of Interventional Cardiology",
-        },
-      },
-    ],
-    faqs: [
-      {
-        question: "Does IVUS or OCT make the angioplasty procedure painful or longer?",
-        answer:
-          "Not at all. The miniature imaging catheter is introduced over the exact same hair-thin guidewire already used for the angioplasty. It causes zero physical sensation, is completely painless, and adds only 3 to 5 minutes to the total procedure time while dramatically improving safety.",
-      },
-      {
-        question: "Why do IVUS and OCT result in stents that last longer?",
-        answer:
-          "A stent that is not expanded to its proper size or leaves gaps against the artery wall triggers turbulent blood flow, clot formation, and excessive tissue scarring. Intravascular imaging ensures 100% strut expansion and wall contact, which prevents in-stent restenosis and sudden stent thrombosis.",
-      },
-      {
-        question: "Why do not all hospitals use IVUS and OCT for every stent?",
-        answer:
-          "Intravascular imaging systems require significant capital investment and specialized, sub-fellowship training to interpret microscopic cross-sectional light and ultrasound data. Dr. Aggarwal is a dedicated advocate for imaging-guided precision in Delhi NCR.",
-      },
-    ],
-    keywords:
-      "IVUS angioplasty Delhi NCR, OCT guided stenting Indirapuram, intravascular ultrasound Ghaziabad, optical coherence tomography Noida, precision coronary angioplasty, Dr Manish Aggarwal imaging PCI",
-  },
-  {
     slug: "rhythm-care",
     title: "Advanced Rhythm Care & Arrhythmia Management",
     tagline: "Restoring Electrical Cadence · AFib, SVT & Stroke Prevention",
@@ -800,4 +793,90 @@ export const procedures: Procedure[] = [
     keywords:
       "arrhythmia specialist Delhi NCR, atrial fibrillation treatment Indirapuram, LAA closure Watchman Ghaziabad, stroke prevention AFib Noida, electrophysiology cardiologist Delhi, Dr Manish Aggarwal rhythm care",
   },
+  {
+    slug: "intravascular-imaging",
+    title: "Intravascular Imaging (IVUS & OCT)",
+    tagline: "Millimetric Precision Stenting · We Don't Guess. We See Inside the Vessel.",
+    desc: "10-micron optical coherence tomography (OCT) and high-definition intravascular ultrasound (IVUS) to guide stent selection and deployment. Eliminating stent under-expansion and thrombosis.",
+    focus: "High-Definition IVUS · Near-Infrared OCT · Stent Optimization · Zero Guesswork",
+    highlights: [
+      {
+        label: "Imaging Resolution",
+        value: "OCT 10 to 15-Micron Near-Infrared Resolution (10x sharper than ultrasound)",
+      },
+      {
+        label: "Clinical Advantage",
+        value: "Complete 360-degree cross-sectional arterial plaque & calcium characterization",
+      },
+      {
+        label: "Complication Defense",
+        value: "Eliminates stent under-expansion, malapposition, and edge dissection",
+      },
+      {
+        label: "Guideline Stance",
+        value: "Class 1A ESC & ACC recommendation for complex PCI optimization",
+      },
+    ],
+    patientProfile: [
+      "Any patient undergoing elective or complex coronary angioplasty who wants the highest standard of procedural precision and lifelong stent durability.",
+      "Patients with Left Main coronary trunk blockages or complex bifurcation (branching vessel) disease where precision placement is crucial.",
+      "Patients with a history of In-Stent Restenosis (arteries blocking again inside a previously placed stent) or late stent clotting.",
+      "Individuals with heavily calcified or diffuse, long blockages requiring precise landing zone selection to avoid healthy arterial damage.",
+      "Diabetic and high-risk patients who require minimal dye (contrast) administration to protect sensitive kidney function.",
+    ],
+    sections: [
+      {
+        heading: "Beyond the Shadow: The Inherent Blindness of Standard Angiography",
+        paragraphs: [
+          "Standard coronary angiography has been the foundation of catheterization for 50 years. However, angiography has an inherent, dangerous limitation: it is merely a two-dimensional 'shadowgram', creating a flat silhouette of radiopaque dye flowing through a vessel.",
+          "An angiogram cannot look through the blood to examine the arterial wall itself. It cannot tell whether a blockage is composed of soft lipid, dense fibrous tissue, or deep rock-hard calcium. Crucially, an angiogram cannot verify whether an expanded stent is fully pressed (apposed) against the vessel wall or sitting loosely inside the bloodstream.",
+          "Global registries demonstrate that over 70% of stents deployed using angiography alone suffer from some degree of stent under-expansion or edge malapposition. These microscopic gaps are the primary trigger for in-stent restenosis (the artery slowly scarring shut again) and catastrophic stent thrombosis (sudden massive blood clotting inside the stent).",
+        ],
+      },
+      {
+        heading: "Optical Coherence Tomography (OCT): Microscopic Resolution Inside the Heart",
+        paragraphs: [
+          "At Yashoda Medicity, Dr. Manish Aggarwal champions the routine use of advanced Intravascular Imaging for coronary interventions. Utilizing Optical Coherence Tomography (OCT), we harness near-infrared light to capture real-time cross-sectional microscopic images from within the coronary artery with an incredible 10 to 15-micron resolution.",
+          "OCT acts as an optical microscope travelling through the beating heart. With OCT, Dr. Aggarwal achieves unprecedented clinical control:",
+        ],
+        bullets: [
+          "Precision Stent Sizing: Measures exact internal lumen dimensions down to the tenth of a millimeter, preventing the placement of undersized or oversized stents.",
+          "Plaque Characterization: Differentiates vulnerable thin-cap fibroatheromas (unstable plaques) from stable fibrous plaques and calculates calcium arc and depth.",
+          "Strut-Level Verification: Verifies 100% circumferential metal contact against the vessel wall and immediately identifies microscopic edge tears or tissue prolapse.",
+        ],
+      },
+      {
+        heading: "High-Definition IVUS: The Standard for Left Main & Deep Calcium",
+        paragraphs: [
+          "For large vessels, aorto-ostial blockages, and high-stakes Left Main coronary trunk interventions, Dr. Aggarwal deploys High-Definition Intravascular Ultrasound (HD-IVUS). Sound waves penetrate deep into the outer vessel layers, visualizing the full architecture of the arterial wall.",
+          "IVUS guidance allows Dr. Aggarwal to deploy targeted high-pressure post-dilation balloons, ensuring the stent reaches its optimal cross-sectional expansion area (MSA). Landmark international clinical trials, including RENOVATE-COMPLEX-PCI and ILUMIEN IV, prove that imaging-guided angioplasty significantly reduces cardiac death, recurrent heart attacks, and target vessel failure compared to conventional angioplasty.",
+        ],
+        callout: {
+          quote:
+            "In interventional cardiology, you cannot fix what you cannot see. Intravascular imaging transforms angioplasty from an art of approximation into a science of millimetric certainty.",
+          attribution: "Dr. Manish Aggarwal · Director of Interventional Cardiology",
+        },
+      },
+    ],
+    faqs: [
+      {
+        question: "Does IVUS or OCT make the angioplasty procedure painful or longer?",
+        answer:
+          "Not at all. The miniature imaging catheter is introduced over the exact same hair-thin guidewire already used for the angioplasty. It causes zero physical sensation, is completely painless, and adds only 3 to 5 minutes to the total procedure time while dramatically improving safety.",
+      },
+      {
+        question: "Why do IVUS and OCT result in stents that last longer?",
+        answer:
+          "A stent that is not expanded to its proper size or leaves gaps against the artery wall triggers turbulent blood flow, clot formation, and excessive tissue scarring. Intravascular imaging ensures 100% strut expansion and wall contact, which prevents in-stent restenosis and sudden stent thrombosis.",
+      },
+      {
+        question: "Why do not all hospitals use IVUS and OCT for every stent?",
+        answer:
+          "Intravascular imaging systems require significant capital investment and specialized, sub-fellowship training to interpret microscopic cross-sectional light and ultrasound data. Dr. Aggarwal is a dedicated advocate for imaging-guided precision in Delhi NCR.",
+      },
+    ],
+    keywords:
+      "IVUS angioplasty Delhi NCR, OCT guided stenting Indirapuram, intravascular ultrasound Ghaziabad, optical coherence tomography Noida, precision coronary angioplasty, Dr Manish Aggarwal imaging PCI",
+  },
+
 ];

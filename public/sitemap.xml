@@ -199,12 +199,28 @@
   </url>
   <url>
     <loc>https://drmanishaggarwal.in/costs/pacemaker-implantation-cost</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://drmanishaggarwal.in/costs/angiography-cost-delhi-ncr</loc>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <!-- Specialised Interventional & Structural Cardiac Procedures -->
+  <url>
+    <loc>https://drmanishaggarwal.in/procedures/coronary-angiography</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://drmanishaggarwal.in/images/cath-lab-suite.jpg</image:loc>
+      <image:title>Coronary Angiography (CAG) Radial Wrist Cath Lab Suite</image:title>
+    </image:image>
+  </url>
   <url>
     <loc>https://drmanishaggarwal.in/procedures/tavi-tavr</loc>
     <lastmod>2026-10-22</lastmod>

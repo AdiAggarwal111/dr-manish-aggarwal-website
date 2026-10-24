@@ -644,4 +644,194 @@ export const procedureCosts: ProcedureCostGuide[] = [
       "pacemaker cost in Delhi NCR, dual chamber pacemaker price Ghaziabad, ICD defibrillator cost India, CRT-D package cost Yashoda Medicity, cashless pacemaker insurance, Dr Manish Aggarwal",
     relatedProcedureSlug: "pacemakers",
   },
+  {
+    slug: "angiography-cost-delhi-ncr",
+    procedureTitle:
+      "Coronary Angiography (CAG) Cost in Delhi NCR & Ghaziabad (2026 Transparent Guide)",
+    shortTitle: "Coronary Angiography Cost Guide",
+    heroTagline:
+      "Transparent Daycare Angiogram Pricing · Pinhole Radial Protocol · 100% Cashless Mediclaim Approved",
+    summary:
+      "A comprehensive, transparent cost guide to diagnostic coronary angiography (CAG) at Yashoda Medicity, Indirapuram. Explaining transradial pinhole wrist technique, daycare stay (2–4 hours), non-ionic contrast dye charges, digital DICOM CD recording, and zero out-of-pocket cashless insurance approvals under modern daycare clauses.",
+    overallPriceRange: "₹11,500 to ₹16,500",
+    statutoryHighlight:
+      "Zero-stitch transradial wrist protocol performed under local anesthesia with same-day discharge in under 4 hours.",
+    keyStats: [
+      {
+        label: "Daycare Package Range",
+        value: "₹11,500 – ₹16,500",
+        subtext: "Includes cath lab fee, radial sheath, contrast dye, day care bed & CD recording",
+      },
+      {
+        label: "Procedure Duration",
+        value: "15 – 25 Mins",
+        subtext: "Quick, pinhole local anesthesia, fully awake and conversant",
+      },
+      {
+        label: "Hospital Discharge",
+        value: "2 to 4 Hours",
+        subtext: "Walk out same day; zero 24-hr overnight stay required",
+      },
+      {
+        label: "Insurance Approval",
+        value: "100% Cashless",
+        subtext: "Approved under Day Care Procedures by Star Health, HDFC Ergo, Care, CGHS, ECHS",
+      },
+    ],
+    nppaStatutoryBreakdown: {
+      title: "Standardized Cath Lab Consumables & Non-Ionic Contrast Media",
+      description:
+        "Coronary angiography uses standardized, single-use sterile micro-catheters, radial access sheaths, and premium low-osmolar non-ionic contrast agents to guarantee image clarity and kidney safety.",
+      statutoryCaps: [
+        {
+          component: "Transradial Introducer Sheath & Hydrophilic Catheter",
+          ceilingPrice: "₹2,500 – ₹3,500",
+          nppaReference: "Sterile single-use medical device standard",
+        },
+        {
+          component: "Low-Osmolar Non-Ionic Contrast Dye (Omnipaque / Visipaque)",
+          ceilingPrice: "₹2,000 – ₹3,200",
+          nppaReference: "US-FDA / CDSCO approved iso-osmolar renal protection",
+        },
+        {
+          component: "Cath Lab Fluoroscopy & Digital DICOM Recording",
+          ceilingPrice: "₹5,500 – ₹8,000",
+          nppaReference: "Biplane digital angiographic C-arm suite with CD",
+        },
+      ],
+    },
+    roomTiers: [
+      {
+        roomType: "Daycare Recliner Lounge",
+        estimatedRange: "₹11,500 – ₹13,500",
+        icuStay: "Zero ICU needed (Direct recovery lounge)",
+        roomStay: "2 to 4 hours daycare observation",
+        includes: [
+          "Cardiac Cath Lab usage & biplane fluoroscopy",
+          "Transradial pinhole puncture kit & diagnostic catheters",
+          "Low-osmolar non-ionic contrast media",
+          "Daycare observation with continuous cardiac telemetry",
+          "Digital DICOM CD recording & written clinical report",
+        ],
+      },
+      {
+        roomType: "Twin Sharing Daycare Room",
+        estimatedRange: "₹13,500 – ₹15,000",
+        icuStay: "Zero ICU needed",
+        roomStay: "Same-day room for patient & 1 attendant",
+        includes: [
+          "All Cath Lab, diagnostic catheters & contrast dye",
+          "Semi-private room accommodation for family comfort",
+          "Post-procedure vitals monitoring & clinical review",
+          "Same-day CD recording & discharge summary",
+        ],
+      },
+      {
+        roomType: "Single Private Room",
+        estimatedRange: "₹15,000 – ₹16,500",
+        icuStay: "Zero ICU needed",
+        roomStay: "Private room accommodation",
+        includes: [
+          "All Cath Lab charges, consumables & contrast",
+          "Individual private room with dedicated attendant couch",
+          "Priority insurance pre-authorization desk assistance",
+          "Personalized post-procedure diet & discharge counseling",
+        ],
+      },
+    ],
+    costBreakdown: [
+      {
+        category: "Cath Lab Suite & Fluoroscopy",
+        sharePercentage: "45%",
+        description:
+          "High-definition biplane C-arm suite, digital imaging detectors, radiation shielding, and technician support.",
+      },
+      {
+        category: "Sterile Diagnostic Consumables",
+        sharePercentage: "25%",
+        description:
+          "Single-use transradial hydrophilic access sheaths, Judkins/Tiger diagnostic catheters, and micro-guidewires.",
+      },
+      {
+        category: "Non-Ionic Contrast Media",
+        sharePercentage: "18%",
+        description:
+          "Low-osmolar radio-opaque contrast agent injected into coronary ostia to map vessel lumina with sub-millimeter precision.",
+      },
+      {
+        category: "Nursing, Daycare & Documentation",
+        sharePercentage: "12%",
+        description:
+          "Recliner lounge monitoring, blood pressure checks, puncture site compression band, and video CD burning.",
+      },
+    ],
+    variableFactors: [
+      {
+        factor: "Transradial (Wrist) vs. Transfemoral (Groin) Access",
+        impact: "Saves ₹8,000 – ₹15,000",
+        guidance:
+          "Wrist access eliminates the need for expensive femoral closure plugs (Angio-Seal) and avoids 8-hour flat bed rest in ICU.",
+      },
+      {
+        factor: "Immediate Transition to Angioplasty (Same-Sitting Stenting)",
+        impact: "Merged billing (Saves ~₹25,000)",
+        guidance:
+          "If a critical 95–99% blockage is found and stenting is performed immediately, the diagnostic angiography charges are absorbed into the comprehensive stenting package.",
+      },
+      {
+        factor: "Bypass Graft (CABG) Angiography",
+        impact: "₹2,000 – ₹3,500 additional consumable utilization",
+        guidance:
+          "Patients with prior open-heart bypass surgery require additional specialized catheters to map internal mammary (LIMA) and saphenous vein grafts.",
+      },
+    ],
+    insuranceCoverage: {
+      summary:
+        "Under modern IRDAI guidelines, Coronary Angiography does NOT require 24 hours of hospital stay to claim insurance. It is classified as an approved Day Care Procedure eligible for 100% cashless mediclaim across all private insurers, TPAs, CGHS, and ECHS.",
+      acceptedInsurers: [
+        "Star Health & Allied Insurance",
+        "Care Health Insurance",
+        "HDFC ERGO General Insurance",
+        "ICICI Lombard",
+        "Niva Bupa Health Insurance",
+        "Bajaj Allianz",
+        "Medi Assist TPA",
+        "Paramount TPA",
+      ],
+      cghsEchsStatus:
+        "Fully cashless for CGHS, ECHS, and Delhi Police pensioners upon referral or emergency cardiac evaluation at Yashoda Medicity.",
+      preAuthDuration:
+        "Day care pre-authorization typically approved within 1 to 2 hours by the hospital TPA desk.",
+      coPayDetails:
+        "Zero out-of-pocket co-pay for standard corporate and comprehensive individual retail health plans.",
+    },
+    faqs: [
+      {
+        question: "Is 24-hour hospitalization required to claim insurance for an angiography?",
+        answer:
+          "No. Modern health insurance policies include Day Care Procedure coverage for coronary angiography. Because transradial techniques allow safe discharge in 2–4 hours, insurers approve cashless claims without requiring overnight admission.",
+      },
+      {
+        question: "What is included in the all-inclusive angiography package at Yashoda Medicity?",
+        answer:
+          "The package covers cath lab usage, cardiologist procedural fee, non-ionic low-osmolar contrast dye, sterile radial puncture kit, daycare observation, nursing care, post-procedure refreshments, and the official video CD recording with comprehensive written report.",
+      },
+      {
+        question: "If I need a stent or angioplasty immediately, how is the billing handled?",
+        answer:
+          "If Dr. Manish Aggarwal discovers a critical blockage requiring immediate treatment and your family consents to same-sitting angioplasty, you do not pay for two separate procedures. The diagnostic angiography cost is absorbed into the comprehensive stenting package, saving both time and hospital room charges.",
+      },
+      {
+        question: "Why is transradial wrist angiography better and more cost-effective than groin angiography?",
+        answer:
+          "Wrist angiography eliminates groin bleeding risks, avoids expensive manual compression devices or arterial closure plugs (which can cost ₹8,000–₹15,000 extra), and allows patients to walk immediately without paying for overnight hospital bed charges.",
+      },
+    ],
+    metaTitle: "Coronary Angiography Cost in Delhi NCR & Ghaziabad (2026 Daycare Guide)",
+    metaDescription:
+      "Complete transparent cost guide for coronary angiography in Delhi NCR & Ghaziabad (₹11,500 - ₹16,500). Transradial daycare package, contrast dye, CD report, and cashless insurance at Yashoda Medicity.",
+    keywords:
+      "angiography cost in Delhi NCR, coronary angiogram price Ghaziabad, radial angiography cost Indirapuram, heart test cost Yashoda Medicity, cashless angiography insurance, Dr Manish Aggarwal",
+    relatedProcedureSlug: "coronary-angiography",
+  },
 ];
