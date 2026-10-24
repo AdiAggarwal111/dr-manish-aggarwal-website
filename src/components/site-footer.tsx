@@ -253,70 +253,14 @@ export const SiteFooter = memo(function SiteFooter() {
             </ul>
           </div>
 
-          {/* Column 3: Heart Conditions & Clinical Guides (3 cols) */}
-          <div className="lg:col-span-3">
+          {/* Column 3: Heart Conditions Library (2 cols) */}
+          <div className="lg:col-span-2">
             <h3 className="mb-3 text-xs font-bold tracking-[0.15em] uppercase text-white flex items-center gap-2">
               <HeartPulse className="h-3.5 w-3.5 text-rose-400" />
-              <span>Conditions &amp; Decisions</span>
+              <span>Heart Conditions</span>
             </h3>
             <ul className="space-y-1.5 text-xs text-slate-400">
-              <li>
-                <Link
-                  to="/conditions/chest-pain-heart-attack-vs-acidity"
-                  className="text-white hover:text-rose-300 transition font-medium block py-0.5"
-                >
-                  <span className="text-rose-400 font-semibold">[Tool]</span> Chest Pain: Acidity vs Heart Attack
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/second-opinion/echo-report-decrypter"
-                  className="text-white hover:text-blue-300 transition font-medium block py-0.5"
-                >
-                  <span className="text-blue-400 font-semibold">[Tool]</span> 2D Echo Report Normal Decrypter
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/second-opinion/positive-tmt-test-next-steps"
-                  className="text-white hover:text-amber-300 transition font-medium block py-0.5"
-                >
-                  <span className="text-amber-400 font-semibold">[Guide]</span> Positive TMT Test: Next Steps
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/second-opinion/avoid-bypass-surgery"
-                  className="text-white hover:text-rose-300 transition font-medium block py-0.5"
-                >
-                  Avoid Bypass Surgery (CABG) Hub
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/second-opinion/report-interpretation"
-                  className="text-white hover:text-rose-300 transition font-medium block py-0.5"
-                >
-                  Report Decrypter: 70%–90% Blockage
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/second-opinion/angioplasty-vs-bypass"
-                  className="text-slate-200 hover:text-blue-300 transition font-medium block py-0.5"
-                >
-                  Angioplasty vs Bypass (CABG) Guide
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/costs/heart-checkup-packages-cost"
-                  className="hover:text-white transition block py-0.5"
-                >
-                  2D Echo, TMT &amp; Diagnostic Tests
-                </Link>
-              </li>
-              {conditions.slice(0, 5).map((c) => (
+              {conditions.slice(0, 8).map((c) => (
                 <li key={c.slug}>
                   <Link
                     to="/conditions/$slug"
@@ -392,51 +336,75 @@ export const SiteFooter = memo(function SiteFooter() {
             </ul>
           </div>
 
-          {/* Column 5: Patient Services & Specialized Desks (2 cols) */}
-          <div className="lg:col-span-2">
+          {/* Column 5: Patient Services & Specialized Hub (3 cols) */}
+          <div className="lg:col-span-3">
             <h3 className="mb-3 text-xs font-bold tracking-[0.15em] uppercase text-white flex items-center gap-2">
               <Building2 className="h-3.5 w-3.5 text-blue-400" />
-              <span>Specialized Desks</span>
+              <span>Specialized Hub &amp; Tools</span>
             </h3>
             <ul className="space-y-1.5 text-xs text-slate-400">
               <li>
-                <Link to="/second-opinion/max-fortis-cardiac-second-opinion" className="text-white hover:text-blue-300 transition font-medium">
+                <Link
+                  to="/conditions/chest-pain-heart-attack-vs-acidity"
+                  className="text-white hover:text-rose-300 transition font-medium block py-0.5"
+                >
+                  <span className="text-rose-400 font-semibold">[Tool]</span> Chest Pain: Acidity vs Heart Attack
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/second-opinion/echo-report-decrypter"
+                  className="text-white hover:text-blue-300 transition font-medium block py-0.5"
+                >
+                  <span className="text-blue-400 font-semibold">[Tool]</span> 2D Echo Report Normal Decrypter
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/second-opinion/positive-tmt-test-next-steps"
+                  className="text-white hover:text-amber-300 transition font-medium block py-0.5"
+                >
+                  <span className="text-amber-400 font-semibold">[Guide]</span> Positive TMT Test: Next Steps
+                </Link>
+              </li>
+              <li>
+                <Link to="/second-opinion/avoid-bypass-surgery" className="text-white hover:text-rose-300 transition font-medium block py-0.5">
+                  Avoid Bypass Surgery (CABG) Hub
+                </Link>
+              </li>
+              <li>
+                <Link to="/second-opinion/report-interpretation" className="text-white hover:text-blue-300 transition font-medium block py-0.5">
+                  Report Decrypter: 70%–90% Blockage
+                </Link>
+              </li>
+              <li>
+                <Link to="/second-opinion/angioplasty-vs-bypass" className="text-slate-200 hover:text-blue-300 transition font-medium block py-0.5">
+                  Angioplasty vs Bypass (CABG) Guide
+                </Link>
+              </li>
+              <li>
+                <Link to="/second-opinion/max-fortis-cardiac-second-opinion" className="text-white hover:text-blue-300 transition font-medium block py-0.5">
                   Max &amp; Fortis 2nd Opinion
                 </Link>
               </li>
               <li>
-                <Link to="/procedures/daycare-radial-angiography" className="text-white hover:text-blue-300 transition font-medium">
+                <Link to="/procedures/daycare-radial-angiography" className="text-white hover:text-blue-300 transition font-medium block py-0.5">
                   Same-Day Radial Angiography
                 </Link>
               </li>
               <li>
-                <Link to="/conditions/in-stent-restenosis-treatment" className="text-white hover:text-blue-300 transition font-medium">
+                <Link to="/conditions/in-stent-restenosis-treatment" className="text-white hover:text-blue-300 transition font-medium block py-0.5">
                   Blocked Stent (ISR) Clinic
                 </Link>
               </li>
               <li>
-                <Link to="/best-cardiologist-indirapuram-ghaziabad" className="text-white hover:text-blue-300 transition font-medium">
+                <Link to="/best-cardiologist-indirapuram-ghaziabad" className="text-white hover:text-blue-300 transition font-medium block py-0.5">
                   Top Cardiologist Selection Guide
                 </Link>
               </li>
               <li>
-                <Link to="/insurance/cghs-cardiology" className="hover:text-white transition font-medium text-slate-200">
+                <Link to="/insurance/cghs-cardiology" className="hover:text-white transition font-medium text-slate-200 block py-0.5">
                   CGHS &amp; ECHS Fast-Track Desk
-                </Link>
-              </li>
-              <li>
-                <Link to="/second-opinion/avoid-bypass-surgery" className="hover:text-white transition font-medium text-slate-200">
-                  Avoid Bypass Surgery Hub
-                </Link>
-              </li>
-              <li>
-                <Link to="/insurance" className="hover:text-white transition font-medium text-slate-200">
-                  Cashless TPA Empanelment
-                </Link>
-              </li>
-              <li>
-                <Link to="/second-opinion" className="hover:text-white transition font-medium text-slate-200">
-                  Angiogram CD Review Desk
                 </Link>
               </li>
             </ul>

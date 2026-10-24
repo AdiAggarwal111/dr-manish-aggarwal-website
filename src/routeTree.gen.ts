@@ -36,6 +36,7 @@ import { Route as LocationsSlugRouteImport } from './routes/locations.$slug'
 import { Route as ProceduresIndexRouteImport } from './routes/procedures.index'
 import { Route as ProceduresSlugRouteImport } from './routes/procedures.$slug'
 import { Route as ProceduresDaycareRadialAngiographyRouteImport } from './routes/procedures.daycare-radial-angiography'
+import { Route as SecondOpinionIndexRouteImport } from './routes/second-opinion.index'
 import { Route as SecondOpinionAngioplastyVsBypassRouteImport } from './routes/second-opinion.angioplasty-vs-bypass'
 import { Route as SecondOpinionAvoidBypassSurgeryRouteImport } from './routes/second-opinion.avoid-bypass-surgery'
 import { Route as SecondOpinionEchoReportDecrypterRouteImport } from './routes/second-opinion.echo-report-decrypter'
@@ -183,6 +184,11 @@ const ProceduresDaycareRadialAngiographyRoute =
     path: '/daycare-radial-angiography',
     getParentRoute: () => ProceduresRoute,
   } as any)
+const SecondOpinionIndexRoute = SecondOpinionIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => SecondOpinionRoute,
+} as any)
 const SecondOpinionAngioplastyVsBypassRoute =
   SecondOpinionAngioplastyVsBypassRouteImport.update({
     id: '/angioplasty-vs-bypass',
@@ -254,6 +260,7 @@ export interface FileRoutesByFullPath {
   '/costs/': typeof CostsIndexRoute
   '/locations/': typeof LocationsIndexRoute
   '/procedures/': typeof ProceduresIndexRoute
+  '/second-opinion/': typeof SecondOpinionIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -264,7 +271,6 @@ export interface FileRoutesByTo {
   '/insurance': typeof InsuranceRouteWithChildren
   '/privacy': typeof PrivacyRoute
   '/reviews': typeof ReviewsRoute
-  '/second-opinion': typeof SecondOpinionRouteWithChildren
   '/terms': typeof TermsRoute
   '/conditions/$slug': typeof ConditionsSlugRoute
   '/conditions/chest-pain-heart-attack-vs-acidity': typeof ConditionsChestPainHeartAttackVsAcidityRoute
@@ -285,6 +291,7 @@ export interface FileRoutesByTo {
   '/costs': typeof CostsIndexRoute
   '/locations': typeof LocationsIndexRoute
   '/procedures': typeof ProceduresIndexRoute
+  '/second-opinion': typeof SecondOpinionIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -321,6 +328,7 @@ export interface FileRoutesById {
   '/costs/': typeof CostsIndexRoute
   '/locations/': typeof LocationsIndexRoute
   '/procedures/': typeof ProceduresIndexRoute
+  '/second-opinion/': typeof SecondOpinionIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -358,6 +366,7 @@ export interface FileRouteTypes {
     | '/costs/'
     | '/locations/'
     | '/procedures/'
+    | '/second-opinion/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -368,7 +377,6 @@ export interface FileRouteTypes {
     | '/insurance'
     | '/privacy'
     | '/reviews'
-    | '/second-opinion'
     | '/terms'
     | '/conditions/$slug'
     | '/conditions/chest-pain-heart-attack-vs-acidity'
@@ -389,6 +397,7 @@ export interface FileRouteTypes {
     | '/costs'
     | '/locations'
     | '/procedures'
+    | '/second-opinion'
   id:
     | '__root__'
     | '/'
@@ -424,6 +433,7 @@ export interface FileRouteTypes {
     | '/costs/'
     | '/locations/'
     | '/procedures/'
+    | '/second-opinion/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -634,6 +644,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProceduresDaycareRadialAngiographyRouteImport
       parentRoute: typeof ProceduresRoute
     }
+    '/second-opinion/': {
+      id: '/second-opinion/'
+      path: '/'
+      fullPath: '/second-opinion/'
+      preLoaderRoute: typeof SecondOpinionIndexRouteImport
+      parentRoute: typeof SecondOpinionRoute
+    }
     '/second-opinion/angioplasty-vs-bypass': {
       id: '/second-opinion/angioplasty-vs-bypass'
       path: '/angioplasty-vs-bypass'
@@ -763,6 +780,7 @@ interface SecondOpinionRouteChildren {
   SecondOpinionMaxFortisCardiacSecondOpinionRoute: typeof SecondOpinionMaxFortisCardiacSecondOpinionRoute
   SecondOpinionPositiveTmtTestNextStepsRoute: typeof SecondOpinionPositiveTmtTestNextStepsRoute
   SecondOpinionReportInterpretationRoute: typeof SecondOpinionReportInterpretationRoute
+  SecondOpinionIndexRoute: typeof SecondOpinionIndexRoute
 }
 
 const SecondOpinionRouteChildren: SecondOpinionRouteChildren = {
@@ -775,6 +793,7 @@ const SecondOpinionRouteChildren: SecondOpinionRouteChildren = {
     SecondOpinionPositiveTmtTestNextStepsRoute,
   SecondOpinionReportInterpretationRoute:
     SecondOpinionReportInterpretationRoute,
+  SecondOpinionIndexRoute: SecondOpinionIndexRoute,
 }
 
 const SecondOpinionRouteWithChildren = SecondOpinionRoute._addFileChildren(
