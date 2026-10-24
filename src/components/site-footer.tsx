@@ -262,6 +262,30 @@ export const SiteFooter = memo(function SiteFooter() {
             <ul className="space-y-1.5 text-xs text-slate-400">
               <li>
                 <Link
+                  to="/conditions/chest-pain-heart-attack-vs-acidity"
+                  className="text-white hover:text-rose-300 transition font-medium block py-0.5"
+                >
+                  <span className="text-rose-400 font-semibold">[Tool]</span> Chest Pain: Acidity vs Heart Attack
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/second-opinion/echo-report-decrypter"
+                  className="text-white hover:text-blue-300 transition font-medium block py-0.5"
+                >
+                  <span className="text-blue-400 font-semibold">[Tool]</span> 2D Echo Report Normal Decrypter
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/second-opinion/positive-tmt-test-next-steps"
+                  className="text-white hover:text-amber-300 transition font-medium block py-0.5"
+                >
+                  <span className="text-amber-400 font-semibold">[Guide]</span> Positive TMT Test: Next Steps
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/second-opinion/avoid-bypass-surgery"
                   className="text-white hover:text-rose-300 transition font-medium block py-0.5"
                 >

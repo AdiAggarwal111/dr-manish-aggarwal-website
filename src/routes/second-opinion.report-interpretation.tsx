@@ -398,6 +398,65 @@ function ReportInterpretationPage() {
             </div>
           </div>
 
+          {/* Related Diagnostic Decrypter Tools */}
+          <div className="mt-16 space-y-6">
+            <div className="text-center max-w-2xl mx-auto space-y-2">
+              <span className="text-xs font-bold uppercase tracking-wider text-primary">
+                Related Diagnostic Decrypters
+              </span>
+              <h3 className="text-2xl md:text-3xl font-display font-medium text-foreground">
+                Understand Your Other Cardiac Test Reports
+              </h3>
+            </div>
+
+            <div className="grid gap-6 sm:grid-cols-3">
+              <Link
+                to="/second-opinion/echo-report-decrypter"
+                className="group rounded-2xl border border-border bg-card p-6 space-y-3 transition hover:border-primary/50 hover:shadow-md block"
+              >
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-500/10 text-blue-600">
+                  <Activity className="h-5 w-5" />
+                </div>
+                <h4 className="font-display text-base font-bold text-foreground group-hover:text-primary transition">
+                  2D Echo Report Decrypter →
+                </h4>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  Decode your LVEF pumping %, RWMA wall motion abnormalities, and valve leakage findings in plain English.
+                </p>
+              </Link>
+
+              <Link
+                to="/second-opinion/positive-tmt-test-next-steps"
+                className="group rounded-2xl border border-border bg-card p-6 space-y-3 transition hover:border-primary/50 hover:shadow-md block"
+              >
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-500/10 text-amber-600">
+                  <HeartPulse className="h-5 w-5" />
+                </div>
+                <h4 className="font-display text-base font-bold text-foreground group-hover:text-primary transition">
+                  Positive TMT Test Guide →
+                </h4>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  Understand false positives, calculate your Duke Treadmill Score, and know when you need a CT Angio.
+                </p>
+              </Link>
+
+              <Link
+                to="/conditions/chest-pain-heart-attack-vs-acidity"
+                className="group rounded-2xl border border-border bg-card p-6 space-y-3 transition hover:border-primary/50 hover:shadow-md block"
+              >
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-rose-500/10 text-rose-600">
+                  <AlertTriangle className="h-5 w-5" />
+                </div>
+                <h4 className="font-display text-base font-bold text-foreground group-hover:text-primary transition">
+                  Chest Pain Triage Checker →
+                </h4>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  Evaluate whether chest discomfort or burning is acid reflux or a heart attack requiring emergency care.
+                </p>
+              </Link>
+            </div>
+          </div>
+
           {/* WhatsApp Direct Report Review Banner */}
           <div className="mt-16 rounded-3xl border border-border bg-gradient-to-br from-navy via-navy to-slate-900 p-8 md:p-12 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="space-y-2 max-w-2xl">

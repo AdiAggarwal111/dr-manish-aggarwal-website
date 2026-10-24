@@ -25,6 +25,7 @@ import { Route as SecondOpinionRouteImport } from './routes/second-opinion'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as ConditionsIndexRouteImport } from './routes/conditions.index'
 import { Route as ConditionsSlugRouteImport } from './routes/conditions.$slug'
+import { Route as ConditionsChestPainHeartAttackVsAcidityRouteImport } from './routes/conditions.chest-pain-heart-attack-vs-acidity'
 import { Route as ConditionsInStentRestenosisTreatmentRouteImport } from './routes/conditions.in-stent-restenosis-treatment'
 import { Route as CostsIndexRouteImport } from './routes/costs.index'
 import { Route as CostsSlugRouteImport } from './routes/costs.$slug'
@@ -37,7 +38,9 @@ import { Route as ProceduresSlugRouteImport } from './routes/procedures.$slug'
 import { Route as ProceduresDaycareRadialAngiographyRouteImport } from './routes/procedures.daycare-radial-angiography'
 import { Route as SecondOpinionAngioplastyVsBypassRouteImport } from './routes/second-opinion.angioplasty-vs-bypass'
 import { Route as SecondOpinionAvoidBypassSurgeryRouteImport } from './routes/second-opinion.avoid-bypass-surgery'
+import { Route as SecondOpinionEchoReportDecrypterRouteImport } from './routes/second-opinion.echo-report-decrypter'
 import { Route as SecondOpinionMaxFortisCardiacSecondOpinionRouteImport } from './routes/second-opinion.max-fortis-cardiac-second-opinion'
+import { Route as SecondOpinionPositiveTmtTestNextStepsRouteImport } from './routes/second-opinion.positive-tmt-test-next-steps'
 import { Route as SecondOpinionReportInterpretationRouteImport } from './routes/second-opinion.report-interpretation'
 
 const IndexRoute = IndexRouteImport.update({
@@ -121,6 +124,12 @@ const ConditionsSlugRoute = ConditionsSlugRouteImport.update({
   path: '/$slug',
   getParentRoute: () => ConditionsRoute,
 } as any)
+const ConditionsChestPainHeartAttackVsAcidityRoute =
+  ConditionsChestPainHeartAttackVsAcidityRouteImport.update({
+    id: '/chest-pain-heart-attack-vs-acidity',
+    path: '/chest-pain-heart-attack-vs-acidity',
+    getParentRoute: () => ConditionsRoute,
+  } as any)
 const ConditionsInStentRestenosisTreatmentRoute =
   ConditionsInStentRestenosisTreatmentRouteImport.update({
     id: '/in-stent-restenosis-treatment',
@@ -186,10 +195,22 @@ const SecondOpinionAvoidBypassSurgeryRoute =
     path: '/avoid-bypass-surgery',
     getParentRoute: () => SecondOpinionRoute,
   } as any)
+const SecondOpinionEchoReportDecrypterRoute =
+  SecondOpinionEchoReportDecrypterRouteImport.update({
+    id: '/echo-report-decrypter',
+    path: '/echo-report-decrypter',
+    getParentRoute: () => SecondOpinionRoute,
+  } as any)
 const SecondOpinionMaxFortisCardiacSecondOpinionRoute =
   SecondOpinionMaxFortisCardiacSecondOpinionRouteImport.update({
     id: '/max-fortis-cardiac-second-opinion',
     path: '/max-fortis-cardiac-second-opinion',
+    getParentRoute: () => SecondOpinionRoute,
+  } as any)
+const SecondOpinionPositiveTmtTestNextStepsRoute =
+  SecondOpinionPositiveTmtTestNextStepsRouteImport.update({
+    id: '/positive-tmt-test-next-steps',
+    path: '/positive-tmt-test-next-steps',
     getParentRoute: () => SecondOpinionRoute,
   } as any)
 const SecondOpinionReportInterpretationRoute =
@@ -215,6 +236,7 @@ export interface FileRoutesByFullPath {
   '/second-opinion': typeof SecondOpinionRouteWithChildren
   '/terms': typeof TermsRoute
   '/conditions/$slug': typeof ConditionsSlugRoute
+  '/conditions/chest-pain-heart-attack-vs-acidity': typeof ConditionsChestPainHeartAttackVsAcidityRoute
   '/conditions/in-stent-restenosis-treatment': typeof ConditionsInStentRestenosisTreatmentRoute
   '/costs/$slug': typeof CostsSlugRoute
   '/costs/stent-brands-comparison': typeof CostsStentBrandsComparisonRoute
@@ -224,7 +246,9 @@ export interface FileRoutesByFullPath {
   '/procedures/daycare-radial-angiography': typeof ProceduresDaycareRadialAngiographyRoute
   '/second-opinion/angioplasty-vs-bypass': typeof SecondOpinionAngioplastyVsBypassRoute
   '/second-opinion/avoid-bypass-surgery': typeof SecondOpinionAvoidBypassSurgeryRoute
+  '/second-opinion/echo-report-decrypter': typeof SecondOpinionEchoReportDecrypterRoute
   '/second-opinion/max-fortis-cardiac-second-opinion': typeof SecondOpinionMaxFortisCardiacSecondOpinionRoute
+  '/second-opinion/positive-tmt-test-next-steps': typeof SecondOpinionPositiveTmtTestNextStepsRoute
   '/second-opinion/report-interpretation': typeof SecondOpinionReportInterpretationRoute
   '/conditions/': typeof ConditionsIndexRoute
   '/costs/': typeof CostsIndexRoute
@@ -243,6 +267,7 @@ export interface FileRoutesByTo {
   '/second-opinion': typeof SecondOpinionRouteWithChildren
   '/terms': typeof TermsRoute
   '/conditions/$slug': typeof ConditionsSlugRoute
+  '/conditions/chest-pain-heart-attack-vs-acidity': typeof ConditionsChestPainHeartAttackVsAcidityRoute
   '/conditions/in-stent-restenosis-treatment': typeof ConditionsInStentRestenosisTreatmentRoute
   '/costs/$slug': typeof CostsSlugRoute
   '/costs/stent-brands-comparison': typeof CostsStentBrandsComparisonRoute
@@ -252,7 +277,9 @@ export interface FileRoutesByTo {
   '/procedures/daycare-radial-angiography': typeof ProceduresDaycareRadialAngiographyRoute
   '/second-opinion/angioplasty-vs-bypass': typeof SecondOpinionAngioplastyVsBypassRoute
   '/second-opinion/avoid-bypass-surgery': typeof SecondOpinionAvoidBypassSurgeryRoute
+  '/second-opinion/echo-report-decrypter': typeof SecondOpinionEchoReportDecrypterRoute
   '/second-opinion/max-fortis-cardiac-second-opinion': typeof SecondOpinionMaxFortisCardiacSecondOpinionRoute
+  '/second-opinion/positive-tmt-test-next-steps': typeof SecondOpinionPositiveTmtTestNextStepsRoute
   '/second-opinion/report-interpretation': typeof SecondOpinionReportInterpretationRoute
   '/conditions': typeof ConditionsIndexRoute
   '/costs': typeof CostsIndexRoute
@@ -276,6 +303,7 @@ export interface FileRoutesById {
   '/second-opinion': typeof SecondOpinionRouteWithChildren
   '/terms': typeof TermsRoute
   '/conditions/$slug': typeof ConditionsSlugRoute
+  '/conditions/chest-pain-heart-attack-vs-acidity': typeof ConditionsChestPainHeartAttackVsAcidityRoute
   '/conditions/in-stent-restenosis-treatment': typeof ConditionsInStentRestenosisTreatmentRoute
   '/costs/$slug': typeof CostsSlugRoute
   '/costs/stent-brands-comparison': typeof CostsStentBrandsComparisonRoute
@@ -285,7 +313,9 @@ export interface FileRoutesById {
   '/procedures/daycare-radial-angiography': typeof ProceduresDaycareRadialAngiographyRoute
   '/second-opinion/angioplasty-vs-bypass': typeof SecondOpinionAngioplastyVsBypassRoute
   '/second-opinion/avoid-bypass-surgery': typeof SecondOpinionAvoidBypassSurgeryRoute
+  '/second-opinion/echo-report-decrypter': typeof SecondOpinionEchoReportDecrypterRoute
   '/second-opinion/max-fortis-cardiac-second-opinion': typeof SecondOpinionMaxFortisCardiacSecondOpinionRoute
+  '/second-opinion/positive-tmt-test-next-steps': typeof SecondOpinionPositiveTmtTestNextStepsRoute
   '/second-opinion/report-interpretation': typeof SecondOpinionReportInterpretationRoute
   '/conditions/': typeof ConditionsIndexRoute
   '/costs/': typeof CostsIndexRoute
@@ -310,6 +340,7 @@ export interface FileRouteTypes {
     | '/second-opinion'
     | '/terms'
     | '/conditions/$slug'
+    | '/conditions/chest-pain-heart-attack-vs-acidity'
     | '/conditions/in-stent-restenosis-treatment'
     | '/costs/$slug'
     | '/costs/stent-brands-comparison'
@@ -319,7 +350,9 @@ export interface FileRouteTypes {
     | '/procedures/daycare-radial-angiography'
     | '/second-opinion/angioplasty-vs-bypass'
     | '/second-opinion/avoid-bypass-surgery'
+    | '/second-opinion/echo-report-decrypter'
     | '/second-opinion/max-fortis-cardiac-second-opinion'
+    | '/second-opinion/positive-tmt-test-next-steps'
     | '/second-opinion/report-interpretation'
     | '/conditions/'
     | '/costs/'
@@ -338,6 +371,7 @@ export interface FileRouteTypes {
     | '/second-opinion'
     | '/terms'
     | '/conditions/$slug'
+    | '/conditions/chest-pain-heart-attack-vs-acidity'
     | '/conditions/in-stent-restenosis-treatment'
     | '/costs/$slug'
     | '/costs/stent-brands-comparison'
@@ -347,7 +381,9 @@ export interface FileRouteTypes {
     | '/procedures/daycare-radial-angiography'
     | '/second-opinion/angioplasty-vs-bypass'
     | '/second-opinion/avoid-bypass-surgery'
+    | '/second-opinion/echo-report-decrypter'
     | '/second-opinion/max-fortis-cardiac-second-opinion'
+    | '/second-opinion/positive-tmt-test-next-steps'
     | '/second-opinion/report-interpretation'
     | '/conditions'
     | '/costs'
@@ -370,6 +406,7 @@ export interface FileRouteTypes {
     | '/second-opinion'
     | '/terms'
     | '/conditions/$slug'
+    | '/conditions/chest-pain-heart-attack-vs-acidity'
     | '/conditions/in-stent-restenosis-treatment'
     | '/costs/$slug'
     | '/costs/stent-brands-comparison'
@@ -379,7 +416,9 @@ export interface FileRouteTypes {
     | '/procedures/daycare-radial-angiography'
     | '/second-opinion/angioplasty-vs-bypass'
     | '/second-opinion/avoid-bypass-surgery'
+    | '/second-opinion/echo-report-decrypter'
     | '/second-opinion/max-fortis-cardiac-second-opinion'
+    | '/second-opinion/positive-tmt-test-next-steps'
     | '/second-opinion/report-interpretation'
     | '/conditions/'
     | '/costs/'
@@ -518,6 +557,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ConditionsSlugRouteImport
       parentRoute: typeof ConditionsRoute
     }
+    '/conditions/chest-pain-heart-attack-vs-acidity': {
+      id: '/conditions/chest-pain-heart-attack-vs-acidity'
+      path: '/chest-pain-heart-attack-vs-acidity'
+      fullPath: '/conditions/chest-pain-heart-attack-vs-acidity'
+      preLoaderRoute: typeof ConditionsChestPainHeartAttackVsAcidityRouteImport
+      parentRoute: typeof ConditionsRoute
+    }
     '/conditions/in-stent-restenosis-treatment': {
       id: '/conditions/in-stent-restenosis-treatment'
       path: '/in-stent-restenosis-treatment'
@@ -602,11 +648,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SecondOpinionAvoidBypassSurgeryRouteImport
       parentRoute: typeof SecondOpinionRoute
     }
+    '/second-opinion/echo-report-decrypter': {
+      id: '/second-opinion/echo-report-decrypter'
+      path: '/echo-report-decrypter'
+      fullPath: '/second-opinion/echo-report-decrypter'
+      preLoaderRoute: typeof SecondOpinionEchoReportDecrypterRouteImport
+      parentRoute: typeof SecondOpinionRoute
+    }
     '/second-opinion/max-fortis-cardiac-second-opinion': {
       id: '/second-opinion/max-fortis-cardiac-second-opinion'
       path: '/max-fortis-cardiac-second-opinion'
       fullPath: '/second-opinion/max-fortis-cardiac-second-opinion'
       preLoaderRoute: typeof SecondOpinionMaxFortisCardiacSecondOpinionRouteImport
+      parentRoute: typeof SecondOpinionRoute
+    }
+    '/second-opinion/positive-tmt-test-next-steps': {
+      id: '/second-opinion/positive-tmt-test-next-steps'
+      path: '/positive-tmt-test-next-steps'
+      fullPath: '/second-opinion/positive-tmt-test-next-steps'
+      preLoaderRoute: typeof SecondOpinionPositiveTmtTestNextStepsRouteImport
       parentRoute: typeof SecondOpinionRoute
     }
     '/second-opinion/report-interpretation': {
@@ -621,12 +681,15 @@ declare module '@tanstack/react-router' {
 
 interface ConditionsRouteChildren {
   ConditionsSlugRoute: typeof ConditionsSlugRoute
+  ConditionsChestPainHeartAttackVsAcidityRoute: typeof ConditionsChestPainHeartAttackVsAcidityRoute
   ConditionsInStentRestenosisTreatmentRoute: typeof ConditionsInStentRestenosisTreatmentRoute
   ConditionsIndexRoute: typeof ConditionsIndexRoute
 }
 
 const ConditionsRouteChildren: ConditionsRouteChildren = {
   ConditionsSlugRoute: ConditionsSlugRoute,
+  ConditionsChestPainHeartAttackVsAcidityRoute:
+    ConditionsChestPainHeartAttackVsAcidityRoute,
   ConditionsInStentRestenosisTreatmentRoute:
     ConditionsInStentRestenosisTreatmentRoute,
   ConditionsIndexRoute: ConditionsIndexRoute,
@@ -696,15 +759,20 @@ const ProceduresRouteWithChildren = ProceduresRoute._addFileChildren(
 interface SecondOpinionRouteChildren {
   SecondOpinionAngioplastyVsBypassRoute: typeof SecondOpinionAngioplastyVsBypassRoute
   SecondOpinionAvoidBypassSurgeryRoute: typeof SecondOpinionAvoidBypassSurgeryRoute
+  SecondOpinionEchoReportDecrypterRoute: typeof SecondOpinionEchoReportDecrypterRoute
   SecondOpinionMaxFortisCardiacSecondOpinionRoute: typeof SecondOpinionMaxFortisCardiacSecondOpinionRoute
+  SecondOpinionPositiveTmtTestNextStepsRoute: typeof SecondOpinionPositiveTmtTestNextStepsRoute
   SecondOpinionReportInterpretationRoute: typeof SecondOpinionReportInterpretationRoute
 }
 
 const SecondOpinionRouteChildren: SecondOpinionRouteChildren = {
   SecondOpinionAngioplastyVsBypassRoute: SecondOpinionAngioplastyVsBypassRoute,
   SecondOpinionAvoidBypassSurgeryRoute: SecondOpinionAvoidBypassSurgeryRoute,
+  SecondOpinionEchoReportDecrypterRoute: SecondOpinionEchoReportDecrypterRoute,
   SecondOpinionMaxFortisCardiacSecondOpinionRoute:
     SecondOpinionMaxFortisCardiacSecondOpinionRoute,
+  SecondOpinionPositiveTmtTestNextStepsRoute:
+    SecondOpinionPositiveTmtTestNextStepsRoute,
   SecondOpinionReportInterpretationRoute:
     SecondOpinionReportInterpretationRoute,
 }
