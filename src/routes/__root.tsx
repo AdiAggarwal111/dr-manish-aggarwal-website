@@ -120,10 +120,10 @@ function RootShell({ children }: { children: React.ReactNode }) {
         {/* Ahrefs Web Analytics */}
         {siteConfig.ahrefsAnalyticsKey ? (
           <script
-            async
             src="https://analytics.ahrefs.com/analytics.js"
             data-key={siteConfig.ahrefsAnalyticsKey}
-          />
+            async
+          ></script>
         ) : null}
       </head>
       <body>
