@@ -179,12 +179,24 @@ function ReviewsPage() {
             description="Choosing a cardiologist for someone you love is among the most consequential decisions a family can make. Read genuine, unedited accounts from patients who placed their hearts in the care of Dr. Manish Aggarwal across Delhi NCR and Western Uttar Pradesh."
             badges={
               <>
-                <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3.5 py-1.5 text-xs font-semibold text-primary">
-                  <Award className="h-3.5 w-3.5" /> Registration: {siteConfig.registration}
-                </span>
-                <span className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3.5 py-1.5 text-xs font-semibold text-secondary-foreground">
-                  ⭐ {reviewAggregate.score} Google Score ({reviewAggregate.reviewCount} Reviews)
-                </span>
+                <a
+                  href="https://delhimedicalcouncil.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3.5 py-1.5 text-xs font-semibold text-primary transition hover:bg-primary/20"
+                  title="Verify registration on the Delhi Medical Council Official Portal"
+                >
+                  <Award className="h-3.5 w-3.5" /> DMC Reg: 26547 (Verify ↗)
+                </a>
+                <a
+                  href={siteConfig.googleMapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3.5 py-1.5 text-xs font-semibold text-secondary-foreground transition hover:bg-secondary/80 hover:text-primary"
+                  title="View verified 4.9★ reviews directly on Google Maps"
+                >
+                  ⭐ {reviewAggregate.score} Google Score ({reviewAggregate.reviewCount} Reviews ↗)
+                </a>
                 <a
                   href={siteConfig.hospitalUrl}
                   target="_blank"
@@ -195,7 +207,7 @@ function ReviewsPage() {
                   📍 {siteConfig.hospital}, Indirapuram ↗
                 </a>
                 <span className="rounded-full bg-primary/10 px-3.5 py-1.5 text-xs font-semibold text-primary">
-                  100% Verified Outcomes
+                  100% Documented Clinical Cases
                 </span>
               </>
             }
@@ -204,6 +216,54 @@ function ReviewsPage() {
       </section>
 
       {/* Main Reviews Showcase with Verified Photos, Summaries & Toggles */}
+      {/* Independent Verification & Clinical Registries Bar */}
+      <section className="px-6 pt-2 pb-6 md:px-12">
+        <div className="mx-auto max-w-[1360px]">
+          <div className="rounded-2xl border border-primary/20 bg-muted/30 p-5 sm:p-6">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+              <div className="space-y-1">
+                <div className="flex items-center gap-2">
+                  <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+                  <span className="text-xs font-bold uppercase tracking-wider text-primary">
+                    Independent Medical Council &amp; Public Registry Verification
+                  </span>
+                </div>
+                <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                  All clinical credentials, hospital appointments, and patient review metrics are independently verifiable on public registries and official hospital directories.
+                </p>
+              </div>
+              <div className="flex flex-wrap items-center gap-2.5 shrink-0">
+                <a
+                  href={siteConfig.googleMapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-full border border-border bg-background px-3.5 py-1.5 text-xs font-semibold text-foreground transition hover:border-primary hover:text-primary shadow-sm"
+                >
+                  <span>Google Maps Reviews (370+) ↗</span>
+                </a>
+                <a
+                  href={siteConfig.hospitalUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-full border border-border bg-background px-3.5 py-1.5 text-xs font-semibold text-foreground transition hover:border-primary hover:text-primary shadow-sm"
+                >
+                  <span>Yashoda Faculty Profile ↗</span>
+                </a>
+                <a
+                  href="https://delhimedicalcouncil.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-full border border-border bg-background px-3.5 py-1.5 text-xs font-semibold text-foreground transition hover:border-primary hover:text-primary shadow-sm"
+                  title="Delhi Medical Council Registration No. 26547"
+                >
+                  <span>DMC Reg. #26547 ↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <ReviewsSection />
 
       {/* Clinical Pillars of Patient Trust */}

@@ -479,10 +479,26 @@ export const SiteFooter = memo(function SiteFooter() {
         <div className="mx-auto max-w-[1400px] px-6 py-6 md:px-12">
           <div className="flex flex-wrap items-center justify-between gap-4 text-[11px] text-slate-400">
             <div className="flex flex-wrap items-center gap-4 sm:gap-6">
-              <span className="inline-flex items-center gap-1.5">
+              <a
+                href="https://delhimedicalcouncil.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 hover:text-white transition"
+                title="Verify Delhi Medical Council registration"
+              >
                 <CheckCircle2 className="h-3.5 w-3.5 text-emerald-400" />
-                <span>Delhi Medical Council Reg: {siteConfig.registration}</span>
-              </span>
+                <span>Delhi Medical Council Reg: {siteConfig.registration} (Verify ↗)</span>
+              </a>
+              <a
+                href={siteConfig.googleMapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 hover:text-white transition"
+                title="View verified 370+ patient reviews on Google Maps"
+              >
+                <CheckCircle2 className="h-3.5 w-3.5 text-amber-400" />
+                <span>Google Rating: 4.9★ ({siteConfig.rating.reviewCount} Verified Reviews ↗)</span>
+              </a>
               <span className="inline-flex items-center gap-1.5">
                 <CheckCircle2 className="h-3.5 w-3.5 text-emerald-400" />
                 <span>100% Cashless CGHS, ECHS &amp; TPA Empanelled</span>

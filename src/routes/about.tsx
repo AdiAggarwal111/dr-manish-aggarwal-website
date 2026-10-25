@@ -69,9 +69,15 @@ function AboutPage() {
           description={`${siteConfig.experienceYears} years of clinical excellence, over ${siteConfig.proceduresCount} successful cardiac procedures, and European fellowship training in non-surgical valve replacements across Delhi NCR.`}
           badges={
             <>
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3.5 py-1.5 text-xs font-semibold text-primary">
-                <Award className="h-3.5 w-3.5" /> Registration: {siteConfig.registration}
-              </span>
+              <a
+                href="https://delhimedicalcouncil.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3.5 py-1.5 text-xs font-semibold text-primary transition hover:bg-primary/20"
+                title="Verify registration on the Delhi Medical Council Official Portal"
+              >
+                <Award className="h-3.5 w-3.5" /> DMC Reg: 26547 (Verify ↗)
+              </a>
               <span className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3.5 py-1.5 text-xs font-semibold text-secondary-foreground">
                 {siteConfig.credentials}
               </span>
@@ -83,6 +89,15 @@ function AboutPage() {
                 title="View Dr. Manish Aggarwal's Official Yashoda Medicity Profile"
               >
                 📍 {siteConfig.hospital}, Indirapuram ↗
+              </a>
+              <a
+                href={siteConfig.googleMapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3.5 py-1.5 text-xs font-semibold text-secondary-foreground transition hover:bg-secondary/80 hover:text-primary"
+                title="View verified 4.9★ patient reviews on Google Maps"
+              >
+                ⭐ 4.9★ (370+ Reviews on Google Maps ↗)
               </a>
             </>
           }

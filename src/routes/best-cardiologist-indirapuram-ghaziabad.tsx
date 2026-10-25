@@ -129,9 +129,15 @@ function BestCardiologistIndirapuramPage() {
                 <span className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3.5 py-1.5 text-xs font-semibold text-secondary-foreground">
                   12,500+ Interventions
                 </span>
-                <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-3.5 py-1.5 text-xs font-semibold text-emerald-600">
-                  <Star className="h-3.5 w-3.5 fill-current" /> 4.9★ (370+ Verified Reviews)
-                </span>
+                <a
+                  href={siteConfig.googleMapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-3.5 py-1.5 text-xs font-semibold text-emerald-600 transition hover:bg-emerald-500/20"
+                  title="View verified 4.9★ reviews on Google Maps"
+                >
+                  <Star className="h-3.5 w-3.5 fill-current" /> 4.9★ (370+ Google Reviews ↗)
+                </a>
               </>
             }
           />

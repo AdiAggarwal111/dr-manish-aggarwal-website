@@ -20,9 +20,12 @@ export interface PatientReviewItem {
 export const reviewAggregate = {
   score: "4.9",
   reviewCount: "370+",
-  source: "Verified Google Reviews",
-  googleReviewUrl:
+  source: "Verified Google Business Profile Reviews",
+  googleReviewUrl: "https://maps.app.goo.gl/BrU9t1byXzPg6dx89",
+  googleSearchReviewUrl:
     "https://www.google.com/search?q=Dr+Manish+Aggarwal+Yashoda+Medicity+Indirapuram+reviews",
+  hospitalProfileUrl: "https://www.yashodahospital.org/doctor/dr-manish-aggarwal",
+  registrationNumber: "26547 Delhi Medical Council (2005)",
 };
 
 export const featuredReviews: PatientReviewItem[] = [

@@ -16,7 +16,7 @@ export const physicianSchema = {
   url: siteConfig.siteUrl,
   image: `${siteConfig.siteUrl}/images/doctor-portrait.png`,
   telephone: siteConfig.phone,
-  email: "appointments@drmanishaggarwal.com",
+  email: siteConfig.email,
   jobTitle: "Director & Department Head of Interventional Cardiology & Structural Heart Specialist",
   medicalSpecialty: "https://schema.org/Cardiovascular",
   priceRange: "$$$",
@@ -37,6 +37,7 @@ export const physicianSchema = {
     siteConfig.googleMapsUrl,
     siteConfig.googleProfileUrl,
     siteConfig.hospitalUrl,
+    "https://www.credihealth.com/doctor/dr-manish-aggarwal-cardiologist",
     siteConfig.siteUrl,
   ],
   worksFor: {

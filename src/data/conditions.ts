@@ -315,7 +315,7 @@ export const conditions: Condition[] = [
         hospitalStay: "7–10 Days",
         recoveryTime: "6–12 weeks sternotomy bone recovery",
         drAggarwalAdvantage:
-          "Unbiased assessment; zero stent quotas; clear guidance when bypass is truly the safer longevity choice",
+          "Unbiased clinical assessment; physiology-guided indications; clear guidance when bypass is truly the safer longevity choice",
       },
       {
         approach: "Optimal Medical Therapy (OMT)",

@@ -33,6 +33,28 @@ export const CareerTimeline = memo(function CareerTimeline({
           </div>
         ))}
       </div>
+
+      {/* Verified Medical Council & Clinical Registry */}
+      <div className="mt-8 rounded-2xl border border-border/80 bg-muted/40 p-4 space-y-2 text-xs">
+        <div className="flex items-center gap-1.5 font-semibold text-foreground">
+          <span className="inline-block h-2 w-2 rounded-full bg-emerald-500" />
+          <span>Verified Medical Registration</span>
+        </div>
+        <p className="text-muted-foreground leading-relaxed text-[11px]">
+          Delhi Medical Council (DMC) Reg. <strong className="text-foreground font-mono">#26547</strong> (2005)
+        </p>
+        <p className="text-muted-foreground leading-relaxed text-[11px]">
+          Fellow of the European Society of Cardiology (<strong className="text-foreground">FESC</strong>)
+        </p>
+        <a
+          href={siteConfig.hospitalUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1 pt-1 text-[11px] font-semibold text-primary hover:underline"
+        >
+          <span>Official Yashoda Medicity Faculty Profile ↗</span>
+        </a>
+      </div>
     </div>
   );
 });
@@ -135,31 +157,31 @@ export function DirectorNarrative() {
       </NarrativeBlock>
 
       <NarrativeBlock
-        title="Complex Interventions & Radically Honest Advocacy"
-        pull="A radically honest approach to the complex cardiac cases other centres refuse."
+        title="Complex Interventions & Evidence-Based Advocacy"
+        pull="Evidence-based management of complex coronary anatomy, calcified blockages, and objective second opinions."
       >
         <p>
-          Widely regarded across Delhi NCR as the &ldquo;cardiologist&apos;s cardiologist,&rdquo;
-          Dr. Aggarwal specializes in high-risk, complex coronary interventions (CHIP) that other
-          institutions routinely turn away. Where standard catheterization reaches its limits, he
+          Widely trusted by physician colleagues across Delhi NCR for high-risk cases,
+          Dr. Aggarwal specializes in complex higher-risk indicated procedures (CHIP) and severely
+          calcified coronary anatomy. Where standard catheterization reaches its limits, he
           deploys diamond-tipped{" "}
           <strong className="font-semibold text-foreground">
             rotational atherectomy (rotablation)
           </strong>{" "}
-          at 160,000 RPM and specialized retrograde-antegrade dissection techniques to conquer
-          rock-hard calcifications and reopen{" "}
+          at 160,000 RPM, Shockwave intravascular lithotripsy (IVL), and specialized retrograde-antegrade
+          dissection techniques to treat heavy calcifications and reopen{" "}
           <strong className="font-semibold text-foreground">
             100% blocked Chronic Total Occlusions (CTOs)
           </strong>
           .
         </p>
         <p>
-          Complementing this technical mastery is his defining ethos of{" "}
-          <strong className="font-semibold text-foreground">Radical Honesty</strong>: an unwavering
-          patient-advocacy commitment providing rigorous, objective second opinions for individuals
-          told that emergency open-heart bypass surgery (CABG) or multiple stents are their only
-          option. In Dr. Aggarwal&apos;s care, science and patient longevity always precede
-          procedural volume.
+          Complementing this procedural depth is a strict philosophy of{" "}
+          <strong className="font-semibold text-foreground">Evidence-Based Advocacy</strong>:
+          providing rigorous, guideline-concordant second opinions for patients advised to undergo
+          emergency open-heart bypass surgery (CABG) or multiple stents. Utilizing intravascular
+          ultrasound (IVUS) and fractional flow reserve (FFR), Dr. Aggarwal ensures stents are placed
+          only when medically compulsory, prioritizing long-term survival over procedural volume.
         </p>
       </NarrativeBlock>
     </article>

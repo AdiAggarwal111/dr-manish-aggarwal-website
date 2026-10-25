@@ -217,15 +217,21 @@ export const HeroSection = memo(function HeroSection() {
             />
           </picture>
 
-          <div className="mt-2.5 flex w-full max-w-[272px] items-center justify-center gap-2 rounded-2xl bg-card px-3.5 py-2.5 text-xs font-medium shadow-[var(--shadow-card)] sm:mt-3 sm:max-w-[304px] sm:px-4 sm:py-3 sm:text-sm md:mt-3.5 md:max-w-[364px] lg:mt-4 lg:max-w-[348px] lg:rounded-full lg:py-2.5 lg:text-sm">
+          <a
+            href={siteConfig.googleMapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Read 370+ verified patient reviews on Google Maps"
+            className="mt-2.5 flex w-full max-w-[272px] items-center justify-center gap-2 rounded-2xl bg-card px-3.5 py-2.5 text-xs font-medium shadow-[var(--shadow-card)] transition hover:bg-secondary sm:mt-3 sm:max-w-[304px] sm:px-4 sm:py-3 sm:text-sm md:mt-3.5 md:max-w-[364px] lg:mt-4 lg:max-w-[348px] lg:rounded-full lg:py-2.5 lg:text-sm"
+          >
             <Star
               className="h-3.5 w-3.5 fill-gold text-gold shrink-0 sm:h-4 sm:w-4"
               aria-hidden="true"
             />
             <span className="truncate">
-              {siteConfig.rating.score} · {siteConfig.rating.reviewCount} verified Google reviews
+              {siteConfig.rating.score} · {siteConfig.rating.reviewCount} Google reviews ↗
             </span>
-          </div>
+          </a>
         </div>
       </div>
     </section>

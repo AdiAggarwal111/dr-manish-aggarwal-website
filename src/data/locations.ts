@@ -129,7 +129,7 @@ export const locations: Location[] = [
       {
         question: "Why choose Yashoda Medicity over hospitals on the Delhi-UP border?",
         answer:
-          "Yashoda Medicity provides dedicated sub-specialty leadership under Dr. Manish Aggarwal with European structural training, zero commercial stent quotas, and faster transit times free from border police checks and metro congestion.",
+          "Yashoda Medicity provides dedicated sub-specialty leadership under Dr. Manish Aggarwal with European structural training, independent evidence-based case selection, and faster transit times free from border police checks and metro congestion.",
       },
       {
         question: "How long does a comprehensive cardiac evaluation take for Vaishali residents?",
@@ -614,7 +614,7 @@ export const locations: Location[] = [
     positioning: "Unconflicted Clinical Authority",
     hero: "A transparent, non-commercial alternative to high-turnover East Delhi corporate hospitals.",
     intro:
-      "Families across IP Extension and Patparganj seek a senior interventional cardiologist who puts clinical science above institutional stent quotas.",
+      "Families across IP Extension and Patparganj seek a senior interventional cardiologist who puts clinical science and long-term patient outcomes above institutional procedural volume.",
     transitTime: "12 to 14 Minutes via NH-9 / Gazipur Bypass",
     corridor: "Fast eastbound highway corridor bypassing domestic traffic",
     demographicFocus:

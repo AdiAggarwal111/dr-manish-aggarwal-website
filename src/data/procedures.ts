@@ -674,7 +674,7 @@ export const procedures: Procedure[] = [
       {
         heading: "A Pure Patient Advocate in Your Corner",
         paragraphs: [
-          "Dr. Aggarwal does not work on volume quotas. His second opinion service is built on zero commercial bias. If open-heart bypass surgery is genuinely your safest, longest-lasting option, Dr. Aggarwal will tell you unequivocally and connect you with premier cardiothoracic surgeons.",
+          "Dr. Aggarwal's second opinion service is built on strict clinical independence and guideline adherence. If open-heart bypass surgery is genuinely your safest, longest-lasting option, Dr. Aggarwal will tell you unequivocally and connect you with premier cardiothoracic surgeons.",
           "If, however, your blockages can be safely managed with medication, or if complex rotablation can spare you an unnecessary sternotomy, you will receive the exact scientific rationale in plain, respectful language. You leave with clarity, confidence, and complete control over your health.",
         ],
         callout: {

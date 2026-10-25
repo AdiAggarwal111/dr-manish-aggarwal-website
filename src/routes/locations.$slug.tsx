@@ -378,7 +378,7 @@ function LocationPage() {
                 "European Fellowship in Structural Heart (Budapest)",
                 `${siteConfig.experienceYears} Years Clinical Mastery · ${siteConfig.proceduresCount} Procedures`,
                 "24×7 Door-to-Balloon Primary Angioplasty (<90 min)",
-                "Radically Honest Second Opinions (Zero Stent Quotas)",
+                "Independent Second Opinions (Guideline-Directed, Zero Bias)",
               ].map((item) => (
                 <div
                   key={item}

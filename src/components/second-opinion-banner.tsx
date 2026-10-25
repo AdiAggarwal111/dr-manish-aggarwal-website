@@ -24,7 +24,7 @@ export const SecondOpinionBanner = memo(function SecondOpinionBanner() {
             <div className="lg:col-span-8 space-y-6">
               <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold tracking-wider text-emerald-300 backdrop-blur-md uppercase">
                 <ShieldCheck className="h-4 w-4" />
-                <span>Radical Diagnostic Honesty · Zero Stent Quotas</span>
+                <span>Conservative Clinical Philosophy · Evidence-Based Practice</span>
               </div>
 
               <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight leading-tight text-white">
@@ -52,8 +52,8 @@ export const SecondOpinionBanner = memo(function SecondOpinionBanner() {
                 <div className="flex items-start gap-2.5">
                   <FileSearch className="h-4 w-4 text-emerald-400 shrink-0 mt-0.5" />
                   <span>
-                    <strong className="text-white block font-medium">Zero Quotas</strong>
-                    Guideline-directed advice: no unnecessary stenting.
+                    <strong className="text-white block font-medium">Guideline-Directed</strong>
+                    Physiology-guided advice: no unnecessary or unindicated stenting.
                   </span>
                 </div>
                 <div className="flex items-start gap-2.5">

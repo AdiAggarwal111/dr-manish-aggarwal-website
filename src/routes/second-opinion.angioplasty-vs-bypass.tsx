@@ -364,7 +364,7 @@ function AngioplastyVsBypassPage() {
                 <span className="text-xs font-bold text-primary uppercase tracking-wider">Factor 4</span>
                 <h4 className="font-semibold text-sm text-foreground">Calcification Complexity</h4>
                 <p className="text-xs text-muted-foreground leading-relaxed">
-                  Do the blockages have rock-hard calcium? With modern <strong>Rotablation</strong> and <strong>Shockwave IVL</strong>, Dr. Manish can clear calcified blockages that other centers refuse to stent.
+                  Do the blockages have rock-hard calcium? With specialized <strong>Rotablation</strong> and <strong>Shockwave IVL</strong>, Dr. Manish can safely dilate severe, porcelain calcifications without requiring open-heart surgery.
                 </p>
               </div>
 

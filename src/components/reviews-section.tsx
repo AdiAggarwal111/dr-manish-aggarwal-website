@@ -162,8 +162,9 @@ export const ReviewsSection = memo(function ReviewsSection() {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-navy px-5 py-2.5 text-xs font-semibold text-navy-foreground transition hover:opacity-90 shadow-sm"
+              title="Read all 370+ patient reviews directly on Google Maps"
             >
-              <span>Review on Google</span>
+              <span>Read all 370+ on Google Maps</span>
               <svg
                 className="h-3.5 w-3.5"
                 viewBox="0 0 24 24"

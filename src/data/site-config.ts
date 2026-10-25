@@ -17,7 +17,7 @@ export const siteConfig = {
   phone: "+91-9348131276",
   phoneDisplay: "+91 93481 31276",
   phoneRaw: "+919348131276",
-  email: "appointments@drmanishaggarwal.com",
+  email: "appointments@drmanishaggarwal.in",
   opdHours: "Mon – Sat · 10:00 AM – 6:00 PM",
   emergencyHours: "24/7 Emergency Response",
   experienceYears: "28",

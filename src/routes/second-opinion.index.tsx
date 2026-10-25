@@ -153,7 +153,7 @@ function SecondOpinionPage() {
                 In cardiovascular medicine, the pressure to make immediate decisions inside a hospital holding area can be overwhelming. Families are frequently told their loved one has "90% blockages" and must undergo emergency open-heart bypass surgery or 3 to 4 stents within the hour.
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Unless a patient is actively suffering an acute ST-elevation myocardial infarction (active heart attack with ST elevation), guideline-directed medical therapy and physiological testing (FFR/IVUS) are essential before rushing into irreversible surgery. We provide completely independent, ethical, and evidence-based case assessments with zero corporate stent quotas.
+                Unless a patient is actively suffering an acute ST-elevation myocardial infarction (active heart attack with ST elevation), guideline-directed medical therapy and physiological testing (FFR/IVUS) are essential before rushing into irreversible surgery. We provide completely independent, ethical, and evidence-based case assessments free from commercial volume pressures or institutional quotas.
               </p>
             </div>
           </div>

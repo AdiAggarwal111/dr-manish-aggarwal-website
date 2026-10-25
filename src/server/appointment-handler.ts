@@ -5,7 +5,7 @@ import {
   type AppointmentApiResponse,
 } from "../lib/appointment-schema.ts";
 
-const CLINIC_NOTIFICATION_EMAIL = "appointments@drmanishaggarwal.com";
+const CLINIC_NOTIFICATION_EMAIL = "appointments@drmanishaggarwal.in";
 
 interface EnvContext {
   RESEND_API_KEY?: string;
