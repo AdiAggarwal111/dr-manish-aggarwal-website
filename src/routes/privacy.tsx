@@ -67,9 +67,9 @@ export const Route = createFileRoute("/privacy")({
           description: pageDescription,
           url: `${siteConfig.siteUrl}/privacy`,
           publisher: {
-            "@type": "Physician",
+            "@type": "Person",
             name: siteConfig.name,
-            url: siteConfig.siteUrl,
+            url: `${siteConfig.siteUrl}/about`,
           },
         }),
       },

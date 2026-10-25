@@ -67,10 +67,23 @@ export const Route = createFileRoute("/reviews")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Physician",
+          "@id": `${siteConfig.siteUrl}/#physician`,
           name: siteConfig.name,
           jobTitle: siteConfig.title,
           url: `${siteConfig.siteUrl}/reviews`,
+          image: `${siteConfig.siteUrl}/images/doctor-portrait.png`,
           telephone: siteConfig.phone,
+          priceRange: "$$$",
+          currenciesAccepted: "INR",
+          paymentAccepted: [
+            "Cash",
+            "Credit Card",
+            "Debit Card",
+            "Cashless Health Insurance",
+            "TPA",
+            "CGHS",
+            "ECHS",
+          ],
           identifier: siteConfig.registration,
           medicalSpecialty: [
             "https://schema.org/CardiovascularExam",
@@ -95,6 +108,25 @@ export const Route = createFileRoute("/reviews")({
             postalCode: siteConfig.postalCode,
             addressCountry: siteConfig.country,
           },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 28.6464,
+            longitude: 77.3775,
+          },
+          openingHoursSpecification: [
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+              opens: "10:00",
+              closes: "18:00",
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+              opens: "00:00",
+              closes: "23:59",
+            },
+          ],
           aggregateRating: {
             "@type": "AggregateRating",
             ratingValue: siteConfig.rating.score,

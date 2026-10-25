@@ -58,10 +58,10 @@ export const Route = createFileRoute("/second-opinion/positive-tmt-test-next-ste
           description: pageDescription,
           url: pageUrl,
           reviewedBy: {
-            "@type": "Physician",
+            "@type": "Person",
             name: siteConfig.name,
             jobTitle: siteConfig.title,
-            identifier: siteConfig.registration,
+            url: `${siteConfig.siteUrl}/about`,
           },
           breadcrumb: {
             "@context": "https://schema.org",
@@ -317,7 +317,7 @@ function PositiveTmtNextStepsRoute() {
                     `Hello Dr. Manish Aggarwal, I have a Positive TMT report. My Duke Treadmill Score is ${dts} (Exercise time: ${exerciseTime} min, ST depression: ${stDepression} mm). I would like a second opinion.`
                   )}`}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="nofollow noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-5 py-3 text-xs sm:text-sm font-bold text-white shadow-md hover:bg-emerald-700 transition"
                 >
                   <Activity className="h-4 w-4" />

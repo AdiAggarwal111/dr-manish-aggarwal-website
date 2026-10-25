@@ -277,10 +277,11 @@ export const Route = createFileRoute("/tools")({
           description: pageDescription,
           url: pageUrl,
           author: {
-            "@type": "Physician",
+            "@type": "Person",
             name: siteConfig.name,
             jobTitle: siteConfig.title,
             identifier: siteConfig.registration,
+            url: `${siteConfig.siteUrl}/about`,
           },
           breadcrumb: {
             "@context": "https://schema.org",
@@ -443,7 +444,7 @@ function ToolsHubRoute() {
                 "Hello Dr. Manish Aggarwal, I am on your Tools & Specialized Hub page and would like to share my cardiac report / angiogram CD for second opinion review."
               )}`}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-emerald-500 px-7 py-3.5 text-xs font-semibold text-slate-950 hover:bg-emerald-400 transition shadow-md"
             >
               <span>WhatsApp Reports for Triage</span>

@@ -77,7 +77,7 @@ export const SecondOpinionBanner = memo(function SecondOpinionBanner() {
                 <a
                   href={whatsappUrl}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="nofollow noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-full border border-emerald-400/40 bg-emerald-500/20 px-5 py-3 text-xs sm:text-sm font-semibold text-emerald-200 transition hover:bg-emerald-500/30"
                 >
                   <MessageSquare className="h-4 w-4 text-emerald-400" />
@@ -108,7 +108,7 @@ export const SecondOpinionBanner = memo(function SecondOpinionBanner() {
               <a
                 href={whatsappUrl}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-emerald-400/40 bg-emerald-500/20 px-6 py-3.5 text-sm font-semibold text-emerald-200 transition hover:bg-emerald-500/30"
               >
                 <MessageSquare className="h-4 w-4 text-emerald-400" />

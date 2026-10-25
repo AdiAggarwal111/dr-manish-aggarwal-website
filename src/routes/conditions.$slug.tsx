@@ -178,17 +178,10 @@ export const Route = createFileRoute("/conditions/$slug")({
         lastReviewed: "2026-10-18",
         medicalSpecialty: "https://schema.org/Cardiovascular",
         reviewedBy: {
-          "@type": "Physician",
+          "@type": "Person",
           name: siteConfig.name,
           jobTitle: siteConfig.title,
-          identifier: siteConfig.registration,
           url: `${siteConfig.siteUrl}/about`,
-          medicalSpecialty: "https://schema.org/Cardiovascular",
-          alumniOf: "Gottsegen György Hungarian Institute of Cardiology, Budapest",
-          worksFor: {
-            "@type": "Hospital",
-            name: siteConfig.hospital,
-          },
         },
       },
       {

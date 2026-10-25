@@ -59,10 +59,10 @@ export const Route = createFileRoute("/conditions/chest-pain-heart-attack-vs-aci
           description: pageDescription,
           url: pageUrl,
           reviewedBy: {
-            "@type": "Physician",
+            "@type": "Person",
             name: siteConfig.name,
             jobTitle: siteConfig.title,
-            identifier: siteConfig.registration,
+            url: `${siteConfig.siteUrl}/about`,
           },
           breadcrumb: {
             "@context": "https://schema.org",

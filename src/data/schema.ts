@@ -105,6 +105,7 @@ export const physicianSchema = {
       recognizedBy: {
         "@type": "Organization",
         name: "Delhi Medical Council",
+        url: "https://delhimedicalcouncil.org",
       },
     },
     {
@@ -117,16 +118,19 @@ export const physicianSchema = {
     {
       "@type": "EducationalOrganization",
       name: "University of Rajasthan",
+      url: "https://www.uniraj.ac.in",
       description: "MBBS & MD (General Medicine)",
     },
     {
       "@type": "EducationalOrganization",
       name: "National Board of Examinations",
+      url: "https://natboard.edu.in",
       description: "DNB (Cardiology)",
     },
     {
       "@type": "EducationalOrganization",
       name: "Gottsegen György Hungarian Institute of Cardiology, Budapest",
+      url: "https://gokvi.hu",
       description: "Fellowship in Structural Heart Interventions (2018)",
     },
   ],
@@ -134,15 +138,18 @@ export const physicianSchema = {
     {
       "@type": "Organization",
       name: "Cardiological Society of India (CSI)",
+      url: "https://csi.org.in",
     },
     {
       "@type": "Organization",
       name: "European Society of Cardiology (ESC)",
+      url: "https://www.escardio.org",
       description: "FESC - Fellow of the European Society of Cardiology",
     },
     {
       "@type": "Organization",
       name: "Delhi Medical Council",
+      url: "https://delhimedicalcouncil.org",
       description: "Registration No. 26547 (issued 2005)",
     },
   ],
@@ -167,23 +174,6 @@ export const physicianSchema = {
     reviewCount: 370,
     bestRating: "5",
     worstRating: "1",
-    itemReviewed: {
-      "@type": "Physician",
-      "@id": `${siteConfig.siteUrl}/#physician`,
-      name: "Dr. Manish Aggarwal",
-      image: `${siteConfig.siteUrl}/images/doctor-portrait.png`,
-      telephone: siteConfig.phone,
-      url: siteConfig.siteUrl,
-      priceRange: "$$$",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "Yashoda Medicity, Indirapuram",
-        addressLocality: "Indirapuram, Ghaziabad",
-        addressRegion: "Delhi NCR, Uttar Pradesh",
-        postalCode: "201014",
-        addressCountry: "IN",
-      },
-    },
   },
   review: [
     {

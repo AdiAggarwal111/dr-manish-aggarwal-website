@@ -67,9 +67,9 @@ export const Route = createFileRoute("/terms")({
           description: pageDescription,
           url: `${siteConfig.siteUrl}/terms`,
           publisher: {
-            "@type": "Physician",
+            "@type": "Person",
             name: siteConfig.name,
-            url: siteConfig.siteUrl,
+            url: `${siteConfig.siteUrl}/about`,
           },
         }),
       },

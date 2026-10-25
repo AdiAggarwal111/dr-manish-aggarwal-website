@@ -69,6 +69,7 @@ export const LocationFaqSection = memo(function LocationFaqSection() {
   const localClinicSchema = {
     "@context": "https://schema.org",
     "@type": ["MedicalClinic", "LocalBusiness"],
+    "@id": `${siteConfig.siteUrl}/#clinic`,
     name: `Dr. Manish Aggarwal | Interventional Cardiology Suite at ${siteConfig.hospital}`,
     image: `${siteConfig.siteUrl}/images/yashoda-medicity-hero.jpg`,
     url: siteConfig.siteUrl,
@@ -80,7 +81,17 @@ export const LocationFaqSection = memo(function LocationFaqSection() {
       siteConfig.siteUrl,
     ],
     telephone: siteConfig.phone,
-    priceRange: "$$",
+    priceRange: "$$$",
+    currenciesAccepted: "INR",
+    paymentAccepted: [
+      "Cash",
+      "Credit Card",
+      "Debit Card",
+      "Cashless Health Insurance",
+      "TPA",
+      "CGHS",
+      "ECHS",
+    ],
     address: {
       "@type": "PostalAddress",
       streetAddress: siteConfig.streetAddress,

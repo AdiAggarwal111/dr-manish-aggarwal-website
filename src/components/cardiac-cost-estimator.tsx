@@ -366,7 +366,7 @@ export function CardiacCostEstimator() {
               <a
                 href={whatsappEstimatorUrl}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-600 px-5 py-3 text-xs font-semibold text-white hover:bg-emerald-500 transition shadow-sm"
               >
                 <MessageSquare className="h-4 w-4" />

@@ -462,7 +462,7 @@ export function EchoReportDecrypter() {
                 `Hello Dr. Manish Aggarwal, I used your 2D Echo Decrypter tool. My report shows LVEF: ${lvef}%, RWMA: ${rwma}, Aortic: ${aorticValve}, Mitral: ${mitralValve}. I would like your expert opinion.`
               )}`}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-5 py-3 text-xs sm:text-sm font-bold text-white shadow-md hover:bg-emerald-700 transition shrink-0"
             >
               <span>WhatsApp Echo Report to Dr. Manish</span>

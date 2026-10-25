@@ -56,10 +56,10 @@ export const Route = createFileRoute("/second-opinion/report-interpretation")({
           description: pageDescription,
           url: pageUrl,
           reviewedBy: {
-            "@type": "Physician",
+            "@type": "Person",
             name: siteConfig.name,
             jobTitle: siteConfig.title,
-            identifier: siteConfig.registration,
+            url: `${siteConfig.siteUrl}/about`,
           },
           breadcrumb: {
             "@context": "https://schema.org",
@@ -300,7 +300,7 @@ function ReportInterpretationPage() {
                   <a
                     href={whatsappUrl}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="nofollow noopener noreferrer"
                     className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-600 px-4 py-3 text-xs font-semibold text-white hover:bg-emerald-500 transition shadow-sm"
                   >
                     <MessageSquare className="h-4 w-4" />
@@ -473,7 +473,7 @@ function ReportInterpretationPage() {
             <a
               href={whatsappUrl}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="nofollow noopener noreferrer"
               className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-emerald-500 px-7 py-3.5 text-xs font-semibold text-slate-950 hover:bg-emerald-400 transition shadow-md"
             >
               <MessageSquare className="h-4 w-4" />

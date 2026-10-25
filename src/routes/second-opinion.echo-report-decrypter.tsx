@@ -57,10 +57,10 @@ export const Route = createFileRoute("/second-opinion/echo-report-decrypter")({
           description: pageDescription,
           url: pageUrl,
           reviewedBy: {
-            "@type": "Physician",
+            "@type": "Person",
             name: siteConfig.name,
             jobTitle: siteConfig.title,
-            identifier: siteConfig.registration,
+            url: `${siteConfig.siteUrl}/about`,
           },
           breadcrumb: {
             "@context": "https://schema.org",
@@ -329,7 +329,7 @@ function EchoReportDecrypterRoute() {
               </p>
               <Link
                 to="/procedures/$slug"
-                params={{ slug: "mitraclip-procedure-india" }}
+                params={{ slug: "mitraclip" }}
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-300 hover:text-white transition"
               >
                 <span>Explore Non-Surgical MitraClip Repair →</span>

@@ -523,7 +523,7 @@ export function ChestPainTriageTool() {
                       "Hello Dr. Manish Aggarwal, I have chest discomfort with mixed acidity/cardiac symptoms and would like an urgent review / ECG evaluation."
                     )}`}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="nofollow noopener noreferrer"
                     className="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-6 py-3.5 text-sm font-bold text-white shadow-md hover:bg-emerald-700 transition"
                   >
                     <Activity className="h-4 w-4" />

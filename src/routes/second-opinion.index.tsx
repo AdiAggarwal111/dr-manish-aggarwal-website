@@ -54,10 +54,10 @@ export const Route = createFileRoute("/second-opinion/")({
           description: pageDescription,
           url: `${siteConfig.siteUrl}/second-opinion`,
           reviewedBy: {
-            "@type": "Physician",
+            "@type": "Person",
             name: siteConfig.name,
             jobTitle: siteConfig.title,
-            identifier: siteConfig.registration,
+            url: `${siteConfig.siteUrl}/about`,
           },
           breadcrumb: {
             "@context": "https://schema.org",
@@ -206,7 +206,7 @@ function SecondOpinionPage() {
               <a
                 href={whatsappUrl}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-emerald-600 px-6 py-3.5 text-xs font-semibold text-white shadow-md hover:bg-emerald-700 transition"
               >
                 <MessageSquare className="h-4 w-4" />

@@ -31,6 +31,7 @@ import { Route as ConditionsInStentRestenosisTreatmentRouteImport } from './rout
 import { Route as CostsIndexRouteImport } from './routes/costs.index'
 import { Route as CostsSlugRouteImport } from './routes/costs.$slug'
 import { Route as CostsStentBrandsComparisonRouteImport } from './routes/costs.stent-brands-comparison'
+import { Route as InsuranceIndexRouteImport } from './routes/insurance.index'
 import { Route as InsuranceCghsCardiologyRouteImport } from './routes/insurance.cghs-cardiology'
 import { Route as LocationsIndexRouteImport } from './routes/locations.index'
 import { Route as LocationsSlugRouteImport } from './routes/locations.$slug'
@@ -159,6 +160,11 @@ const CostsStentBrandsComparisonRoute =
     path: '/stent-brands-comparison',
     getParentRoute: () => CostsRoute,
   } as any)
+const InsuranceIndexRoute = InsuranceIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => InsuranceRoute,
+} as any)
 const InsuranceCghsCardiologyRoute = InsuranceCghsCardiologyRouteImport.update({
   id: '/cghs-cardiology',
   path: '/cghs-cardiology',
@@ -265,6 +271,7 @@ export interface FileRoutesByFullPath {
   '/second-opinion/report-interpretation': typeof SecondOpinionReportInterpretationRoute
   '/conditions/': typeof ConditionsIndexRoute
   '/costs/': typeof CostsIndexRoute
+  '/insurance/': typeof InsuranceIndexRoute
   '/locations/': typeof LocationsIndexRoute
   '/procedures/': typeof ProceduresIndexRoute
   '/second-opinion/': typeof SecondOpinionIndexRoute
@@ -275,7 +282,6 @@ export interface FileRoutesByTo {
   '/best-cardiologist-indirapuram-ghaziabad': typeof BestCardiologistIndirapuramGhaziabadRoute
   '/contact': typeof ContactRoute
   '/facility': typeof FacilityRoute
-  '/insurance': typeof InsuranceRouteWithChildren
   '/privacy': typeof PrivacyRoute
   '/reviews': typeof ReviewsRoute
   '/terms': typeof TermsRoute
@@ -297,6 +303,7 @@ export interface FileRoutesByTo {
   '/second-opinion/report-interpretation': typeof SecondOpinionReportInterpretationRoute
   '/conditions': typeof ConditionsIndexRoute
   '/costs': typeof CostsIndexRoute
+  '/insurance': typeof InsuranceIndexRoute
   '/locations': typeof LocationsIndexRoute
   '/procedures': typeof ProceduresIndexRoute
   '/second-opinion': typeof SecondOpinionIndexRoute
@@ -335,6 +342,7 @@ export interface FileRoutesById {
   '/second-opinion/report-interpretation': typeof SecondOpinionReportInterpretationRoute
   '/conditions/': typeof ConditionsIndexRoute
   '/costs/': typeof CostsIndexRoute
+  '/insurance/': typeof InsuranceIndexRoute
   '/locations/': typeof LocationsIndexRoute
   '/procedures/': typeof ProceduresIndexRoute
   '/second-opinion/': typeof SecondOpinionIndexRoute
@@ -374,6 +382,7 @@ export interface FileRouteTypes {
     | '/second-opinion/report-interpretation'
     | '/conditions/'
     | '/costs/'
+    | '/insurance/'
     | '/locations/'
     | '/procedures/'
     | '/second-opinion/'
@@ -384,7 +393,6 @@ export interface FileRouteTypes {
     | '/best-cardiologist-indirapuram-ghaziabad'
     | '/contact'
     | '/facility'
-    | '/insurance'
     | '/privacy'
     | '/reviews'
     | '/terms'
@@ -406,6 +414,7 @@ export interface FileRouteTypes {
     | '/second-opinion/report-interpretation'
     | '/conditions'
     | '/costs'
+    | '/insurance'
     | '/locations'
     | '/procedures'
     | '/second-opinion'
@@ -443,6 +452,7 @@ export interface FileRouteTypes {
     | '/second-opinion/report-interpretation'
     | '/conditions/'
     | '/costs/'
+    | '/insurance/'
     | '/locations/'
     | '/procedures/'
     | '/second-opinion/'
@@ -622,6 +632,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CostsStentBrandsComparisonRouteImport
       parentRoute: typeof CostsRoute
     }
+    '/insurance/': {
+      id: '/insurance/'
+      path: '/'
+      fullPath: '/insurance/'
+      preLoaderRoute: typeof InsuranceIndexRouteImport
+      parentRoute: typeof InsuranceRoute
+    }
     '/insurance/cghs-cardiology': {
       id: '/insurance/cghs-cardiology'
       path: '/cghs-cardiology'
@@ -752,10 +769,12 @@ const CostsRouteWithChildren = CostsRoute._addFileChildren(CostsRouteChildren)
 
 interface InsuranceRouteChildren {
   InsuranceCghsCardiologyRoute: typeof InsuranceCghsCardiologyRoute
+  InsuranceIndexRoute: typeof InsuranceIndexRoute
 }
 
 const InsuranceRouteChildren: InsuranceRouteChildren = {
   InsuranceCghsCardiologyRoute: InsuranceCghsCardiologyRoute,
+  InsuranceIndexRoute: InsuranceIndexRoute,
 }
 
 const InsuranceRouteWithChildren = InsuranceRoute._addFileChildren(

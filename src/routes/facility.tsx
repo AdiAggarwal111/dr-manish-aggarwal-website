@@ -63,7 +63,9 @@ export const Route = createFileRoute("/facility")({
           name: `${siteConfig.hospital} | Interventional Cardiology`,
           description: pageDescription,
           url: `${siteConfig.siteUrl}/facility`,
+          image: `${siteConfig.siteUrl}/images/doctor-portrait.png`,
           telephone: siteConfig.phone,
+          priceRange: "$$$",
           paymentAccepted: [
             "Cash",
             "Credit Card",

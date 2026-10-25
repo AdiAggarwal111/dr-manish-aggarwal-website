@@ -269,14 +269,11 @@ export const Route = createFileRoute("/procedures/$slug")({
         description: p.desc,
         procedureType: "Percutaneous Procedure",
         performer: {
-          "@type": "Physician",
+          "@type": "Person",
           name: siteConfig.name,
           jobTitle: siteConfig.title,
           identifier: siteConfig.registration,
-          worksFor: {
-            "@type": "Hospital",
-            name: siteConfig.hospital,
-          },
+          url: `${siteConfig.siteUrl}/about`,
         },
         location: {
           "@type": "Hospital",
@@ -300,17 +297,10 @@ export const Route = createFileRoute("/procedures/$slug")({
         lastReviewed: "2026-10-18",
         medicalSpecialty: "https://schema.org/Cardiovascular",
         reviewedBy: {
-          "@type": "Physician",
+          "@type": "Person",
           name: siteConfig.name,
           jobTitle: siteConfig.title,
-          identifier: siteConfig.registration,
           url: `${siteConfig.siteUrl}/about`,
-          medicalSpecialty: "https://schema.org/Cardiovascular",
-          alumniOf: "Gottsegen György Hungarian Institute of Cardiology, Budapest",
-          worksFor: {
-            "@type": "Hospital",
-            name: siteConfig.hospital,
-          },
         },
         about: {
           "@type": "MedicalProcedure",

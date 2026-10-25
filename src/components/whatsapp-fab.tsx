@@ -29,7 +29,7 @@ export const WhatsappFab = memo(function WhatsappFab() {
           "Hello Dr. Manish Aggarwal's team, I would like to inquire about a consultation / cardiac evaluation.",
         )}`}
         target="_blank"
-        rel="noopener noreferrer"
+        rel="nofollow noopener noreferrer"
         aria-label="Chat on WhatsApp with Dr. Manish Aggarwal's clinic"
         title="Chat with Clinical Team on WhatsApp"
         className="flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 hover:bg-[#20ba59] focus:outline-none focus:ring-2 focus:ring-[#25D366]/40"

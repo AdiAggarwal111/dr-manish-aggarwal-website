@@ -58,9 +58,22 @@ export const Route = createFileRoute("/contact")({
           url: `${siteConfig.siteUrl}/contact`,
           mainEntity: {
             "@type": "MedicalClinic",
+            "@id": `${siteConfig.siteUrl}/#clinic`,
             name: `${siteConfig.hospital} | Interventional Cardiology Division`,
+            url: `${siteConfig.siteUrl}/contact`,
+            image: `${siteConfig.siteUrl}/images/yashoda-medicity-hero.jpg`,
             telephone: siteConfig.phone,
             priceRange: "$$$",
+            currenciesAccepted: "INR",
+            paymentAccepted: [
+              "Cash",
+              "Credit Card",
+              "Debit Card",
+              "Cashless Health Insurance",
+              "TPA",
+              "CGHS",
+              "ECHS",
+            ],
             address: {
               "@type": "PostalAddress",
               streetAddress: siteConfig.streetAddress,
