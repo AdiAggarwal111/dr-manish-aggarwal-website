@@ -9,6 +9,9 @@ export const physicianSchema = {
   alternateName: [
     "Dr. Manish Aggarwal",
     "डॉ. मनीष अग्रवाल",
+    "Dr. Manish Aggarwal | Interventional Cardiologist",
+    "Dr. Manish Aggarwal - Interventional Cardiologist",
+    "Dr Manish Aggarwal Interventional Cardiologist",
     "Dr Manish Aggarwal Cardiologist",
     "Dr Manish Aggarwal Yashoda Medicity",
     "Dr. Manish Aggarwal, Director Cardiology",

@@ -13,7 +13,7 @@ export const siteConfig = {
   googleProfileUrl: "https://share.google/J6Vu9CrYCRqk43ln0",
   siteUrl: "https://drmanishaggarwal.in",
   googleAnalyticsId: "G-E9L9F07FP5",
-  ahrefsAnalyticsKey: "T887KWOA1NlpzY60bZOtg",
+  ahrefsAnalyticsKey: "T887KWOA11NlpzY60bZOtg",
   phone: "+91-9348131276",
   phoneDisplay: "+91 93481 31276",
   phoneRaw: "+919348131276",
