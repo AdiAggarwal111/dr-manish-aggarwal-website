@@ -5,8 +5,8 @@ import { CareerTimeline, DirectorNarrative } from "@/components/timeline-section
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { PageHeroHeader } from "@/components/page-hero-header";
 
-const pageTitle = `About ${siteConfig.name} | Cardiologist, Yashoda Medicity`;
-const pageDescription = `Learn about ${siteConfig.name}, Cardiology Director at Yashoda Medicity, Indirapuram. 28+ yrs exp, 12,500+ procedures, European structural heart fellow.`;
+const pageTitle = `Dr. Manish Aggarwal · Director of Cardiology, Yashoda Medicity`;
+const pageDescription = `Meet Dr. Manish Aggarwal, Director of Interventional Cardiology at Yashoda Medicity, Indirapuram, Ghaziabad. 28+ yrs exp, 12,500+ procedures, European fellow.`;
 
 export const Route = createFileRoute("/about")({
   head: () => ({

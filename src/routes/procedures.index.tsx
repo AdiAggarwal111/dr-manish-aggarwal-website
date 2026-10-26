@@ -5,8 +5,8 @@ import { siteConfig } from "@/data/site-config";
 import { ProcedureCard } from "@/components/procedure-card";
 import { PageHeroHeader } from "@/components/page-hero-header";
 
-const pageTitle = `Cardiac Procedures | ${siteConfig.name}`;
-const pageDescription = `Interventional and structural heart procedures by ${siteConfig.name} at Yashoda Medicity: TAVR, MitraClip, Angioplasty, CTO, and Pacemakers.`;
+const pageTitle = `Cardiac Procedures & Angioplasty · Dr. Manish Aggarwal`;
+const pageDescription = `Advanced interventional procedures at Yashoda Medicity by Dr. Manish Aggarwal: Angiography, Stenting, TAVR, Rotablation, Pacemakers. Cashless CGHS/TPA.`;
 
 export const Route = createFileRoute("/procedures/")({
   head: () => ({

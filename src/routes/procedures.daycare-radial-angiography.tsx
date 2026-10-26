@@ -21,8 +21,8 @@ import { siteConfig } from "@/data/site-config";
 import { PageHeroHeader } from "@/components/page-hero-header";
 import { AppointmentSection } from "@/components/appointment-form";
 
-const pageTitle = `Same-Day Radial Angiography Desk: 3-Hour Discharge & Painless Wrist CAG | ${siteConfig.name}`;
-const pageDescription = `Transradial coronary angiography under Dr. Manish Aggarwal at Yashoda Medicity. 99% wrist access, painless, walk in 2 hours, 3-hour daycare discharge & instant CD.`;
+const pageTitle = `Coronary Angiography in Ghaziabad · Dr. Manish Aggarwal`;
+const pageDescription = `Painless wrist angiography at Yashoda Medicity by Dr. Manish Aggarwal. Walk in 2 hrs, same-day discharge & instant CD. Cashless CGHS & TPA: +91 93481 31276.`;
 const pageUrl = `${siteConfig.siteUrl}/procedures/daycare-radial-angiography`;
 
 export const Route = createFileRoute("/procedures/daycare-radial-angiography")({

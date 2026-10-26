@@ -40,10 +40,10 @@ export const siteConfig = {
     reviewCount: "370+",
   },
   meta: {
-    defaultTitle: "Dr. Manish Aggarwal | Cardiologist, Yashoda Medicity",
+    defaultTitle: "Dr. Manish Aggarwal | Best Cardiologist in Ghaziabad",
     defaultDescription:
-      "Director of Cardiology at Yashoda Medicity, Indirapuram, Delhi NCR. 28+ years exp, 12,500+ procedures, European heart fellow. Call: +91-9348131276.",
+      "Director of Cardiology at Yashoda Medicity, Indirapuram, Ghaziabad. 28+ yrs exp, 12,500+ procedures, 400+ 5★ reviews. Fast-Track OPD: +91 93481 31276.",
     keywords:
-      "Dr Manish Aggarwal, interventional cardiologist Delhi NCR, structural heart specialist Indirapuram, Yashoda Medicity cardiology, TAVR Delhi, MitraClip India, best cardiologist Ghaziabad",
+      "Dr Manish Aggarwal, cardiologist ghaziabad, best cardiologist ghaziabad, best cardiologist in ghaziabad, cardiologist in indirapuram, cardiologist indirapuram, interventional cardiologist, Yashoda Medicity cardiology, TAVR Delhi, angiography",
   },
 } as const;

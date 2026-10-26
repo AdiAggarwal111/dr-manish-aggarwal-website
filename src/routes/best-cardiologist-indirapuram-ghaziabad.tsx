@@ -22,8 +22,8 @@ import { siteConfig } from "@/data/site-config";
 import { PageHeroHeader } from "@/components/page-hero-header";
 import { AppointmentSection } from "@/components/appointment-form";
 
-const pageTitle = `Best Cardiologist in Indirapuram & Ghaziabad: 5 Clinical Benchmarks | ${siteConfig.name}`;
-const pageDescription = `Looking for the top interventional cardiologist in Indirapuram, Vaishali, or Ghaziabad? Learn how to evaluate procedure volume, Cath Lab tech, and clinical ethics.`;
+const pageTitle = `Best Cardiologist in Indirapuram & Ghaziabad · Dr Manish Aggarwal`;
+const pageDescription = `Consult Dr. Manish Aggarwal, Director of Cardiology at Yashoda Medicity, Indirapuram, Ghaziabad. 28+ yrs exp, 400+ reviews. 24/7 Helpline: +91 93481 31276.`;
 const pageUrl = `${siteConfig.siteUrl}/best-cardiologist-indirapuram-ghaziabad`;
 
 export const Route = createFileRoute("/best-cardiologist-indirapuram-ghaziabad")({

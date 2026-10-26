@@ -56,8 +56,8 @@ export const Route = createFileRoute("/locations/$slug")({
     if (!l) return { meta: [{ title: `Location | ${siteConfig.name}` }] };
     const rawName = l.name.includes("/") ? l.name.split("/")[0].trim() : l.name;
     const cleanName = rawName.replace("Sectors ", "Sec ").replace("Extension", "Ext");
-    const title = `Cardiologist in ${cleanName} | ${siteConfig.name}`;
-    const rawDesc = `Cardiologist serving ${rawName}. ${siteConfig.name} at ${siteConfig.hospital}, Indirapuram. 28+ yrs exp, 12,500+ procedures. Call ${siteConfig.phone}.`;
+    const title = `Best Cardiologist in ${cleanName} · Dr. Manish Aggarwal`;
+    const rawDesc = `Best Cardiologist for ${cleanName} · Dr. Manish Aggarwal, Director at Yashoda Medicity. 28+ yrs exp, 400+ reviews. 24/7 Helpline: +91 93481 31276.`;
     const description =
       rawDesc.length > 155 ? rawDesc.slice(0, 152).replace(/\s+\S*$/, "") + "..." : rawDesc;
     const url = `${siteConfig.siteUrl}/locations/${l.slug}`;
